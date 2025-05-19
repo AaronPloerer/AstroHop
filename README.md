@@ -1,2 +1,2 @@
 # AstroHop
-UX-Versions of the AstroHop game
+UX-Versions of the AstroHop Game
