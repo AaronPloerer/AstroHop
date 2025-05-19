@@ -1,0 +1,28 @@
+fileFormatVersion: 2
+guid: 9ce071cf0ab0019409dfbcd8f0f57055
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - musicSource: {instanceID: 0}
+  - sfxSource: {instanceID: 0}
+  - sfxBoostSource: {instanceID: 0}
+  - sfxUfoSource: {instanceID: 0}
+  - background: {fileID: 8300000, guid: aeecac41ac2417d41b057eeb444bdd93, type: 3}
+  - click: {fileID: 8300000, guid: e6f465cdf77d9b2468cd1b99dd36a347, type: 3}
+  - closeClick: {fileID: 8300000, guid: 0a5f336a4b6ef1a489e11c518bb04218, type: 3}
+  - jump: {fileID: 8300000, guid: 0835e39247331604b8c907c1bbd7429a, type: 3}
+  - laserShot: {fileID: 8300000, guid: e68cb8cc290f1d741b511fff4029f25f, type: 3}
+  - explosion: {fileID: 8300000, guid: 9663dd9081539314f8babd74b0f07f81, type: 3}
+  - breaking: {fileID: 8300000, guid: 82b1564e2c671f842b203dbd9abfcc16, type: 3}
+  - fall: {fileID: 8300000, guid: e8a92c37e0ffce24aaa93d5732aef873, type: 3}
+  - lowFuelBoost: {fileID: 8300000, guid: 81d3fd1ab040aaf469be3b7870a88431, type: 3}
+  - highFuelBoost: {fileID: 8300000, guid: dd404fea0f9c2654c971ca5111bca70f, type: 3}
+  - ufoSound: {fileID: 8300000, guid: b8e1c9bb873cb944db06f7131b50f60b, type: 3}
+  - collectFuel: {fileID: 8300000, guid: bd3376393e2086f4781a94295c69cfc9, type: 3}
+  - failedBoost: {fileID: 8300000, guid: f3574ca4c9e599442b95524f17754283, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

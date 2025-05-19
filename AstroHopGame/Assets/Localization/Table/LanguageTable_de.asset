@@ -1,0 +1,332 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: LanguageTable_de
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: de
+  m_SharedData: {fileID: 11400000, guid: 601fa2dec27d2f345975d9f48614d239, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 250128683237376
+    m_Localized: Spielen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251612590243840
+    m_Localized: Einstellungen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251672120000512
+    m_Localized: Hilfe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255191178805248
+    m_Localized: Sprache
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255316395556864
+    m_Localized: Audioeinstellungen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255330933014528
+    m_Localized: Musik
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255492279500800
+    m_Localized: Soundeffekte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255530384752640
+    m_Localized: Steuerungen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255597812383744
+    m_Localized: Boost
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255648194363392
+    m_Localized: Links
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255692297469952
+    m_Localized: Rechts
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255793631854592
+    m_Localized: Pause
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255831535779840
+    m_Localized: "Schlie\xDFen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 264018280316928
+    m_Localized: Beenden?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 264160769212416
+    m_Localized: "M\xF6chtest du das Spiel wirklich beenden?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 264212656947200
+    m_Localized: Abbrechen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 264250174996480
+    m_Localized: Beenden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 267636408582144
+    m_Localized: "L\xE4dt..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 322286851719168
+    m_Localized: "Hauptmen\xFC"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 322328677318656
+    m_Localized: Nochmal versuchen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 322357261500416
+    m_Localized: Pause
+    m_Metadata:
+      m_Items: []
+  - m_Id: 322758924828672
+    m_Localized: 'Punktzahl:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 323006443290624
+    m_Localized: Rekord
+    m_Metadata:
+      m_Items: []
+  - m_Id: 324972066111488
+    m_Localized: Abbrechen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 323144184233984
+    m_Localized: Alle Fortschritte gehen verloren.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 323276204146688
+    m_Localized: Nochmal versuchen?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 323298245214208
+    m_Localized: "Hauptmen\xFC?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 322549373206528
+    m_Localized: Erster Kontakt gescheitert. Tod durch UFO-Kollision.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 322383782084608
+    m_Localized: Kein Boden erkannt. Fallen im Weltraum.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 335795706658816
+    m_Localized: Fortsetzen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 604724567998464
+    m_Localized: Fall nicht aus dem Bild!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 604769543520256
+    m_Localized: "Klick die <color=#ECA800>Linkstaste <color=#FFFFFF>um auf die UFOs
+      zu <color=#ECA800>schie\xDFen<color=#FFFFFF>."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 604853593178112
+    m_Localized: Sammle Treibstoff, um deinen Raketenboost aufzuladen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 604892465987584
+    m_Localized: <color=#EC1321>Rote <color=#FFFFFF>Plattformen zerbrechen nach einmaliger
+      Nutzung.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 604938443948032
+    m_Localized: <color=#BE23FE>Lila <color=#FFFFFF>Plattformen bewegen sich links
+      und rechts.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4223074929999872
+    m_Localized: Start-Boost
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4225244228222976
+    m_Localized: Allgemeine Einstellungen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4225273508659200
+    m_Localized: Spieleinstellungen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5320637074636800
+    m_Localized: Konflikt! Doppelte Tasten.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6408009740713984
+    m_Localized: "Kein Treibstoff \u2013 sammle Tanks f\xFCr Raketenboost."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6417898709975040
+    m_Localized: "Spiel\xFCbersicht"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418067216138240
+    m_Localized: "Springe mit Hilfe der im Weltraum verteilten, schwebenden Plattformen
+      immer h\xF6her. \r\nDu h\xFCpfst automatisch und musst dich nach links oder
+      rechts bewegen, um auf den oberen Plattformen zu landen. Verfehlst du eine
+      Plattform und f\xE4llst aus dem Bildschirm oder kollidierst du von unten oder
+      der Seite mit einem UFO, ist das Spiel vorbei. \r\nSteige so hoch wie m\xF6glich,
+      um die h\xF6chste Punktzahl wie m\xF6glich zu erreichen.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418097113137152
+    m_Localized: Bewegung
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418170840612864
+    m_Localized: "Nutze die Bewegungstasten (Standard: A/D oder die Pfeiltasten links/rechts),
+      um dich auf die n\xE4chsten Plattformen zu bewegen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418195234684928
+    m_Localized: Raketen-Boost-Mechaniken
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6419343605760000
+    m_Localized: "Deine Rakete erm\xF6glicht es dir, nach oben zu boosten. Wenn Treibstoff
+      im Tank ist, halte die Boost-Taste gedr\xFCckt (Standard: W oder Pfeiltaste
+      nach oben), um zu fliegen. Springe zum Auftanken auf Plattformen mit Treibstofftanks.
+      \r\nW\xE4hrend eines Boosts wird dein Treibstoff kontinuierlich verbraucht,
+      aber jede Boost-Phase verbraucht mindestens 10\u202F% deines gesamten Tanks
+      - sind weniger als 10\u202F% \xFCbrig, wird der Rest komplett verbraucht. \r\nNutze
+      den Boost, um verpasste Landungen zu korrigieren oder h\xF6here Plattformen
+      zu erreichen - aber tanke auf, um ihn erneut einsetzen zu k\xF6nnen.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418291280052224
+    m_Localized: Plattformtypen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418301782589440
+    m_Localized: "Plattformen gibt es in drei Varianten:\n- Gr\xFCn: Statisch und
+      dauerhaft.\r\n- Rot: Zerbricht nach einem Sprung \u2013 nur einmal nutzbar.\r\n-
+      Lila: Bewegt sich konstant nach links und rechts."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418419743195136
+    m_Localized: UFO-Mechaniken
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418451519242240
+    m_Localized: "UFOs schweben langsam nach unten und verfolgen deine horizontale
+      Position. Bevor sie auf dem Bildschirm erscheinen, zeigt ein Pfeil am oberen
+      Rand an, aus welcher Richtung sie kommen. Eine Kollision von unten oder von
+      der Seite beendet deinen Lauf.\r\nDu kannst UFOs jedoch auf drei Arten vernichten:\r\n-
+      Sprung: Springe auf einem UFO wie auf einer Plattform, um es zu zerst\xF6ren.\r\n-
+      Laserschuss: Klicke mit der linken Maustaste in Zielrichtung. Ein Laserstrahl
+      zerst\xF6rt das UFO, wenn es getroffen wird.\r\n- Raketenschub: Fliege mit
+      einem Boost in ein UFO hinein, um es zu vernichten."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418570339680256
+    m_Localized: Start-Boost
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418695137001472
+    m_Localized: "Ab einem Punktestand von 400 schaltest du beim n\xE4chsten Lauf
+      einen automatischen Start-Boost frei, der dich bis zu 50\u202F% der H\xF6he
+      deines letzten Spiels nach oben katapultiert. In den Einstellungen kannst du
+      diese Funktion ein- oder ausschalten."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418716410511360
+    m_Localized: Pause-Funktion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418756222844928
+    m_Localized: "Pausiere das Spiel jederzeit \xFCber das Pausensymbol oben links
+      oder die Pausetaste (Standard: Leertaste)."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418783104139264
+    m_Localized: Spiel-UI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418846614290432
+    m_Localized: "W\xE4hrend des Spiels siehst du auf der rechten Seite des Bildschirms
+      stets:\r\n- Aktueller Punktestand: Deine aktuelle H\xF6he in Echtzeit.\r\n-
+      Rekord: Die h\xF6chste H\xF6he, die du je erreicht hast. \n- Treibstoffvorrat:
+      Dein verbleibender Raketentreibstoff.\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418875605319680
+    m_Localized: "Einstellungen-Men\xFC"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418934363324416
+    m_Localized: "\xD6ffne im Hauptmen\xFC das Einstellungsmen\xFC um:\r\n- Die Sprache
+      der On-Screen-Texte w\xE4hlen\r\n- Die Lautst\xE4rke von Musik und Soundeffekten
+      getrennt anpassen\r\n- Die Tastenbelegung f\xFCr Bewegung, Schub, Schuss und
+      Pause anpassen\r\n- Den automatischen Start-Boost zu aktivieren/deaktivieren\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6751468896911360
+    m_Localized: "Fortschritt l\xF6schen?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6751719573684224
+    m_Localized: "Bist du sicher, dass du alle dein Fortschritt l\xF6schen m\xF6chtest?
+      Dies kann nicht r\xFCckg\xE4ngig gemacht werden."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6751744198443008
+    m_Localized: Ja
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6751820652216320
+    m_Localized: Abbrechen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6751853573308416
+    m_Localized: "L\xF6schen best\xE4tigen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6751933776789504
+    m_Localized: "Dies l\xF6scht alle deine Erfolge unwiderruflich. Sie k\xF6nnen
+      nicht wiederhergestellt werden!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6751976357363712
+    m_Localized: Abbrechen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6752012029919232
+    m_Localized: "Alles l\xF6schen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6769556006633472
+    m_Localized: "Alle dein Fortschritt wurden gel\xF6scht."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6819690010640384
+    m_Localized: "Fortschritt l\xF6schen"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

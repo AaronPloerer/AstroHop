@@ -1,0 +1,793 @@
+fileFormatVersion: 2
+guid: a6ed9cd552a757d42bc06935fad435af
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7438170023038152802
+    second: astrautJumper_0
+  - first:
+      213: -8530628761618707653
+    second: astrautJumper_1
+  - first:
+      213: 9178789778354590503
+    second: astrautJumper_2
+  - first:
+      213: 215243170637670633
+    second: astrautJumper_3
+  - first:
+      213: -2105940690545775355
+    second: astrautJumper_4
+  - first:
+      213: -939695449680267605
+    second: astrautJumper_5
+  - first:
+      213: -1159528079453609274
+    second: astrautJumper_6
+  - first:
+      213: 7713109450737512504
+    second: astrautJumper_7
+  - first:
+      213: -4534610174963784219
+    second: astrautJumper_8
+  - first:
+      213: -7255436642743465970
+    second: astrautJumper_9
+  - first:
+      213: -3921612099182719168
+    second: astrautJumper_10
+  - first:
+      213: 9126358254425069627
+    second: astrautJumper_11
+  - first:
+      213: -2903901725016743583
+    second: astrautJumper_12
+  - first:
+      213: -8966163508674218296
+    second: astrautJumper_13
+  - first:
+      213: -100688315044764511
+    second: astrautJumper_14
+  - first:
+      213: 3121609630395998965
+    second: astrautJumper_15
+  - first:
+      213: -2460485663723017362
+    second: astrautJumper_16
+  - first:
+      213: -2407030907463682392
+    second: astrautJumper_17
+  - first:
+      213: 1497807459737722956
+    second: astrautJumper_18
+  - first:
+      213: -626212171555460046
+    second: astrautJumper_19
+  - first:
+      213: -5177460185985466591
+    second: astrautJumper_20
+  - first:
+      213: 2028554474718279650
+    second: astrautJumper_21
+  - first:
+      213: -4253271929173512850
+    second: astrautJumper_22
+  - first:
+      213: -5099443768556588059
+    second: astrautJumper_23
+  - first:
+      213: 8475696937932231901
+    second: astrautJumper_24
+  - first:
+      213: 6769457538016452750
+    second: astrautJumper_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: astrautJumper_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 49
+        width: 22
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9f0adde5cf46c890800000000000000
+      internalID: -7438170023038152802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astrautJumper_1
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 49
+        width: 22
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3b8cf8a65e1d9980800000000000000
+      internalID: -8530628761618707653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astrautJumper_2
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 49
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 723dfce0cac916f70800000000000000
+      internalID: 9178789778354590503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astrautJumper_3
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 49
+        width: 22
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e8ef26f582bcf200800000000000000
+      internalID: 215243170637670633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astrautJumper_4
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 49
+        width: 22
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50d6af5891236c2e0800000000000000
+      internalID: -2105940690545775355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astrautJumper_5
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 49
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba6b1cc97f785f2f0800000000000000
+      internalID: -939695449680267605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astrautJumper_6
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 49
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c2a31dea5788efe0800000000000000
+      internalID: -1159528079453609274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astrautJumper_7
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 49
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 830faecfd287a0b60800000000000000
+      internalID: 7713109450737512504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astrautJumper_8
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 49
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e5696e3214d111c0800000000000000
+      internalID: -4534610174963784219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astrautJumper_9
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 49
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e084cea70d28f4b90800000000000000
+      internalID: -7255436642743465970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astrautJumper_10
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 49
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04f0759c292a399c0800000000000000
+      internalID: -3921612099182719168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astrautJumper_11
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 49
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b38d5f79a7657ae70800000000000000
+      internalID: 9126358254425069627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astrautJumper_12
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 49
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 161abb144c443b7d0800000000000000
+      internalID: -2903901725016743583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astrautJumper_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 22
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c6376b2bc9c19380800000000000000
+      internalID: -8966163508674218296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astrautJumper_14
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 0
+        width: 22
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a469bcc2884a9ef0800000000000000
+      internalID: -100688315044764511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astrautJumper_15
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 0
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f2213b7b6f225b20800000000000000
+      internalID: 3121609630395998965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astrautJumper_16
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 0
+        width: 22
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6b29d633599addd0800000000000000
+      internalID: -2460485663723017362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astrautJumper_17
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 0
+        width: 22
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a6bd358422889ed0800000000000000
+      internalID: -2407030907463682392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astrautJumper_18
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 0
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c40e89be2f749c410800000000000000
+      internalID: 1497807459737722956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astrautJumper_19
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 0
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23c2968095f3f47f0800000000000000
+      internalID: -626212171555460046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astrautJumper_20
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 0
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12fbb976467f528b0800000000000000
+      internalID: -5177460185985466591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astrautJumper_21
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 0
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e7bc190c8fd62c10800000000000000
+      internalID: 2028554474718279650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astrautJumper_22
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 0
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6de87817b759f4c0800000000000000
+      internalID: -4253271929173512850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astrautJumper_23
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 0
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e3fa1719e22b39b0800000000000000
+      internalID: -5099443768556588059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astrautJumper_24
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 0
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd411597579bf9570800000000000000
+      internalID: 8475696937932231901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astrautJumper_25
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 0
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e80af83c3c1f1fd50800000000000000
+      internalID: 6769457538016452750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: df0e98e5d38056b48bcf45b68031baab
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      astrautJumper_0: -7438170023038152802
+      astrautJumper_1: -8530628761618707653
+      astrautJumper_10: -3921612099182719168
+      astrautJumper_11: 9126358254425069627
+      astrautJumper_12: -2903901725016743583
+      astrautJumper_13: -8966163508674218296
+      astrautJumper_14: -100688315044764511
+      astrautJumper_15: 3121609630395998965
+      astrautJumper_16: -2460485663723017362
+      astrautJumper_17: -2407030907463682392
+      astrautJumper_18: 1497807459737722956
+      astrautJumper_19: -626212171555460046
+      astrautJumper_2: 9178789778354590503
+      astrautJumper_20: -5177460185985466591
+      astrautJumper_21: 2028554474718279650
+      astrautJumper_22: -4253271929173512850
+      astrautJumper_23: -5099443768556588059
+      astrautJumper_24: 8475696937932231901
+      astrautJumper_25: 6769457538016452750
+      astrautJumper_3: 215243170637670633
+      astrautJumper_4: -2105940690545775355
+      astrautJumper_5: -939695449680267605
+      astrautJumper_6: -1159528079453609274
+      astrautJumper_7: 7713109450737512504
+      astrautJumper_8: -4534610174963784219
+      astrautJumper_9: -7255436642743465970
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

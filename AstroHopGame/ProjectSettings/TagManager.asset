@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 3
+  tags:
+  - End
+  - Ufo
+  - Laser
+  - weakSpot
+  - PlayerFeet
+  - GameViewArea
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Ufo
+  - Water
+  - UI
+  - Laser
+  - Player
+  - Platform
+  - End
+  - Boundary
+  - Fuel
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 33787827
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Ufo
+    uniqueID: 1665908449
+    locked: 0
+  - name: UI
+    uniqueID: 1327731271
+    locked: 0
+  m_RenderingLayers:
+  - Default

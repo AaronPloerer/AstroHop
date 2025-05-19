@@ -1,0 +1,334 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: LanguageTable_it
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: it
+  m_SharedData: {fileID: 11400000, guid: 601fa2dec27d2f345975d9f48614d239, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 250128683237376
+    m_Localized: Gioca
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251612590243840
+    m_Localized: Impostazioni
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251672120000512
+    m_Localized: Aiuto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255191178805248
+    m_Localized: Lingua
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255316395556864
+    m_Localized: Impostazioni Audio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255330933014528
+    m_Localized: Musica
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255492279500800
+    m_Localized: Effetti sonori
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255530384752640
+    m_Localized: Controlli
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255597812383744
+    m_Localized: Boost
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255648194363392
+    m_Localized: Sinistra
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255692297469952
+    m_Localized: Destra
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255793631854592
+    m_Localized: Pausa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255831535779840
+    m_Localized: Chiudi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 264018280316928
+    m_Localized: Esci?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 264250174996480
+    m_Localized: Esci
+    m_Metadata:
+      m_Items: []
+  - m_Id: 264160769212416
+    m_Localized: Sei sicuro di voler uscire dal gioco?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 264212656947200
+    m_Localized: Annulla
+    m_Metadata:
+      m_Items: []
+  - m_Id: 267636408582144
+    m_Localized: Caricamento...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 323144184233984
+    m_Localized: Tutti i progressi verranno persi.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 324972066111488
+    m_Localized: Annulla
+    m_Metadata:
+      m_Items: []
+  - m_Id: 323006443290624
+    m_Localized: 'Record:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 322758924828672
+    m_Localized: 'Punteggio:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 322549373206528
+    m_Localized: Primo contatto fallito. Collisione fatale con un UFO.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 322383782084608
+    m_Localized: Nessun pavimento rilevato. Disperso nello spazio.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 322357261500416
+    m_Localized: Pausa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 322328677318656
+    m_Localized: Riprova
+    m_Metadata:
+      m_Items: []
+  - m_Id: 322286851719168
+    m_Localized: Menu Principale
+    m_Metadata:
+      m_Items: []
+  - m_Id: 323276204146688
+    m_Localized: Riprova?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 323298245214208
+    m_Localized: Menu Principale?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 335795706658816
+    m_Localized: Continua
+    m_Metadata:
+      m_Items: []
+  - m_Id: 604724567998464
+    m_Localized: Non cadere fuori dallo schermo!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 604769543520256
+    m_Localized: Clicca il <color=#ECA800>tasto sinistro <color=#FFFFFF>per sparare
+      verso gli UFO.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 604853593178112
+    m_Localized: Raccogli carburante per ricaricare il tuo razzo boost.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 604892465987584
+    m_Localized: Le piattaforme <color=#EC1321>rosse <color=#FFFFFF>si rompono dopo
+      un solo uso.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 604938443948032
+    m_Localized: Le piattaforme <color=#BE23FE>viola <color=#FFFFFF>si muovono a
+      sinistra e a destra.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4223074929999872
+    m_Localized: Boost Iniziale
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4225244228222976
+    m_Localized: Impostazioni Generali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4225273508659200
+    m_Localized: Impostazioni di Gioco
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5320637074636800
+    m_Localized: Controlli duplicati! Correggi.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6408009740713984
+    m_Localized: "Carburante finito \u2013 raccogli serbatoi per il boost razzo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6417898709975040
+    m_Localized: Panoramica del Gioco
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418067216138240
+    m_Localized: "Salta sempre pi\xF9 in alto usando le piattaforme fluttuanti sparse
+      nello spazio.\r\nRimbalzi automaticamente e devi muoverti a sinistra o destra
+      per atterrare sulle piattaforme superiori. Se manchi una piattaforma e cadi
+      oltre lo schermo, o ti scontri con un UFO dal basso o dal lato, la partita
+      terminer\xE0.\r\nRaggiungi la massima altezza possibile per ottenere il punteggio
+      pi\xF9 alto.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418097113137152
+    m_Localized: Movimento
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418170840612864
+    m_Localized: 'Usa i tasti di movimento sinistra/destra (predefiniti: A/D o Frecce
+      Sinistra/Destra) per posizionarti sulle piattaforme su cui vuoi atterrare.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418195234684928
+    m_Localized: Meccanica del Boost del Razzo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6419343605760000
+    m_Localized: "Hai un razzo un boost verticale. Se il razzo contiene carburante,
+      tieni premuto il tasto Boost (predefinito: W o Freccia Su) per volare verso
+      l\u2019alto. Per fare rifornimento, colpisci i serbatoi di carburante che compaiono
+      su alcune piattaforme.\r\nDurante il boost, il carburante si consuma a un ritmo
+      costante, ma ogni fase di boost consuma almeno il 10% del serbatoio totale.
+      Se rimane meno del 10%, il resto viene consumato completamente.\r\nUsa il boost
+      per correggere atterraggi mancati o raggiungere piattaforme pi\xF9 alte, ma
+      ricorda: devi raccogliere carburante per riutilizzarlo.\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418291280052224
+    m_Localized: Tipi di Piattaforme
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418301782589440
+    m_Localized: "Le piattaforme hanno tre varianti:\r\n- Verdi: Statiche e permanenti.\r\n-
+      Rosse: Si rompono dopo un atterraggio, utilizzabili una sola volta.\r\n- Viola:
+      Si muovono a sinistra e destra a velocit\xE0 costante.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418419743195136
+    m_Localized: 'Meccanica degli UFO
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418451519242240
+    m_Localized: "Gli UFO scendono lentamente seguendo la tua posizione orizzontale.
+      Prima di apparire sullo schermo, una freccia in alto avvisa da quale direzione
+      stanno arrivando. Scontrarsi con uno dal basso o dal lato termina la partita.\r\nPuoi
+      eliminarli in tre modi:\r\n- Attacco con Salto: Atterra sopra un UFO per distruggerlo.
+      Rimbalzerai come su una piattaforma.\r\n- Colpo Laser: Clicca con il tasto
+      sinistro del mouse verso il bersaglio. Un raggio laser parte dalla tua posizione
+      e distrugge l\u2019UFO se colpito.\r\n- Propulsione del Razzo: Usa un boost
+      per distruggere qualsiasi UFO che colpisci mentre sali.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418570339680256
+    m_Localized: Boost di Partenza
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418695137001472
+    m_Localized: Dopo aver raggiunto un punteggio di 400 o superiore, sblocchi un
+      boost di partenza automatico per la prossima partita, che ti lancia fino al
+      50% del punteggio precedente. Puoi attivare/disattivare questa funzione nelle
+      Impostazioni.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418716410511360
+    m_Localized: Funzione Pausa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418756222844928
+    m_Localized: "Metti in pausa il gioco in qualsiasi momento cliccando l\u2019icona
+      di pausa in alto a sinistra o premendo il tasto Pausa (predefinito: Barra Spaziatrice)."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418783104139264
+    m_Localized: Interfaccia di Gioco (UI)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418846614290432
+    m_Localized: "Durante la partita, sul lato destro dello schermo vedrai sempre:\r\nPunteggio
+      Attuale: La tua altezza in tempo reale.\r\nRecord: La massima altezza mai raggiunta.\r\nCarburante:
+      La quantit\xE0 rimanente di carburante nel serbatoio."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418875605319680
+    m_Localized: "Opzioni del Menu Impostazioni\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418934363324416
+    m_Localized: "Apri il menu impostazioni dal menu principale per:\r\n- Scegliere
+      la lingua dei testi sullo schermo\r\n- Regolare separatamente il volume della
+      musica e degli effetti sonori\r\n- Personalizzare l\u2019assegnazione dei tasti
+      per movimento, boost, sparo e pausa\r\n- Attivare o disattivare il boost di
+      partenza automatico\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6751468896911360
+    m_Localized: Eliminare i progressi?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6751719573684224
+    m_Localized: "Sei sicuro di voler eliminare tutti i tuoi progressi? Questa azione
+      non pu\xF2 essere annullata."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6751744198443008
+    m_Localized: "S\xEC"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6751820652216320
+    m_Localized: Annulla
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6751853573308416
+    m_Localized: Conferma eliminazione
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6751976357363712
+    m_Localized: Annulla
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6752012029919232
+    m_Localized: Elimina tutto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6751933776789504
+    m_Localized: "Questo eliminer\xE0 tutti i tuoi successi in modo permanente. Non
+      sar\xE0 possibile recuperarli!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6769556006633472
+    m_Localized: Tutti i tuoi progressi sono stati eliminati.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6819690010640384
+    m_Localized: Elimina progressi
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

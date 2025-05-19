@@ -1,0 +1,793 @@
+fileFormatVersion: 2
+guid: 02b77322147dbf54bbbc4af34c4d8437
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7932976185719557791
+    second: blueflameAstronaut_0
+  - first:
+      213: -4666328012292093123
+    second: blueflameAstronaut_1
+  - first:
+      213: 7046040213896482288
+    second: blueflameAstronaut_2
+  - first:
+      213: 8357778460545042295
+    second: blueflameAstronaut_3
+  - first:
+      213: -1837835377308338717
+    second: blueflameAstronaut_4
+  - first:
+      213: 2078187504631353274
+    second: blueflameAstronaut_5
+  - first:
+      213: 3776166709078105279
+    second: blueflameAstronaut_6
+  - first:
+      213: 3259957064331107570
+    second: blueflameAstronaut_7
+  - first:
+      213: 5008237462637836138
+    second: blueflameAstronaut_8
+  - first:
+      213: 3432109085249368668
+    second: blueflameAstronaut_9
+  - first:
+      213: 870111427083617153
+    second: blueflameAstronaut_10
+  - first:
+      213: 6566927126872479496
+    second: blueflameAstronaut_11
+  - first:
+      213: 3560501727496911538
+    second: blueflameAstronaut_12
+  - first:
+      213: -8452616062736802204
+    second: blueflameAstronaut_13
+  - first:
+      213: 8532475106935916445
+    second: blueflameAstronaut_14
+  - first:
+      213: 4930694457911116077
+    second: blueflameAstronaut_15
+  - first:
+      213: 8228631468291269071
+    second: blueflameAstronaut_16
+  - first:
+      213: -2204302309884237516
+    second: blueflameAstronaut_17
+  - first:
+      213: -7846471687468644907
+    second: blueflameAstronaut_18
+  - first:
+      213: -485529561209691463
+    second: blueflameAstronaut_19
+  - first:
+      213: -1907498276919820321
+    second: blueflameAstronaut_20
+  - first:
+      213: 7949033621972630051
+    second: blueflameAstronaut_21
+  - first:
+      213: -9141912212979699299
+    second: blueflameAstronaut_22
+  - first:
+      213: 6936376001347274786
+    second: blueflameAstronaut_23
+  - first:
+      213: -5628496891822086304
+    second: blueflameAstronaut_24
+  - first:
+      213: 2680187295805011922
+    second: blueflameAstronaut_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: blueflameAstronaut_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 49
+        width: 22
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1617d86903868e190800000000000000
+      internalID: -7932976185719557791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blueflameAstronaut_1
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 49
+        width: 22
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3b00e5656fdd3fb0800000000000000
+      internalID: -4666328012292093123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blueflameAstronaut_2
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 49
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fdca663e3098c160800000000000000
+      internalID: 7046040213896482288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blueflameAstronaut_3
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 49
+        width: 22
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 777c23c7a3bccf370800000000000000
+      internalID: 8357778460545042295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blueflameAstronaut_4
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 49
+        width: 22
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e5f3eb2672be76e0800000000000000
+      internalID: -1837835377308338717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blueflameAstronaut_5
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 49
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abf0536568437dc10800000000000000
+      internalID: 2078187504631353274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blueflameAstronaut_6
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 49
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbc914b6d93a76430800000000000000
+      internalID: 3776166709078105279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blueflameAstronaut_7
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 49
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fc1b729da1bd3d20800000000000000
+      internalID: 3259957064331107570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blueflameAstronaut_8
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 49
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a67f45fff65d08540800000000000000
+      internalID: 5008237462637836138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blueflameAstronaut_9
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 49
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c52fda8670d41af20800000000000000
+      internalID: 3432109085249368668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blueflameAstronaut_10
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 49
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 183c35e9bb1431c00800000000000000
+      internalID: 870111427083617153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blueflameAstronaut_11
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 49
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8075c17cd69622b50800000000000000
+      internalID: 6566927126872479496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blueflameAstronaut_12
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 49
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ba3e91f471796130800000000000000
+      internalID: 3560501727496911538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blueflameAstronaut_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 22
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46edfcd897642ba80800000000000000
+      internalID: -8452616062736802204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blueflameAstronaut_14
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 0
+        width: 22
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9747cb17e0796670800000000000000
+      internalID: 8532475106935916445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blueflameAstronaut_15
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 0
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2187cb4c785d6440800000000000000
+      internalID: 4930694457911116077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blueflameAstronaut_16
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 0
+        width: 22
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc12a1729b8f13270800000000000000
+      internalID: 8228631468291269071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blueflameAstronaut_17
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 0
+        width: 22
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 439e6c16abeb861e0800000000000000
+      internalID: -2204302309884237516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blueflameAstronaut_18
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 0
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d58548929bbb1390800000000000000
+      internalID: -7846471687468644907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blueflameAstronaut_19
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 0
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b22520cf6d0349f0800000000000000
+      internalID: -485529561209691463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blueflameAstronaut_20
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 0
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdf368a6c643785e0800000000000000
+      internalID: -1907498276919820321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blueflameAstronaut_21
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 0
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32ab051a6f3a05e60800000000000000
+      internalID: 7949033621972630051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blueflameAstronaut_22
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 0
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d913a893747612180800000000000000
+      internalID: -9141912212979699299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blueflameAstronaut_23
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 0
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22849d40935f24060800000000000000
+      internalID: 6936376001347274786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blueflameAstronaut_24
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 0
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 067ed8fd5ef83e1b0800000000000000
+      internalID: -5628496891822086304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blueflameAstronaut_25
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 0
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d7f8f13520f13520800000000000000
+      internalID: 2680187295805011922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 387cb48c04e7a124ba10637c3636b61b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      blueflameAstronaut_0: -7932976185719557791
+      blueflameAstronaut_1: -4666328012292093123
+      blueflameAstronaut_10: 870111427083617153
+      blueflameAstronaut_11: 6566927126872479496
+      blueflameAstronaut_12: 3560501727496911538
+      blueflameAstronaut_13: -8452616062736802204
+      blueflameAstronaut_14: 8532475106935916445
+      blueflameAstronaut_15: 4930694457911116077
+      blueflameAstronaut_16: 8228631468291269071
+      blueflameAstronaut_17: -2204302309884237516
+      blueflameAstronaut_18: -7846471687468644907
+      blueflameAstronaut_19: -485529561209691463
+      blueflameAstronaut_2: 7046040213896482288
+      blueflameAstronaut_20: -1907498276919820321
+      blueflameAstronaut_21: 7949033621972630051
+      blueflameAstronaut_22: -9141912212979699299
+      blueflameAstronaut_23: 6936376001347274786
+      blueflameAstronaut_24: -5628496891822086304
+      blueflameAstronaut_25: 2680187295805011922
+      blueflameAstronaut_3: 8357778460545042295
+      blueflameAstronaut_4: -1837835377308338717
+      blueflameAstronaut_5: 2078187504631353274
+      blueflameAstronaut_6: 3776166709078105279
+      blueflameAstronaut_7: 3259957064331107570
+      blueflameAstronaut_8: 5008237462637836138
+      blueflameAstronaut_9: 3432109085249368668
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

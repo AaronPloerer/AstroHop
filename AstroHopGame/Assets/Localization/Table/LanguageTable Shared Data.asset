@@ -1,0 +1,300 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: LanguageTable Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: LanguageTable
+  m_TableCollectionNameGuidString: 601fa2dec27d2f345975d9f48614d239
+  m_Entries:
+  - m_Id: 250128683237376
+    m_Key: Menu ButtonPlay
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251612590243840
+    m_Key: Menu ButtonOptions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251672120000512
+    m_Key: Menu ButtonHelp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4225244228222976
+    m_Key: Menu PanelOptions TextGeneral
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255191178805248
+    m_Key: Menu PanelOptions TextLanguage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255316395556864
+    m_Key: Menu PanelOptions TextAudio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255330933014528
+    m_Key: Menu PanelOptions TextMusic
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255492279500800
+    m_Key: Menu PanelOptions TextSoundEffects
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255530384752640
+    m_Key: Menu PanelOptions TextControls
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5320637074636800
+    m_Key: Menu PanelOptions TextDuplicateKeyWarning
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255597812383744
+    m_Key: Menu PanelOptions TextBoostKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255648194363392
+    m_Key: Menu PanelOptions TextLeftKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255692297469952
+    m_Key: Menu PanelOptions TextRightKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255793631854592
+    m_Key: Menu PanelOptions TextPauseKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255831535779840
+    m_Key: Menu PanelOptions ButtonClose
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4225273508659200
+    m_Key: Menu PanelOptions TextGameplay
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4223074929999872
+    m_Key: Menu PanelOptions TextStartingBoost
+    m_Metadata:
+      m_Items: []
+  - m_Id: 264018280316928
+    m_Key: Menu PanelExit TextExit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 264160769212416
+    m_Key: Menu PanelExit TextExitExplanation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 264212656947200
+    m_Key: Menu PanelExit ButtonCancel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 264250174996480
+    m_Key: Menu PanelExit ButtonExit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 267636408582144
+    m_Key: Loading Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 322286851719168
+    m_Key: Game Panels MainMenu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 322328677318656
+    m_Key: Game Panels Retry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 322357261500416
+    m_Key: Game Panels Pause
+    m_Metadata:
+      m_Items: []
+  - m_Id: 322383782084608
+    m_Key: Game Panels FallingExplanation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 322549373206528
+    m_Key: Game Panels CrashingExplanation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 322758924828672
+    m_Key: Game Panels Score
+    m_Metadata:
+      m_Items: []
+  - m_Id: 323006443290624
+    m_Key: Game Panels HighScore
+    m_Metadata:
+      m_Items: []
+  - m_Id: 324972066111488
+    m_Key: Game Panels Cancel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 323144184233984
+    m_Key: Game Panels CancelExplanation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 323276204146688
+    m_Key: Game Panels Retry?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 323298245214208
+    m_Key: Game Panels MainMenu?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 335795706658816
+    m_Key: Game Panels Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 604724567998464
+    m_Key: Game Tutorial Falling
+    m_Metadata:
+      m_Items: []
+  - m_Id: 604769543520256
+    m_Key: Game Tutorial Shooting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 604853593178112
+    m_Key: Game Tutorial Fuel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 604892465987584
+    m_Key: Game Tutorial BreakingPlatform
+    m_Metadata:
+      m_Items: []
+  - m_Id: 604938443948032
+    m_Key: Game Tutorial MovingPlatform
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6408009740713984
+    m_Key: Game Tip FailedBoost
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6417898709975040
+    m_Key: Menu PanelHelp OverviewTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418067216138240
+    m_Key: Menu PanelHelp OverviewText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418097113137152
+    m_Key: Menu PanelHelp MovementTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418170840612864
+    m_Key: Menu PanelHelp MovementText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418195234684928
+    m_Key: Menu PanelHelp BoostTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418291280052224
+    m_Key: Menu PanelHelp PlatformsTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418301782589440
+    m_Key: Menu PanelHelp PlatformsText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418419743195136
+    m_Key: Menu PanelHelp UfoTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418451519242240
+    m_Key: Menu PanelHelp UfoText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418570339680256
+    m_Key: Menu PanelHelp StartTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418695137001472
+    m_Key: Menu PanelHelp StartText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418716410511360
+    m_Key: Menu PanelHelp PauseTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418756222844928
+    m_Key: Menu PanelHelp PauseText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418783104139264
+    m_Key: Menu PanelHelp UITitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418846614290432
+    m_Key: Menu PanelHelp UIText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418875605319680
+    m_Key: Menu PanelHelp SettingsTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418934363324416
+    m_Key: Menu PanelHelp SettingsText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6419343605760000
+    m_Key: Menu PanelHelp BoostText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6751468896911360
+    m_Key: Menu PanelDeleteProgress FirstTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6751719573684224
+    m_Key: Menu PanelDeleteProgress FirstText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6751744198443008
+    m_Key: Menu PanelDeleteProgress FirstConfirmButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6751820652216320
+    m_Key: Menu PanelDeleteProgress FirstCancelButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6751853573308416
+    m_Key: Menu PanelDeleteProgress SecondTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6751933776789504
+    m_Key: Menu PanelDeleteProgress SecondText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6751976357363712
+    m_Key: Menu PanelDeleteProgress SecondCancelButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6752012029919232
+    m_Key: Menu PanelDeleteProgress SecondConfirmButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6769556006633472
+    m_Key: Menu PanelOptions ProgressDeletedText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6819690010640384
+    m_Key: Menu PanelOptions DeleteProgressText
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 71453515952161076
+  references:
+    version: 2
+    RefIds:
+    - rid: 71453515952161076
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1745878927364

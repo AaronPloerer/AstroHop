@@ -1,0 +1,329 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: LanguageTable_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 601fa2dec27d2f345975d9f48614d239, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 250128683237376
+    m_Localized: Play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251612590243840
+    m_Localized: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251672120000512
+    m_Localized: Help
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255831535779840
+    m_Localized: Close
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255793631854592
+    m_Localized: Pause
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255692297469952
+    m_Localized: Right
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255191178805248
+    m_Localized: Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255316395556864
+    m_Localized: Audio Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255330933014528
+    m_Localized: Music
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255492279500800
+    m_Localized: Sound Effects
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255530384752640
+    m_Localized: Controls
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255597812383744
+    m_Localized: Boost
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255648194363392
+    m_Localized: Left
+    m_Metadata:
+      m_Items: []
+  - m_Id: 264018280316928
+    m_Localized: Exit?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 264160769212416
+    m_Localized: Are you sure you want to exit the game?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 264212656947200
+    m_Localized: Cancel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 264250174996480
+    m_Localized: Exit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 267636408582144
+    m_Localized: Loading...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 322286851719168
+    m_Localized: Main Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 322328677318656
+    m_Localized: Retry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 322357261500416
+    m_Localized: Pause
+    m_Metadata:
+      m_Items: []
+  - m_Id: 322383782084608
+    m_Localized: No floor detected. Falling in Space.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 322549373206528
+    m_Localized: First contact went bad. Died on collision with UFO.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 322758924828672
+    m_Localized: 'Score:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 323006443290624
+    m_Localized: 'High Score:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 324972066111488
+    m_Localized: Cancel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 323144184233984
+    m_Localized: All progress will be lost.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 323276204146688
+    m_Localized: Retry?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 323298245214208
+    m_Localized: Main Menu?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 335795706658816
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 604724567998464
+    m_Localized: "Don\u2019t fall out of the screen!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 604769543520256
+    m_Localized: "<color=#ECA800>Left-click <color=#FFFFFF>to <color=#ECA800>shoot
+      <color=#FFFFFFFF>towards the UFOs. \n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 604853593178112
+    m_Localized: Get Fuel to charge up your Rocket Boost.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 604892465987584
+    m_Localized: <color=#EC1321>Red <color=#FFFFFF>platforms break after a single
+      use.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 604938443948032
+    m_Localized: <color=#BE23FE>Purple <color=#FFFFFF>platforms move left and right.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4223074929999872
+    m_Localized: Starting Boost
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4225244228222976
+    m_Localized: General Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4225273508659200
+    m_Localized: Gameplay Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5320637074636800
+    m_Localized: Conflicting controls! Fix duplicates.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6408009740713984
+    m_Localized: "No fuel \u2013 collect tanks for rocket boost."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6417898709975040
+    m_Localized: Game Overview
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418067216138240
+    m_Localized: "Jump up using the floating platforms scattered through space. \r\nYou
+      bounce automatically and must move left or right to land on the platforms above.
+      If you miss a platform and fall past the bottom edge of the screen, or collide
+      with a UFO from the bottom or side, it's game over. \r\nGo as high as you can
+      to achieve the highest score possible.\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418170840612864
+    m_Localized: 'Use your left/right movement keys (default: A/D or Left Arrow/Right
+      Arrow) to move toward your upcoming landing platforms.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418097113137152
+    m_Localized: Movement
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418195234684928
+    m_Localized: "Rocket Boost Mechanics\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418291280052224
+    m_Localized: Platform Types
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418301782589440
+    m_Localized: "Platforms come in three varieties:\r\n- Green: Static and permanent.\r\n-
+      Red: Break after a single landing, so they can only be used once.\r\n- Purple:
+      Move left and right at a constant pace.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418419743195136
+    m_Localized: UFO Mechanics
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418451519242240
+    m_Localized: "UFOs slowly hover downward, following your horizontal position.
+      Before they appear on screen, an arrow at the top of the screen warns you from
+      which direction they are coming from. Colliding with one from below or the
+      side ends your run. \r\nHowever, you have three ways to eliminate them:\r\n-
+      Stomp Attack: Jump on top of a UFO to destroy it. You\u2019ll bounce off as
+      if landing on a platform.\r\n- Laser Shot: Click the left mouse button toward
+      your target. A laser beam fires from your position in the cursor\u2019s direction
+      and destroys a UFO if it hits.\r\n- Rocket Boost: Use a boost to destroy any
+      UFO you collide with while thrusting upward.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6419343605760000
+    m_Localized: "You carry a rocket for vertical boosting. If it contains fuel,
+      hold the Boost key (default: W or Up Arrow) to fly upward. To refuel, jump
+      into fuel tanks that spawn on certain platforms. \r\nWhile boosting, your fuel
+      drains at a constant rate, but each boost phase consumes at least 10% of your
+      total tank - if less than 10% is left, the rest is consumed completely.\r\nUse
+      rocket boosts to correct missed landings or reach higher ledges - but remember,
+      you must collect fuel to use it again."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418570339680256
+    m_Localized: Starting Boost
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418756222844928
+    m_Localized: 'The game can be paused at any time by clicking the pause button
+      in the top-left corner or by pressing the Pause key (default: Spacebar).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418695137001472
+    m_Localized: After scoring 400 or more, you unlock an automatic starting boost
+      on your next run, which launches you up to 50% of your previous score. You
+      can toggle this feature on or off in Settings.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418716410511360
+    m_Localized: "Pause Function\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418783104139264
+    m_Localized: Game UI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418846614290432
+    m_Localized: "During a game, on the right side of the screen, you\u2019ll always
+      see:\r\n- Current Score: Your real-time height score.\r\n- High Score: The
+      best height score you\u2019ve ever reached.\r\n- Fuel Amount: Your remaining
+      rocket fuel.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418875605319680
+    m_Localized: Settings Menu Options
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6418934363324416
+    m_Localized: "Open the Settings menu from the Main Menu to:\r\n- Choose the language
+      of the on-screen texts\r\n- Adjust the volume of music and sound effects separately\r\n\r-
+      Customize the key bindings for movement, boost, shooting, and pause\r\n\r-
+      Enable or disable the automatic start boost\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6751468896911360
+    m_Localized: Delete Progress?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6751719573684224
+    m_Localized: Are you sure you want to delete all your progress? This cannot be
+      undone.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6751744198443008
+    m_Localized: Yes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6751820652216320
+    m_Localized: Cancel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6751853573308416
+    m_Localized: Confirm Delete
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6751933776789504
+    m_Localized: This will permanently delete all your achievements. There is no
+      way to recover them!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6751976357363712
+    m_Localized: Cancel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6752012029919232
+    m_Localized: Delete Everything
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6769556006633472
+    m_Localized: All your progress has been deleted.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6819690010640384
+    m_Localized: Delete Progress
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
