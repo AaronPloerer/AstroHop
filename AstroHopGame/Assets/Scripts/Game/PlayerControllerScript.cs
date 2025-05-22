@@ -36,8 +36,6 @@ public class PlayerControllerScript : MonoBehaviour
     [SerializeField] private float startingBoostForce;                  // Upward force applied during special initial score-based boost
     [SerializeField] private float relativeStartingBoostDistance;       // Fraction of previous score to reach with initial boost
     [SerializeField] private float scoreForBoostActivation;             // Minimum score to enable starting boost
-    [SerializeField] private int failedBoostsForTip;                    // How often to fail a boost until geting a hint
-    [SerializeField] private int timeTipText;                           // How long is the tip getting shown before dissapearing
     #endregion
 
     #region State Flags
@@ -59,8 +57,6 @@ public class PlayerControllerScript : MonoBehaviour
     private float lostFuel;                     // Fuel loss during single boost
     private int previousScore;                  // Score from previous game
     private bool isPausedPlayer;                // Pause state flag
-    private int failedBoostAmount;              // Amount of failed boosts in a row
-    private bool failedBoostTipOn;               // The failed boost tip is being shown
     private Vector2 storedVelocity;             // Velocity storage during pause
     private RigidbodyType2D originalBodyType;   // Original rigidbody type
     #endregion
@@ -90,8 +86,6 @@ public class PlayerControllerScript : MonoBehaviour
         movement = 0f;
         lostFuel = 0f;
         currentDirection = 0f;
-        failedBoostAmount = 1;
-        failedBoostTipOn = false;
     }
 
     private void LoadPotentialBoost()
@@ -158,18 +152,11 @@ public class PlayerControllerScript : MonoBehaviour
             failedBoostSfxPlayed = true;
 
             // Give a Hint if to many fails in a row
-            if (!failedBoostTipOn)
-            {
-                failedBoostAmount++;
-                if (failedBoostAmount >= failedBoostsForTip)
-                {
-                    StartCoroutine(SpawnFailedBoostTip());
-                }
-            }
+            MainGameUIScript.instance.FailedBoostTip();
         }
 
         // Reset failed boost counter on successful boost
-        if (isBoostingWithKey) failedBoostAmount = 0;
+        if (isBoostingWithKey) MainGameUIScript.instance.failedBoostAmount = 0;
 
         // Handle boost key release by managing minimum fuel consumption and resetting sound flag
         if (Input.GetKeyUp(ManagerScript.instance.keyBoostPrimary) || Input.GetKeyUp(ManagerScript.instance.keyBoostSecondary))
@@ -179,16 +166,6 @@ public class PlayerControllerScript : MonoBehaviour
             failedBoostSfxPlayed = false;
         }
     }
-    private IEnumerator SpawnFailedBoostTip()
-    {
-        failedBoostTipOn = true;
-        MainGameUIScript.instance.failedBoostTip.SetActive(true);
-        yield return MainGameUIScript.instance.WaitForSecondsUnpaused(timeTipText);
-        MainGameUIScript.instance.failedBoostTip.SetActive(false);
-        failedBoostAmount = 0;
-        failedBoostTipOn = false;
-    }
-
     private void ApplyMinimumFuelLoss()
     {
         // Ensure minimum fuel is consumed per boost activation

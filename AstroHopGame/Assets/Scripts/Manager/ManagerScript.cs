@@ -29,6 +29,68 @@ public class ManagerScript : MonoBehaviour
     }
     #endregion
 
+    #region Escape Button Logic
+    private float escapeCooldownTimer = 0f;
+    [SerializeField] private  float escapeCooldownTime = 0.1f;
+
+    private void Update()
+    {
+        // Update cooldown timer
+        escapeCooldownTimer += Time.deltaTime;
+
+        // Ignore key press if cooldowndown timer is not done
+        if (escapeCooldownTimer <= escapeCooldownTime) return;
+
+        // Reset cooldown time
+        escapeCooldownTimer = 0f;
+
+        // Close current interface when Escape is pressed
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (MainGameUIScript.instance != null && MainGameUIScript.instance.pausePanel.activeSelf)
+            {
+                ContinueGame();
+            }
+            else if (MainGameUIScript.instance != null && MainGameUIScript.instance.warningMainMenuPanel.activeSelf)
+            {
+                PauseGame();
+            }
+            else if (MainGameUIScript.instance != null && MainGameUIScript.instance.warningRetryPanel.activeSelf)
+            {
+                PauseGame();
+            }
+            else if (MenuUIScript.instance != null && MenuUIScript.instance.deleteProgressConfirmPanel.activeSelf)
+            {
+                CloseDeleteProgressConfirmPanel();
+            }
+            else if (MenuUIScript.instance != null && MenuUIScript.instance.deleteProgressPanel.activeSelf)
+            {
+                CloseDeleteProgressPanel();
+            }
+            else if (MenuUIScript.instance != null && MenuUIScript.instance.optionsPanel.activeSelf)
+            {
+                CloseOptionsPanel();
+            }
+            else if (MenuUIScript.instance != null && MenuUIScript.instance.helpPanel.activeSelf)
+            {
+                CloseHelpPanel();
+            }
+            else if (MenuUIScript.instance != null && MenuUIScript.instance.exitWindowWarningPanel.activeSelf)
+            {
+                CloseExitWindowWarning();
+            }
+            else if (MainGameUIScript.instance != null)
+            {
+                PauseGame();
+            }
+            else if (MenuUIScript.instance != null)
+            {
+                OpenExitWinodwWarning();
+            }
+        }
+    }
+    #endregion
+
     #region Input Management
     [Header("Input Bindings")]
     public KeyCode keyBoostPrimary;        // Primary key binding for boost
@@ -179,7 +241,7 @@ public class ManagerScript : MonoBehaviour
     }
     #endregion
 
-    #region Starting Boost Management
+    #region Toggles Management
     public void ChangeStartingBoostToggle()
     {
         if (PlayerPrefs.GetInt("StartingBoostEnabled", 1) == 1)
@@ -194,6 +256,24 @@ public class ManagerScript : MonoBehaviour
             PlayerPrefs.SetInt("StartingBoostEnabled", 1);
             MenuUIScript.instance.startingBoostToggleGraphic.sprite = MenuUIScript.instance.toggleOnSprite;
             MenuUIScript.instance.startingBoostToggleGraphic.enabled = true;
+            AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
+        }
+    }
+
+    public void ChangeInGameTipsToggle()
+    {
+        if (PlayerPrefs.GetInt("InGameTipsEnabled", 1) == 1)
+        {
+            PlayerPrefs.SetInt("InGameTipsEnabled", 0);
+            MenuUIScript.instance.inGameTipsToggleGraphic.sprite = MenuUIScript.instance.toggleOffSprite;
+            MenuUIScript.instance.inGameTipsToggleGraphic.enabled = true;
+            AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.closeClick, AudioManagerScript.instance.closeClickVolume);
+        }
+        else
+        {
+            PlayerPrefs.SetInt("InGameTipsEnabled", 1);
+            MenuUIScript.instance.inGameTipsToggleGraphic.sprite = MenuUIScript.instance.toggleOnSprite;
+            MenuUIScript.instance.inGameTipsToggleGraphic.enabled = true;
             AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
         }
     }

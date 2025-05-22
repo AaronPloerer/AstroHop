@@ -139,26 +139,33 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 604724567998464
-    m_Localized: "Ne quitter pas l\u2019\xE9cran !  \r"
+    m_Localized: "Ne quitter pas l\u2019\xE9cran !\n\r<size=30><alpha=#80>Appuie
+      sur [Alt] pour pour passer le tutoriel."
     m_Metadata:
       m_Items: []
   - m_Id: 604769543520256
-    m_Localized: <color=#ECA800>Clic gauche</color> pour <color=#ECA800>tirer<color=#FFFFFF>
+    m_Localized: '<color=#ECA800>Clic gauche</color> pour <color=#ECA800>tirer<color=#FFFFFF>
       sur les OVNIs.
+
+      <size=30><alpha=#80>Appuie sur [Alt] pour pour passer
+      le tutoriel.'
     m_Metadata:
       m_Items: []
   - m_Id: 604853593178112
-    m_Localized: "R\xE9cup\xE9rez du carburant pour recharger votre Boost de Fus\xE9e."
+    m_Localized: "R\xE9cup\xE9rez du carburant pour recharger votre Boost de Fus\xE9e.\n<size=30><alpha=#80>Appuie
+      sur [Alt] pour pour passer le tutoriel."
     m_Metadata:
       m_Items: []
   - m_Id: 604892465987584
     m_Localized: "Les plateformes <color=#EC1321>rouges</color><color=#FFFFFF> se
-      brisent apr\xE8s une seule utilisation."
+      brisent apr\xE8s une seule utilisation.\n<size=30><alpha=#80>Appuie sur [Alt]
+      pour pour passer le tutoriel."
     m_Metadata:
       m_Items: []
   - m_Id: 604938443948032
     m_Localized: "Les plateformes <color=#BE23FE>violettes</color><color=#FFFFFF>
-      se d\xE9placent de gauche \xE0 droite."
+      se d\xE9placent de gauche \xE0 droite.\n<size=30><alpha=#80>Appuie sur [Alt]
+      pour pour passer le tutoriel."
     m_Metadata:
       m_Items: []
   - m_Id: 4223074929999872
@@ -335,6 +342,15 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 6819690010640384
     m_Localized: Supprimer la progression
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8591763389284352
+    m_Localized: Astuces en jeu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8607735869341696
+    m_Localized: "R\xE9servoir fus\xE9e plein \u2013 impossible de collecter plus
+      de carburant pour le boost."
     m_Metadata:
       m_Items: []
   references:

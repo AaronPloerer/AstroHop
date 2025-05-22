@@ -10,7 +10,6 @@ public class ButtonAnimationScript : MonoBehaviour, IPointerDownHandler, IPointe
     #region Parameters
     private Animator animator;          // Reference to the button's Animator component
     private bool isHovered;             // Track if cursor is over the button
-    private bool isPressed;             // Track if button is currently being pressed
     #endregion
 
     #region Initialization
@@ -25,7 +24,7 @@ public class ButtonAnimationScript : MonoBehaviour, IPointerDownHandler, IPointe
     public void OnPointerEnter(PointerEventData eventData)
     {
         isHovered = true;         // Mark cursor as inside button
-    } 
+    }
 
     public void OnPointerExit(PointerEventData eventData)
     {
@@ -33,8 +32,7 @@ public class ButtonAnimationScript : MonoBehaviour, IPointerDownHandler, IPointe
     }
 
     public void OnPointerDown(PointerEventData eventData)
-    { 
-        isPressed = true;                    
+    {
         animator.SetBool("Pressed", true);          // Activate pressed animation state
     }
     #endregion
@@ -42,18 +40,11 @@ public class ButtonAnimationScript : MonoBehaviour, IPointerDownHandler, IPointe
     #region Animation Control Logic
     private void Update()
     {
-        // Only process if button was pressed and mouse is released
-        if (isPressed && Input.GetMouseButtonUp(0))
+        // Reset animation if cursor left button during press (unvalid press) to be able to reactivate pressed animation OR instantly when it's a toggle
+        if (!isHovered || isToggleUI)
         {
-
-            // Reset animation if cursor left button during press (unvalid press) to be able to reactivate pressed animation OR instantly when it's a toggle
-            if (!isHovered || isToggleUI)
-            {
-                animator.SetBool("Pressed", false);
-                EventSystem.current.SetSelectedGameObject(null);
-            }
-
-            isPressed = false;
+            animator.SetBool("Pressed", false);
+            EventSystem.current.SetSelectedGameObject(null);
         }
     }
     #endregion

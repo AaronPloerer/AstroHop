@@ -1,14 +1,11 @@
 ﻿using System.Runtime.InteropServices;
-using System.Text;
 using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using System.Globalization;
-using UnityEditor;
 using System.Collections.Generic;
-using UnityEngine.InputSystem;
 
 public class MenuUIScript : MonoBehaviour
 {
@@ -65,8 +62,8 @@ public class MenuUIScript : MonoBehaviour
     public TMP_Dropdown languageDropdown;
     public Slider musicSlider;
     public Slider sfxSlider;
-    public Button startingBoostToggle;
     public Image startingBoostToggleGraphic;
+    public Image inGameTipsToggleGraphic;
     public Sprite toggleOnSprite;          
     public Sprite toggleOffSprite;         
     public TMP_InputField boostInputField;
@@ -97,7 +94,7 @@ public class MenuUIScript : MonoBehaviour
         InitializeVolumeSliders();
 
         // Set up starting boost toggle 
-        InitializeStartingBoostToggle();
+        InitializeToggles();
 
         // Set up control input fields
         InitializeControlsInputField(boostInputField, "KeyBoostPrimary", KeyCode.W);
@@ -110,8 +107,10 @@ public class MenuUIScript : MonoBehaviour
     #region Input Field Setup
     private void InitializeControlsInputField(TMP_InputField field, string savedKey, KeyCode defaultKey)
     {
-        // Remove default blue selection highlight
-        field.selectionColor = new Color(0f, 0f, 0f, 0f);
+        // Remove visual elements
+        field.selectionColor = new Color(0f, 0f, 0f, 0f);  // Selection highlight
+        field.caretColor = new Color(0, 0, 0, 0);          // Blinking cursor (transparent)
+        field.caretWidth = 0;                              // Ensure no caret space
 
         // Initialize input field for custom controls
         RefreshKeyDisplay(field, savedKey, defaultKey);
@@ -127,8 +126,8 @@ public class MenuUIScript : MonoBehaviour
     }
     #endregion
 
-    #region Starting Boost Toggle Setup
-    private void InitializeStartingBoostToggle()
+    #region Toggles Setup
+    private void InitializeToggles()
     {
         bool startingBoostIsOn = PlayerPrefs.GetInt("StartingBoostEnabled", 1) == 1;
         
@@ -141,6 +140,19 @@ public class MenuUIScript : MonoBehaviour
         {
             MenuUIScript.instance.startingBoostToggleGraphic.sprite = MenuUIScript.instance.toggleOffSprite;
             MenuUIScript.instance.startingBoostToggleGraphic.enabled = true;
+        }
+
+        bool inGameTipsIsOn = PlayerPrefs.GetInt("InGameTipsEnabled", 1) == 1;
+
+        if (inGameTipsIsOn)
+        {
+            MenuUIScript.instance.inGameTipsToggleGraphic.sprite = MenuUIScript.instance.toggleOnSprite;
+            MenuUIScript.instance.inGameTipsToggleGraphic.enabled = true;
+        }
+        else
+        {
+            MenuUIScript.instance.inGameTipsToggleGraphic.sprite = MenuUIScript.instance.toggleOffSprite;
+            MenuUIScript.instance.inGameTipsToggleGraphic.enabled = true;
         }
     }
     #endregion
@@ -167,9 +179,9 @@ public class MenuUIScript : MonoBehaviour
             Event e = Event.current;
             if (e.isKey && e.type == EventType.KeyDown)
             {
-                Debug.Log($"Key Pressed: {e.keyCode}");
-                // Ignore mouse keys
-                if (e.keyCode >= KeyCode.Mouse0 && e.keyCode <= KeyCode.Mouse6)
+                // Ignore mouse buttons or reserved keys
+                if ((e.keyCode is >= KeyCode.Mouse0 and <= KeyCode.Mouse6) ||
+                e.keyCode is KeyCode.Escape or KeyCode.LeftArrow or KeyCode.RightArrow or KeyCode.UpArrow or KeyCode.DownArrow)
                     return;
 
                 KeyCode key = e.keyCode;

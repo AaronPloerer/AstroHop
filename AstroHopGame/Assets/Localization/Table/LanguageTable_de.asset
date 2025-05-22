@@ -139,26 +139,30 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 604724567998464
-    m_Localized: Fall nicht aus dem Bild!
+    m_Localized: "Fall nicht aus dem Bild!\n<size=30><alpha=#80>Dr\xFCcke [Alt],
+      um das Tutorial zu \xFCberspringen."
     m_Metadata:
       m_Items: []
   - m_Id: 604769543520256
     m_Localized: "Klick die <color=#ECA800>Linkstaste <color=#FFFFFF>um auf die UFOs
-      zu <color=#ECA800>schie\xDFen<color=#FFFFFF>."
+      zu <color=#ECA800>schie\xDFen<color=#FFFFFF>.\n<size=30><alpha=#80>Dr\xFCcke
+      [Alt], um das Tutorial zu \xFCberspringen."
     m_Metadata:
       m_Items: []
   - m_Id: 604853593178112
-    m_Localized: Sammle Treibstoff, um deinen Raketenboost aufzuladen.
+    m_Localized: "Sammle Treibstoff, um deinen Raketenboost aufzuladen.\n<size=30><alpha=#80>Dr\xFCcke
+      [Alt], um das Tutorial zu \xFCberspringen."
     m_Metadata:
       m_Items: []
   - m_Id: 604892465987584
-    m_Localized: <color=#EC1321>Rote <color=#FFFFFF>Plattformen zerbrechen nach einmaliger
-      Nutzung.
+    m_Localized: "<color=#EC1321>Rote <color=#FFFFFF>Plattformen zerbrechen nach
+      einmaliger Nutzung.\n<size=30><alpha=#80>Dr\xFCcke [Alt], um das Tutorial zu
+      \xFCberspringen."
     m_Metadata:
       m_Items: []
   - m_Id: 604938443948032
-    m_Localized: <color=#BE23FE>Lila <color=#FFFFFF>Plattformen bewegen sich links
-      und rechts.
+    m_Localized: "<color=#BE23FE>Lila <color=#FFFFFF>Plattformen bewegen sich links
+      und rechts.\n<size=30><alpha=#80>Dr\xFCcke [Alt], um das Tutorial zu \xFCberspringen."
     m_Metadata:
       m_Items: []
   - m_Id: 4223074929999872
@@ -320,11 +324,20 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6769556006633472
-    m_Localized: "Alle dein Fortschritt wurden gel\xF6scht."
+    m_Localized: "All dein Fortschritt wurde gel\xF6scht."
     m_Metadata:
       m_Items: []
   - m_Id: 6819690010640384
     m_Localized: "Fortschritt l\xF6schen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8591763389284352
+    m_Localized: "In\u2011Game\u2011Tipps"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8607735869341696
+    m_Localized: "Raketentank voll \u2013 kann keinen weiteren Treibstoff f\xFCr
+      den Boost aufnehmen."
     m_Metadata:
       m_Items: []
   references:

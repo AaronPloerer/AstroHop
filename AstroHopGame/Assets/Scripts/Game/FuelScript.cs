@@ -24,14 +24,17 @@ public class FuelScript : MonoBehaviour
         if (MainGameUIScript.instance.currentFuel == MainGameUIScript.instance.maxFuel)
         {
             AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.collectFuelIsFull, AudioManagerScript.instance.collectFuelIsFullVolume);
+            MainGameUIScript.instance.FailedPickUpTip();
         }
         else if (MainGameUIScript.instance.currentFuel >= (MainGameUIScript.instance.maxFuel - addedFuel))
         {
             AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.collectFuelToFull, AudioManagerScript.instance.collectFuelToFullVolume);
+            MainGameUIScript.instance.failedPickUpAmount = 0;
         }
         else
         {
             AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.collectFuel, AudioManagerScript.instance.collectFuelVolume);
+            MainGameUIScript.instance.failedPickUpAmount = 0;
         }
     }
 

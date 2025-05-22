@@ -287,6 +287,14 @@ MonoBehaviour:
     m_Key: Menu PanelOptions DeleteProgressText
     m_Metadata:
       m_Items: []
+  - m_Id: 8591763389284352
+    m_Key: Menu PanelOptions TextInGameTips
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8607735869341696
+    m_Key: Game Tip FailedPickUp
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
