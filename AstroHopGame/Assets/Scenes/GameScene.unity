@@ -311,7 +311,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isToggleUI: 0
+  isDropdownUI: 0
 --- !u!95 &29055197
 Animator:
   serializedVersion: 7
@@ -943,7 +943,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isToggleUI: 0
+  isDropdownUI: 0
 --- !u!95 &132802517
 Animator:
   serializedVersion: 7
@@ -1312,7 +1312,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isToggleUI: 0
+  isDropdownUI: 0
 --- !u!1 &215183990
 GameObject:
   m_ObjectHideFlags: 0
@@ -4470,7 +4470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isToggleUI: 0
+  isDropdownUI: 0
 --- !u!95 &763873865
 Animator:
   serializedVersion: 7
@@ -7059,7 +7059,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isToggleUI: 0
+  isDropdownUI: 0
 --- !u!95 &1283786506
 Animator:
   serializedVersion: 7
@@ -7264,7 +7264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isToggleUI: 0
+  isDropdownUI: 0
 --- !u!95 &1286490803
 Animator:
   serializedVersion: 7
@@ -8446,7 +8446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isToggleUI: 0
+  isDropdownUI: 0
 --- !u!1 &1544818593
 GameObject:
   m_ObjectHideFlags: 0
@@ -9163,7 +9163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isToggleUI: 0
+  isDropdownUI: 0
 --- !u!95 &1576630677
 Animator:
   serializedVersion: 7
@@ -10364,7 +10364,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isToggleUI: 0
+  isDropdownUI: 0
 --- !u!95 &1837562139
 Animator:
   serializedVersion: 7
@@ -10528,7 +10528,7 @@ MonoBehaviour:
   failedBoostsForTip: 5
   failedBoostAmount: 0
   failedPickUpTip: {fileID: 981286469}
-  failedPickUpForTip: 4
+  failedPickUpForTip: 3
   failedPickUpAmount: 0
   pauseButton: {fileID: 1608931795}
   pausePanel: {fileID: 111727878}

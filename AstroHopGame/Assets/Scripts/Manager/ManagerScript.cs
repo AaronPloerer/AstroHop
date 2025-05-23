@@ -126,6 +126,9 @@ public class ManagerScript : MonoBehaviour
 
     public void LanguageDropdown()
     {
+        // Add click sound when selecting language
+        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
+
         // Load language from UI language dropdown
         int selectedLocale = MenuUIScript.instance.languageDropdown.value;
 
@@ -282,22 +285,32 @@ public class ManagerScript : MonoBehaviour
     #region Scene Management
     public void LoadLoadingSceneOnClick()
     {
-        // Click SFX and scene change
-        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
-        SceneManager.LoadScene("LoadingScene");
+        // Start coroutine to handle sound and scene change
+        StartCoroutine(LoadSceneAfterSound("LoadingScene"));
     }
 
     public void LoadGameScene()
     {
-        // Load game scene
+        // Directly load game scene
         SceneManager.LoadScene("GameScene");
     }
 
     public void LoadMenuSceneOnClick()
+    {        
+        // Start coroutine to handle sound and scene change
+        StartCoroutine(LoadSceneAfterSound("MenuScene"));
+    }
+
+    private IEnumerator LoadSceneAfterSound(string sceneName)
     {
-        // Click SFX and scene change
+        // Play click sound
         AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
-        SceneManager.LoadScene("MenuScene");
+
+        // Wait for the duration of the click sound
+        yield return new WaitForSeconds(AudioManagerScript.instance.click.length);
+
+        // Load the scene after waiting
+        SceneManager.LoadScene(sceneName);
     }
     #endregion
 

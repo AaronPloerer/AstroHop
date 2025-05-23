@@ -713,7 +713,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isToggleUI: 0
+  isDropdownUI: 1
 --- !u!95 &47169557
 Animator:
   serializedVersion: 7
@@ -1398,7 +1398,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isToggleUI: 0
+  isDropdownUI: 0
 --- !u!1 &115770678
 GameObject:
   m_ObjectHideFlags: 0
@@ -1546,7 +1546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isToggleUI: 0
+  isDropdownUI: 0
 --- !u!95 &115770684
 Animator:
   serializedVersion: 7
@@ -4057,7 +4057,6 @@ MonoBehaviour:
   normalSprite: {fileID: 6687851822966965590, guid: 75051eb108651fe44b9dda214a83318a, type: 3}
   highlightedSprite: {fileID: -6408775633568255793, guid: 713df1de8d8b9bd4796d60958325b1a8, type: 3}
   pressedSprite: {fileID: -354252705906616202, guid: 713df1de8d8b9bd4796d60958325b1a8, type: 3}
-  selectedSprite: {fileID: -354252705906616202, guid: 713df1de8d8b9bd4796d60958325b1a8, type: 3}
 --- !u!1 &391056000
 GameObject:
   m_ObjectHideFlags: 0
@@ -6009,7 +6008,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isToggleUI: 0
+  isDropdownUI: 0
 --- !u!95 &555027965
 Animator:
   serializedVersion: 7
@@ -7672,7 +7671,6 @@ MonoBehaviour:
   normalSprite: {fileID: 6687851822966965590, guid: 75051eb108651fe44b9dda214a83318a, type: 3}
   highlightedSprite: {fileID: -6408775633568255793, guid: 713df1de8d8b9bd4796d60958325b1a8, type: 3}
   pressedSprite: {fileID: -354252705906616202, guid: 713df1de8d8b9bd4796d60958325b1a8, type: 3}
-  selectedSprite: {fileID: -354252705906616202, guid: 713df1de8d8b9bd4796d60958325b1a8, type: 3}
 --- !u!1 &776952578
 GameObject:
   m_ObjectHideFlags: 0
@@ -9083,7 +9081,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isToggleUI: 1
+  isDropdownUI: 0
 --- !u!114 &948462869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13078,7 +13076,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isToggleUI: 0
+  isDropdownUI: 0
 --- !u!1 &1205619164
 GameObject:
   m_ObjectHideFlags: 0
@@ -13591,6 +13589,7 @@ MonoBehaviour:
   leftInputFieldText: {fileID: 1409914537}
   rightInputFieldText: {fileID: 1453538750}
   pauseInputFieldText: {fileID: 2093477664}
+  selectedInputField: {fileID: 0}
 --- !u!1 &1231442404
 GameObject:
   m_ObjectHideFlags: 0
@@ -13746,7 +13745,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isToggleUI: 0
+  isDropdownUI: 0
 --- !u!95 &1250202262
 Animator:
   serializedVersion: 7
@@ -14127,7 +14126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isToggleUI: 1
+  isDropdownUI: 0
 --- !u!114 &1262802267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14560,7 +14559,6 @@ MonoBehaviour:
   normalSprite: {fileID: 6687851822966965590, guid: 75051eb108651fe44b9dda214a83318a, type: 3}
   highlightedSprite: {fileID: -6408775633568255793, guid: 713df1de8d8b9bd4796d60958325b1a8, type: 3}
   pressedSprite: {fileID: -354252705906616202, guid: 713df1de8d8b9bd4796d60958325b1a8, type: 3}
-  selectedSprite: {fileID: -354252705906616202, guid: 713df1de8d8b9bd4796d60958325b1a8, type: 3}
 --- !u!1 &1313511030
 GameObject:
   m_ObjectHideFlags: 0
@@ -17252,7 +17250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isToggleUI: 0
+  isDropdownUI: 0
 --- !u!95 &1669840629
 Animator:
   serializedVersion: 7
@@ -17538,7 +17536,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isToggleUI: 0
+  isDropdownUI: 0
 --- !u!1 &1687822781
 GameObject:
   m_ObjectHideFlags: 0
@@ -19386,7 +19384,6 @@ MonoBehaviour:
   normalSprite: {fileID: 6687851822966965590, guid: 75051eb108651fe44b9dda214a83318a, type: 3}
   highlightedSprite: {fileID: -6408775633568255793, guid: 713df1de8d8b9bd4796d60958325b1a8, type: 3}
   pressedSprite: {fileID: -354252705906616202, guid: 713df1de8d8b9bd4796d60958325b1a8, type: 3}
-  selectedSprite: {fileID: -354252705906616202, guid: 713df1de8d8b9bd4796d60958325b1a8, type: 3}
 --- !u!1 &1946186668
 GameObject:
   m_ObjectHideFlags: 0
@@ -20119,7 +20116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isToggleUI: 0
+  isDropdownUI: 0
 --- !u!95 &1997576023
 Animator:
   serializedVersion: 7
@@ -20882,7 +20879,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isToggleUI: 0
+  isDropdownUI: 0
 --- !u!95 &2074766114
 Animator:
   serializedVersion: 7
@@ -21379,7 +21376,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isToggleUI: 0
+  isDropdownUI: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

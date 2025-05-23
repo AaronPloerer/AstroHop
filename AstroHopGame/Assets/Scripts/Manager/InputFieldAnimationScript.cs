@@ -3,118 +3,101 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using TMPro;
 
-public class InputFieldAnimationScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler, IPointerUpHandler, IDeselectHandler
+public class InputFieldAnimationScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler, IPointerUpHandler
 {
-
     #region Parameters
-    [SerializeField] private Sprite normalSprite;
-    [SerializeField] private Sprite highlightedSprite;
-    [SerializeField] private Sprite pressedSprite;
-    [SerializeField] private Sprite selectedSprite;
+    [SerializeField] private Sprite normalSprite;        // Default state visual
+    [SerializeField] private Sprite highlightedSprite;   // Hover state visual
+    [SerializeField] private Sprite pressedSprite;       // Clicked state visual
 
-    private Image image;
-    private TMP_InputField inputField;
-    private bool isHovered;
-    private bool isPressed;
+    private Image image;                  // Reference to UI Image component
+    private TMP_InputField inputField;    // Reference to TextMeshPro InputField
+    private bool isHovered;               // Track mouse hover state
+    private bool isPressed;               // Track mouse press state
     #endregion
 
-    #region Awake
+    #region Initialization
     private void Awake()
     {
-        // Get the InputField component
+        // Get component references
         inputField = GetComponent<TMP_InputField>();
-
-        // Disable Unity's transitions
-        inputField.transition = Selectable.Transition.None;
-
-        // Get the Image component (
         image = GetComponent<Image>();
 
+        // Disable Unity's default transitions
+        inputField.transition = Selectable.Transition.None;
+
+        // Set initial visual state
         UpdateAppearance();
     }
     #endregion
 
-    #region Sprite Logic
-    // Update sprite based on current state
+    #region Visual State Management
+    // Updates the input field's appearance based on current state
+    // Priority: Pressed > Hovered > Normal
     private void UpdateAppearance()
     {
-        if (EventSystem.current.currentSelectedGameObject == gameObject)
-        {
-            image.sprite = selectedSprite;
-        }
-        else if (isPressed)
-        {
+        if (isPressed)
             image.sprite = pressedSprite;
-        }
         else if (isHovered)
-        {
             image.sprite = highlightedSprite;
-        }
         else
-        {
             image.sprite = normalSprite;
-        }
     }
 
-    // Mouse enters the InputField
+    // Called when mouse enters input field area
     public void OnPointerEnter(PointerEventData eventData)
     {
         isHovered = true;
-        if (EventSystem.current.currentSelectedGameObject != gameObject)
-        {
+        // Only update appearance if this isn't the currently selected field
+        if (MenuUIScript.instance.selectedInputField != inputField)
             UpdateAppearance();
-        }
     }
 
-    // Mouse exits the InputField
+    // Called when mouse exits input field area
     public void OnPointerExit(PointerEventData eventData)
     {
         isHovered = false;
-        if (EventSystem.current.currentSelectedGameObject != gameObject)
-        {
+        // Only update appearance if this isn't the currently selected field
+        if (MenuUIScript.instance.selectedInputField != inputField)
             UpdateAppearance();
-        }
-
-        // If mouse exits while pressed, force deselect
-        if (isPressed)
-        {
-            DeselectInputField();
-        }
     }
 
-    // Mouse button pressed down
+    // Called when mouse button is pressed down
     public void OnPointerDown(PointerEventData eventData)
     {
         isPressed = true;
+        // Claim focus as the currently selected input field
+        MenuUIScript.instance.selectedInputField = inputField;
+        // Play interaction sound
+        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
         UpdateAppearance();
     }
 
-    // Mouse button released
+    // Called when mouse button is released
     public void OnPointerUp(PointerEventData eventData)
     {
-        isPressed = false;
-        if (isHovered)
+        // If releasing mouse button outside the field, clear selection
+        if (!isHovered)
         {
-            // Select the InputField and show selected sprite
-            EventSystem.current.SetSelectedGameObject(gameObject);
-            inputField.ActivateInputField();
+            MenuUIScript.instance.selectedInputField = null;
         }
         UpdateAppearance();
     }
 
-    // InputField loses focus (deselected)
-    public void OnDeselect(BaseEventData eventData)
+    private void Update()
     {
-        UpdateAppearance();
-    }
+        // Update pressed state if another input field is selected
+        if (isPressed && MenuUIScript.instance.selectedInputField != inputField)
+        {
+            isPressed = false;
+            UpdateAppearance();
+        }
 
-    // Force deselect when mouse exits while pressed
-    private void DeselectInputField()
-    {
-        isPressed = false;
-        inputField.DeactivateInputField();
-        EventSystem.current.SetSelectedGameObject(null);
-        UpdateAppearance();
+        // Deselect if clicking outside the selected input field
+        if (Input.GetMouseButtonDown(0) && MenuUIScript.instance.selectedInputField == inputField && !isHovered)
+        {
+            MenuUIScript.instance.selectedInputField = null;
+        }
     }
     #endregion
 }

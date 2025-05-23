@@ -77,7 +77,7 @@ public class MenuUIScript : MonoBehaviour
     #endregion
 
     #region Selected Input
-    private TMP_InputField selectedInputField;
+    public TMP_InputField selectedInputField;
     private string selectedSavedKey;
     #endregion
 
@@ -206,6 +206,7 @@ public class MenuUIScript : MonoBehaviour
                 PlayerPrefs.Save();
 
                 // Reset selection
+                AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.closeClick, AudioManagerScript.instance.closeClickVolume);
                 selectedInputField.DeactivateInputField();
                 EventSystem.current.SetSelectedGameObject(null);
                 selectedInputField = null;

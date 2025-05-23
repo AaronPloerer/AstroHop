@@ -4,12 +4,12 @@ using UnityEngine.EventSystems;
 public class ButtonAnimationScript : MonoBehaviour, IPointerDownHandler, IPointerExitHandler, IPointerEnterHandler
 {
     #region UI Configuration
-    [SerializeField] private bool isToggleUI;             // Always reset Animation when it's a toggle
+    [SerializeField] private bool isDropdownUI;           // Dropdown field needs extra an extra click sound 
     #endregion
 
     #region Parameters
-    private Animator animator;          // Reference to the button's Animator component
-    private bool isHovered;             // Track if cursor is over the button
+    private Animator animator;                        // Reference to the button's Animator component
+    private bool isHovered;                           // Track if cursor is over the button
     #endregion
 
     #region Initialization
@@ -34,6 +34,10 @@ public class ButtonAnimationScript : MonoBehaviour, IPointerDownHandler, IPointe
     public void OnPointerDown(PointerEventData eventData)
     {
         animator.SetBool("Pressed", true);          // Activate pressed animation state
+        if (isDropdownUI)
+        {
+            AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
+        }
     }
     #endregion
 
@@ -41,7 +45,7 @@ public class ButtonAnimationScript : MonoBehaviour, IPointerDownHandler, IPointe
     private void Update()
     {
         // Reset animation if cursor left button during press (unvalid press) to be able to reactivate pressed animation OR instantly when it's a toggle
-        if (!isHovered || isToggleUI)
+        if (!isHovered)
         {
             animator.SetBool("Pressed", false);
             EventSystem.current.SetSelectedGameObject(null);
