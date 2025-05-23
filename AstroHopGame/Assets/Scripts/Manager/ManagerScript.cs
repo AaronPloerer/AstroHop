@@ -519,7 +519,7 @@ public class ManagerScript : MonoBehaviour
     public void DeleteProgress()
     {
         AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
-        MenuUIScript.instance.deletedProgressText.SetActive(true);
+        MenuUIScript.instance.deletedProgressText.SetActive(false);
         MenuUIScript.instance.deleteProgressConfirmPanel.SetActive(false);
         MenuUIScript.instance.startGameButton.interactable = true;
         MenuUIScript.instance.openOptionsButton.interactable = true;
