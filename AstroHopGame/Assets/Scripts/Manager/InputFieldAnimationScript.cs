@@ -9,6 +9,7 @@ public class InputFieldAnimationScript : MonoBehaviour, IPointerEnterHandler, IP
     [SerializeField] private Sprite normalSprite;        // Default state visual
     [SerializeField] private Sprite highlightedSprite;   // Hover state visual
     [SerializeField] private Sprite pressedSprite;       // Clicked state visual
+    [SerializeField] private GameObject text;            // Text asking to enter key
 
     private Image image;                  // Reference to UI Image component
     private TMP_InputField inputField;    // Reference to TextMeshPro InputField
@@ -37,11 +38,20 @@ public class InputFieldAnimationScript : MonoBehaviour, IPointerEnterHandler, IP
     private void UpdateAppearance()
     {
         if (isPressed)
+        {
             image.sprite = pressedSprite;
+            text.SetActive(true);
+        }
         else if (isHovered)
+        {
             image.sprite = highlightedSprite;
+            text.SetActive(false);
+        }
         else
+        {
             image.sprite = normalSprite;
+            text.SetActive(false);
+        }
     }
 
     // Called when mouse enters input field area

@@ -340,6 +340,12 @@ MonoBehaviour:
     m_Localized: "Rocket tank full \u2013 cannot collect more fuel."
     m_Metadata:
       m_Items: []
+  - m_Id: 9070433581137920
+    m_Localized: 'Select key
+
+'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

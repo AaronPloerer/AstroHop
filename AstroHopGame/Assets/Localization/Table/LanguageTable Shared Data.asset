@@ -295,6 +295,10 @@ MonoBehaviour:
     m_Key: Game Tip FailedPickUp
     m_Metadata:
       m_Items: []
+  - m_Id: 9070433581137920
+    m_Key: Menu PanelOptions TextSelectKey
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
