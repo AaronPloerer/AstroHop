@@ -75,7 +75,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 264160769212416
-    m_Localized: Are you sure you want to exit the game?
+    m_Localized: Are you sure?
     m_Metadata:
       m_Items: []
   - m_Id: 264212656947200
@@ -83,7 +83,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 264250174996480
-    m_Localized: Exit
+    m_Localized: Yes
     m_Metadata:
       m_Items: []
   - m_Id: 267636408582144
@@ -297,8 +297,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6751719573684224
-    m_Localized: Are you sure you want to delete all your progress? This cannot be
-      undone.
+    m_Localized: Are you sure? This cannot be undone.
     m_Metadata:
       m_Items: []
   - m_Id: 6751744198443008
@@ -314,8 +313,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6751933776789504
-    m_Localized: This will permanently delete all your achievements. There is no
-      way to recover them!
+    m_Localized: This action is permanent. Recovery will not be possible!
     m_Metadata:
       m_Items: []
   - m_Id: 6751976357363712
@@ -323,7 +321,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6752012029919232
-    m_Localized: Delete Everything
+    m_Localized: OK
     m_Metadata:
       m_Items: []
   - m_Id: 6769556006633472

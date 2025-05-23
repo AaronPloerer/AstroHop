@@ -75,7 +75,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 264160769212416
-    m_Localized: Voulez-vous vraiment quitter le jeu ?
+    m_Localized: "\xCAtes-vous s\xFBr ? "
     m_Metadata:
       m_Items: []
   - m_Id: 264212656947200
@@ -83,7 +83,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 264250174996480
-    m_Localized: Quitter
+    m_Localized: Oui
     m_Metadata:
       m_Items: []
   - m_Id: 267636408582144
@@ -307,8 +307,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6751719573684224
-    m_Localized: "\xCAtes-vous s\xFBr de vouloir supprimer toute votre progression
-      ? Cette action est irr\xE9versible."
+    m_Localized: "\xCAtes-vous s\xFBr ?  Cette action est irr\xE9versible."
     m_Metadata:
       m_Items: []
   - m_Id: 6751744198443008
@@ -328,12 +327,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6752012029919232
-    m_Localized: Tout supprimer
+    m_Localized: OK
     m_Metadata:
       m_Items: []
   - m_Id: 6751933776789504
-    m_Localized: "Cela supprimera tous vos succ\xE8s d\xE9finitivement. Aucun moyen
-      de les r\xE9cup\xE9rer !"
+    m_Localized: "Cette action est irr\xE9versible. Le r\xE9tablissement ne sera
+      pas possible !"
     m_Metadata:
       m_Items: []
   - m_Id: 6769556006633472

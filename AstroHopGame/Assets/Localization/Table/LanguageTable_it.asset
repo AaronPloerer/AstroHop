@@ -75,11 +75,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 264250174996480
-    m_Localized: Esci
+    m_Localized: "S\xEC"
     m_Metadata:
       m_Items: []
   - m_Id: 264160769212416
-    m_Localized: Sei sicuro di voler uscire dal gioco?
+    m_Localized: Sei sicuro?
     m_Metadata:
       m_Items: []
   - m_Id: 264212656947200
@@ -305,8 +305,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6751719573684224
-    m_Localized: "Sei sicuro di voler eliminare tutti i tuoi progressi? Questa azione
-      non pu\xF2 essere annullata."
+    m_Localized: "Sei sicuroi? Questa azione non pu\xF2 essere annullata."
     m_Metadata:
       m_Items: []
   - m_Id: 6751744198443008
@@ -326,12 +325,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6752012029919232
-    m_Localized: Elimina tutto
+    m_Localized: OK
     m_Metadata:
       m_Items: []
   - m_Id: 6751933776789504
-    m_Localized: "Questo eliminer\xE0 tutti i tuoi successi in modo permanente. Non
-      sar\xE0 possibile recuperarli!"
+    m_Localized: "Questa azione \xE8 permanente. Il recupero non sar\xE0 possibile!"
     m_Metadata:
       m_Items: []
   - m_Id: 6769556006633472
