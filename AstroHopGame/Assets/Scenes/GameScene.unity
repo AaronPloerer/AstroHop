@@ -2124,7 +2124,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0.9169811, g: 0.6770542, b: 0.08131714, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -7572,7 +7572,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4290630105
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0.9169811, g: 0.6770542, b: 0.08131714, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -7680,8 +7680,8 @@ MonoBehaviour:
   keyPause: 0
   cursorScale: 3
   basicCursor: {fileID: 4577612974103712230, guid: 6d9614b4d76fe5a47b42073a5e1895b5, type: 3}
-  laserCursor: {fileID: -3755658901651073972, guid: 6d9614b4d76fe5a47b42073a5e1895b5, type: 3}
-  laserCursorActive: {fileID: -7504687786432176828, guid: 6d9614b4d76fe5a47b42073a5e1895b5, type: 3}
+  laserCursor: {fileID: 4577612974103712230, guid: 6d9614b4d76fe5a47b42073a5e1895b5, type: 3}
+  laserCursorActive: {fileID: 4577612974103712230, guid: 6d9614b4d76fe5a47b42073a5e1895b5, type: 3}
 --- !u!4 &1380312161
 Transform:
   m_ObjectHideFlags: 0
@@ -8815,7 +8815,7 @@ MonoBehaviour:
     m_TableReference:
       m_TableCollectionName: GUID:601fa2dec27d2f345975d9f48614d239
     m_TableEntryReference:
-      m_KeyId: 322286851719168
+      m_KeyId: 6752012029919232
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -11265,7 +11265,7 @@ MonoBehaviour:
     m_TableReference:
       m_TableCollectionName: GUID:601fa2dec27d2f345975d9f48614d239
     m_TableEntryReference:
-      m_KeyId: 322328677318656
+      m_KeyId: 6752012029919232
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0

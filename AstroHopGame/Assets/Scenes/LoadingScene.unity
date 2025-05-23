@@ -464,6 +464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6529f09e592308f4b83b8afad3f59367, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  escapeCooldownTime: 0.1
   keyBoostPrimary: 0
   keyBoostSecondary: 0
   keyLeftPrimary: 0
@@ -473,8 +474,8 @@ MonoBehaviour:
   keyPause: 0
   cursorScale: 3
   basicCursor: {fileID: 4577612974103712230, guid: 6d9614b4d76fe5a47b42073a5e1895b5, type: 3}
-  laserCursor: {fileID: -3755658901651073972, guid: 6d9614b4d76fe5a47b42073a5e1895b5, type: 3}
-  laserCursorActive: {fileID: -7504687786432176828, guid: 6d9614b4d76fe5a47b42073a5e1895b5, type: 3}
+  laserCursor: {fileID: 4577612974103712230, guid: 6d9614b4d76fe5a47b42073a5e1895b5, type: 3}
+  laserCursorActive: {fileID: 4577612974103712230, guid: 6d9614b4d76fe5a47b42073a5e1895b5, type: 3}
 --- !u!1 &392352325
 GameObject:
   m_ObjectHideFlags: 0
