@@ -53,7 +53,10 @@ public class ButtonAnimationScript : MonoBehaviour, IPointerDownHandler, IPointe
         if (!isHovered)
         {
             animator.SetBool("Pressed", false);
-            EventSystem.current.SetSelectedGameObject(null);
+            if (EventSystem.current != null)    
+            {
+                EventSystem.current.SetSelectedGameObject(null);
+            }
         }
     }
     #endregion

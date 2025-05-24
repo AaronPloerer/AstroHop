@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 using System.Collections;
 using UnityEngine.Localization.Settings;
 using System.Collections.Generic;
+using UnityEngine.EventSystems;
 public class ManagerScript : MonoBehaviour
 {
     #region Singleton
@@ -306,11 +307,17 @@ public class ManagerScript : MonoBehaviour
         // Play click sound
         AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
 
+        // Disable input
+        EventSystem.current.enabled = false;
+
         // Wait for the duration of the click sound
         yield return new WaitForSeconds(AudioManagerScript.instance.click.length);
 
+        // Wait for loading time
+        yield return new WaitForSeconds(5.0f);
+
         // Load the scene after waiting
-        SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene("GameScene");
     }
     #endregion
 
