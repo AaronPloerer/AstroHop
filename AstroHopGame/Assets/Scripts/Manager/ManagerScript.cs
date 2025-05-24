@@ -287,13 +287,13 @@ public class ManagerScript : MonoBehaviour
     public void LoadLoadingSceneOnClick()
     {
         // Start coroutine to handle sound and scene change
-        StartCoroutine(LoadSceneAfterSound("LoadingScene"));
+        StartCoroutine(LoadSceneAfterTimer());
     }
 
     public void LoadGameScene()
     {
-        // Directly load game scene
-        SceneManager.LoadScene("GameScene");
+        // Start coroutine to handle sound and scene change
+        StartCoroutine(LoadSceneAfterSound("GameScene"));
     }
 
     public void LoadMenuSceneOnClick()
@@ -303,6 +303,21 @@ public class ManagerScript : MonoBehaviour
     }
 
     private IEnumerator LoadSceneAfterSound(string sceneName)
+    {
+        // Play click sound
+        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
+
+        // Disable input
+        EventSystem.current.enabled = false;
+
+        // Wait for the duration of the click sound
+        yield return new WaitForSeconds(AudioManagerScript.instance.click.length);
+
+        // Load the scene after waiting
+        SceneManager.LoadScene(sceneName);
+    }
+
+    private IEnumerator LoadSceneAfterTimer()
     {
         // Play click sound
         AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);

@@ -58,9 +58,12 @@ public class SpriteSwitcher : MonoBehaviour
         // Check if that point overlaps our collider
         if (col.OverlapPoint(worldPoint))
         {
-            // Still over the image: go back to hover
+            // Still over the image: go back to hover and make click sound
             if (hoverSprite != null)
+            {
+                AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
                 targetImage.sprite = hoverSprite;
+            }
         }
         else
         {

@@ -1,12 +1,8 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class ButtonAnimationScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IPointerExitHandler, IPointerEnterHandler
+public class ButtonAnimationScript : MonoBehaviour, IPointerDownHandler, IPointerExitHandler, IPointerEnterHandler
 {
-    #region UI Configuration
-    [SerializeField] private bool isDropdownUI;           // Dropdown field needs extra an extra click sound 
-    #endregion
-
     #region Parameters
     private Animator animator;                        // Reference to the button's Animator component
     private bool isHovered;                           // Track if cursor is over the button
@@ -33,15 +29,9 @@ public class ButtonAnimationScript : MonoBehaviour, IPointerDownHandler, IPointe
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        animator.SetBool("Pressed", true);          // Activate pressed animation state
-    }
-
-    public void OnPointerUp(PointerEventData eventData)
-    {
-        // Play click sound when relaseing mouse on open dropdown click
-        if (isDropdownUI && isHovered)
+        if (eventData.button == PointerEventData.InputButton.Left)
         {
-            AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
+            animator.SetBool("Pressed", true);               // Activate pressed animation state
         }
     }
     #endregion

@@ -4,11 +4,16 @@ using UnityEngine;
 public class VolumeButtonControl : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
     private bool isHeld;
-    [SerializeField] private float volumeChangeSpeed; 
+    private float pointerDownTime;
+    private float minHoldDuration = 0.2f;
+    [SerializeField] private float volumeChangeSpeed;
     private float volume;
 
     public void OnPointerDown(PointerEventData eventData)
     {
+        if (eventData.button != PointerEventData.InputButton.Left) return;
+
+        pointerDownTime = Time.time;
         volume = PlayerPrefs.GetFloat("MusicVolume", 0.3f);
         AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
         isHeld = true;
@@ -16,8 +21,16 @@ public class VolumeButtonControl : MonoBehaviour, IPointerDownHandler, IPointerU
 
     public void OnPointerUp(PointerEventData eventData)
     {
+        if (eventData.button != PointerEventData.InputButton.Left) return;
+
         isHeld = false;
-        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
+
+        float holdDuration = Time.time - pointerDownTime;
+        if (holdDuration >= minHoldDuration)
+        {
+            AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.closeClick, AudioManagerScript.instance.closeClickVolume);
+        }
+
         PlayerPrefs.Save();
     }
 
