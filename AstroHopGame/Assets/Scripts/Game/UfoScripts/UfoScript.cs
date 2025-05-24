@@ -186,8 +186,8 @@ public class UfoScript : MonoBehaviour
         if (!killable) return;     // Ignore lasers when outside game view area
 
         // Play explosion SFX and animation and remove UFO from the UFO counter as well as from the scene (with arrow)
-        //AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.explosion, AudioManagerScript.instance.explosionVolume);
-        //Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.explosion, AudioManagerScript.instance.explosionVolume);
+        Instantiate(explosionPrefab, transform.position, Quaternion.identity);
         UfoSpawnerScript.instance.aliveUfos--;
         Destroy(spawnedArrow);
         Destroy(gameObject);
@@ -220,17 +220,17 @@ public class UfoScript : MonoBehaviour
         if (PlayerControllerScript.instance.boostMovement || PlayerControllerScript.instance.startingBoost)
         {
             // UFO destruction sequence like with laser collision
-            //AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.explosion, AudioManagerScript.instance.explosionVolume);
-            //Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+            AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.explosion, AudioManagerScript.instance.explosionVolume);
+            Instantiate(explosionPrefab, transform.position, Quaternion.identity);
             UfoSpawnerScript.instance.aliveUfos--;
             Destroy(gameObject);
         }
         else
         {
             // Player death sequence with position-adjusted explosion
-            //AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.explosion, AudioManagerScript.instance.explosionVolume);
+            AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.explosion, AudioManagerScript.instance.explosionVolume);
             Vector3 explosionPos = PlayerControllerScript.instance.transform.position + Vector3.up * 1.07f;
-            //Instantiate(explosionPrefab, explosionPos, Quaternion.identity);
+            Instantiate(explosionPrefab, explosionPos, Quaternion.identity);
 
             // Show game over screen with crash expanation
             PlayerControllerScript.instance.crashing = true;

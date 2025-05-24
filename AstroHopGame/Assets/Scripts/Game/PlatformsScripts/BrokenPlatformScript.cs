@@ -15,7 +15,8 @@ public class BrokenPlatformScript : MonoBehaviour
     #endregion
 
     #region Runtime State
-    private bool destroyed;            // Track if platform is completly destroyed
+    private bool destroyed;            // Track if platform is completly visually destroyed
+    private bool broken;               // Track if platform cannot be used anymore
     private GameObject spawnedFuel;   // Reference to spawned fuel object
     public bool forceFuelSpawn;       // Override for fuel spawning (determined by level genarator)
     #endregion
@@ -52,6 +53,7 @@ public class BrokenPlatformScript : MonoBehaviour
     {
         // Initialize platform state
         destroyed = false;
+        broken = false;
     }
     #endregion
 
@@ -124,6 +126,9 @@ public class BrokenPlatformScript : MonoBehaviour
 
     private void ApplyPlayerBounce()
     {
+        // Only make player jump when platform was not yet used
+        if (broken) return;
+
         // Apply upward force to player
         Vector2 velocity = PlayerControllerScript.instance.rb.linearVelocity;
         velocity.y = playerJumpForce;
@@ -137,12 +142,17 @@ public class BrokenPlatformScript : MonoBehaviour
 
     private void BreakPlatform()
     {
-        // Disable platform and play SFX and trigger animations
-        GetComponent<Collider2D>().enabled = false;
-        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.breaking, AudioManagerScript.instance.breakingVolume);
-        breakingPlatformAnim.SetTrigger("break");
-        destroyed = true;
-        Destroy(spawnedFuel);      // Remove associated fuel item
+        if (broken)
+        {
+            // Disable platform and play SFX and trigger animations
+            GetComponent<Collider2D>().enabled = false;
+            AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.breaking, AudioManagerScript.instance.breakingVolume);
+            breakingPlatformAnim.SetTrigger("break");
+            destroyed = true;
+            Destroy(spawnedFuel);      // Remove associated fuel item
+        }
+
+        broken = true;
     }
     #endregion
 }
