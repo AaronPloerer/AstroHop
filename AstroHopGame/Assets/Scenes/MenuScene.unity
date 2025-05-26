@@ -524,8 +524,8 @@ MonoBehaviour:
   backgroundMusic: 1
   defaultMusicVolume: 0.3
   defaultSfxVolume: 0.3
-  lowBoostVolume: 0.4
-  highBoostVolume: 0.2
+  lowBoostVolume: 0.5
+  highBoostVolume: 0.27
   ufoVolume: 0.3
   fallVolume: 0.3
   breakingVolume: 0.2
@@ -550,7 +550,6 @@ GameObject:
   - component: {fileID: 47169554}
   - component: {fileID: 47169553}
   - component: {fileID: 47169552}
-  - component: {fileID: 47169556}
   - component: {fileID: 47169557}
   m_Layer: 5
   m_Name: Language Dropdown
@@ -701,19 +700,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 47169550}
   m_CullTransparentMesh: 1
---- !u!114 &47169556
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 47169550}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isDropdownUI: 1
 --- !u!95 &47169557
 Animator:
   serializedVersion: 7
@@ -1398,7 +1384,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDropdownUI: 0
 --- !u!1 &115770678
 GameObject:
   m_ObjectHideFlags: 0
@@ -1546,7 +1531,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDropdownUI: 0
 --- !u!95 &115770684
 Animator:
   serializedVersion: 7
@@ -3173,7 +3157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0057373047, y: 0.8999939}
+  m_AnchoredPosition: {x: -0.0057373047, y: 0}
   m_SizeDelta: {x: 275.69, y: 44.996}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &342437502
@@ -3900,7 +3884,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 93.00002, y: -78.89999}
+  m_AnchoredPosition: {x: 93.00008, y: -81.8}
   m_SizeDelta: {x: 275.7, y: 45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &383894960
@@ -6008,7 +5992,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDropdownUI: 0
 --- !u!95 &555027965
 Animator:
   serializedVersion: 7
@@ -7139,7 +7122,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4291419106
-  m_fontColor: {r: 0.9169811, g: 0.6770542, b: 0.08131714, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -7615,7 +7598,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 93, y: -27.4}
+  m_AnchoredPosition: {x: 93.00005, y: -26.93}
   m_SizeDelta: {x: 275.7, y: 45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &773312537
@@ -8816,7 +8799,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.5}
+  m_AnchoredPosition: {x: 0, y: -0.4999962}
   m_SizeDelta: {x: -20, y: -13}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &887590286
@@ -9081,7 +9064,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDropdownUI: 0
 --- !u!114 &948462869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12251,7 +12233,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 1
   m_wordSpacing: 18
@@ -13076,7 +13058,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDropdownUI: 0
 --- !u!1 &1205619164
 GameObject:
   m_ObjectHideFlags: 0
@@ -13745,7 +13726,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDropdownUI: 0
 --- !u!95 &1250202262
 Animator:
   serializedVersion: 7
@@ -14126,7 +14106,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDropdownUI: 0
 --- !u!114 &1262802267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14402,7 +14381,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 92.74997, y: 28.339996}
+  m_AnchoredPosition: {x: 92.74997, y: 27.94}
   m_SizeDelta: {x: 275.7, y: 45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1292919880
@@ -17250,7 +17229,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDropdownUI: 0
 --- !u!95 &1669840629
 Animator:
   serializedVersion: 7
@@ -17536,7 +17514,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDropdownUI: 0
 --- !u!1 &1687822781
 GameObject:
   m_ObjectHideFlags: 0
@@ -20116,7 +20093,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDropdownUI: 0
 --- !u!95 &1997576023
 Animator:
   serializedVersion: 7
@@ -20879,7 +20855,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDropdownUI: 0
 --- !u!95 &2074766114
 Animator:
   serializedVersion: 7
@@ -21376,7 +21351,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDropdownUI: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

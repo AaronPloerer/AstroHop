@@ -406,8 +406,8 @@ MonoBehaviour:
   backgroundMusic: 0
   defaultMusicVolume: 0.3
   defaultSfxVolume: 0.3
-  lowBoostVolume: 0.4
-  highBoostVolume: 0.2
+  lowBoostVolume: 0.5
+  highBoostVolume: 0.27
   ufoVolume: 0.3
   fallVolume: 0.3
   breakingVolume: 0.2
@@ -464,6 +464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6529f09e592308f4b83b8afad3f59367, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  escapeCooldownTime: 0.1
   keyBoostPrimary: 0
   keyBoostSecondary: 0
   keyLeftPrimary: 0

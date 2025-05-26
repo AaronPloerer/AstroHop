@@ -65,11 +65,11 @@ public class InputFieldAnimationScript : MonoBehaviour, IPointerEnterHandler, IP
     // Called when mouse button is pressed down
     public void OnPointerDown(PointerEventData eventData)
     {
+        if (eventData.button != PointerEventData.InputButton.Left) return;
+
         isPressed = true;
         // Claim focus as the currently selected input field
         MenuUIScript.instance.selectedInputField = inputField;
-        // Play interaction sound
-        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
         UpdateAppearance();
     }
 
@@ -80,6 +80,11 @@ public class InputFieldAnimationScript : MonoBehaviour, IPointerEnterHandler, IP
         if (!isHovered)
         {
             MenuUIScript.instance.selectedInputField = null;
+        }
+        else
+        {
+            // Play interaction sound
+            AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
         }
         UpdateAppearance();
     }

@@ -60,7 +60,10 @@ public class SpriteSwitcher : MonoBehaviour
         {
             // Still over the image: go back to hover
             if (hoverSprite != null)
+            {
+                AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
                 targetImage.sprite = hoverSprite;
+            }
         }
         else
         {

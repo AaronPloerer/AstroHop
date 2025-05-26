@@ -295,6 +295,12 @@ public class ManagerScript : MonoBehaviour
         SceneManager.LoadScene("GameScene");
     }
 
+    public void LoadGameSceneOnClick()
+    {
+        // Start coroutine to handle sound and scene change
+        StartCoroutine(LoadSceneAfterSound("GameScene"));
+    }
+
     public void LoadMenuSceneOnClick()
     {        
         // Start coroutine to handle sound and scene change
