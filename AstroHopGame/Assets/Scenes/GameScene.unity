@@ -311,7 +311,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDropdownUI: 0
 --- !u!95 &29055197
 Animator:
   serializedVersion: 7
@@ -345,6 +344,7 @@ GameObject:
   - component: {fileID: 31507674}
   - component: {fileID: 31507676}
   - component: {fileID: 31507675}
+  - component: {fileID: 31507677}
   m_Layer: 5
   m_Name: OVER Text
   m_TagString: Untagged
@@ -418,12 +418,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 200
+  m_fontSize: 145.5
   m_fontSizeBase: 200
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 200
   m_fontStyle: 16
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -470,6 +470,46 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 31507673}
   m_CullTransparentMesh: 1
+--- !u!114 &31507677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31507673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:601fa2dec27d2f345975d9f48614d239
+    m_TableEntryReference:
+      m_KeyId: 10138053445156864
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 31507675}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &48994664
 GameObject:
   m_ObjectHideFlags: 0
@@ -943,7 +983,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDropdownUI: 0
 --- !u!95 &132802517
 Animator:
   serializedVersion: 7
@@ -1312,7 +1351,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDropdownUI: 0
 --- !u!1 &215183990
 GameObject:
   m_ObjectHideFlags: 0
@@ -2644,6 +2682,7 @@ GameObject:
   - component: {fileID: 406001269}
   - component: {fileID: 406001271}
   - component: {fileID: 406001270}
+  - component: {fileID: 406001272}
   m_Layer: 5
   m_Name: GAME Text
   m_TagString: Untagged
@@ -2717,12 +2756,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 200
+  m_fontSize: 145.5
   m_fontSizeBase: 200
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 200
   m_fontStyle: 16
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -2769,6 +2808,46 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 406001268}
   m_CullTransparentMesh: 1
+--- !u!114 &406001272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406001268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:601fa2dec27d2f345975d9f48614d239
+    m_TableEntryReference:
+      m_KeyId: 10138025418817536
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 406001270}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &469258734
 GameObject:
   m_ObjectHideFlags: 0
@@ -3422,7 +3501,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -66, y: -158.62202}
-  m_SizeDelta: {x: 271.77, y: 139.77}
+  m_SizeDelta: {x: 271.77, y: 51}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &558711771
 MonoBehaviour:
@@ -4470,7 +4549,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDropdownUI: 0
 --- !u!95 &763873865
 Animator:
   serializedVersion: 7
@@ -6329,12 +6407,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 200
+  m_fontSize: 192.55
   m_fontSizeBase: 200
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 200
   m_fontStyle: 16
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -7059,7 +7137,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDropdownUI: 0
 --- !u!95 &1283786506
 Animator:
   serializedVersion: 7
@@ -7264,7 +7341,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDropdownUI: 0
 --- !u!95 &1286490803
 Animator:
   serializedVersion: 7
@@ -8446,7 +8522,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDropdownUI: 0
 --- !u!1 &1544818593
 GameObject:
   m_ObjectHideFlags: 0
@@ -8875,7 +8950,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -2.1}
-  m_SizeDelta: {x: 313, y: 100}
+  m_SizeDelta: {x: 313, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1574674990
 MonoBehaviour:
@@ -8927,7 +9002,7 @@ MonoBehaviour:
   m_fontSize: 42
   m_fontSizeBase: 42
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 42
   m_fontStyle: 0
@@ -9163,7 +9238,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDropdownUI: 0
 --- !u!95 &1576630677
 Animator:
   serializedVersion: 7
@@ -10040,7 +10114,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -66, y: -108}
-  m_SizeDelta: {x: 271.77, y: 139.77}
+  m_SizeDelta: {x: 271.77, y: 51}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1764043988
 MonoBehaviour:
@@ -10092,9 +10166,9 @@ MonoBehaviour:
   m_fontSize: 42
   m_fontSizeBase: 42
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 42
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
@@ -10364,7 +10438,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDropdownUI: 0
 --- !u!95 &1837562139
 Animator:
   serializedVersion: 7

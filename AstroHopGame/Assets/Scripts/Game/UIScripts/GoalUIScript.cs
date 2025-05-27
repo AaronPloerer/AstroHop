@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using TMPro;
+using UnityEditor;
 using UnityEngine;
 
 public class GoalTextScript : MonoBehaviour
@@ -59,7 +60,15 @@ public class GoalTextScript : MonoBehaviour
             TextMeshProUGUI tmpComponent = goalText.GetComponentInChildren<TextMeshProUGUI>();
             if (!tmpComponent) return;
 
-            tmpComponent.text = ("Highscore!");
+            int localeID = PlayerPrefs.GetInt("Language", 0);
+            tmpComponent.text = localeID switch
+            {
+                1 => "Gespeicherte\nPunktezahl!",
+                2 => "Punteggio\nsalvato!",
+                3 => "Punteggio\nenregistré !",
+                _ => "Saved\nScore!"
+            };
+
             tmpComponent.textWrappingMode = TextWrappingModes.NoWrap;
             tmpComponent.overflowMode = TextOverflowModes.Overflow;
 
@@ -74,6 +83,7 @@ public class GoalTextScript : MonoBehaviour
             spawnedLines.Add(goallLine);
         }
     }
+
     #endregion
 
     #region Goal Spawning

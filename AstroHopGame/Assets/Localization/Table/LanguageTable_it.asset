@@ -19,79 +19,79 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 250128683237376
-    m_Localized: Gioca
+    m_Localized: Inizializza scena 1
     m_Metadata:
       m_Items: []
   - m_Id: 251612590243840
-    m_Localized: Impostazioni
+    m_Localized: Cfg
     m_Metadata:
       m_Items: []
   - m_Id: 251672120000512
-    m_Localized: Aiuto
+    m_Localized: Ref
     m_Metadata:
       m_Items: []
   - m_Id: 255191178805248
-    m_Localized: Lingua
+    m_Localized: Locale
     m_Metadata:
       m_Items: []
   - m_Id: 255316395556864
-    m_Localized: Impostazioni Audio
+    m_Localized: AudCfg
     m_Metadata:
       m_Items: []
   - m_Id: 255330933014528
-    m_Localized: Musica
+    m_Localized: BGM
     m_Metadata:
       m_Items: []
   - m_Id: 255492279500800
-    m_Localized: Effetti sonori
+    m_Localized: SFX
     m_Metadata:
       m_Items: []
   - m_Id: 255530384752640
-    m_Localized: Controlli
+    m_Localized: CtrlMap
     m_Metadata:
       m_Items: []
   - m_Id: 255597812383744
-    m_Localized: Boost
+    m_Localized: +yMov
     m_Metadata:
       m_Items: []
   - m_Id: 255648194363392
-    m_Localized: Sinistra
+    m_Localized: -xMov
     m_Metadata:
       m_Items: []
   - m_Id: 255692297469952
-    m_Localized: Destra
+    m_Localized: +xMov
     m_Metadata:
       m_Items: []
   - m_Id: 255793631854592
-    m_Localized: Pausa
+    m_Localized: "velocit\xE0 0"
     m_Metadata:
       m_Items: []
   - m_Id: 255831535779840
-    m_Localized: Chiudi
+    m_Localized: setActive (false)
     m_Metadata:
       m_Items: []
   - m_Id: 264018280316928
-    m_Localized: Esci?
+    m_Localized: "Terminare l\u2019esecuzione?"
     m_Metadata:
       m_Items: []
   - m_Id: 264250174996480
-    m_Localized: Esci
+    m_Localized: "Terminare l\u2019esecuzione"
     m_Metadata:
       m_Items: []
   - m_Id: 264160769212416
-    m_Localized: Sei sicuro di voler uscire dal gioco?
+    m_Localized: Sei sicuro di voler terminare il processo in esecuzione?
     m_Metadata:
       m_Items: []
   - m_Id: 264212656947200
-    m_Localized: Annulla
+    m_Localized: Annula
     m_Metadata:
       m_Items: []
   - m_Id: 267636408582144
-    m_Localized: Caricamento...
+    m_Localized: "Inizializzazione scena\u2026"
     m_Metadata:
       m_Items: []
   - m_Id: 323144184233984
-    m_Localized: Tutti i progressi verranno persi.
+    m_Localized: "Questa inizializzazione della scena 1 verr\xE0 eliminata."
     m_Metadata:
       m_Items: []
   - m_Id: 324972066111488
@@ -99,99 +99,100 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 323006443290624
-    m_Localized: 'Record:'
+    m_Localized: 'Punteggio salvato:'
     m_Metadata:
       m_Items: []
   - m_Id: 322758924828672
-    m_Localized: 'Punteggio:'
+    m_Localized: 'Punteggio attuale:'
     m_Metadata:
       m_Items: []
   - m_Id: 322549373206528
-    m_Localized: Primo contatto fallito. Collisione fatale con un UFO.
+    m_Localized: "Collisione rilevata tra oggetti contrassegnati \u201CPlayer\u201D
+      e \u201CUfo\u201D."
     m_Metadata:
       m_Items: []
   - m_Id: 322383782084608
-    m_Localized: Nessun pavimento rilevato. Disperso nello spazio.
+    m_Localized: "Collisione rilevata tra oggetti contrassegnati \u201CPlayer\u201D
+      e \u201CEnd\u201D."
     m_Metadata:
       m_Items: []
   - m_Id: 322357261500416
-    m_Localized: Pausa
+    m_Localized: "velocit\xE0 0"
     m_Metadata:
       m_Items: []
   - m_Id: 322328677318656
-    m_Localized: Riprova
+    m_Localized: Reinizializza
     m_Metadata:
       m_Items: []
   - m_Id: 322286851719168
-    m_Localized: Menu Principale
+    m_Localized: Inizializza scena 0
     m_Metadata:
       m_Items: []
   - m_Id: 323276204146688
-    m_Localized: Riprova?
+    m_Localized: Reinizializzare?
     m_Metadata:
       m_Items: []
   - m_Id: 323298245214208
-    m_Localized: Menu Principale?
+    m_Localized: Inizializza scena 0?
     m_Metadata:
       m_Items: []
   - m_Id: 335795706658816
-    m_Localized: Continua
+    m_Localized: "velocit\xE0 1"
     m_Metadata:
       m_Items: []
   - m_Id: 604724567998464
-    m_Localized: 'Non cadere fuori dallo schermo!
-
-      <size=30><alpha=#80>Premi
-      [Alt] per saltare il tutorial.'
+    m_Localized: "Non collidere con l\u2019oggetto contrassegnato con \u201CEnd\u201D!\n<size=30><alpha=#80>Premi
+      [Alt] per segnare il tutorial come visualizzato."
     m_Metadata:
       m_Items: []
   - m_Id: 604769543520256
-    m_Localized: 'Clicca il <color=#ECA800>tasto sinistro <color=#FFFFFF>per sparare
-      verso gli UFO.
+    m_Localized: '<color=#ECA800>Clic sinistro<color=#FFFFFF> su un prefab UFO per
+      generare un <color=#ECA800>prefab laser<color=#FFFFFFFF> che si muove verso
+      di esso.
 
-      <size=30><alpha=#80>Premi [Alt] per saltare il tutorial.'
+      <size=30><alpha=#80>Premi [Alt] per segnare il tutorial come
+      visualizzato.'
     m_Metadata:
       m_Items: []
   - m_Id: 604853593178112
-    m_Localized: 'Raccogli carburante per ricaricare il tuo razzo boost.
+    m_Localized: 'Raccogli prefab di carburante per aumentare la barra carburante.
 
       <size=30><alpha=#80>Premi
-      [Alt] per saltare il tutorial.'
+      [Alt] per segnare il tutorial come visualizzato.'
     m_Metadata:
       m_Items: []
   - m_Id: 604892465987584
-    m_Localized: 'Le piattaforme <color=#EC1321>rosse <color=#FFFFFF>si rompono dopo
-      un solo uso.
+    m_Localized: '<color=#EC1321>Piattaforme rosse <color=#FFFFFF>disabilitano il
+      loro Collider2D dopo una singola collisione.
 
-      <size=30><alpha=#80>Premi [Alt] per saltare il tutorial.'
+      <size=30><alpha=#80>Premi
+      [Alt] per segnare il tutorial come visualizzato.'
     m_Metadata:
       m_Items: []
   - m_Id: 604938443948032
-    m_Localized: 'Le piattaforme <color=#BE23FE>viola <color=#FFFFFF>si muovono a
-      sinistra e a destra.
-
-      <size=30><alpha=#80>Premi [Alt] per saltare il
-      tutorial.'
+    m_Localized: "Piattaforme <color=#BE23FE>viola <color=#FFFFFF>si muovono avanti
+      e indietro sull\u2019asse x.\n<size=30><alpha=#80>Premi [Alt] per segnare il
+      tutorial come visualizzato."
     m_Metadata:
       m_Items: []
   - m_Id: 4223074929999872
-    m_Localized: Boost Iniziale
+    m_Localized: start+yMov
     m_Metadata:
       m_Items: []
   - m_Id: 4225244228222976
-    m_Localized: Impostazioni Generali
+    m_Localized: CoreCfg
     m_Metadata:
       m_Items: []
   - m_Id: 4225273508659200
-    m_Localized: Impostazioni di Gioco
+    m_Localized: PlayCfg
     m_Metadata:
       m_Items: []
   - m_Id: 5320637074636800
-    m_Localized: Controlli duplicati! Correggi.
+    m_Localized: Risolvi sovrapposizione dei tasti!
     m_Metadata:
       m_Items: []
   - m_Id: 6408009740713984
-    m_Localized: "Carburante finito \u2013 raccogli serbatoi per il boost razzo."
+    m_Localized: isBoostingWithKey = currentFuel > 0;
     m_Metadata:
       m_Items: []
   - m_Id: 6417898709975040
@@ -199,12 +200,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418067216138240
-    m_Localized: "Salta sempre pi\xF9 in alto usando le piattaforme fluttuanti sparse
-      nello spazio.\r\nRimbalzi automaticamente e devi muoverti a sinistra o destra
-      per atterrare sulle piattaforme superiori. Se manchi una piattaforma e cadi
-      oltre lo schermo, o ti scontri con un UFO dal basso o dal lato, la partita
-      terminer\xE0.\r\nRaggiungi la massima altezza possibile per ottenere il punteggio
-      pi\xF9 alto.\r"
+    m_Localized: "Ti muovi verso l\u2019alto scontrandoti con prefab di piattaforme
+      istanziati nell\u2019ambiente di gioco. La forza verticale negativa \xE8 costante
+      e viene impostata dal gravity scale del componente Rigidbody dell\u2019oggetto
+      giocatore. La propulsione verso l\u2019alto si verifica quando collidi dall\u2019alto
+      con un GameObject taggato \u201CPlatform\u201D. Un input orizzontale \xE8 necessario
+      per allinearti con le piattaforme sopra. \r\nSe l\u2019oggetto giocatore collide
+      con un GameObject taggato \u201CEnd\u201D o colpisce lateralmente o dal basso
+      un GameObject taggato \u201CUFO\u201D, viene distrutto. \r\nRaggiungi la coordinata
+      y pi\xF9 alta possibile per ottenere il punteggio massimo.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6418097113137152
@@ -212,8 +216,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418170840612864
-    m_Localized: 'Usa i tasti di movimento sinistra/destra (predefiniti: A/D o Frecce
-      Sinistra/Destra) per posizionarti sulle piattaforme su cui vuoi atterrare.'
+    m_Localized: "Usa i tasti di movimento orizzontale (predefinito: A/D o Freccia
+      sinistra/destra) per spostarti sull\u2019asse x verso il prefab di piattaforma
+      successivo."
     m_Metadata:
       m_Items: []
   - m_Id: 6418195234684928
@@ -221,14 +226,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6419343605760000
-    m_Localized: "Hai un razzo un boost verticale. Se il razzo contiene carburante,
-      tieni premuto il tasto Boost (predefinito: W o Freccia Su) per volare verso
-      l\u2019alto. Per fare rifornimento, colpisci i serbatoi di carburante che compaiono
-      su alcune piattaforme.\r\nDurante il boost, il carburante si consuma a un ritmo
-      costante, ma ogni fase di boost consuma almeno il 10% del serbatoio totale.
-      Se rimane meno del 10%, il resto viene consumato completamente.\r\nUsa il boost
-      per correggere atterraggi mancati o raggiungere piattaforme pi\xF9 alte, ma
-      ricorda: devi raccogliere carburante per riutilizzarlo.\r\n"
+    m_Localized: "Porti un razzo per i boost di movimento verso l\u2019alto. Se currentFuel
+      > 0, tieni premuto il tasto +yMov (predefinito: W o Freccia su) per muoverti
+      nella direzione positiva dell\u2019asse y. Per aumentare il valore del carburante,
+      collidi con GameObjects taggati \u201CFuel\u201D, che compaiono su piattaforme
+      selezionate. \r\nDurante il boost, il carburante diminuisce a un ritmo costante,
+      ma ogni pressione del tasto riduce almeno il 10 % di maxFuel. Se currentFuel
+      \u2264 10 %, la pressione successiva porta il carburante a 0. \r\nUsa i boost
+      del razzo per correggere atterraggi mancati o raggiungere sporgenze pi\xF9
+      alte.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6418291280052224
@@ -236,9 +242,10 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418301782589440
-    m_Localized: "Le piattaforme hanno tre varianti:\r\n- Verdi: Statiche e permanenti.\r\n-
-      Rosse: Si rompono dopo un atterraggio, utilizzabili una sola volta.\r\n- Viola:
-      Si muovono a sinistra e destra a velocit\xE0 costante.\r"
+    m_Localized: "Ci sono tre prefab di piattaforma:\r\n- Colore HEX #00fe0c: Nessuna
+      modifica ai componenti Transform e Edge Collider 2D.\r\n- Colore HEX #ec1321:
+      Il Collider 2D viene disabilitato dopo un unico utilizzo.\r\n- Colore HEX #be23fe:
+      Si muove avanti e indietro a velocit\xE0 costante.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6418419743195136
@@ -248,14 +255,16 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418451519242240
-    m_Localized: "Gli UFO scendono lentamente seguendo la tua posizione orizzontale.
-      Prima di apparire sullo schermo, una freccia in alto avvisa da quale direzione
-      stanno arrivando. Scontrarsi con uno dal basso o dal lato termina la partita.\r\nPuoi
-      eliminarli in tre modi:\r\n- Attacco con Salto: Atterra sopra un UFO per distruggerlo.
-      Rimbalzerai come su una piattaforma.\r\n- Colpo Laser: Clicca con il tasto
-      sinistro del mouse verso il bersaglio. Un raggio laser parte dalla tua posizione
-      e distrugge l\u2019UFO se colpito.\r\n- Propulsione del Razzo: Usa un boost
-      per distruggere qualsiasi UFO che colpisci mentre sali.\r"
+    m_Localized: "I prefab UFO scendono verso il basso e si dirigono verso la coordinata
+      x del giocatore. Prima che un prefab UFO entri nel campo visivo della telecamera,
+      viene generato in alto uno prefab Arrow che ne indica la posizione x. Una collisione
+      con un prefab UFO da sotto o di lato termina la tua corsa. Tuttavia, puoi distruggerli
+      in tre modi:\r\nStomp Attack: Collidi dall\u2019alto con un prefab UFO per
+      distruggerlo. Rimbalzi verso l\u2019alto come su una piattaforma.\r\nLaser
+      Shot: Clic sinistro su un prefab UFO. Un raggio laser parte dalla posizione
+      del giocatore verso il cursore e distrugge l\u2019UFO all\u2019impatto.\r\nRocket
+      Boost: Usa un boost per distruggere qualsiasi prefab UFO con cui entri in collisione
+      durante la salita."
     m_Metadata:
       m_Items: []
   - m_Id: 6418570339680256
@@ -263,10 +272,10 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418695137001472
-    m_Localized: Dopo aver raggiunto un punteggio di 400 o superiore, sblocchi un
-      boost di partenza automatico per la prossima partita, che ti lancia fino al
-      50% del punteggio precedente. Puoi attivare/disattivare questa funzione nelle
-      Impostazioni.
+    m_Localized: "Dopo aver totalizzato 400 punti o pi\xF9, nella partita successiva
+      la variabile start+yMov verr\xE0 impostata su true e verrai lanciato al 50%
+      del tuo punteggio record precedente. Puoi attivare o disattivare questa funzione
+      dal Pannello Ctrl."
     m_Metadata:
       m_Items: []
   - m_Id: 6418716410511360
@@ -274,8 +283,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418756222844928
-    m_Localized: "Metti in pausa il gioco in qualsiasi momento cliccando l\u2019icona
-      di pausa in alto a sinistra o premendo il tasto Pausa (predefinito: Barra Spaziatrice)."
+    m_Localized: "Le jeu peut \xEAtre mis en pause \xE0 tout moment en d\xE9clenchant
+      l\u2019\xE9v\xE9nement onClick du bouton pause (en haut \xE0 gauche) ou en
+      appuyant sur la touche pause (par d\xE9faut : Espace).\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6418783104139264
@@ -283,9 +293,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418846614290432
-    m_Localized: "Durante la partita, sul lato destro dello schermo vedrai sempre:\r\nPunteggio
-      Attuale: La tua altezza in tempo reale.\r\nRecord: La massima altezza mai raggiunta.\r\nCarburante:
-      La quantit\xE0 rimanente di carburante nel serbatoio."
+    m_Localized: "Durante la partita, il lato destro dello schermo mostra:\n- Punteggio
+      attuale: Altezza in tempo reale.\n- Punteggio salvato: Miglior altezza raggiunta.\n-
+      Quantit\xE0 di carburante: Valore attuale di currentFuel."
     m_Metadata:
       m_Items: []
   - m_Id: 6418875605319680
@@ -293,24 +303,22 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418934363324416
-    m_Localized: "Apri il menu impostazioni dal menu principale per:\r\n- Scegliere
-      la lingua dei testi sullo schermo\r\n- Regolare separatamente il volume della
-      musica e degli effetti sonori\r\n- Personalizzare l\u2019assegnazione dei tasti
-      per movimento, boost, sparo e pausa\r\n- Attivare o disattivare il boost di
-      partenza automatico\r\n"
+    m_Localized: "Apri il Panello Ctrl in Scena 0 per:\r\n- Selezionare le tabelle
+      di localizzazione.\r\n- Regolare separatamente BGMVolume e SFXVolume.\r\n-
+      Rimappare i binding per movimento orizzontale (\u2013xMov/+xMov), boost (+yMov)
+      e pausa (speed 0).\r\n- Attivare o disattivare le variabili start+yMov e tipsActive."
     m_Metadata:
       m_Items: []
   - m_Id: 6751468896911360
-    m_Localized: Eliminare i progressi?
+    m_Localized: Eliminare le chiavi PlayerPrefs?
     m_Metadata:
       m_Items: []
   - m_Id: 6751719573684224
-    m_Localized: "Sei sicuro di voler eliminare tutti i tuoi progressi? Questa azione
-      non pu\xF2 essere annullata."
+    m_Localized: Sei sicuro di voler eliminare le chiavi PlayerPrefs di gioco?
     m_Metadata:
       m_Items: []
   - m_Id: 6751744198443008
-    m_Localized: "S\xEC"
+    m_Localized: Conferma
     m_Metadata:
       m_Items: []
   - m_Id: 6751820652216320
@@ -318,7 +326,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6751853573308416
-    m_Localized: Conferma eliminazione
+    m_Localized: Conferma eliminazione chiavi PlayerPrefs
     m_Metadata:
       m_Items: []
   - m_Id: 6751976357363712
@@ -326,29 +334,36 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6752012029919232
-    m_Localized: Elimina tutto
+    m_Localized: Elimina
     m_Metadata:
       m_Items: []
   - m_Id: 6751933776789504
-    m_Localized: "Questo eliminer\xE0 tutti i tuoi successi in modo permanente. Non
-      sar\xE0 possibile recuperarli!"
+    m_Localized: "Questo eliminer\xE0 permanentemente tutte le tue chiavi PlayerPrefs
+      di gioco."
     m_Metadata:
       m_Items: []
   - m_Id: 6769556006633472
-    m_Localized: Tutti i tuoi progressi sono stati eliminati.
+    m_Localized: Le chiavi PlayerPrefs sono state eliminate.
     m_Metadata:
       m_Items: []
   - m_Id: 6819690010640384
-    m_Localized: Elimina progressi
+    m_Localized: Eliminare le chiavi PlayerPrefs
     m_Metadata:
       m_Items: []
   - m_Id: 8591763389284352
-    m_Localized: Suggerimenti in gioco
+    m_Localized: tipsActive
     m_Metadata:
       m_Items: []
   - m_Id: 8607735869341696
-    m_Localized: "Serbatoio razzo pieno \u2013 non puoi raccogliere altro carburante
-      per il boost."
+    m_Localized: if (maxFuel < currentFuel) currentFuel = maxFuel;
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10138025418817536
+    m_Localized: Oggetto giocatore
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10138053445156864
+    m_Localized: distrutto
     m_Metadata:
       m_Items: []
   references:

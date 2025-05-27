@@ -1427,44 +1427,62 @@ MonoBehaviour:
   tipText: {fileID: 1148850511}
   englishTips:
   - Score at least 400 to start your next game with a boost!
-  - Jump on the UFOs - they can be used as platforms too!
-  - Save your fuel and collect more to unleash a longer boost.
-  - Watch the arrows at the top - they warn you where the next UFOs are coming from.
-  - Boosting upward gives you enough power to destroy any UFOs in your way!
-  - Use your boost at the right moment - it might just save your life!
-  - Destroy the UFOs fast! If you don't, they'll turn into trouble later.
+  - "Jump on the UFO prefabs \u2014 they can make you rebound upward like the platform
+    prefabs!"
+  - Save your currentFuel value and collect more fuel prefabs to extend your potential
+    boost duration.
+  - "Watch the arrow prefabs at the top \u2014 they show the x-position of UFO prefabs
+    outside the Main Camera view."
+  - "Boosting upward gives you enough power to destroy any UFO prefab your Player
+    GameObject\u2019s Collider2D collides with!"
+  - "Use your boost at the right moment \u2014 it might save your Player GameObject
+    from being destroyed!"
+  - "Destroy the UFO prefabs quickly! If you don\u2019t, they\u2019ll cause trouble
+    later."
   germanTips:
-  - Erziele mindestens 400 Punkte, um das folgende Spiel mit einem Boost zu starten!
-  - Spring auf die UFOs - sie dienen auch als Plattformen!
-  - "Spare deinen Treibstoff und sammle mehr, um einen l\xE4ngeren Boost freizuschalten."
-  - Achte auf die Pfeile oben - sie zeigen, wo die folgenden UFOs auftauchen werden.
-  - "Ein Boost gibt dir genug Kraft, um alle UFOs auf deinem Weg zu zerst\xF6ren!"
-  - Setze deinen Boost im richtigen Moment ein - er kann dir das Leben retten!
-  - "Zerst\xF6re die UFOs schnell! Sonst werden sie sp\xE4ter zum Problem."
+  - Erziele mindestens 400 Punkte, um das folgende Spiel mit start+yMov zu starten!
+  - "Spring auf die UFO-Prefabs \u2013 sie k\xF6nnen dich wie Plattform-Prefabs nach
+    oben katapultieren!"
+  - "Spare deinen aktuellen currentFuel-Wert und sammle weitere Fuel-Prefabs, um
+    die m\xF6gliche Boost-Dauer zu verl\xE4ngern."
+  - "Beobachte die Pfeil-Prefabs oben \u2013 sie zeigen die x-Position von UFO-Prefabs
+    au\xDFerhalb des Sichtbereichs der Hauptkamera an."
+  - "Ein Boost nach oben verleiht dir genug Kraft, um jedes UFO-Prefab zu zerst\xF6ren,
+    mit dem der Collider2D deines Player-GameObjects kollidiert!"
+  - "Nutze den Boost im richtigen Moment \u2013 er k\xF6nnte dein Player-GameObject
+    vor der Zerst\xF6rung bewahren!"
+  - "Zerst\xF6re die UFO-Prefabs schnell! Wenn du das nicht tust, werden sie sp\xE4ter
+    zum Problem."
   italianTips:
-  - Ottieni almeno 400 punti per iniziare la tua prossima partita con un boost!
-  - Salta sugli UFO - possono essere usati anche come piattaforme!
-  - "Risparmia carburante e raccogline altro per poter scatenare un boost pi\xF9
-    lungo."
-  - Presta attenzione alle frecce in alto - ti avvisano da dove arriveranno i prossimi
-    UFO.
-  - Con un boost otterrai abbastanza potenza per distruggere tutti gli UFO sulla
-    tua strada!
-  - Usa il boost al momento giusto - potrebbe salvarti la vita!
-  - Distruggi gli UFO in fretta! Altrimenti, creeranno problemi piu tardi.
+  - Ottieni almeno 400 punti per iniziare la tua prossima partita con start+yMov!
+  - "Salta sui prefab UFO \u2014 possono farti rimbalzare verso l\u2019alto proprio
+    come i prefab piattaforma!"
+  - Conserva il valore attuale di currentFuel e raccogli altri prefab di carburante
+    per aumentare la durata potenziale del boost.
+  - "Guarda i prefab freccia in alto \u2014 mostrano la posizione x dei prefab UFO
+    fuori dalla vista della Main Camera."
+  - "Usare il boost verso l\u2019alto ti d\xE0 abbastanza potenza per distruggere
+    qualsiasi prefab UFO con cui il Collider2D del tuo Player GameObject entra in
+    collisione!"
+  - "Usa il boost al momento giusto \u2014 potrebbe salvare il tuo Player GameObject
+    dalla distruzione!"
+  - "Distruggi i prefab UFO rapidamente! Se non lo fai, diventeranno un problema
+    pi\xF9 avanti."
   frenchTips:
   - "Marquez au moins 400 points afin de d\xE9marrer votre prochaine partie avec
-    un boost !"
-  - 'Sautez sur les OVNIs : ils peuvent aussi servir de plateformes !'
-  - "\xC9conomisez votre carburant et collectez-en davantage pour d\xE9clencher un
-    boost plus long."
-  - "Regardez les fl\xE8ches apparaissant en haut : elles vous avertissent d\u2019o\xF9
-    viennent les prochains OVNIs."
-  - "En augmentant votre puissance, vous pouvez d\xE9truire tous les OVNIs sur votre
-    chemin !"
-  - 'Utilisez votre boost au bon moment : il pourrait bien vous sauver la vie !'
-  - "D\xE9truisez vite les OVNIs ! Sinon, ils vous poseront des probl\xE8mes plus
-    tard."
+    start+yMov !"
+  - "Saute sur les prefabs d\u2019UFO \u2014 ils peuvent te faire rebondir vers le
+    haut comme les prefabs de plateforme\u202F!"
+  - "Garde ta valeur actuelle de currentFuel et collecte d\u2019autres prefabs de
+    carburant pour prolonger la dur\xE9e potentielle de ton boost."
+  - "Regarde les prefabs fl\xE8ches en haut \u2014 ils indiquent la position x des
+    prefabs d\u2019UFO en dehors du champ de la cam\xE9ra principale."
+  - "Un boost vers le haut te donne assez de puissance pour d\xE9truire n\u2019importe
+    quel prefab d\u2019UFO que le Collider2D de ton Player GameObject touche\u202F!"
+  - "Utilise ton boost au bon moment \u2014 il pourrait sauver ton Player GameObject
+    de la destruction\u202F!"
+  - "D\xE9truis les prefabs d\u2019UFO rapidement\u202F! Sinon, ils te causeront
+    des ennuis plus tard."
 --- !u!1 &1507141415
 GameObject:
   m_ObjectHideFlags: 0

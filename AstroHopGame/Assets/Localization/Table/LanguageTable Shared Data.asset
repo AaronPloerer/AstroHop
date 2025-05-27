@@ -295,6 +295,14 @@ MonoBehaviour:
     m_Key: Game Tip FailedPickUp
     m_Metadata:
       m_Items: []
+  - m_Id: 10138025418817536
+    m_Key: GAME
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10138053445156864
+    m_Key: OVER
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

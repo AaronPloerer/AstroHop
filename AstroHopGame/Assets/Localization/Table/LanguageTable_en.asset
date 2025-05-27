@@ -19,175 +19,181 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 250128683237376
-    m_Localized: Play
+    m_Localized: Initialize Scene 1
     m_Metadata:
       m_Items: []
   - m_Id: 251612590243840
-    m_Localized: Settings
+    m_Localized: Cfg
     m_Metadata:
       m_Items: []
   - m_Id: 251672120000512
-    m_Localized: Help
+    m_Localized: Ref
     m_Metadata:
       m_Items: []
   - m_Id: 255831535779840
-    m_Localized: Close
+    m_Localized: setActive (false)
     m_Metadata:
       m_Items: []
   - m_Id: 255793631854592
-    m_Localized: Pause
+    m_Localized: speed 0
     m_Metadata:
       m_Items: []
   - m_Id: 255692297469952
-    m_Localized: Right
+    m_Localized: +xMov
     m_Metadata:
       m_Items: []
   - m_Id: 255191178805248
-    m_Localized: Language
+    m_Localized: Locale
     m_Metadata:
       m_Items: []
   - m_Id: 255316395556864
-    m_Localized: Audio Settings
+    m_Localized: AudCfg
     m_Metadata:
       m_Items: []
   - m_Id: 255330933014528
-    m_Localized: Music
+    m_Localized: BGM
     m_Metadata:
       m_Items: []
   - m_Id: 255492279500800
-    m_Localized: Sound Effects
+    m_Localized: SFX
     m_Metadata:
       m_Items: []
   - m_Id: 255530384752640
-    m_Localized: Controls
+    m_Localized: CtrlMap
     m_Metadata:
       m_Items: []
   - m_Id: 255597812383744
-    m_Localized: Boost
+    m_Localized: +yMov
     m_Metadata:
       m_Items: []
   - m_Id: 255648194363392
-    m_Localized: Left
+    m_Localized: -xMov
     m_Metadata:
       m_Items: []
   - m_Id: 264018280316928
-    m_Localized: Exit?
+    m_Localized: Terminate Runtime?
     m_Metadata:
       m_Items: []
   - m_Id: 264160769212416
-    m_Localized: Are you sure you want to exit the game?
+    m_Localized: Are you sure you want to terminate the active runtime process?
     m_Metadata:
       m_Items: []
   - m_Id: 264212656947200
-    m_Localized: Cancel
+    m_Localized: Abort
     m_Metadata:
       m_Items: []
   - m_Id: 264250174996480
-    m_Localized: Exit
+    m_Localized: Terminate Runtime
     m_Metadata:
       m_Items: []
   - m_Id: 267636408582144
-    m_Localized: Loading...
+    m_Localized: Initializing Scene...
     m_Metadata:
       m_Items: []
   - m_Id: 322286851719168
-    m_Localized: Main Menu
+    m_Localized: Initialize Scene 0
     m_Metadata:
       m_Items: []
   - m_Id: 322328677318656
-    m_Localized: Retry
+    m_Localized: Reinitialize
     m_Metadata:
       m_Items: []
   - m_Id: 322357261500416
-    m_Localized: Pause
+    m_Localized: speed 0
     m_Metadata:
       m_Items: []
   - m_Id: 322383782084608
-    m_Localized: No floor detected. Falling in Space.
+    m_Localized: Detected collision between objects tagged "Player" and "End".
     m_Metadata:
       m_Items: []
   - m_Id: 322549373206528
-    m_Localized: First contact went bad. Died on collision with UFO.
+    m_Localized: Detected collision between objects tagged "Player" and "Ufo".
     m_Metadata:
       m_Items: []
   - m_Id: 322758924828672
-    m_Localized: 'Score:'
+    m_Localized: 'Current Score:'
     m_Metadata:
       m_Items: []
   - m_Id: 323006443290624
-    m_Localized: 'High Score:'
+    m_Localized: 'Saved Score:'
     m_Metadata:
       m_Items: []
   - m_Id: 324972066111488
-    m_Localized: Cancel
+    m_Localized: Abort
     m_Metadata:
       m_Items: []
   - m_Id: 323144184233984
-    m_Localized: All progress will be lost.
+    m_Localized: This initialization of Scene 1 will be deleted.
     m_Metadata:
       m_Items: []
   - m_Id: 323276204146688
-    m_Localized: Retry?
+    m_Localized: Reinitialize?
     m_Metadata:
       m_Items: []
   - m_Id: 323298245214208
-    m_Localized: Main Menu?
+    m_Localized: Initialize Scene 0?
     m_Metadata:
       m_Items: []
   - m_Id: 335795706658816
-    m_Localized: Continue
+    m_Localized: speed 1
     m_Metadata:
       m_Items: []
   - m_Id: 604724567998464
-    m_Localized: "Don\u2019t fall out of the screen!\n<size=30><alpha=#80>Press [Alt]
-      to skip the tutorial.\n"
+    m_Localized: "Don\u2019t collide with the \"End\"-tagged object!\n<size=30><alpha=#80>Press
+      [Alt] to mark the tutorial as seen."
     m_Metadata:
       m_Items: []
   - m_Id: 604769543520256
-    m_Localized: "<color=#ECA800>Left-click <color=#FFFFFF>to <color=#ECA800>shoot
-      <color=#FFFFFFFF>towards the UFOs.\n<size=30><alpha=#80>Press [Alt] to skip
-      the tutorial. \n"
+    m_Localized: '<color=#ECA800>Left-click<color=#FFFFFF> on a UFO prefab to spawn
+      a <color=#ECA800>laser prefab<color=#FFFFFFFF> that moves toward it.
+
+      <size=30><alpha=#80>Press
+      [Alt] to mark the tutorial as seen.
+
+'
     m_Metadata:
       m_Items: []
   - m_Id: 604853593178112
-    m_Localized: 'Get Fuel to charge up your Rocket Boost.
+    m_Localized: 'Get fuel prefabs to increase fuel bar value.
 
       <size=30><alpha=#80>Press
-      [Alt] to skip the tutorial.'
+      [Alt] to mark the tutorial as seen.'
     m_Metadata:
       m_Items: []
   - m_Id: 604892465987584
-    m_Localized: '<color=#EC1321>Red <color=#FFFFFF>platforms break after a single
-      use.
+    m_Localized: '<color=#EC1321>Red <color=#FFFFFF>platform prefabs disable their
+      Collider2D after a single collision.
 
-      <size=30><alpha=#80>Press [Alt] to skip the tutorial.'
+      <size=30><alpha=#80>Press [Alt]
+      to mark the tutorial as seen.'
     m_Metadata:
       m_Items: []
   - m_Id: 604938443948032
-    m_Localized: '<color=#BE23FE>Purple <color=#FFFFFF>platforms move left and right.
+    m_Localized: '<color=#BE23FE>Purple <color=#FFFFFF>platform prefabs move back
+      and forth on the x-axis.
 
-      <size=30><alpha=#80>Press
-      [Alt] to skip the tutorial.'
+      <size=30><alpha=#80>Press [Alt] to skip the
+      tutorial.'
     m_Metadata:
       m_Items: []
   - m_Id: 4223074929999872
-    m_Localized: Starting Boost
+    m_Localized: start+yMov
     m_Metadata:
       m_Items: []
   - m_Id: 4225244228222976
-    m_Localized: General Settings
+    m_Localized: CoreCfg
     m_Metadata:
       m_Items: []
   - m_Id: 4225273508659200
-    m_Localized: Gameplay Settings
+    m_Localized: PlayCfg
     m_Metadata:
       m_Items: []
   - m_Id: 5320637074636800
-    m_Localized: Conflicting controls! Fix duplicates.
+    m_Localized: Fix key binding overlap!
     m_Metadata:
       m_Items: []
   - m_Id: 6408009740713984
-    m_Localized: "No fuel \u2013 collect tanks for rocket boost."
+    m_Localized: isBoostingWithKey = currentFuel > 0;
     m_Metadata:
       m_Items: []
   - m_Id: 6417898709975040
@@ -195,16 +201,20 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418067216138240
-    m_Localized: "Jump up using the floating platforms scattered through space. \r\nYou
-      bounce automatically and must move left or right to land on the platforms above.
-      If you miss a platform and fall past the bottom edge of the screen, or collide
-      with a UFO from the bottom or side, it's game over. \r\nGo as high as you can
-      to achieve the highest score possible.\r\n"
+    m_Localized: "You move upward colliding with platform prefab objects, instantiated
+      across the game environment. Negative vertical force is constant, set by the
+      gravity scale of the Rigidbody component of the player object. Upward propulsion
+      occurs upon collision from above with a GameObject tagged \u201CPlatform.\u201D
+      Horizontal movement input is necessary to align with the platforms above. \r\nIf
+      the player object collides with a GameObject tagged \u201CEnd\u201D or hits
+      a GameObject tagged \u201CUFO\u201D from the side or bottom, it will be destroyed.
+      \r\nReach the highest y-coordinate you can to achieve the highest score possible.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6418170840612864
-    m_Localized: 'Use your left/right movement keys (default: A/D or Left Arrow/Right
-      Arrow) to move toward your upcoming landing platforms.'
+    m_Localized: 'Use your horizontal-axis movement input keys (default: A/D or Left
+      Arrow/Right Arrow) to translate along the x-axis toward the platform prefab
+      you want to collide with next.'
     m_Metadata:
       m_Items: []
   - m_Id: 6418097113137152
@@ -220,9 +230,10 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418301782589440
-    m_Localized: "Platforms come in three varieties:\r\n- Green: Static and permanent.\r\n-
-      Red: Break after a single landing, so they can only be used once.\r\n- Purple:
-      Move left and right at a constant pace.\r"
+    m_Localized: "There are three platform prefabs:\r\n- HEX color #00fe0c: No changes
+      to the Transform and Edge Collider 2D components.\r\n- HEX color #ec1321: Collider2D
+      is disabled after a single use.\r\n- HEX color #be23fe: Moves left and right
+      at a constant pace.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6418419743195136
@@ -230,25 +241,26 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418451519242240
-    m_Localized: "UFOs slowly hover downward, following your horizontal position.
-      Before they appear on screen, an arrow at the top of the screen warns you from
-      which direction they are coming from. Colliding with one from below or the
-      side ends your run. \r\nHowever, you have three ways to eliminate them:\r\n-
-      Stomp Attack: Jump on top of a UFO to destroy it. You\u2019ll bounce off as
-      if landing on a platform.\r\n- Laser Shot: Click the left mouse button toward
-      your target. A laser beam fires from your position in the cursor\u2019s direction
-      and destroys a UFO if it hits.\r\n- Rocket Boost: Use a boost to destroy any
-      UFO you collide with while thrusting upward.\r"
+    m_Localized: "UFO prefabs descend downward and move toward the player\u2019s
+      x-coordinate. Before a UFO prefab enters the camera\u2019s view, an arrow prefab
+      is spawned at the top of the screen to indicate its x-position. Colliding with
+      a UFO prefab from below or the side ends your run. However, you can destroy
+      them in three ways:\r\n- Stomp Attack: Collide from above with a UFO prefab
+      to destroy it. You\u2019ll rebound upward as if you hit a platform.\r\n- Laser
+      Shot: Left-click on a UFO prefab. A laser beam fires from the player\u2019s
+      position toward the cursor and destroys the UFO on impact.\r\n- Boost: Use
+      a boost to destroy any UFO prefab you collide with while ascending."
     m_Metadata:
       m_Items: []
   - m_Id: 6419343605760000
-    m_Localized: "You carry a rocket for vertical boosting. If it contains fuel,
-      hold the Boost key (default: W or Up Arrow) to fly upward. To refuel, jump
-      into fuel tanks that spawn on certain platforms. \r\nWhile boosting, your fuel
-      drains at a constant rate, but each boost phase consumes at least 10% of your
-      total tank - if less than 10% is left, the rest is consumed completely.\r\nUse
-      rocket boosts to correct missed landings or reach higher ledges - but remember,
-      you must collect fuel to use it again."
+    m_Localized: "You carry a rocket for upward movement boosts. If currentFuel >
+      0, hold the +yMov input key (default: W or Up Arrow) to move positively in
+      the y-direction. To increase the fuel value, collide with \u201CFuel\u201D-tagged
+      GameObjects, which spawn on select platforms. \r\nWhile boosting, your fuel
+      value decreases at a constant rate, but each key press decreases at least 10
+      % of maxFuel. If currentFuel \u2264 10 %, the next key press reduces the fuel
+      value to 0. \r\nUse rocket boosts to correct missed landings or reach higher
+      ledges.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6418570339680256
@@ -256,14 +268,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418756222844928
-    m_Localized: 'The game can be paused at any time by clicking the pause button
-      in the top-left corner or by pressing the Pause key (default: Spacebar).'
+    m_Localized: 'The gameplay can be paused at any time by triggering the onClick
+      event of the pause button (top-left corner) or pressing the pause key (default:
+      Spacebar).'
     m_Metadata:
       m_Items: []
   - m_Id: 6418695137001472
-    m_Localized: After scoring 400 or more, you unlock an automatic starting boost
-      on your next run, which launches you up to 50% of your previous score. You
-      can toggle this feature on or off in Settings.
+    m_Localized: After scoring 400 points or more, the variable start+yMov is set
+      to true on your next run, launching you to 50% of your previous high score.
+      You can enable or disable this feature in the Ctrl Panel.
     m_Metadata:
       m_Items: []
   - m_Id: 6418716410511360
@@ -275,10 +288,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418846614290432
-    m_Localized: "During a game, on the right side of the screen, you\u2019ll always
-      see:\r\n- Current Score: Your real-time height score.\r\n- High Score: The
-      best height score you\u2019ve ever reached.\r\n- Fuel Amount: Your remaining
-      rocket fuel.\r"
+    m_Localized: "During gameplay, the right side of the screen displays:\r\n- Current
+      Score: Real-time height score.\r\n- Saved Score: Best height score.\r\n- Fuel
+      Amount: Real-time currentFuel value.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6418875605319680
@@ -286,60 +298,68 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418934363324416
-    m_Localized: "Open the Settings menu from the Main Menu to:\r\n- Choose the language
-      of the on-screen texts\r\n- Adjust the volume of music and sound effects separately\r\n\r-
-      Customize the key bindings for movement, boost, shooting, and pause\r\n\r-
-      Enable or disable the automatic start boost\r\n"
+    m_Localized: "Open the Control Panel in Scene 0 to:\r\n- Select Localization
+      Tables.\r\n- Adjust BGMVolume and SFXVolume separately.\r\n- Remap input bindings
+      for horizontal movement (-xMov/+xMov), boost activation (+yMov), and pause
+      (speed 0).\r\n- Enable and disable the start+yMov and the tipsActive variables.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6751468896911360
-    m_Localized: Delete Progress?
+    m_Localized: Delete PlayerPrefs keys?
     m_Metadata:
       m_Items: []
   - m_Id: 6751719573684224
-    m_Localized: Are you sure you want to delete all your progress? This cannot be
-      undone.
+    m_Localized: Are you sure you want to delete your gameplay playerprefs keys?
+      This cannot be undone.
     m_Metadata:
       m_Items: []
   - m_Id: 6751744198443008
-    m_Localized: Yes
+    m_Localized: Confirm
     m_Metadata:
       m_Items: []
   - m_Id: 6751820652216320
-    m_Localized: Cancel
+    m_Localized: Abort
     m_Metadata:
       m_Items: []
   - m_Id: 6751853573308416
-    m_Localized: Confirm Delete
+    m_Localized: Confirm Delete PlayerPrefs keys
     m_Metadata:
       m_Items: []
   - m_Id: 6751933776789504
-    m_Localized: This will permanently delete all your achievements. There is no
-      way to recover them!
+    m_Localized: This will permanently delete all your gameplay playerprefs keys.
+      There is no way to recover them!
     m_Metadata:
       m_Items: []
   - m_Id: 6751976357363712
-    m_Localized: Cancel
+    m_Localized: Abort
     m_Metadata:
       m_Items: []
   - m_Id: 6752012029919232
-    m_Localized: Delete Everything
+    m_Localized: 'Delete '
     m_Metadata:
       m_Items: []
   - m_Id: 6769556006633472
-    m_Localized: All your progress has been deleted.
+    m_Localized: PlayerPrefs keys have been deleted.
     m_Metadata:
       m_Items: []
   - m_Id: 6819690010640384
-    m_Localized: Delete Progress
+    m_Localized: Delete PlayerPrefs keys
     m_Metadata:
       m_Items: []
   - m_Id: 8591763389284352
-    m_Localized: In-Game Tips
+    m_Localized: tipsActive
     m_Metadata:
       m_Items: []
   - m_Id: 8607735869341696
-    m_Localized: "Rocket tank full \u2013 cannot collect more fuel."
+    m_Localized: if (maxFuel < currentFuel) currentFuel = maxFuel;
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10138025418817536
+    m_Localized: Player Object
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10138053445156864
+    m_Localized: Destroyed
     m_Metadata:
       m_Items: []
   references:

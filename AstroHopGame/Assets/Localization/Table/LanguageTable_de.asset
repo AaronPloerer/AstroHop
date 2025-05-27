@@ -19,63 +19,63 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 250128683237376
-    m_Localized: Spielen
+    m_Localized: Szene 1 initialisieren
     m_Metadata:
       m_Items: []
   - m_Id: 251612590243840
-    m_Localized: Einstellungen
+    m_Localized: Cfg
     m_Metadata:
       m_Items: []
   - m_Id: 251672120000512
-    m_Localized: Hilfe
+    m_Localized: Ref
     m_Metadata:
       m_Items: []
   - m_Id: 255191178805248
-    m_Localized: Sprache
+    m_Localized: Locale
     m_Metadata:
       m_Items: []
   - m_Id: 255316395556864
-    m_Localized: Audioeinstellungen
+    m_Localized: AudCfg
     m_Metadata:
       m_Items: []
   - m_Id: 255330933014528
-    m_Localized: Musik
+    m_Localized: BGM
     m_Metadata:
       m_Items: []
   - m_Id: 255492279500800
-    m_Localized: Soundeffekte
+    m_Localized: SFX
     m_Metadata:
       m_Items: []
   - m_Id: 255530384752640
-    m_Localized: Steuerungen
+    m_Localized: CtrlMap
     m_Metadata:
       m_Items: []
   - m_Id: 255597812383744
-    m_Localized: Boost
+    m_Localized: +yMov
     m_Metadata:
       m_Items: []
   - m_Id: 255648194363392
-    m_Localized: Links
+    m_Localized: -xMov
     m_Metadata:
       m_Items: []
   - m_Id: 255692297469952
-    m_Localized: Rechts
+    m_Localized: +xMov
     m_Metadata:
       m_Items: []
   - m_Id: 255793631854592
-    m_Localized: Pause
+    m_Localized: Geschwindigkeit 0
     m_Metadata:
       m_Items: []
   - m_Id: 255831535779840
-    m_Localized: "Schlie\xDFen"
+    m_Localized: setActive (false)
     m_Metadata:
       m_Items: []
   - m_Id: 264018280316928
-    m_Localized: Beenden?
+    m_Localized: Laufzeit beenden?
     m_Metadata:
       m_Items: []
   - m_Id: 264160769212416
-    m_Localized: "M\xF6chtest du das Spiel wirklich beenden?"
+    m_Localized: "M\xF6chtest du den laufenden Prozess wirklich beenden?"
     m_Metadata:
       m_Items: []
   - m_Id: 264212656947200
@@ -83,31 +83,31 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 264250174996480
-    m_Localized: Beenden
+    m_Localized: Laufzeit beenden
     m_Metadata:
       m_Items: []
   - m_Id: 267636408582144
-    m_Localized: "L\xE4dt..."
+    m_Localized: "Szene wird initialisiert\u2026"
     m_Metadata:
       m_Items: []
   - m_Id: 322286851719168
-    m_Localized: "Hauptmen\xFC"
+    m_Localized: Szene 0 initialisieren
     m_Metadata:
       m_Items: []
   - m_Id: 322328677318656
-    m_Localized: Nochmal versuchen
+    m_Localized: Neu initialisieren
     m_Metadata:
       m_Items: []
   - m_Id: 322357261500416
-    m_Localized: Pause
+    m_Localized: Geschwindigkeit 0
     m_Metadata:
       m_Items: []
   - m_Id: 322758924828672
-    m_Localized: 'Punktzahl:'
+    m_Localized: 'Aktuelle Punktezahl:'
     m_Metadata:
       m_Items: []
   - m_Id: 323006443290624
-    m_Localized: Rekord
+    m_Localized: 'Gespeicherter Punktezahl:'
     m_Metadata:
       m_Items: []
   - m_Id: 324972066111488
@@ -115,74 +115,78 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 323144184233984
-    m_Localized: Alle Fortschritte gehen verloren.
+    m_Localized: "Diese Initialisierung von Szene 1 wird gel\xF6scht."
     m_Metadata:
       m_Items: []
   - m_Id: 323276204146688
-    m_Localized: Nochmal versuchen?
+    m_Localized: Neu initialisieren?
     m_Metadata:
       m_Items: []
   - m_Id: 323298245214208
-    m_Localized: "Hauptmen\xFC?"
+    m_Localized: Szene 0 initialisieren?
     m_Metadata:
       m_Items: []
   - m_Id: 322549373206528
-    m_Localized: Erster Kontakt gescheitert. Tod durch UFO-Kollision.
+    m_Localized: "Kollision zwischen Objekten mit den Tags \u201EPlayer\u201C und
+      \u201EUfo\u201C erkannt."
     m_Metadata:
       m_Items: []
   - m_Id: 322383782084608
-    m_Localized: Kein Boden erkannt. Fallen im Weltraum.
+    m_Localized: "Kollision zwischen Objekten mit den Tags \u201EPlayer\u201C und
+      \u201EEnd\u201C erkannt."
     m_Metadata:
       m_Items: []
   - m_Id: 335795706658816
-    m_Localized: Fortsetzen
+    m_Localized: Geschwindigkeit 1
     m_Metadata:
       m_Items: []
   - m_Id: 604724567998464
-    m_Localized: "Fall nicht aus dem Bild!\n<size=30><alpha=#80>Dr\xFCcke [Alt],
-      um das Tutorial zu \xFCberspringen."
+    m_Localized: "Kollidiere nicht mit dem Objekt, das mit \u201EEnd\u201C getaggt
+      ist!\n<size=30><alpha=#80>Dr\xFCcke [Alt], um das Tutorial als gesehen zu markieren."
     m_Metadata:
       m_Items: []
   - m_Id: 604769543520256
-    m_Localized: "Klick die <color=#ECA800>Linkstaste <color=#FFFFFF>um auf die UFOs
-      zu <color=#ECA800>schie\xDFen<color=#FFFFFF>.\n<size=30><alpha=#80>Dr\xFCcke
-      [Alt], um das Tutorial zu \xFCberspringen."
+    m_Localized: "<color=#ECA800>Linksklick<color=#FFFFFF> auf ein UFO-Prefab, um
+      ein <color=#ECA800>Laser-Prefab<color=#FFFFFFFF> zu erzeugen, das sich darauf
+      zubewegt.\n<size=30><alpha=#80>Dr\xFCcke [Alt], um das Tutorial als gesehen
+      zu markieren."
     m_Metadata:
       m_Items: []
   - m_Id: 604853593178112
-    m_Localized: "Sammle Treibstoff, um deinen Raketenboost aufzuladen.\n<size=30><alpha=#80>Dr\xFCcke
-      [Alt], um das Tutorial zu \xFCberspringen."
+    m_Localized: "Sammle Treibstoff-Prefabs, um den Tankbalken zu f\xFCllen.\n<size=30><alpha=#80>Dr\xFCcke
+      [Alt], um das Tutorial als gesehen zu markieren."
     m_Metadata:
       m_Items: []
   - m_Id: 604892465987584
-    m_Localized: "<color=#EC1321>Rote <color=#FFFFFF>Plattformen zerbrechen nach
-      einmaliger Nutzung.\n<size=30><alpha=#80>Dr\xFCcke [Alt], um das Tutorial zu
-      \xFCberspringen."
+    m_Localized: "<color=#EC1321>Rote <color=#FFFFFF>Plattform-Prefabs deaktivieren
+      ihren Collider2D nach einer einzigen Kollision.\n<size=30><alpha=#80>Dr\xFCcke
+      [Alt], um das Tutorial als gesehen zu markieren."
     m_Metadata:
       m_Items: []
   - m_Id: 604938443948032
-    m_Localized: "<color=#BE23FE>Lila <color=#FFFFFF>Plattformen bewegen sich links
-      und rechts.\n<size=30><alpha=#80>Dr\xFCcke [Alt], um das Tutorial zu \xFCberspringen."
+    m_Localized: "Lila <color=#FFFFFF>Plattform-Prefabs bewegen sich entlang der
+      x-Achse vor und zur\xFCck.\n<size=30><alpha=#80>Dr\xFCcke [Alt], um das Tutorial
+      als gesehen zu markieren."
     m_Metadata:
       m_Items: []
   - m_Id: 4223074929999872
-    m_Localized: Start-Boost
+    m_Localized: start+yMov
     m_Metadata:
       m_Items: []
   - m_Id: 4225244228222976
-    m_Localized: Allgemeine Einstellungen
+    m_Localized: CoreCfg
     m_Metadata:
       m_Items: []
   - m_Id: 4225273508659200
-    m_Localized: Spieleinstellungen
+    m_Localized: PlayCfg
     m_Metadata:
       m_Items: []
   - m_Id: 5320637074636800
-    m_Localized: Konflikt! Doppelte Tasten.
+    m_Localized: "\xDCberschneidende Tastenbelegung beheben!"
     m_Metadata:
       m_Items: []
   - m_Id: 6408009740713984
-    m_Localized: "Kein Treibstoff \u2013 sammle Tanks f\xFCr Raketenboost."
+    m_Localized: isBoostingWithKey = currentFuel > 0;
     m_Metadata:
       m_Items: []
   - m_Id: 6417898709975040
@@ -190,12 +194,16 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418067216138240
-    m_Localized: "Springe mit Hilfe der im Weltraum verteilten, schwebenden Plattformen
-      immer h\xF6her. \r\nDu h\xFCpfst automatisch und musst dich nach links oder
-      rechts bewegen, um auf den oberen Plattformen zu landen. Verfehlst du eine
-      Plattform und f\xE4llst aus dem Bildschirm oder kollidierst du von unten oder
-      der Seite mit einem UFO, ist das Spiel vorbei. \r\nSteige so hoch wie m\xF6glich,
-      um die h\xF6chste Punktzahl wie m\xF6glich zu erreichen.\r"
+    m_Localized: "Du bewegst dich nach oben, indem du mit Plattform-Prefabs kollidierst,
+      die in der Spielwelt instanziiert werden. Die negative vertikale Kraft ist
+      konstant und wird durch den Gravity Scale der Rigidbody-Komponente des Spieler-Objekts
+      festgelegt. Nach oben wirst du katapultiert, wenn du von oben mit einem GameObject
+      mit dem Tag \u201EPlatform\u201C kollidierst. Horizontale Bewegungseingaben
+      sind notwendig, um dich mit den Plattformen oberhalb auszurichten. \r\nKollisionen
+      mit einem GameObject mit dem Tag \u201EEnd\u201C oder seitlich/unterhalb mit
+      einem GameObject mit dem Tag \u201EUFO\u201C zerst\xF6ren dein Objekt.\r\nErreiche
+      die h\xF6chstm\xF6gliche y-Koordinate, um die bestm\xF6gliche Punktzahl zu
+      erzielen."
     m_Metadata:
       m_Items: []
   - m_Id: 6418097113137152
@@ -203,8 +211,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418170840612864
-    m_Localized: "Nutze die Bewegungstasten (Standard: A/D oder die Pfeiltasten links/rechts),
-      um dich auf die n\xE4chsten Plattformen zu bewegen."
+    m_Localized: "Verwende deine horizontalen Bewegungstasten (Standard: A/D oder
+      Pfeil links/rechts), um dich entlang der x-Achse zur n\xE4chsten Plattform-Prefab
+      zu bewegen."
     m_Metadata:
       m_Items: []
   - m_Id: 6418195234684928
@@ -212,14 +221,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6419343605760000
-    m_Localized: "Deine Rakete erm\xF6glicht es dir, nach oben zu boosten. Wenn Treibstoff
-      im Tank ist, halte die Boost-Taste gedr\xFCckt (Standard: W oder Pfeiltaste
-      nach oben), um zu fliegen. Springe zum Auftanken auf Plattformen mit Treibstofftanks.
-      \r\nW\xE4hrend eines Boosts wird dein Treibstoff kontinuierlich verbraucht,
-      aber jede Boost-Phase verbraucht mindestens 10\u202F% deines gesamten Tanks
-      - sind weniger als 10\u202F% \xFCbrig, wird der Rest komplett verbraucht. \r\nNutze
-      den Boost, um verpasste Landungen zu korrigieren oder h\xF6here Plattformen
-      zu erreichen - aber tanke auf, um ihn erneut einsetzen zu k\xF6nnen.\r"
+    m_Localized: "Du tr\xE4gst eine Rakete f\xFCr Aufw\xE4rts-Boosts. Wenn currentFuel
+      > 0, halte die +yMov-Taste (Standard: W oder Pfeil nach oben) gedr\xFCckt,
+      um dich in positiver y-Richtung zu bewegen. Um den Treibstoffwert zu erh\xF6hen,
+      kollidiere mit einem GameObject mit dem Tag \u201EFuel\u201C, das auf ausgew\xE4hlten
+      Plattformen erscheint.\r\nW\xE4hrend des Boosts sinkt dein Treibstoffwert konstant,
+      aber jeder Tastendruck verringert ihn um mindestens 10 % von maxFuel. Liegt
+      currentFuel \u2264 10 %, setzt der n\xE4chste Tastendruck den Wert auf 0.\r\nNutze
+      Raketen-Boosts, um verfehlte Landungen auszugleichen oder h\xF6here Vorspr\xFCnge
+      zu erreichen.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6418291280052224
@@ -227,9 +237,10 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418301782589440
-    m_Localized: "Plattformen gibt es in drei Varianten:\n- Gr\xFCn: Statisch und
-      dauerhaft.\r\n- Rot: Zerbricht nach einem Sprung \u2013 nur einmal nutzbar.\r\n-
-      Lila: Bewegt sich konstant nach links und rechts."
+    m_Localized: "Es gibt drei Plattform-Prefabs:\r\n- HEX-Farbcode #00fe0c: Keine
+      \xC4nderungen an den Transform- und Edge Collider 2D-Komponenten.\r\n- HEX-Farbcode
+      #ec1321: Der Collider 2D wird nach einmaliger Nutzung deaktiviert.\r\n- HEX-Farbcode
+      #be23fe: Bewegt sich mit konstanter Geschwindigkeit nach links und rechts."
     m_Metadata:
       m_Items: []
   - m_Id: 6418419743195136
@@ -237,14 +248,16 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418451519242240
-    m_Localized: "UFOs schweben langsam nach unten und verfolgen deine horizontale
-      Position. Bevor sie auf dem Bildschirm erscheinen, zeigt ein Pfeil am oberen
-      Rand an, aus welcher Richtung sie kommen. Eine Kollision von unten oder von
-      der Seite beendet deinen Lauf.\r\nDu kannst UFOs jedoch auf drei Arten vernichten:\r\n-
-      Sprung: Springe auf einem UFO wie auf einer Plattform, um es zu zerst\xF6ren.\r\n-
-      Laserschuss: Klicke mit der linken Maustaste in Zielrichtung. Ein Laserstrahl
-      zerst\xF6rt das UFO, wenn es getroffen wird.\r\n- Raketenschub: Fliege mit
-      einem Boost in ein UFO hinein, um es zu vernichten."
+    m_Localized: "UFO-Prefabs bewegen sich nach unten und auf die x-Position des
+      Spielers zu. Bevor ein UFO in den Kamerabereich eintritt, wird oben in der
+      Kameraansicht ein Arrow-Prefab erzeugt, das seine x-Position anzeigt. Eine
+      Kollision mit einem UFO-Prefab von unten oder der Seite beendet deinen Lauf.
+      Du kannst sie jedoch auf drei Arten zerst\xF6ren:\r\n- Stomp Attack: Kollidiere
+      von oben mit einem UFO-Prefab, um es zu zerst\xF6ren. Du prallst dabei wie
+      auf einer Plattform wieder nach oben.\r \n- Laser Shot: Linksklick auf ein
+      UFO-Prefab. Ein Laserstrahl wird von der Spielerposition in Richtung des Mauszeigers
+      abgefeuert und zerst\xF6rt das UFO bei Treffer.\r\n- Rocket Boost: Nutze einen
+      Boost, um jedes UFO-Prefab zu zerst\xF6ren, mit dem du kollidierst.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6418570339680256
@@ -254,8 +267,8 @@ MonoBehaviour:
   - m_Id: 6418695137001472
     m_Localized: "Ab einem Punktestand von 400 schaltest du beim n\xE4chsten Lauf
       einen automatischen Start-Boost frei, der dich bis zu 50\u202F% der H\xF6he
-      deines letzten Spiels nach oben katapultiert. In den Einstellungen kannst du
-      diese Funktion ein- oder ausschalten."
+      deines letzten Spiels nach oben katapultiert. Auf dem Ctrl Feld kannst du diese
+      Funktion ein- oder ausschalten."
     m_Metadata:
       m_Items: []
   - m_Id: 6418716410511360
@@ -263,8 +276,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418756222844928
-    m_Localized: "Pausiere das Spiel jederzeit \xFCber das Pausensymbol oben links
-      oder die Pausetaste (Standard: Leertaste)."
+    m_Localized: "Das Spiel kann jederzeit pausiert werden, indem das onClick-Event
+      des Pausen-Buttons (oben links) ausgel\xF6st oder die Pause-Taste (Standard:
+      Leertaste) gedr\xFCckt wird.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6418783104139264
@@ -272,10 +286,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418846614290432
-    m_Localized: "W\xE4hrend des Spiels siehst du auf der rechten Seite des Bildschirms
-      stets:\r\n- Aktueller Punktestand: Deine aktuelle H\xF6he in Echtzeit.\r\n-
-      Rekord: Die h\xF6chste H\xF6he, die du je erreicht hast. \n- Treibstoffvorrat:
-      Dein verbleibender Raketentreibstoff.\r\n"
+    m_Localized: "W\xE4hrend des Spiels zeigt die rechte Seite an.\n- Aktueller Punktestand:
+      Echtzeit-H\xF6henwert.\n- Gespeicherter Punktestand: Bester H\xF6henwert.\n-
+      Treibstoffmenge: Aktueller currentFuel-Wert."
     m_Metadata:
       m_Items: []
   - m_Id: 6418875605319680
@@ -283,23 +296,23 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418934363324416
-    m_Localized: "\xD6ffne im Hauptmen\xFC das Einstellungsmen\xFC um:\r\n- Die Sprache
-      der On-Screen-Texte w\xE4hlen\r\n- Die Lautst\xE4rke von Musik und Soundeffekten
-      getrennt anpassen\r\n- Die Tastenbelegung f\xFCr Bewegung, Schub, Schuss und
-      Pause anpassen\r\n- Den automatischen Start-Boost zu aktivieren/deaktivieren\r\n"
+    m_Localized: "\xD6ffne das Ctrl Feld in Szene 0, um:\r\n- Lokalisierungstabellen
+      auszuw\xE4hlen.\r\n- BGMVolume und SFXVolume separat anzupassen.\r\n- Eingabebelegungen
+      f\xFCr horizontale Bewegung (\u2013xMov/+xMov), Boost ( +yMov) und Pause (speed
+      0) neu zuzuordnen.\r\n- Die Variablen start+yMov und tipsActive ein-/auszuschalten.\r\n"
     m_Metadata:
       m_Items: []
   - m_Id: 6751468896911360
-    m_Localized: "Fortschritt l\xF6schen?"
+    m_Localized: "PlayerPrefs-Schl\xFCssel l\xF6schen?"
     m_Metadata:
       m_Items: []
   - m_Id: 6751719573684224
-    m_Localized: "Bist du sicher, dass du alle dein Fortschritt l\xF6schen m\xF6chtest?
-      Dies kann nicht r\xFCckg\xE4ngig gemacht werden."
+    m_Localized: "M\xF6chtest du deine Gameplay-PlayerPrefs-Schl\xFCssel wirklich
+      l\xF6schen?"
     m_Metadata:
       m_Items: []
   - m_Id: 6751744198443008
-    m_Localized: Ja
+    m_Localized: "Best\xE4tigen"
     m_Metadata:
       m_Items: []
   - m_Id: 6751820652216320
@@ -307,12 +320,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6751853573308416
-    m_Localized: "L\xF6schen best\xE4tigen"
+    m_Localized: "PlayerPrefs-Schl\xFCssel L\xF6schen best\xE4tigen"
     m_Metadata:
       m_Items: []
   - m_Id: 6751933776789504
-    m_Localized: "Dies l\xF6scht alle deine Erfolge unwiderruflich. Sie k\xF6nnen
-      nicht wiederhergestellt werden!"
+    m_Localized: "Dies wird alle Gameplay-PlayerPrefs-Schl\xFCssel dauerhaft l\xF6schen."
     m_Metadata:
       m_Items: []
   - m_Id: 6751976357363712
@@ -320,24 +332,31 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6752012029919232
-    m_Localized: "Alles l\xF6schen"
+    m_Localized: "L\xF6schen"
     m_Metadata:
       m_Items: []
   - m_Id: 6769556006633472
-    m_Localized: "All dein Fortschritt wurde gel\xF6scht."
+    m_Localized: "PlayerPrefs-Schl\xFCssel wurden gel\xF6scht."
     m_Metadata:
       m_Items: []
   - m_Id: 6819690010640384
-    m_Localized: "Fortschritt l\xF6schen"
+    m_Localized: "PlayerPrefs-Schl\xFCssel l\xF6schen"
     m_Metadata:
       m_Items: []
   - m_Id: 8591763389284352
-    m_Localized: "In\u2011Game\u2011Tipps"
+    m_Localized: tipsActive
     m_Metadata:
       m_Items: []
   - m_Id: 8607735869341696
-    m_Localized: "Raketentank voll \u2013 kann keinen weiteren Treibstoff f\xFCr
-      den Boost aufnehmen."
+    m_Localized: if (maxFuel < currentFuel) currentFuel = maxFuel;
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10138025418817536
+    m_Localized: 'Player-Objekt '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10138053445156864
+    m_Localized: "Zerst\xF6rt"
     m_Metadata:
       m_Items: []
   references:
