@@ -143,7 +143,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8483051222464998911, guid: 35735abcdb03f8147b7d797188c649d1, type: 3}
+  m_Sprite: {fileID: 6492437937301083319, guid: c102fd991632fb646b20cffee4e6f3cc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -209,7 +209,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57d34d8629d8cd84fbda303a2b1af87f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserCollider: {fileID: 3727972690639314713, guid: 945378ec4f6790e4c8c71a510d2265ec, type: 3}
   rocketFuel: {fileID: 5993806398105575849, guid: 3262db29b2c9ead4a9bdbad9a5707b32, type: 3}
   leftFuelPoint: {fileID: 6756487866187003615}
   rightFuelPoint: {fileID: 803751244965955082}
