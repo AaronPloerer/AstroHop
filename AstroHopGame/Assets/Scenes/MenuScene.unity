@@ -635,13 +635,13 @@ MonoBehaviour:
   m_Options:
     m_Options:
     - m_Text: Locale 0
-      m_Image: {fileID: 6762134451966203949, guid: 75051eb108651fe44b9dda214a83318a, type: 3}
+      m_Image: {fileID: 4568551233179320377, guid: 24589ba8b1d604249b25cb392b62abd8, type: 3}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
     - m_Text: Locale 1
-      m_Image: {fileID: 1702800583035370182, guid: 75051eb108651fe44b9dda214a83318a, type: 3}
+      m_Image: {fileID: -1989878591166186389, guid: 24589ba8b1d604249b25cb392b62abd8, type: 3}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
     - m_Text: Locale 2
-      m_Image: {fileID: 67773501451282883, guid: 75051eb108651fe44b9dda214a83318a, type: 3}
+      m_Image: {fileID: 3670391032272798491, guid: 24589ba8b1d604249b25cb392b62abd8, type: 3}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
     - m_Text: Locale 3
       m_Image: {fileID: -2420447938425561734, guid: 75051eb108651fe44b9dda214a83318a, type: 3}
