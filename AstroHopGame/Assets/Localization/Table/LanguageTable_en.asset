@@ -154,7 +154,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 604853593178112
-    m_Localized: 'Get fuel prefabs to increase fuel bar value.
+    m_Localized: 'Get stopwatch prefabs to increase fuel bar value.
 
       <size=30><alpha=#80>Press
       [Alt] to mark the tutorial as seen.'
