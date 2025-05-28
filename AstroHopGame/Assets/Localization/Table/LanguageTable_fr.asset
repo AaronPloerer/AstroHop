@@ -147,8 +147,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 604769543520256
-    m_Localized: "<color=#ECA800>Clique gauche<color=#FFFFFF> sur un prefab UFO pour
-      g\xE9n\xE9rer un <color=#ECA800>prefab laser<color=#FFFFFFFF> qui se d\xE9place
+    m_Localized: "<color=#ECA800>Clique gauche<color=#FFFFFF> sur un prefab m\xE9t\xE9orite
+      pour g\xE9n\xE9rer un <color=#ECA800>prefab laser<color=#FFFFFFFF> qui se d\xE9place
       vers lui.\n<size=30><alpha=#80>Appuyez sur [Alt] pour marquer le tutoriel comme
       vu."
     m_Metadata:
@@ -233,21 +233,22 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418419743195136
-    m_Localized: "M\xE9canique des OVNI"
+    m_Localized: "M\xE9canique des m\xE9t\xE9orites"
     m_Metadata:
       m_Items: []
   - m_Id: 6418451519242240
-    m_Localized: "Les prefabs UFO descendent vers le bas et se dirigent vers la coordonn\xE9e
-      x du joueur. Avant qu\u2019un prefab UFO n\u2019entre dans le champ de la cam\xE9ra,
-      un prefab Arrow appara\xEEt en haut de l\u2019\xE9cran pour indiquer sa position
-      x. Entrer en collision avec un prefab UFO par en dessous ou sur le c\xF4t\xE9
-      met fin \xE0 votre partie. Vous pouvez cependant les d\xE9truire de trois mani\xE8res
-      :\r\n- Stomp Attack : Entrez en collision par le dessus avec un prefab UFO
+    m_Localized: "Les prefabs m\xE9t\xE9orite descendent vers le bas et se dirigent
+      vers la coordonn\xE9e x du joueur. Avant qu\u2019un prefab m\xE9t\xE9orite
+      n\u2019entre dans le champ de la cam\xE9ra, un prefab fr\xE8che appara\xEEt
+      en haut de l\u2019\xE9cran pour indiquer sa position x. Entrer en collision
+      avec un prefab m\xE9t\xE9orite par en dessous ou sur le c\xF4t\xE9 met fin
+      \xE0 votre partie. Vous pouvez cependant les d\xE9truire de trois mani\xE8res
+      :\r\n- Stomp Attack : Entrez en collision par le dessus avec un prefab m\xE9t\xE9orite
       pour le d\xE9truire. Vous rebondissez vers le haut comme sur une plateforme.\r\n-
-      Laser Shot : Clic gauche sur un prefab UFO. Un rayon laser part de la position
-      du joueur vers le curseur et d\xE9truit l\u2019UFO \xE0 l\u2019impact.\r\n-
-      Rocket Boost : Utilisez un boost pour d\xE9truire tout prefab UFO avec lequel
-      vous entrez en collision en montant."
+      Laser Shot : Clic gauche sur un prefab m\xE9t\xE9orite. Un rayon laser part
+      de la position du joueur vers le curseur et d\xE9truit la m\xE9t\xE9orite \xE0
+      l\u2019impact.\r\n- Rocket Boost : Utilisez un boost pour d\xE9truire tout
+      prefab m\xE9t\xE9orite avec lequel vous entrez en collision en montant."
     m_Metadata:
       m_Items: []
   - m_Id: 6418570339680256

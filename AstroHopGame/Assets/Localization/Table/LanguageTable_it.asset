@@ -146,8 +146,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 604769543520256
-    m_Localized: '<color=#ECA800>Clic sinistro<color=#FFFFFF> su un prefab UFO per
-      generare un <color=#ECA800>prefab laser<color=#FFFFFFFF> che si muove verso
+    m_Localized: '<color=#ECA800>Clic sinistro<color=#FFFFFF> su un prefab meteorite
+      per generare un <color=#ECA800>prefab laser<color=#FFFFFFFF> che si muove verso
       di esso.
 
       <size=30><alpha=#80>Premi [Alt] per segnare il tutorial come
@@ -249,22 +249,20 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418419743195136
-    m_Localized: 'Meccanica degli UFO
-
-'
+    m_Localized: Meccanica dei meteoriti
     m_Metadata:
       m_Items: []
   - m_Id: 6418451519242240
-    m_Localized: "I prefab UFO scendono verso il basso e si dirigono verso la coordinata
-      x del giocatore. Prima che un prefab UFO entri nel campo visivo della telecamera,
-      viene generato in alto uno prefab Arrow che ne indica la posizione x. Una collisione
-      con un prefab UFO da sotto o di lato termina la tua corsa. Tuttavia, puoi distruggerli
-      in tre modi:\r\nStomp Attack: Collidi dall\u2019alto con un prefab UFO per
-      distruggerlo. Rimbalzi verso l\u2019alto come su una piattaforma.\r\nLaser
-      Shot: Clic sinistro su un prefab UFO. Un raggio laser parte dalla posizione
-      del giocatore verso il cursore e distrugge l\u2019UFO all\u2019impatto.\r\nRocket
-      Boost: Usa un boost per distruggere qualsiasi prefab UFO con cui entri in collisione
-      durante la salita."
+    m_Localized: "I prefab meteorite scendono verso il basso e si dirigono verso
+      la coordinata x del giocatore. Prima che un prefab meteorite entri nel campo
+      visivo della telecamera, viene generato in alto uno prefab freccia che ne indica
+      la posizione x. Una collisione con un prefab meteorite da sotto o di lato termina
+      la tua corsa. Tuttavia, puoi distruggerli in tre modi:\r\nStomp Attack: Collidi
+      dall\u2019alto con un prefab meteorite per distruggerlo. Rimbalzi verso l\u2019alto
+      come su una piattaforma.\r\nLaser Shot: Clic sinistro su un prefab meteorite.
+      Un raggio laser parte dalla posizione del giocatore verso il cursore e distrugge
+      il meteorite all\u2019impatto.\r\nRocket Boost: Usa un boost per distruggere
+      qualsiasi prefab meteorite con cui entri in collisione durante la salita."
     m_Metadata:
       m_Items: []
   - m_Id: 6418570339680256

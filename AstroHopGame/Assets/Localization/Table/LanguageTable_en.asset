@@ -144,8 +144,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 604769543520256
-    m_Localized: '<color=#ECA800>Left-click<color=#FFFFFF> on a UFO prefab to spawn
-      a <color=#ECA800>laser prefab<color=#FFFFFFFF> that moves toward it.
+    m_Localized: '<color=#ECA800>Left-click<color=#FFFFFF> on a meteorite prefab
+      to spawn a <color=#ECA800>laser prefab<color=#FFFFFFFF> that moves toward it.
 
       <size=30><alpha=#80>Press
       [Alt] to mark the tutorial as seen.
@@ -237,19 +237,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418419743195136
-    m_Localized: UFO Mechanics
+    m_Localized: Meteorite Mechanics
     m_Metadata:
       m_Items: []
   - m_Id: 6418451519242240
-    m_Localized: "UFO prefabs descend downward and move toward the player\u2019s
-      x-coordinate. Before a UFO prefab enters the camera\u2019s view, an arrow prefab
-      is spawned at the top of the screen to indicate its x-position. Colliding with
-      a UFO prefab from below or the side ends your run. However, you can destroy
-      them in three ways:\r\n- Stomp Attack: Collide from above with a UFO prefab
-      to destroy it. You\u2019ll rebound upward as if you hit a platform.\r\n- Laser
-      Shot: Left-click on a UFO prefab. A laser beam fires from the player\u2019s
-      position toward the cursor and destroys the UFO on impact.\r\n- Boost: Use
-      a boost to destroy any UFO prefab you collide with while ascending."
+    m_Localized: "Meteorite prefabs descend downward and move toward the player\u2019s
+      x-coordinate. Before a meteorite prefab enters the camera\u2019s view, an arrow
+      prefab is spawned at the top of the screen to indicate its x-position. Colliding
+      with a UFO prefab from below or the side ends your run. However, you can destroy
+      them in three ways:\r\n- Stomp Attack: Collide from above with a meteorite
+      prefab to destroy it. You\u2019ll rebound upward as if you hit a platform.\r\n-
+      Laser Shot: Left-click on a meteorite prefab. A laser beam fires from the player\u2019s
+      position toward the cursor and destroys the meteorite on impact.\r\n- Boost:
+      Use a boost to destroy any meteorite prefab you collide with while ascending."
     m_Metadata:
       m_Items: []
   - m_Id: 6419343605760000

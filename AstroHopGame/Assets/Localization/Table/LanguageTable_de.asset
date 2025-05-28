@@ -146,8 +146,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 604769543520256
-    m_Localized: "<color=#ECA800>Linksklick<color=#FFFFFF> auf ein UFO-Prefab, um
-      ein <color=#ECA800>Laser-Prefab<color=#FFFFFFFF> zu erzeugen, das sich darauf
+    m_Localized: "<color=#ECA800>Linksklick<color=#FFFFFF> auf ein Meteoriten-Prefab,,
+      um ein <color=#ECA800>Laser-Prefab<color=#FFFFFFFF> zu erzeugen, das sich darauf
       zubewegt.\n<size=30><alpha=#80>Dr\xFCcke [Alt], um das Tutorial als gesehen
       zu markieren."
     m_Metadata:
@@ -244,20 +244,21 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418419743195136
-    m_Localized: UFO-Mechaniken
+    m_Localized: Meteoriten-Mechaniken
     m_Metadata:
       m_Items: []
   - m_Id: 6418451519242240
-    m_Localized: "UFO-Prefabs bewegen sich nach unten und auf die x-Position des
-      Spielers zu. Bevor ein UFO in den Kamerabereich eintritt, wird oben in der
-      Kameraansicht ein Arrow-Prefab erzeugt, das seine x-Position anzeigt. Eine
-      Kollision mit einem UFO-Prefab von unten oder der Seite beendet deinen Lauf.
-      Du kannst sie jedoch auf drei Arten zerst\xF6ren:\r\n- Stomp Attack: Kollidiere
-      von oben mit einem UFO-Prefab, um es zu zerst\xF6ren. Du prallst dabei wie
-      auf einer Plattform wieder nach oben.\r \n- Laser Shot: Linksklick auf ein
-      UFO-Prefab. Ein Laserstrahl wird von der Spielerposition in Richtung des Mauszeigers
-      abgefeuert und zerst\xF6rt das UFO bei Treffer.\r\n- Rocket Boost: Nutze einen
-      Boost, um jedes UFO-Prefab zu zerst\xF6ren, mit dem du kollidierst.\r"
+    m_Localized: "Meteoriten-Prefabs bewegen sich nach unten und auf die x-Position
+      des Spielers zu. Bevor ein Meteoriten-Prefab in den Kamerabereich eintritt,
+      wird oben in der Kameraansicht ein Pfeil-Prefab erzeugt, das seine x-Position
+      anzeigt. Eine Kollision mit einem UFO-Prefab von unten oder der Seite beendet
+      deinen Lauf. Du kannst sie jedoch auf drei Arten zerst\xF6ren:\r\n- Stomp Attack:
+      Kollidiere von oben mit einem Meteoriten-Prefab,, um es zu zerst\xF6ren. Du
+      prallst dabei wie auf einer Plattform wieder nach oben.\r \n- Laser Shot: Linksklick
+      auf ein Meteoriten-Prefab,. Ein Laserstrahl wird von der Spielerposition in
+      Richtung des Mauszeigers abgefeuert und zerst\xF6rt den Meteoriten bei Treffer.\r\n-
+      Rocket Boost: Nutze einen Boost, um jedes Meteoriten-Prefab, zu zerst\xF6ren,
+      mit dem du kollidierst.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6418570339680256
