@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using System.Globalization;
 using System.Collections.Generic;
+using UnityEngine.InputSystem;
 
 public class MenuUIScript : MonoBehaviour
 {
@@ -243,14 +244,9 @@ public class MenuUIScript : MonoBehaviour
         }
         else
         {
-            // Other key: determine name by keyboard layout (key with same name but different position)
-            switch (GetActiveKeyboardLayoutLanguage())
-            {
-                case "de": return GetGermanKeyName(key);
-                case "fr": return GetFrenchKeyName(key);
-                case "it": return GetItalianKeyName(key);
-                default: return GetEnglishKeyName(key);
-            }
+            // For non-special keys: get English name and append identifier
+            string englishName = GetEnglishKeyName(key);
+            return $"{englishName} (ENG)";
         }
     }
 

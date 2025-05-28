@@ -8315,8 +8315,8 @@ MonoBehaviour:
   rb: {fileID: 1463049734}
   astronautAnim: {fileID: 1463049740}
   laserAstronautAnim: {fileID: 1018588576}
-  movementSpeed: 10
-  sensitivity: 3.25
+  movementSpeed: 8.5
+  sensitivity: 0
   fuelLossRate: 2700
   minFuelLoss: 1000
   boostForce: 8
