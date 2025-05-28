@@ -328,7 +328,6 @@ public class ManagerScript : MonoBehaviour
         MenuUIScript.instance.startGameButton.interactable = false;
         MenuUIScript.instance.openOptionsButton.interactable = false;
         MenuUIScript.instance.openHelpButton.interactable = false;
-        MenuUIScript.instance.exitWindowWarningButton.interactable = false;
     }
 
     public void CloseOptionsPanel()
@@ -354,7 +353,6 @@ public class ManagerScript : MonoBehaviour
         MenuUIScript.instance.startGameButton.interactable = true;
         MenuUIScript.instance.openOptionsButton.interactable = true;
         MenuUIScript.instance.openHelpButton.interactable = true;
-        MenuUIScript.instance.exitWindowWarningButton.interactable = true;
     }
 
     public void OpenHelpPanel()
@@ -367,7 +365,6 @@ public class ManagerScript : MonoBehaviour
         MenuUIScript.instance.startGameButton.interactable = false;
         MenuUIScript.instance.openOptionsButton.interactable = false;
         MenuUIScript.instance.openHelpButton.interactable = false;
-        MenuUIScript.instance.exitWindowWarningButton.interactable = false;
     }
 
     public void CloseHelpPanel()
@@ -377,7 +374,6 @@ public class ManagerScript : MonoBehaviour
         MenuUIScript.instance.startGameButton.interactable = true;
         MenuUIScript.instance.openOptionsButton.interactable = true;
         MenuUIScript.instance.openHelpButton.interactable = true;
-        MenuUIScript.instance.exitWindowWarningButton.interactable = true;
     }
 
     public void OpenWarningToMenu()
@@ -461,17 +457,12 @@ public class ManagerScript : MonoBehaviour
         MenuUIScript.instance.startGameButton.interactable = false;
         MenuUIScript.instance.openOptionsButton.interactable = false;
         MenuUIScript.instance.openHelpButton.interactable = false;
-        MenuUIScript.instance.exitWindowWarningButton.interactable = false;
     }
 
     public void CloseExitWindowWarning()
     {
         AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.closeClick, AudioManagerScript.instance.closeClickVolume);
         MenuUIScript.instance.exitWindowWarningPanel.SetActive(false);
-        MenuUIScript.instance.startGameButton.interactable = true;
-        MenuUIScript.instance.openOptionsButton.interactable = true;
-        MenuUIScript.instance.openHelpButton.interactable = true;
-        MenuUIScript.instance.exitWindowWarningButton.interactable = true;
     }
 
     public void ExitProgram()
@@ -492,7 +483,6 @@ public class ManagerScript : MonoBehaviour
         MenuUIScript.instance.startGameButton.interactable = false;
         MenuUIScript.instance.openOptionsButton.interactable = false;
         MenuUIScript.instance.openHelpButton.interactable = false;
-        MenuUIScript.instance.exitWindowWarningButton.interactable = false;
     }
 
     public void CloseDeleteProgressPanel()
@@ -502,7 +492,6 @@ public class ManagerScript : MonoBehaviour
         MenuUIScript.instance.startGameButton.interactable = true;
         MenuUIScript.instance.openOptionsButton.interactable = true;
         MenuUIScript.instance.openHelpButton.interactable = true;
-        MenuUIScript.instance.exitWindowWarningButton.interactable = true;
     }
 
     public void OpenDeleteProgressConfirmPanel()
@@ -556,7 +545,8 @@ public class ManagerScript : MonoBehaviour
 
     #region Pause Management
     public void PauseGame()
-    {
+    {/*
+
         AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
         MainGameUIScript.instance.pauseButton.interactable = false;
         MainGameUIScript.instance.paused = true;
@@ -570,7 +560,7 @@ public class ManagerScript : MonoBehaviour
         ManagerScript.instance.SetPixelCursor(ManagerScript.instance.basicCursor, 0f, 0f);
         // Save score
         int finalScore = int.Parse(MainGameUIScript.instance.scoreText.text);
-        PlayerPrefs.SetInt("Score", finalScore);
+        PlayerPrefs.SetInt("Score", finalScore);*/
     }
 
     public void ContinueGame()
