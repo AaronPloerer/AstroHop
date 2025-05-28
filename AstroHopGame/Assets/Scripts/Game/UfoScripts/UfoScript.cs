@@ -124,6 +124,11 @@ public class UfoScript : MonoBehaviour
     {
         UpdateDirection();
         MoveUfo();
+
+        if (!broken)
+        {
+            UpdateSprite();
+        }
     }
 
     private void UpdateDirection()
@@ -163,6 +168,14 @@ public class UfoScript : MonoBehaviour
             transform.Translate(new Vector3(0, yMovement, 0));
         }
     }
+
+    private void UpdateSprite()
+    {
+        // Flip sprite to face player: flip when UFO is right of player
+        bool isRightOfPlayer = transform.position.x < PlayerControllerScript.instance.transform.position.x;
+        spriteRenderer.flipX = isRightOfPlayer;
+    }
+
 
     private void UpdateArrow()
     {
