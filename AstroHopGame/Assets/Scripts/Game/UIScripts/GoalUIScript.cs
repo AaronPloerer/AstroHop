@@ -59,7 +59,15 @@ public class GoalTextScript : MonoBehaviour
             TextMeshProUGUI tmpComponent = goalText.GetComponentInChildren<TextMeshProUGUI>();
             if (!tmpComponent) return;
 
-            tmpComponent.text = ("Highscore!");
+            int localeID = PlayerPrefs.GetInt("Language", 0);
+            tmpComponent.text = localeID switch
+            {
+                1 => "^Rekord!",
+                2 => "Record!",
+                3 => "Meilleur\nScore !",
+                _ => "High\nScore!"
+            };
+
             tmpComponent.textWrappingMode = TextWrappingModes.NoWrap;
             tmpComponent.overflowMode = TextOverflowModes.Overflow;
 

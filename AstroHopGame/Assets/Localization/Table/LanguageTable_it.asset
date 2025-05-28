@@ -227,8 +227,7 @@ MonoBehaviour:
       su alcune piattaforme.\r\nDurante il boost, il carburante si consuma a un ritmo
       costante, ma ogni fase di boost consuma almeno il 10% del serbatoio totale.
       Se rimane meno del 10%, il resto viene consumato completamente.\r\nUsa il boost
-      per correggere atterraggi mancati o raggiungere piattaforme pi\xF9 alte, ma
-      ricorda: devi raccogliere carburante per riutilizzarlo.\r\n"
+      per correggere atterraggi mancati o raggiungere piattaforme pi\xF9 alte.\r\n"
     m_Metadata:
       m_Items: []
   - m_Id: 6418291280052224
@@ -249,13 +248,13 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 6418451519242240
     m_Localized: "Gli UFO scendono lentamente seguendo la tua posizione orizzontale.
-      Prima di apparire sullo schermo, una freccia in alto avvisa da quale direzione
-      stanno arrivando. Scontrarsi con uno dal basso o dal lato termina la partita.\r\nPuoi
-      eliminarli in tre modi:\r\n- Attacco con Salto: Atterra sopra un UFO per distruggerlo.
-      Rimbalzerai come su una piattaforma.\r\n- Colpo Laser: Clicca con il tasto
-      sinistro del mouse verso il bersaglio. Un raggio laser parte dalla tua posizione
-      e distrugge l\u2019UFO se colpito.\r\n- Propulsione del Razzo: Usa un boost
-      per distruggere qualsiasi UFO che colpisci mentre sali.\r"
+      Prima che un UFO appaia sullo schermo, una freccia in alto avvisa da quale
+      direzione sta arrivando. Scontrarsi con uno dal basso o dal lato termina la
+      partita.\r\nPuoi eliminarli in tre modi:\r\n- Attacco con Salto: Atterra sopra
+      un UFO per distruggerlo. Rimbalzerai come su una piattaforma.\r\n- Colpo Laser:
+      Clicca con il tasto sinistro del mouse verso il bersaglio. Un raggio laser
+      parte dalla tua posizione e distrugge l\u2019UFO se colpito.\r\n- Propulsione
+      del Razzo: Usa un boost per distruggere qualsiasi UFO che colpisci mentre sali.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6418570339680256
@@ -297,7 +296,7 @@ MonoBehaviour:
       la lingua dei testi sullo schermo\r\n- Regolare separatamente il volume della
       musica e degli effetti sonori\r\n- Personalizzare l\u2019assegnazione dei tasti
       per movimento, boost, sparo e pausa\r\n- Attivare o disattivare il boost di
-      partenza automatico\r\n"
+      partenza automatico e suggerimenti in gioco\r\n"
     m_Metadata:
       m_Items: []
   - m_Id: 6751468896911360
