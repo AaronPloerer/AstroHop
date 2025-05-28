@@ -238,9 +238,9 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 6418451519242240
     m_Localized: "UFOs schweben langsam nach unten und verfolgen deine horizontale
-      Position. Bevor sie auf dem Bildschirm erscheinen, zeigt ein Pfeil am oberen
-      Rand an, aus welcher Richtung sie kommen. Eine Kollision von unten oder von
-      der Seite beendet deinen Lauf.\r\nDu kannst UFOs jedoch auf drei Arten vernichten:\r\n-
+      Position. Bevor ein UFO auf dem Bildschirm erscheint, zeigt ein Pfeil am oberen
+      Rand an, aus welcher Richtung es kommt. Eine Kollision von unten oder von der
+      Seite beendet deinen Lauf.\r\nDu kannst UFOs jedoch auf drei Arten vernichten:\r\n-
       Sprung: Springe auf einem UFO wie auf einer Plattform, um es zu zerst\xF6ren.\r\n-
       Laserschuss: Klicke mit der linken Maustaste in Zielrichtung. Ein Laserstrahl
       zerst\xF6rt das UFO, wenn es getroffen wird.\r\n- Raketenschub: Fliege mit
@@ -286,7 +286,8 @@ MonoBehaviour:
     m_Localized: "\xD6ffne im Hauptmen\xFC das Einstellungsmen\xFC um:\r\n- Die Sprache
       der On-Screen-Texte w\xE4hlen\r\n- Die Lautst\xE4rke von Musik und Soundeffekten
       getrennt anpassen\r\n- Die Tastenbelegung f\xFCr Bewegung, Schub, Schuss und
-      Pause anpassen\r\n- Den automatischen Start-Boost zu aktivieren/deaktivieren\r\n"
+      Pause anpassen\r\n- Den automatischen Start-Boost und die In-Game-Tipps zu
+      aktivieren/deaktivieren\r\n"
     m_Metadata:
       m_Items: []
   - m_Id: 6751468896911360
