@@ -131,8 +131,8 @@ public class PlayerControllerScript : MonoBehaviour
         if (leftPressed) targetDirection -= 1f;
         if (rightPressed) targetDirection += 1f;
 
-        // Smoothly transition between directions
-        currentDirection = Mathf.MoveTowards(currentDirection, targetDirection, sensitivity * Time.deltaTime);
+        // INSTANT movement: Directly set direction without smoothing
+        currentDirection = targetDirection;
 
 
         // Calculate horizontal movement from direction and speed
