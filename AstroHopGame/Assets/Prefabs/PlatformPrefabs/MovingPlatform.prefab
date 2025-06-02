@@ -237,5 +237,6 @@ MonoBehaviour:
   playerJumpForce: 9.2
   difference: 1.5
   levelWidth: 5.5
-  speed: 1
+  minSpeed: 0.5
+  maxSpeed: 2
   forceFuelSpawn: 0

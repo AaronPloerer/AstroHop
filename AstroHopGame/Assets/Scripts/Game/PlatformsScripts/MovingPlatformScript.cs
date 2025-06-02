@@ -16,7 +16,8 @@ public class MovingPlatformScript : MonoBehaviour
     [SerializeField] private float playerJumpForce;   // Force applied to player bounce
     [SerializeField] private float difference;        // Horizontal movement range from start position
     [SerializeField] private float levelWidth;        // Level boundary constraints
-    [SerializeField] private float speed;             // Platform movement speed
+    [SerializeField] private float minSpeed;   // Minimum movement speed
+    [SerializeField] private float maxSpeed;   // Maximum movement speed
     #endregion
 
     #region Runtime State
@@ -26,6 +27,7 @@ public class MovingPlatformScript : MonoBehaviour
     private float leftBound;           // Left movement boundary
     private GameObject spawnedFuel;    // Reference to spawned fuel object
     public bool forceFuelSpawn;        // Override for fuel spawning (determined by level genarator)
+    private float speed;
     #endregion
 
     #region Unity Lifecycle
@@ -62,6 +64,8 @@ public class MovingPlatformScript : MonoBehaviour
         startX = transform.position.x;
         rightBound = startX + difference;
         leftBound = startX - difference;
+
+        speed = Random.Range(minSpeed, maxSpeed);
     }
     #endregion
 
