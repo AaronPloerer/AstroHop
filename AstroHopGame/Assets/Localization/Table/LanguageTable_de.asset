@@ -203,8 +203,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418170840612864
-    m_Localized: Use your left/right movement keys (Left/Right Arrows or keys selected
-      in Settings) to move toward your upcoming landing platforms.
+    m_Localized: "Nutze die Bewegungstasten (Pfeiltasten links/rechts oder in Einstellungen
+      gew\xE4hlte Tasten), um dich auf die n\xE4chsten Plattformen zu bewegen."
     m_Metadata:
       m_Items: []
   - m_Id: 6418195234684928
@@ -213,7 +213,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 6419343605760000
     m_Localized: "Deine Rakete erm\xF6glicht es dir, nach oben zu boosten. Wenn Treibstoff
-      im Tank ist, halte die Boost-Taste gedr\xFCckt (Pfeiltaste nach oben  in Einstellungen
+      im Tank ist, halte die Boost-Taste gedr\xFCckt (Pfeiltaste nach oben in Einstellungen
       gew\xE4hlte Taste), um zu fliegen. Springe zum Auftanken auf Plattformen mit
       Treibstofftanks. \r\nW\xE4hrend eines Boosts wird dein Treibstoff kontinuierlich
       verbraucht, aber jede Boost-Phase verbraucht mindestens 10\u202F% deines gesamten
