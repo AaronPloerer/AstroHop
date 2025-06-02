@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using System.Globalization;
 using System.Collections.Generic;
+using Random = UnityEngine.Random;
 
 public class MenuUIScript : MonoBehaviour
 {
@@ -101,6 +102,66 @@ public class MenuUIScript : MonoBehaviour
         InitializeControlsInputField(leftInputField, "KeyLeftPrimary", KeyCode.Alpha1);
         InitializeControlsInputField(rightInputField, "KeyRightPrimary", KeyCode.Alpha3);
         InitializeControlsInputField(pauseInputField, "KeyPause", KeyCode.Space);
+
+        if (exitWindowWarningButton != null)
+        {
+            RectTransform buttonTransform = exitWindowWarningButton.GetComponent<RectTransform>();
+            if (buttonTransform != null)
+            {
+                // Random X position: 50% chance for 816.8 or -816.8
+                float randomX = Random.Range(0, 2) == 0 ? 816.8f : -816.8f;
+
+                // Random Y position: 50% chance for 408.9 or -408.9
+                float randomY = Random.Range(0, 2) == 0 ? 408.9f : -408.9f;
+
+                buttonTransform.anchoredPosition = new Vector2(randomX, randomY);
+            }
+        }
+        // Neue Positionierung für Help, Options und Start Buttons
+        AssignRandomButtonPositions();
+    }
+
+    private void AssignRandomButtonPositions()
+    {
+        // Mögliche Y-Positionen
+        List<float> yPositions = new List<float> { 57f, -133f, -323f };
+
+        // Buttons in einer Liste sammeln
+        List<Button> buttons = new List<Button>
+        {
+            openHelpButton,
+            openOptionsButton,
+            startGameButton
+        };
+
+        // Y-Positionen mischen
+        ShuffleList(yPositions);
+
+        // Positionen zuweisen (nur Y-Position ändern, X bleibt 0)
+        for (int i = 0; i < buttons.Count; i++)
+        {
+            Button button = buttons[i];
+            if (button == null) continue;
+
+            RectTransform rt = button.GetComponent<RectTransform>();
+            if (rt != null)
+            {
+                // X-Position bleibt unverändert (0), nur Y-Position ändern
+                rt.anchoredPosition = new Vector2(0, yPositions[i]);
+            }
+        }
+    }
+
+    private void ShuffleList<T>(List<T> list)
+    {
+        // Fisher-Yates Shuffle Algorithmus
+        for (int i = 0; i < list.Count; i++)
+        {
+            int randomIndex = Random.Range(i, list.Count);
+            T temp = list[i];
+            list[i] = list[randomIndex];
+            list[randomIndex] = temp;
+        }
     }
     #endregion
 
