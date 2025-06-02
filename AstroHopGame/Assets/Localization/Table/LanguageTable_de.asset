@@ -203,8 +203,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418170840612864
-    m_Localized: "Nutze die Bewegungstasten (Standard: A/D oder die Pfeiltasten links/rechts),
-      um dich auf die n\xE4chsten Plattformen zu bewegen."
+    m_Localized: Use your left/right movement keys (Left/Right Arrows or keys selected
+      in Settings) to move toward your upcoming landing platforms.
     m_Metadata:
       m_Items: []
   - m_Id: 6418195234684928
@@ -213,13 +213,13 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 6419343605760000
     m_Localized: "Deine Rakete erm\xF6glicht es dir, nach oben zu boosten. Wenn Treibstoff
-      im Tank ist, halte die Boost-Taste gedr\xFCckt (Standard: W oder Pfeiltaste
-      nach oben), um zu fliegen. Springe zum Auftanken auf Plattformen mit Treibstofftanks.
-      \r\nW\xE4hrend eines Boosts wird dein Treibstoff kontinuierlich verbraucht,
-      aber jede Boost-Phase verbraucht mindestens 10\u202F% deines gesamten Tanks
-      - sind weniger als 10\u202F% \xFCbrig, wird der Rest komplett verbraucht. \r\nNutze
-      den Boost, um verpasste Landungen zu korrigieren oder h\xF6here Plattformen
-      zu erreichen - aber tanke auf, um ihn erneut einsetzen zu k\xF6nnen.\r"
+      im Tank ist, halte die Boost-Taste gedr\xFCckt (Pfeiltaste nach oben  in Einstellungen
+      gew\xE4hlte Taste), um zu fliegen. Springe zum Auftanken auf Plattformen mit
+      Treibstofftanks. \r\nW\xE4hrend eines Boosts wird dein Treibstoff kontinuierlich
+      verbraucht, aber jede Boost-Phase verbraucht mindestens 10\u202F% deines gesamten
+      Tanks - sind weniger als 10\u202F% \xFCbrig, wird der Rest komplett verbraucht.
+      \r\nNutze den Boost, um verpasste Landungen zu korrigieren oder h\xF6here Plattformen
+      zu erreichen.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6418291280052224

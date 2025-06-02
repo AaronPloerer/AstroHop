@@ -212,8 +212,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418170840612864
-    m_Localized: 'Usa i tasti di movimento sinistra/destra (predefiniti: A/D o Frecce
-      Sinistra/Destra) per posizionarti sulle piattaforme su cui vuoi atterrare.'
+    m_Localized: Usa i tasti di movimento sinistra/destra (Frecce Sinistra/Destra
+      o tasti selezionati in Impostazioni) per posizionarti sulle piattaforme su
+      cui vuoi atterrare.
     m_Metadata:
       m_Items: []
   - m_Id: 6418195234684928
@@ -222,13 +223,13 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 6419343605760000
     m_Localized: "Hai un razzo un boost verticale. Se il razzo contiene carburante,
-      tieni premuto il tasto Boost (predefinito: W o Freccia Su) per volare verso
-      l\u2019alto. Per fare rifornimento, colpisci i serbatoi di carburante che compaiono
-      su alcune piattaforme.\r\nDurante il boost, il carburante si consuma a un ritmo
-      costante, ma ogni fase di boost consuma almeno il 10% del serbatoio totale.
-      Se rimane meno del 10%, il resto viene consumato completamente.\r\nUsa il boost
-      per correggere atterraggi mancati o raggiungere piattaforme pi\xF9 alte, ma
-      ricorda: devi raccogliere carburante per riutilizzarlo.\r\n"
+      tieni premuto il tasto Boost (Freccia Su o tasto selezionato in Impostazioni)
+      per volare verso l\u2019alto. Per fare rifornimento, colpisci i serbatoi di
+      carburante che compaiono su alcune piattaforme.\r\nDurante il boost, il carburante
+      si consuma a un ritmo costante, ma ogni fase di boost consuma almeno il 10%
+      del serbatoio totale. Se rimane meno del 10%, il resto viene consumato completamente.\r\nUsa
+      il boost per correggere atterraggi mancati o raggiungere piattaforme pi\xF9
+      alte.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6418291280052224
