@@ -193,8 +193,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418170840612864
-    m_Localized: 'Use your left/right movement keys (default: A/D or Left Arrow/Right
-      Arrow) to move toward your upcoming landing platforms.'
+    m_Localized: Use your left/right movement keys (Left/Right Arrows or keys selected
+      in Settings) to move toward your upcoming landing platforms.
     m_Metadata:
       m_Items: []
   - m_Id: 6418097113137152
@@ -233,11 +233,11 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 6419343605760000
     m_Localized: "You carry a rocket for vertical boosting. If it contains fuel,
-      hold the Boost key (default: W or Up Arrow) to fly upward. To refuel, jump
-      into fuel tanks that spawn on certain platforms. \r\nWhile boosting, your fuel
-      drains at a constant rate, but each boost phase consumes at least 10% of your
-      total tank - if less than 10% is left, the rest is consumed completely.\r\nUse
-      rocket boosts to correct missed landings or reach higher ledges."
+      hold the Boost key (Up Arrow or key selected in Cfg) to fly upward. To refuel,
+      jump into fuel tanks that spawn on certain platforms. \r\nWhile boosting, your
+      fuel drains at a constant rate, but each boost phase consumes at least 10%
+      of your total tank - if less than 10% is left, the rest is consumed completely.\r\nUse
+      rocket boosts to correct missed landings or reach higher ledges.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6418570339680256

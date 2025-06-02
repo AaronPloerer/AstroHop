@@ -200,9 +200,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418170840612864
-    m_Localized: "Utilisez les touches de d\xE9placement gauche/droite (par d\xE9faut
-      : A/D ou Fl\xE8che gauche/droite) pour vous positionner sous la plateforme
-      sur laquelle vous souhaitez atterrir."
+    m_Localized: "Utilisez les touches de d\xE9placement gauche/droite (Fl\xE8che
+      gauche/droite ou touches s\xE9lectionn\xE9es dans les Param\xE8tres) pour vous
+      positionner sous la plateforme sur laquelle vous souhaitez atterrir."
     m_Metadata:
       m_Items: []
   - m_Id: 6418195234684928
@@ -284,14 +284,14 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 6419343605760000
     m_Localized: "Vous disposez d\u2019une fus\xE9e pour vous propulser verticalement.
-      Si elle contient du carburant, maintenez la touche Boost enfonc\xE9e (par d\xE9faut
-      : W ou Fl\xE8che haut) pour voler vers le haut. Pour refaire le plein, sautez
-      dans les r\xE9servoirs de carburant qui apparaissent sur certaines plateformes.\r\nPendant
-      le boost, votre carburant s\u2019\xE9puise \xE0 un rythme constant, mais chaque
-      phase de boost consomme au moins 10\u202F% de votre capacit\xE9 totale\u202F;
-      si moins de 10\u202F% reste, le reste est consomm\xE9 int\xE9gralement.\r\nUtilisez
-      la fus\xE9e pour corriger un atterrissage rat\xE9 ou atteindre des plateformes
-      plus \xE9lev\xE9es.\r\n"
+      Si elle contient du carburant, maintenez la touche Boost enfonc\xE9e (Fl\xE8che
+      haut ou touche s\xE9lectionn\xE9e dans les Param\xE8tres) pour voler vers le
+      haut. Pour refaire le plein, sautez dans les r\xE9servoirs de carburant qui
+      apparaissent sur certaines plateformes.\r\nPendant le boost, votre carburant
+      s\u2019\xE9puise \xE0 un rythme constant, mais chaque phase de boost consomme
+      au moins 10\u202F% de votre capacit\xE9 totale\u202F; si moins de 10\u202F%
+      reste, le reste est consomm\xE9 int\xE9gralement.\r\nUtilisez la fus\xE9e pour
+      corriger un atterrissage rat\xE9 ou atteindre des plateformes plus \xE9lev\xE9es.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6751468896911360
