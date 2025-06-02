@@ -212,9 +212,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418170840612864
-    m_Localized: 'Use your horizontal-axis movement input keys (default: A/D or Left
-      Arrow/Right Arrow) to translate along the x-axis toward the platform prefab
-      you want to collide with next.'
+    m_Localized: Use your horizontal-axis movement input keys (Left/Right Arrows
+      or keys selected in Settings) to translate along the x-axis toward the platform
+      prefab you want to collide with next.
     m_Metadata:
       m_Items: []
   - m_Id: 6418097113137152
@@ -254,8 +254,8 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 6419343605760000
     m_Localized: "You carry a rocket for upward movement boosts. If currentFuel >
-      0, hold the +yMov input key (default: W or Up Arrow) to move positively in
-      the y-direction. To increase the fuel value, collide with \u201CFuel\u201D-tagged
+      0, hold the +yMov input key (Up Arrow or key selected in Cfg) to move positively
+      in the y-direction. To increase the fuel value, collide with \u201CFuel\u201D-tagged
       GameObjects, which spawn on select platforms. \r\nWhile boosting, your fuel
       value decreases at a constant rate, but each key press decreases at least 10
       % of maxFuel. If currentFuel \u2264 10 %, the next key press reduces the fuel

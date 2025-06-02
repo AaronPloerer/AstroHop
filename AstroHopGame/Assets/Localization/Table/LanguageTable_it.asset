@@ -216,9 +216,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418170840612864
-    m_Localized: "Usa i tasti di movimento orizzontale (predefinito: A/D o Freccia
-      sinistra/destra) per spostarti sull\u2019asse x verso il prefab di piattaforma
-      successivo."
+    m_Localized: "Usa i tasti di movimento orizzontale (Frecce Sinistra/Destra o
+      tasti selezionati in Cfg) per spostarti sull\u2019asse x verso il prefab di
+      piattaforma successivo."
     m_Metadata:
       m_Items: []
   - m_Id: 6418195234684928
@@ -227,14 +227,14 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 6419343605760000
     m_Localized: "Porti un razzo per i boost di movimento verso l\u2019alto. Se currentFuel
-      > 0, tieni premuto il tasto +yMov (predefinito: W o Freccia su) per muoverti
-      nella direzione positiva dell\u2019asse y. Per aumentare il valore del carburante,
-      collidi con GameObjects taggati \u201CFuel\u201D, che compaiono su piattaforme
-      selezionate. \r\nDurante il boost, il carburante diminuisce a un ritmo costante,
-      ma ogni pressione del tasto riduce almeno il 10 % di maxFuel. Se currentFuel
-      \u2264 10 %, la pressione successiva porta il carburante a 0. \r\nUsa i boost
-      del razzo per correggere atterraggi mancati o raggiungere sporgenze pi\xF9
-      alte.\r"
+      > 0, tieni premuto il tasto +yMov (Freccia Su o tasto selezionato in Cfg) per
+      muoverti nella direzione positiva dell\u2019asse y. Per aumentare il valore
+      del carburante, collidi con GameObjects taggati \u201CFuel\u201D, che compaiono
+      su piattaforme selezionate. \r\nDurante il boost, il carburante diminuisce
+      a un ritmo costante, ma ogni pressione del tasto riduce almeno il 10 % di maxFuel.
+      Se currentFuel \u2264 10 %, la pressione successiva porta il carburante a 0.
+      \r\nUsa i boost del razzo per correggere atterraggi mancati o raggiungere sporgenze
+      pi\xF9 alte.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6418291280052224

@@ -212,9 +212,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418170840612864
-    m_Localized: "Utilisez les touches de d\xE9placement horizontal (par d\xE9faut
-      : A/D ou Fl\xE8che gauche/droite) pour vous d\xE9placer sur l\u2019axe x vers
-      le prefab de plateforme suivant.\r"
+    m_Localized: "Utilisez les touches de d\xE9placement horizontal (Fl\xE8che gauche/droite
+      ou touches s\xE9lectionn\xE9es dans Cfg) pour vous d\xE9placer sur l\u2019axe
+      x vers le prefab de plateforme suivant.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6418195234684928
@@ -296,8 +296,8 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 6419343605760000
     m_Localized: "Vous portez une fus\xE9e pour effectuer des boosts vers le haut.
-      Si currentFuel > 0, maintenez la touche +yMov (par d\xE9faut : W ou Fl\xE8che
-      haut) enfonc\xE9e pour monter. Pour augmenter la quantit\xE9 de carburant,
+      Si currentFuel > 0, maintenez la touche +yMov (Fl\xE8che haut ou touche s\xE9lectionn\xE9e
+      dans Cfg) enfonc\xE9e pour monter. Pour augmenter la quantit\xE9 de carburant,
       entrez en collision avec des GameObjects tagu\xE9s \xAB Fuel \xBB, qui apparaissent
       sur certaines plateformes. \r\nPendant le boost, votre carburant diminue \xE0
       un rythme constant, mais chaque appui sur la touche r\xE9duit au moins 10 %

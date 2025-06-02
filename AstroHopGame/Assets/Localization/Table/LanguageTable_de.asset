@@ -211,9 +211,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418170840612864
-    m_Localized: "Verwende deine horizontalen Bewegungstasten (Standard: A/D oder
-      Pfeil links/rechts), um dich entlang der x-Achse zur n\xE4chsten Plattform-Prefab
-      zu bewegen."
+    m_Localized: "Verwende deine horizontalen Bewegungstasten (Pfeiltasten links/rechts
+      oder in Cfg gew\xE4hlte Tasten), um dich entlang der x-Achse zur n\xE4chsten
+      Plattform-Prefab zu bewegen."
     m_Metadata:
       m_Items: []
   - m_Id: 6418195234684928
@@ -222,14 +222,14 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 6419343605760000
     m_Localized: "Du tr\xE4gst eine Rakete f\xFCr Aufw\xE4rts-Boosts. Wenn currentFuel
-      > 0, halte die +yMov-Taste (Standard: W oder Pfeil nach oben) gedr\xFCckt,
-      um dich in positiver y-Richtung zu bewegen. Um den Treibstoffwert zu erh\xF6hen,
-      kollidiere mit einem GameObject mit dem Tag \u201EFuel\u201C, das auf ausgew\xE4hlten
-      Plattformen erscheint.\r\nW\xE4hrend des Boosts sinkt dein Treibstoffwert konstant,
-      aber jeder Tastendruck verringert ihn um mindestens 10 % von maxFuel. Liegt
-      currentFuel \u2264 10 %, setzt der n\xE4chste Tastendruck den Wert auf 0.\r\nNutze
-      Raketen-Boosts, um verfehlte Landungen auszugleichen oder h\xF6here Vorspr\xFCnge
-      zu erreichen.\r"
+      > 0, halte die +yMov-Taste (Pfeiltaste nach oben in Cfg gew\xE4hlte Taste)
+      gedr\xFCckt, um dich in positiver y-Richtung zu bewegen. Um den Treibstoffwert
+      zu erh\xF6hen, kollidiere mit einem GameObject mit dem Tag \u201EFuel\u201C,
+      das auf ausgew\xE4hlten Plattformen erscheint.\r\nW\xE4hrend des Boosts sinkt
+      dein Treibstoffwert konstant, aber jeder Tastendruck verringert ihn um mindestens
+      10 % von maxFuel. Liegt currentFuel \u2264 10 %, setzt der n\xE4chste Tastendruck
+      den Wert auf 0.\r\nNutze Raketen-Boosts, um verfehlte Landungen auszugleichen
+      oder h\xF6here Vorspr\xFCnge zu erreichen.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6418291280052224
