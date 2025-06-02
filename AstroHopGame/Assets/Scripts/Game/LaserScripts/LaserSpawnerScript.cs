@@ -80,7 +80,7 @@ public class LaserSpawnerScript : MonoBehaviour
     private void HandleLaserInput()
     {
         // Process mouse click input
-        if (Input.GetMouseButtonDown(0) && laserCurrentTime > laserTimer)
+        if (Input.GetMouseButtonDown(1) && laserCurrentTime > laserTimer)
         {
             Vector2 clickPosition = GetMouseWorldPosition2D();
             if (MainGameUIScript.instance.validClickArea.OverlapPoint(clickPosition))

@@ -104,12 +104,12 @@ public class ManagerScript : MonoBehaviour
     void InitializeInput()
     {
         // Load saved key bindings from permanent storage or use defaults
-        keyBoostPrimary = (KeyCode)PlayerPrefs.GetInt("KeyBoostPrimary", (int)KeyCode.W);
-        keyBoostSecondary = (KeyCode)PlayerPrefs.GetInt("KeyBoostSecondary", (int)KeyCode.UpArrow);
-        keyLeftPrimary = (KeyCode)PlayerPrefs.GetInt("KeyLeftPrimary", (int)KeyCode.A);
-        keyLeftSecondary = (KeyCode)PlayerPrefs.GetInt("KeyLeftSecondary", (int)KeyCode.LeftArrow);
-        keyRightPrimary = (KeyCode)PlayerPrefs.GetInt("KeyRightPrimary", (int)KeyCode.D);
-        keyRightSecondary = (KeyCode)PlayerPrefs.GetInt("KeyRightSecondary", (int)KeyCode.RightArrow);
+        keyBoostPrimary = (KeyCode)PlayerPrefs.GetInt("KeyBoostPrimary", (int)KeyCode.Y);
+        keyBoostSecondary = (KeyCode)PlayerPrefs.GetInt("KeyBoostSecondary", (int)KeyCode.RightBracket);
+        keyLeftPrimary = (KeyCode)PlayerPrefs.GetInt("KeyLeftPrimary", (int)KeyCode.G);
+        keyLeftSecondary = (KeyCode)PlayerPrefs.GetInt("KeyLeftSecondary", (int)KeyCode.Quote);
+        keyRightPrimary = (KeyCode)PlayerPrefs.GetInt("KeyRightPrimary", (int)KeyCode.J);
+        keyRightSecondary = (KeyCode)PlayerPrefs.GetInt("KeyRightSecondary", (int)KeyCode.Return);
         keyPause = (KeyCode)PlayerPrefs.GetInt("KeyPause", (int)KeyCode.Space);
     }
     #endregion
@@ -146,9 +146,9 @@ public class ManagerScript : MonoBehaviour
         localizationActive = false;                                                                                     // Release lock flag
         if (MenuUIScript.instance != null)
         {
-            MenuUIScript.instance.RefreshKeyDisplay(MenuUIScript.instance.boostInputField, "KeyBoostPrimary", KeyCode.W);      // Localize control displays inputs  
-            MenuUIScript.instance.RefreshKeyDisplay(MenuUIScript.instance.leftInputField, "KeyLeftPrimary", KeyCode.A);
-            MenuUIScript.instance.RefreshKeyDisplay(MenuUIScript.instance.rightInputField, "KeyRightPrimary", KeyCode.D);
+            MenuUIScript.instance.RefreshKeyDisplay(MenuUIScript.instance.boostInputField, "KeyBoostPrimary", KeyCode.Y);      // Localize control displays inputs  
+            MenuUIScript.instance.RefreshKeyDisplay(MenuUIScript.instance.leftInputField, "KeyLeftPrimary", KeyCode.G);
+            MenuUIScript.instance.RefreshKeyDisplay(MenuUIScript.instance.rightInputField, "KeyRightPrimary", KeyCode.J);
             MenuUIScript.instance.RefreshKeyDisplay(MenuUIScript.instance.pauseInputField, "KeyPause", KeyCode.Space);
         }
     }

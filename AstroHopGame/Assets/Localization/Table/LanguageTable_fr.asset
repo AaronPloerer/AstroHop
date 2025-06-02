@@ -144,7 +144,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 604769543520256
-    m_Localized: '<color=#ECA800>Clic gauche</color> pour <color=#ECA800>tirer<color=#FFFFFF>
+    m_Localized: '<color=#ECA800>Clic droit</color> pour <color=#ECA800>tirer<color=#FFFFFF>
       sur les OVNIs.
 
       <size=30><alpha=#80>Appuie sur [Alt] pour pour passer
@@ -239,7 +239,7 @@ MonoBehaviour:
       pouvez n\xE9anmoins d\xE9truire les OVNI de trois mani\xE8res :\r\n- Attaque
       \xE0 l\u2019\xE9crasement : Sautez sur le dessus d\u2019un OVNI pour le d\xE9truire.
       Vous rebondirez comme sur une plateforme.\r\n- Tir laser : Cliquez avec le
-      bouton gauche de la souris en direction de votre cible. Un rayon laser part
+      bouton droit de la souris en direction de votre cible. Un rayon laser part
       de votre position dans la direction du curseur et d\xE9truit l\u2019OVNI s\u2019il
       le touche.\r\n- Boost fus\xE9e : Activez un boost pour d\xE9truire tout OVNI
       que vous percuterez en montant.\r"

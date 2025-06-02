@@ -152,9 +152,9 @@ public class MainGameUIScript : MonoBehaviour
 
         try
         {
-            KeyCode boostKey = (KeyCode)PlayerPrefs.GetInt("KeyBoostPrimary", (int)KeyCode.W);
-            KeyCode leftKey = (KeyCode)PlayerPrefs.GetInt("KeyLeftPrimary", (int)KeyCode.A);
-            KeyCode rightKey = (KeyCode)PlayerPrefs.GetInt("KeyRightPrimary", (int)KeyCode.D);
+            KeyCode boostKey = (KeyCode)PlayerPrefs.GetInt("KeyBoostPrimary", (int)KeyCode.Y);
+            KeyCode leftKey = (KeyCode)PlayerPrefs.GetInt("KeyLeftPrimary", (int)KeyCode.G);
+            KeyCode rightKey = (KeyCode)PlayerPrefs.GetInt("KeyRightPrimary", (int)KeyCode.J);
 
             boostKeyString = MenuUIScript.instance.GetLocalizedKeyName(boostKey);
             leftKeyString = MenuUIScript.instance.GetLocalizedKeyName(leftKey);

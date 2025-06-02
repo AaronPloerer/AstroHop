@@ -146,7 +146,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 604769543520256
-    m_Localized: 'Clicca il <color=#ECA800>tasto sinistro <color=#FFFFFF>per sparare
+    m_Localized: 'Clicca il <color=#ECA800>tasto destro <color=#FFFFFF>per sparare
       verso gli UFO.
 
       <size=30><alpha=#80>Premi [Alt] per saltare il tutorial.'
@@ -254,9 +254,9 @@ MonoBehaviour:
       direzione sta arrivando. Scontrarsi con uno dal basso o dal lato termina la
       partita.\r\nPuoi eliminarli in tre modi:\r\n- Attacco con Salto: Atterra sopra
       un UFO per distruggerlo. Rimbalzerai come su una piattaforma.\r\n- Colpo Laser:
-      Clicca con il tasto sinistro del mouse verso il bersaglio. Un raggio laser
-      parte dalla tua posizione e distrugge l\u2019UFO se colpito.\r\n- Propulsione
-      del Razzo: Usa un boost per distruggere qualsiasi UFO che colpisci mentre sali.\r"
+      Clicca con il tasto destro del mouse verso il bersaglio. Un raggio laser parte
+      dalla tua posizione e distrugge l\u2019UFO se colpito.\r\n- Propulsione del
+      Razzo: Usa un boost per distruggere qualsiasi UFO che colpisci mentre sali.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6418570339680256

@@ -144,8 +144,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 604769543520256
-    m_Localized: "Klick die <color=#ECA800>Linkstaste <color=#FFFFFF>um auf die UFOs
-      zu <color=#ECA800>schie\xDFen<color=#FFFFFF>.\n<size=30><alpha=#80>Dr\xFCcke
+    m_Localized: "Klick die <color=#ECA800>Rechtsklick <color=#FFFFFF>um auf die
+      UFOs zu <color=#ECA800>schie\xDFen<color=#FFFFFF>.\n<size=30><alpha=#80>Dr\xFCcke
       [Alt], um das Tutorial zu \xFCberspringen."
     m_Metadata:
       m_Items: []
@@ -242,7 +242,7 @@ MonoBehaviour:
       Rand an, aus welcher Richtung es kommt. Eine Kollision von unten oder von der
       Seite beendet deinen Lauf.\r\nDu kannst UFOs jedoch auf drei Arten vernichten:\r\n-
       Sprung: Springe auf einem UFO wie auf einer Plattform, um es zu zerst\xF6ren.\r\n-
-      Laserschuss: Klicke mit der linken Maustaste in Zielrichtung. Ein Laserstrahl
+      Laserschuss: Klicke mit der rechten Maustaste in Zielrichtung. Ein Laserstrahl
       zerst\xF6rt das UFO, wenn es getroffen wird.\r\n- Raketenschub: Fliege mit
       einem Boost in ein UFO hinein, um es zu vernichten."
     m_Metadata:

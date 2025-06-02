@@ -97,9 +97,9 @@ public class MenuUIScript : MonoBehaviour
         InitializeToggles();
 
         // Set up control input fields
-        InitializeControlsInputField(boostInputField, "KeyBoostPrimary", KeyCode.W);
-        InitializeControlsInputField(leftInputField, "KeyLeftPrimary", KeyCode.A);
-        InitializeControlsInputField(rightInputField, "KeyRightPrimary", KeyCode.D);
+        InitializeControlsInputField(boostInputField, "KeyBoostPrimary", KeyCode.Y);
+        InitializeControlsInputField(leftInputField, "KeyLeftPrimary", KeyCode.G);
+        InitializeControlsInputField(rightInputField, "KeyRightPrimary", KeyCode.J);
         InitializeControlsInputField(pauseInputField, "KeyPause", KeyCode.Space);
     }
     #endregion
@@ -181,7 +181,7 @@ public class MenuUIScript : MonoBehaviour
             {
                 // Ignore mouse buttons or reserved keys
                 if ((e.keyCode is >= KeyCode.Mouse0 and <= KeyCode.Mouse6) ||
-                e.keyCode is KeyCode.Escape or KeyCode.LeftArrow or KeyCode.RightArrow or KeyCode.UpArrow or KeyCode.DownArrow)
+                e.keyCode is KeyCode.Escape or KeyCode.RightBracket or KeyCode.Quote or KeyCode.UpArrow or KeyCode.Return)
                     return;
 
                 KeyCode key = e.keyCode;
@@ -273,6 +273,10 @@ public class MenuUIScript : MonoBehaviour
         KeyCode.Tab,
         KeyCode.Backspace,
         KeyCode.Numlock,
+        KeyCode.LeftArrow,
+        KeyCode.RightArrow,
+        KeyCode.UpArrow,
+        KeyCode.DownArrow,
     };
         return specialKeys.Contains(key);
     }
@@ -372,6 +376,10 @@ public class MenuUIScript : MonoBehaviour
             case KeyCode.Escape: return "ESC";
             case KeyCode.Tab: return "TAB";
             case KeyCode.Backspace: return "RÜCKTASTE";
+            case KeyCode.LeftArrow: return "PFEIL LINKS";
+            case KeyCode.RightArrow: return "PFEIL RECHTS";
+            case KeyCode.UpArrow: return "PFEIL HOCH";
+            case KeyCode.DownArrow: return "PFEIL RUNTER";
 
             default: return key.ToString().ToUpper();
         }
@@ -453,6 +461,11 @@ public class MenuUIScript : MonoBehaviour
             case KeyCode.Escape: return "ESC";
             case KeyCode.Tab: return "TAB";
             case KeyCode.Backspace: return "CANCELLARE";
+            case KeyCode.LeftArrow: return "FRECCIA SINISTRA";
+            case KeyCode.RightArrow: return "FRECCIA DESTRA";
+            case KeyCode.UpArrow: return "FRECCIA SU";
+            case KeyCode.DownArrow: return "FRECCIA GIÙ";
+
 
             default: return key.ToString().ToUpper();
         }
@@ -538,6 +551,10 @@ public class MenuUIScript : MonoBehaviour
             case KeyCode.Escape: return "ÉCHAP";
             case KeyCode.Tab: return "TAB";
             case KeyCode.Backspace: return "RETOUR";
+            case KeyCode.LeftArrow: return "FLÈCHE GAUCHE";
+            case KeyCode.RightArrow: return "FLÈCHE DROITE";
+            case KeyCode.UpArrow: return "FLÈCHE HAUT";
+            case KeyCode.DownArrow: return "FLÈCHE BAS";
 
             default: return key.ToString().ToUpper();
         }
@@ -619,6 +636,10 @@ public class MenuUIScript : MonoBehaviour
             case KeyCode.Escape: return "ESC";
             case KeyCode.Tab: return "TAB";
             case KeyCode.Backspace: return "BACKSPACE";
+            case KeyCode.LeftArrow: return "LEFT ARROW";
+            case KeyCode.RightArrow: return "RIGHT ARROW";
+            case KeyCode.UpArrow: return "UP ARROW";
+            case KeyCode.DownArrow: return "DOWN ARROW";
 
             // Default fallthrough
             default: return key.ToString().ToUpper();
