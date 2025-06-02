@@ -311,7 +311,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDropdownUI: 0
 --- !u!95 &29055197
 Animator:
   serializedVersion: 7
@@ -943,7 +942,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDropdownUI: 0
 --- !u!95 &132802517
 Animator:
   serializedVersion: 7
@@ -1312,7 +1310,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDropdownUI: 0
 --- !u!1 &215183990
 GameObject:
   m_ObjectHideFlags: 0
@@ -4470,7 +4467,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDropdownUI: 0
 --- !u!95 &763873865
 Animator:
   serializedVersion: 7
@@ -7059,7 +7055,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDropdownUI: 0
 --- !u!95 &1283786506
 Animator:
   serializedVersion: 7
@@ -7264,7 +7259,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDropdownUI: 0
 --- !u!95 &1286490803
 Animator:
   serializedVersion: 7
@@ -8446,7 +8440,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDropdownUI: 0
 --- !u!1 &1544818593
 GameObject:
   m_ObjectHideFlags: 0
@@ -9163,7 +9156,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDropdownUI: 0
 --- !u!95 &1576630677
 Animator:
   serializedVersion: 7
@@ -9347,13 +9339,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1608931793}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5917639}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: -781.9, y: 358}
@@ -9435,7 +9427,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2150871330291307017, guid: 4d546c6c6542a4144bf57bcd16065b2d, type: 3}
+  m_Sprite: {fileID: -4285058652498584846, guid: e280ed874fb33dd4fa73b591e83e3d3c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10364,7 +10356,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDropdownUI: 0
 --- !u!95 &1837562139
 Animator:
   serializedVersion: 7
