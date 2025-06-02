@@ -8,6 +8,12 @@ public class PlatformScript : MonoBehaviour
     [SerializeField] private Transform leftFuelPoint;         // Left fuel spawn boundary
     [SerializeField] private Transform rightFuelPoint;        // Right fuel spawn boundary
 
+    [Header("Sprite Settings")]
+    [SerializeField] private Sprite otherSprite;             
+    [SerializeField] private Sprite otherOtherSprite;                         
+    [SerializeField] private float otherSpriteProbability;
+    [SerializeField] private float otherOtherSpriteProbability;
+
     [Header("Behavior Settings")]
     [SerializeField] private float playerJumpForce;                 // Force applied to player bounce
     #endregion
@@ -21,6 +27,7 @@ public class PlatformScript : MonoBehaviour
     private void Start()
     {
         TrySpawnFuel();
+        TryChangeSprite();
     }
 
     private void OnDestroy()
@@ -29,6 +36,27 @@ public class PlatformScript : MonoBehaviour
         if (spawnedFuel != null)
         {
             Destroy(spawnedFuel);
+        }
+    }
+    #endregion
+
+    #region Sprite Management
+    private void TryChangeSprite()
+    {
+        SpriteRenderer renderer = GetComponent<SpriteRenderer>();
+        if (renderer == null) return;
+
+        // First chance: try otherSprite
+        if (otherSprite != null && Random.value < otherSpriteProbability)
+        {
+            renderer.sprite = otherSprite;
+            return; // Exit after first successful change
+        }
+
+        // Second chance: try otherOtherSprite (only if first didn't change)
+        if (otherOtherSprite != null && Random.value < otherOtherSpriteProbability)
+        {
+            renderer.sprite = otherOtherSprite;
         }
     }
     #endregion

@@ -8,6 +8,10 @@ public class MovingPlatformScript : MonoBehaviour
     [SerializeField] private Transform leftFuelPoint;        // Left fuel spawn boundary
     [SerializeField] private Transform rightFuelPoint;       // Right fuel spawn boundary
 
+    [Header("Sprite Settings")]
+    [SerializeField] private Sprite otherSprite;
+    [SerializeField] private float otherSpriteProbability;
+
     [Header("Behavior Settings")]
     [SerializeField] private float playerJumpForce;   // Force applied to player bounce
     [SerializeField] private float difference;        // Horizontal movement range from start position
@@ -28,6 +32,7 @@ public class MovingPlatformScript : MonoBehaviour
     private void Start()
     {       
         InitializeMovement();
+        TryChangeSprite();
         SpawnFuel();
     }
 
@@ -57,6 +62,21 @@ public class MovingPlatformScript : MonoBehaviour
         startX = transform.position.x;
         rightBound = startX + difference;
         leftBound = startX - difference;
+    }
+    #endregion
+
+    #region Sprite Management
+    private void TryChangeSprite()
+    {
+        // Only attempt to change sprite if an alternate sprite is provided
+        if (otherSprite != null && Random.value < otherSpriteProbability)
+        {
+            SpriteRenderer renderer = GetComponent<SpriteRenderer>();
+            if (renderer != null)
+            {
+                renderer.sprite = otherSprite;
+            }
+        }
     }
     #endregion
 

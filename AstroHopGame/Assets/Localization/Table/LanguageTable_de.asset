@@ -161,8 +161,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 604938443948032
-    m_Localized: "<color=#BE23FE>Lila <color=#FFFFFF>Plattformen bewegen sich links
-      und rechts.\n<size=30><alpha=#80>Dr\xFCcke [Alt], um das Tutorial zu \xFCberspringen."
+    m_Localized: "<color=#FFFFFF>Manche Plattformen bewegen sich links und rechts.\n<size=30><alpha=#80>Dr\xFCcke
+      [Alt], um das Tutorial zu \xFCberspringen."
     m_Metadata:
       m_Items: []
   - m_Id: 4223074929999872
@@ -227,9 +227,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418301782589440
-    m_Localized: "Plattformen gibt es in drei Varianten:\n- Gr\xFCn: Statisch und
-      dauerhaft.\r\n- Rot: Zerbricht nach einem Sprung \u2013 nur einmal nutzbar.\r\n-
-      Lila: Bewegt sich konstant nach links und rechts."
+    m_Localized: "Plattformen gibt es in drei Varianten:\n- Statisch und dauerhaft.\r\n-
+      Zerbricht nach einem Sprung \u2013 nur einmal nutzbar (rot).\r\n- Bewegt sich
+      konstant nach links und rechts."
     m_Metadata:
       m_Items: []
   - m_Id: 6418419743195136

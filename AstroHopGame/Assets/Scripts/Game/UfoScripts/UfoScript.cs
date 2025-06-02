@@ -9,8 +9,9 @@ public class UfoScript : MonoBehaviour
     [SerializeField] private float moveSpeedX;                      // Horizontal movement speed
     [SerializeField] private float moveSpeedY;                      // Vertical movement speed (downward)
     [SerializeField] private float directionCooldown;               // Minumum time between direction changes
-    [SerializeField] private SpriteRenderer spriteRenderer;                  // Reference to sprite renderer component
+    [SerializeField] private SpriteRenderer spriteRenderer;         // Reference to sprite renderer component
     [SerializeField] private Animator ufoAnim;                      // Reference to animator component
+    [SerializeField] private float changeChance;
 
     [Header("Destroyed Ufo")]
     [SerializeField] private float jumpForce;                       // Force applied to player when jumped on
@@ -35,6 +36,11 @@ public class UfoScript : MonoBehaviour
     #region Unity Lifecycle Methods
     void Start()
     {
+        if (ufoAnim != null && Random.value <= changeChance)
+        {
+            ufoAnim.SetTrigger("change");
+        }
+
         InitializeUfoState();
         InstantiateArrow();
     }

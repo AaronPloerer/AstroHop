@@ -97,9 +97,9 @@ public class MenuUIScript : MonoBehaviour
         InitializeToggles();
 
         // Set up control input fields
-        InitializeControlsInputField(boostInputField, "KeyBoostPrimary", KeyCode.Y);
-        InitializeControlsInputField(leftInputField, "KeyLeftPrimary", KeyCode.G);
-        InitializeControlsInputField(rightInputField, "KeyRightPrimary", KeyCode.J);
+        InitializeControlsInputField(boostInputField, "KeyBoostPrimary", KeyCode.F2);
+        InitializeControlsInputField(leftInputField, "KeyLeftPrimary", KeyCode.Alpha1);
+        InitializeControlsInputField(rightInputField, "KeyRightPrimary", KeyCode.Alpha3);
         InitializeControlsInputField(pauseInputField, "KeyPause", KeyCode.Space);
     }
     #endregion

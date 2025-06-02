@@ -216,6 +216,7 @@ MonoBehaviour:
   directionCooldown: 0.5
   spriteRenderer: {fileID: 1317375725788529601}
   ufoAnim: {fileID: 4308260773503649271}
+  changeChance: 0.5
   jumpForce: 9.2
   fallSpeed: 8
   explosionPrefab: {fileID: 3103710315566421101, guid: 12c6c7f94ef01f04c9076d1d66f78a6d, type: 3}

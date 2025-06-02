@@ -232,6 +232,8 @@ MonoBehaviour:
   rocketFuel: {fileID: 5993806398105575849, guid: 3262db29b2c9ead4a9bdbad9a5707b32, type: 3}
   leftFuelPoint: {fileID: 5385387816334173842}
   rightFuelPoint: {fileID: 3894615439924736126}
+  otherSprite: {fileID: -1078488804, guid: 56d5f4c52a28d79409d4a1c1e36fbce1, type: 3}
+  otherSpriteProbability: 0.1
   playerJumpForce: 9.2
   difference: 1.5
   levelWidth: 5.5

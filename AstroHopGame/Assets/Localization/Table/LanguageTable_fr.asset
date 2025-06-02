@@ -163,9 +163,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 604938443948032
-    m_Localized: "Les plateformes <color=#BE23FE>violettes</color><color=#FFFFFF>
-      se d\xE9placent de gauche \xE0 droite.\n<size=30><alpha=#80>Appuie sur [Alt]
-      pour pour passer le tutoriel."
+    m_Localized: "Certaines plateformes se d\xE9placent de gauche \xE0 droite.\n<size=30><alpha=#80>Appuie
+      sur [Alt] pour pour passer le tutoriel."
     m_Metadata:
       m_Items: []
   - m_Id: 4223074929999872
@@ -221,10 +220,10 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418301782589440
-    m_Localized: "Les plateformes se d\xE9clinent en trois variantes :\r\n- Vertes
-      : Statiques et permanentes.\r\n- Rouges : Se brisent apr\xE8s un seul atterrissage
-      (utilisables une seule fois).\r\n- Violettes : Se d\xE9placent de gauche \xE0
-      droite \xE0 une vitesse constante."
+    m_Localized: "Les plateformes se d\xE9clinent en trois variantes :\r\n- Statiques
+      et permanentes.\r\n- Se brisent apr\xE8s un seul rebond, utilisables une seule
+      fois (rouges).\r\n- Se d\xE9placent de gauche \xE0 droite \xE0 une vitesse
+      constante."
     m_Metadata:
       m_Items: []
   - m_Id: 6418419743195136

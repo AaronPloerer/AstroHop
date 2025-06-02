@@ -164,7 +164,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 604938443948032
-    m_Localized: '<color=#BE23FE>Purple <color=#FFFFFF>platforms move left and right.
+    m_Localized: '<color=#FFFFFF> Some platforms move left and right.
 
       <size=30><alpha=#80>Press
       [Alt] to skip the tutorial.'
@@ -220,9 +220,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418301782589440
-    m_Localized: "Platforms come in three varieties:\r\n- Green: Static and permanent.\r\n-
-      Red: Break after a single landing, so they can only be used once.\r\n- Purple:
-      Move left and right at a constant pace.\r"
+    m_Localized: "Platforms come in three varieties:\r\n- Static and permanent.\r\n-
+      Break after a single landing, so they can only be used once (red).\r\n- Move
+      left and right at a constant pace.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6418419743195136

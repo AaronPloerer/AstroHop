@@ -167,11 +167,10 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 604938443948032
-    m_Localized: 'Le piattaforme <color=#BE23FE>viola <color=#FFFFFF>si muovono a
-      sinistra e a destra.
+    m_Localized: 'Alcune piattaforme viola si muovono a sinistra e a destra.
 
-      <size=30><alpha=#80>Premi [Alt] per saltare il
-      tutorial.'
+      <size=30><alpha=#80>Premi
+      [Alt] per saltare il tutorial.'
     m_Metadata:
       m_Items: []
   - m_Id: 4223074929999872
@@ -237,9 +236,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418301782589440
-    m_Localized: "Le piattaforme hanno tre varianti:\r\n- Verdi: Statiche e permanenti.\r\n-
-      Rosse: Si rompono dopo un atterraggio, utilizzabili una sola volta.\r\n- Viola:
-      Si muovono a sinistra e destra a velocit\xE0 costante.\r"
+    m_Localized: "Le piattaforme hanno tre varianti:\r\n- Statiche e permanenti.\r\n-
+      Si rompono dopo un atterraggio, utilizzabili una sola volta (rosse).\r\n- Si
+      muovono a sinistra e destra a velocit\xE0 costante.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6418419743195136
