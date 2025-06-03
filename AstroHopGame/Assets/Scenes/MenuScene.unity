@@ -8249,7 +8249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6529f09e592308f4b83b8afad3f59367, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  escapeCooldownTime: 0.1
+  escapeCooldownTime: 0.2
   keyBoostPrimary: 0
   keyBoostSecondary: 0
   keyLeftPrimary: 0
