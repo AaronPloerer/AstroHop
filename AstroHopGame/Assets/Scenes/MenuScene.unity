@@ -3307,7 +3307,6 @@ Transform:
   - {fileID: 807413315}
   - {fileID: 816326150}
   - {fileID: 46057954}
-  - {fileID: 515692576}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &366044561
@@ -5413,7 +5412,7 @@ Transform:
   - {fileID: 1609845850}
   - {fileID: 330419572}
   - {fileID: 1477099877}
-  m_Father: {fileID: 364524819}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &515692577
 MonoBehaviour:
@@ -8309,7 +8308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6529f09e592308f4b83b8afad3f59367, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  escapeCooldownTime: 0.1
+  escapeCooldownTime: 0.2
   keyBoostPrimary: 0
   keyBoostSecondary: 0
   keyLeftPrimary: 0
@@ -21414,4 +21413,5 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 364524819}
+  - {fileID: 515692576}
   - {fileID: 1231177569}
