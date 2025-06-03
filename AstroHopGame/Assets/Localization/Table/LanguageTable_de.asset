@@ -264,7 +264,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 6418756222844928
     m_Localized: "Pausiere das Spiel jederzeit \xFCber das Pausensymbol oben links
-      oder die Pausetaste (Standard: Leertaste)."
+      oder die Pausetaste (in Einstellungen gew\xE4hlte Taste)."
     m_Metadata:
       m_Items: []
   - m_Id: 6418783104139264

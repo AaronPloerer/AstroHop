@@ -4186,7 +4186,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &673472607
@@ -9157,7 +9157,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1556937224
@@ -10992,6 +10992,10 @@ MonoBehaviour:
   pauseRetryButton: {fileID: 1283786502}
   gameOverRetryButton: {fileID: 167076921}
   gameOverMainMenuButton: {fileID: 1502734399}
+  warningRetryConfirmButton: {fileID: 29055193}
+  warningRetryCancelButton: {fileID: 1837562135}
+  warningMenuConfirmButton: {fileID: 763873861}
+  warningMenuCancelButton: {fileID: 132802513}
   paused: 0
   pauseCooldownDuration: 0.1
   validClickArea: {fileID: 1651023146}

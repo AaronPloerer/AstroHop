@@ -386,6 +386,8 @@ public class ManagerScript : MonoBehaviour
 
     public void OpenWarningToMenu()
     {
+        MainGameUIScript.instance.AssignRandomMenuWarningButtonPositions();
+
         AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
         MainGameUIScript.instance.warningMainMenuPanel.SetActive(true);
         MainGameUIScript.instance.pausePanel.SetActive(false);
@@ -393,6 +395,8 @@ public class ManagerScript : MonoBehaviour
 
     public void OpenWarningRetry()
     {
+        MainGameUIScript.instance.AssignRandomRetryWarningButtonPositions();
+
         AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
         MainGameUIScript.instance.warningRetryPanel.SetActive(true);
         MainGameUIScript.instance.pausePanel.SetActive(false);
@@ -462,6 +466,8 @@ public class ManagerScript : MonoBehaviour
 
     public void OpenExitWinodwWarning()
     {
+        MenuUIScript.instance.AssignRandomExitButtonPositions();
+
         AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
         MenuUIScript.instance.exitWindowWarningPanel.SetActive(true);
         MenuUIScript.instance.startGameButton.interactable = false;
@@ -493,6 +499,8 @@ public class ManagerScript : MonoBehaviour
 
     public void OpenDeleteProgressPanel()
     {
+        MenuUIScript.instance.AssignRandomDeleteButtonPositions();  
+
         AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
         MenuUIScript.instance.deleteProgressPanel.SetActive(true);
         MenuUIScript.instance.startGameButton.interactable = false;
@@ -513,6 +521,8 @@ public class ManagerScript : MonoBehaviour
 
     public void OpenDeleteProgressConfirmPanel()
     {
+        MenuUIScript.instance.AssignRandomDeleteConfirmButtonPositions();
+
         AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
         MenuUIScript.instance.deleteProgressConfirmPanel.SetActive(true);
         MenuUIScript.instance.deleteProgressPanel.SetActive(false);

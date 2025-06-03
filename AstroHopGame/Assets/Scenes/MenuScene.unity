@@ -7196,7 +7196,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &659784804
@@ -13717,13 +13717,19 @@ MonoBehaviour:
   boostingHelpText: {fileID: 613763393}
   pauseHelpText: {fileID: 1058195080}
   deletedProgressText: {fileID: 431582578}
-  generalOptions: {fileID: 0}
-  gameplayOptions: {fileID: 0}
-  audioOptions: {fileID: 0}
+  generalOptions: {fileID: 2010177026}
+  gameplayOptions: {fileID: 90183206}
+  audioOptions: {fileID: 1496747784}
   openOptionsButton: {fileID: 106877315}
   openHelpButton: {fileID: 2142561818}
   startGameButton: {fileID: 1683206037}
   exitWindowWarningButton: {fileID: 105542941}
+  confirmExitButton: {fileID: 115770680}
+  cancelExitButton: {fileID: 1997576019}
+  confirmDeleteProgressButton: {fileID: 2074766115}
+  cancelDeleteProgressButton: {fileID: 1250202263}
+  confirmDeleteProgressButton2: {fileID: 555027966}
+  cancelDeleteProgressButton2: {fileID: 1669840630}
   languageDropdown: {fileID: 47169552}
   musicSlider: {fileID: 1067270264}
   sfxSlider: {fileID: 1977794738}

@@ -61,6 +61,12 @@ public class MenuUIScript : MonoBehaviour
     public Button openHelpButton;
     public Button startGameButton;
     public Button exitWindowWarningButton;
+    public Button confirmExitButton;
+    public Button cancelExitButton;
+    public Button confirmDeleteProgressButton;
+    public Button cancelDeleteProgressButton;    
+    public Button confirmDeleteProgressButton2;
+    public Button cancelDeleteProgressButton2;
 
     [Header("Inputs")]
     public TMP_Dropdown languageDropdown;
@@ -191,6 +197,82 @@ public class MenuUIScript : MonoBehaviour
             if (panels[i] != null)
             {
                 panels[i].GetComponent<RectTransform>().anchoredPosition = positions[i];
+            }
+        }
+    }
+
+    public void AssignRandomExitButtonPositions()
+    {
+        Debug.Log("works");
+        if (confirmExitButton == null || cancelExitButton == null) return;
+
+        // 50% chance to change positions
+        bool changePosition = Random.Range(0, 2) == 0;
+
+        RectTransform confirmRect = confirmExitButton.GetComponent<RectTransform>();
+        RectTransform cancelRect = cancelExitButton.GetComponent<RectTransform>();
+
+        if (confirmRect != null && cancelRect != null)
+        {
+            if (changePosition)
+            {
+                confirmRect.anchoredPosition = new Vector2(confirmRect.anchoredPosition.x, -120.2f);
+                cancelRect.anchoredPosition = new Vector2(cancelRect.anchoredPosition.x, -281f);
+            }
+            else
+            {
+                confirmRect.anchoredPosition = new Vector2(confirmRect.anchoredPosition.x, -281f);
+                cancelRect.anchoredPosition = new Vector2(cancelRect.anchoredPosition.x, -120.2f);
+            }
+        }
+    }
+
+    public void AssignRandomDeleteButtonPositions()
+    {
+        if (confirmDeleteProgressButton == null || cancelDeleteProgressButton == null) return;
+
+        // 50% chance to change positions
+        bool changePosition = Random.Range(0, 2) == 0;
+
+        RectTransform confirmRect = confirmDeleteProgressButton.GetComponent<RectTransform>();
+        RectTransform cancelRect = cancelDeleteProgressButton.GetComponent<RectTransform>();
+
+        if (confirmRect != null && cancelRect != null)
+        {
+            if (changePosition)
+            {
+                confirmRect.anchoredPosition = new Vector2(confirmRect.anchoredPosition.x, -120.2f);
+                cancelRect.anchoredPosition = new Vector2(cancelRect.anchoredPosition.x, -281f);
+            }
+            else
+            {
+                confirmRect.anchoredPosition = new Vector2(confirmRect.anchoredPosition.x, -281f);
+                cancelRect.anchoredPosition = new Vector2(cancelRect.anchoredPosition.x, -120.2f);
+            }
+        }
+    }
+
+    public void AssignRandomDeleteConfirmButtonPositions()
+    {
+        if (confirmDeleteProgressButton2 == null || cancelDeleteProgressButton2 == null) return;
+
+        // 50% chance to change positions
+        bool changePosition = Random.Range(0, 2) == 0;
+
+        RectTransform confirmRect = confirmDeleteProgressButton2.GetComponent<RectTransform>();
+        RectTransform cancelRect = cancelDeleteProgressButton2.GetComponent<RectTransform>();
+
+        if (confirmRect != null && cancelRect != null)
+        {
+            if (changePosition)
+            {
+                confirmRect.anchoredPosition = new Vector2(confirmRect.anchoredPosition.x, -120.2f);
+                cancelRect.anchoredPosition = new Vector2(cancelRect.anchoredPosition.x, -281f);
+            }
+            else
+            {
+                confirmRect.anchoredPosition = new Vector2(confirmRect.anchoredPosition.x, -281f);
+                cancelRect.anchoredPosition = new Vector2(cancelRect.anchoredPosition.x, -120.2f);
             }
         }
     }

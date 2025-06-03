@@ -41,9 +41,9 @@ public class MainGameUIScript : MonoBehaviour
     public GameObject tutorials;
 
     [Header("Tip Elements")]
-    [SerializeField] private int timeTipText;                       
+    [SerializeField] private int timeTipText;
     public GameObject failedBoostTip;
-    [SerializeField] private int failedBoostsForTip;                  
+    [SerializeField] private int failedBoostsForTip;
     public int failedBoostAmount;
     private bool failedBoostTipOn;
     public GameObject failedPickUpTip;
@@ -73,6 +73,10 @@ public class MainGameUIScript : MonoBehaviour
     [SerializeField] private Button pauseRetryButton;
     [SerializeField] private Button gameOverRetryButton;
     [SerializeField] private Button gameOverMainMenuButton;
+    [SerializeField] private Button warningRetryConfirmButton;
+    [SerializeField] private Button warningRetryCancelButton;
+    [SerializeField] private Button warningMenuConfirmButton;
+    [SerializeField] private Button warningMenuCancelButton;
     #endregion
 
     #region Pause System
@@ -252,9 +256,13 @@ public class MainGameUIScript : MonoBehaviour
         {
             if (leftOnRight)
             {
-                // leftIcons on right (816), rightIcons on left (-816)
                 leftRect.anchoredPosition = new Vector2(844f, leftRect.anchoredPosition.y);
                 rightRect.anchoredPosition = new Vector2(-849f, rightRect.anchoredPosition.y);
+            }
+            else
+            {
+                leftRect.anchoredPosition = new Vector2(-815.7f, leftRect.anchoredPosition.y);
+                rightRect.anchoredPosition = new Vector2(816.5f, rightRect.anchoredPosition.y);
             }
         }
     }
@@ -277,6 +285,12 @@ public class MainGameUIScript : MonoBehaviour
                 fuelRect.anchoredPosition = new Vector2(fuelRect.anchoredPosition.x, -297.7f);
                 lineRect.anchoredPosition = new Vector2(lineRect.anchoredPosition.x, -114.9f);
             }
+            else
+            {
+                scoresRect.anchoredPosition = new Vector2(scoresRect.anchoredPosition.x, 0f);
+                fuelRect.anchoredPosition = new Vector2(fuelRect.anchoredPosition.x, 0f);
+                lineRect.anchoredPosition = new Vector2(lineRect.anchoredPosition.x, 0f);
+            }
         }
     }
 
@@ -294,6 +308,11 @@ public class MainGameUIScript : MonoBehaviour
             {
                 scoreRect.anchoredPosition = new Vector2(scoreRect.anchoredPosition.x, 120.2f);
                 highscoreRect.anchoredPosition = new Vector2(highscoreRect.anchoredPosition.x, -120.2f);
+            }
+            else
+            {
+                scoreRect.anchoredPosition = new Vector2(scoreRect.anchoredPosition.x, -120.2f);
+                highscoreRect.anchoredPosition = new Vector2(highscoreRect.anchoredPosition.x, 120.2f);
             }
         }
     }
@@ -334,7 +353,7 @@ public class MainGameUIScript : MonoBehaviour
         if (gameOverRetryButton == null || gameOverMainMenuButton == null) return;
 
         // 50% chance to change positions
-        bool changePos = Random.Range(0, 2) == 0; 
+        bool changePos = Random.Range(0, 2) == 0;
 
         RectTransform retryRect = gameOverRetryButton.GetComponent<RectTransform>();
         RectTransform menuRect = gameOverMainMenuButton.GetComponent<RectTransform>();
@@ -346,6 +365,58 @@ public class MainGameUIScript : MonoBehaviour
                 retryRect.anchoredPosition = new Vector2(-210f, retryRect.anchoredPosition.y);
                 menuRect.anchoredPosition = new Vector2(210f, menuRect.anchoredPosition.y);
             }
+            else
+            {
+                retryRect.anchoredPosition = new Vector2(210f, retryRect.anchoredPosition.y);
+                menuRect.anchoredPosition = new Vector2(-210f, menuRect.anchoredPosition.y);
+            }
+        }
+    }
+
+    public void AssignRandomRetryWarningButtonPositions()
+    {
+        if (warningRetryConfirmButton == null || warningRetryCancelButton == null) return;
+
+        // 50% chance to change positions
+        bool changePos = Random.Range(0, 2) == 0;
+
+        RectTransform confirmRect = warningRetryConfirmButton.GetComponent<RectTransform>();
+        RectTransform cancelRect = warningRetryCancelButton.GetComponent<RectTransform>();
+
+        if (gameOverRetryButton != null && gameOverMainMenuButton != null)
+        {
+            if (changePos)
+            {
+                confirmRect.anchoredPosition = new Vector2(confirmRect.anchoredPosition.x, -114f);
+                cancelRect.anchoredPosition = new Vector2(cancelRect.anchoredPosition.x, -268f);
+            }
+            else
+            {
+                confirmRect.anchoredPosition = new Vector2(confirmRect.anchoredPosition.x, -268f);
+                cancelRect.anchoredPosition = new Vector2(cancelRect.anchoredPosition.x, -114f);
+            }
+        }
+    }
+
+    public void AssignRandomMenuWarningButtonPositions()
+    {
+        if (warningMenuConfirmButton == null || warningMenuCancelButton == null) return;
+
+        // 50% chance to swap positions
+        bool changePos = Random.Range(0, 2) == 0;
+
+        RectTransform confirmRect = warningMenuConfirmButton.GetComponent<RectTransform>();
+        RectTransform cancelRect = warningMenuCancelButton.GetComponent<RectTransform>();
+
+        if (changePos)
+        {
+            confirmRect.anchoredPosition = new Vector2(confirmRect.anchoredPosition.x, -114f);
+            cancelRect.anchoredPosition = new Vector2(cancelRect.anchoredPosition.x, -268f);
+        }
+        else
+        {
+            confirmRect.anchoredPosition = new Vector2(confirmRect.anchoredPosition.x, -268f);
+            cancelRect.anchoredPosition = new Vector2(cancelRect.anchoredPosition.x, -114f);
         }
     }
 
@@ -459,7 +530,7 @@ public class MainGameUIScript : MonoBehaviour
     private void UpdateScoreDisplays()
     {
         // Only update score if camera reaches new height record
-        if ((CameraScript.instance.transform.position.y) > highestPos && (CameraScript.instance.transform.position.y) > 0) 
+        if ((CameraScript.instance.transform.position.y) > highestPos && (CameraScript.instance.transform.position.y) > 0)
         {
             // Convert height to score using position multiplier
             int score = Mathf.FloorToInt(CameraScript.instance.transform.position.y * positionToScore);
@@ -580,7 +651,7 @@ public class MainGameUIScript : MonoBehaviour
             bool tutorialNotSpawned = !shownTutorial[currentPhaseIndex];
 
             // Spawn tutorial sequence if conditions met
-            if (tutorialNotSpawned) 
+            if (tutorialNotSpawned)
             {
                 // Tutorial is being shown: do not repeat this if for the phase
                 shownTutorial[currentPhaseIndex] = true;

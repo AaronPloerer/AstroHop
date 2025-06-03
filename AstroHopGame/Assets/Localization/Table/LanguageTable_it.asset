@@ -275,7 +275,8 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 6418756222844928
     m_Localized: "Metti in pausa il gioco in qualsiasi momento cliccando l\u2019icona
-      di pausa in alto a sinistra o premendo il tasto Pausa (predefinito: Barra Spaziatrice)."
+      di pausa in alto a sinistra o premendo il tasto Pausa (tasto selezionato in
+      Impostazioni)."
     m_Metadata:
       m_Items: []
   - m_Id: 6418783104139264
