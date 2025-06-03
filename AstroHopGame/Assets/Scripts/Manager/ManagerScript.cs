@@ -323,6 +323,8 @@ public class ManagerScript : MonoBehaviour
     #region Button Management
     public void OpenOptionsPanel()
     {
+        MenuUIScript.instance.AssignRandomOptionsPanelPositions();
+
         AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
         MenuUIScript.instance.optionsPanel.SetActive(true);
         MenuUIScript.instance.startGameButton.interactable = false;
@@ -333,6 +335,8 @@ public class ManagerScript : MonoBehaviour
 
     public void CloseOptionsPanel()
     {
+        MenuUIScript.instance.AssignRandomButtonPositions();
+
         // Check if all keys are unique using a HashSet
         HashSet<KeyCode> keySet = new HashSet<KeyCode> { keyBoostPrimary, keyLeftPrimary, keyRightPrimary, keyPause };
 
@@ -557,6 +561,8 @@ public class ManagerScript : MonoBehaviour
     #region Pause Management
     public void PauseGame()
     {
+        MainGameUIScript.instance.AssignRandomPauseButtonPositions();
+
         AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
         MainGameUIScript.instance.pauseButton.interactable = false;
         MainGameUIScript.instance.paused = true;

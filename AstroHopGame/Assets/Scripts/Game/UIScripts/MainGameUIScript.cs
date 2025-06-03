@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -58,6 +59,18 @@ public class MainGameUIScript : MonoBehaviour
     public GameObject warningRetryPanel;
     public GameObject fallingText;
     public GameObject crashingText;
+
+    [Header("Moving Objects")]
+    [SerializeField] private GameObject leftIcons;
+    [SerializeField] private GameObject rightIcons;
+    [SerializeField] private GameObject scoresInfo;
+    [SerializeField] private GameObject fuelInfo;
+    [SerializeField] private GameObject line;
+    [SerializeField] private GameObject scoreObject;
+    [SerializeField] private GameObject highscoreObject;
+    [SerializeField] private Button pauseContinueButton;
+    [SerializeField] private Button pauseMainMenuButton;
+    [SerializeField] private Button pauseRetryButton;
     #endregion
 
     #region Pause System
@@ -99,6 +112,9 @@ public class MainGameUIScript : MonoBehaviour
         InitializeGameState();
         InitializeFuelSystem();
         InitializeTipSystem();
+        AssignRandomIconPositions();
+        AssignRandomInfoPositions();
+        AssignRandomScorePositions();
     }
 
     private void InitializeGameState()
@@ -214,6 +230,112 @@ public class MainGameUIScript : MonoBehaviour
         for (int i = 0; i < shownTutorial.Length; i++)
         {
             shownTutorial[i] = PlayerPrefs.GetInt("Phase" + i + "TutorialShown", 0) == 1;
+        }
+    }
+    #endregion
+
+    #region Position System
+    private void AssignRandomIconPositions()
+    {
+        if (leftIcons == null || rightIcons == null) return;
+
+        // Randomly decide which icon goes to which side
+        bool leftOnRight = Random.Range(0, 2) == 0; // 50% chance
+
+        // Get RectTransform components
+        RectTransform leftRect = leftIcons.GetComponent<RectTransform>();
+        RectTransform rightRect = rightIcons.GetComponent<RectTransform>();
+
+        if (leftRect != null && rightRect != null)
+        {
+            if (leftOnRight)
+            {
+                // leftIcons on right (816), rightIcons on left (-816)
+                leftRect.anchoredPosition = new Vector2(844f, leftRect.anchoredPosition.y);
+                rightRect.anchoredPosition = new Vector2(-849f, rightRect.anchoredPosition.y);
+            }
+        }
+    }
+
+    private void AssignRandomInfoPositions()
+    {
+        if (scoresInfo == null || fuelInfo == null || line == null) return;
+
+        // 50% chance to change positions
+        if (Random.Range(0, 2) == 0)
+        {
+            RectTransform scoresRect = scoresInfo.GetComponent<RectTransform>();
+            RectTransform lineRect = line.GetComponent<RectTransform>();
+            RectTransform fuelRect = fuelInfo.GetComponent<RectTransform>();
+
+            if (scoresRect != null && fuelRect != null && lineRect != null)
+            {
+                // Apply new positions
+                scoresRect.anchoredPosition = new Vector2(scoresRect.anchoredPosition.x, 185.25f);
+                fuelRect.anchoredPosition = new Vector2(fuelRect.anchoredPosition.x, -297.7f);
+                lineRect.anchoredPosition = new Vector2(lineRect.anchoredPosition.x, -114.9f);
+            }
+        }
+    }
+
+    private void AssignRandomScorePositions()
+    {
+        if (scoreObject == null || highscoreObject == null) return;
+
+        // 50% chance to change positions
+        if (Random.Range(0, 2) == 0)
+        {
+            RectTransform scoreRect = scoreObject.GetComponent<RectTransform>();
+            RectTransform highscoreRect = highscoreObject.GetComponent<RectTransform>();
+
+            if (scoreRect != null && highscoreRect != null)
+            {
+                scoreRect.anchoredPosition = new Vector2(scoreRect.anchoredPosition.x, 120.2f);
+                highscoreRect.anchoredPosition = new Vector2(highscoreRect.anchoredPosition.x, -120.2f);
+            }
+        }
+    }
+
+    public void AssignRandomPauseButtonPositions()
+    {
+        // Collect the buttons into a list
+        List<Button> buttons = new List<Button>
+        {
+            pauseContinueButton,
+            pauseMainMenuButton,
+            pauseRetryButton
+        };
+
+        // Possible Y-axis positions for the buttons
+        List<float> yPositions = new List<float> { 22f, -134f, -290f };
+
+        // Shuffle positions
+        ShuffleList(yPositions);
+
+        // Assign each button a new Y position from the shuffled list
+        for (int i = 0; i < buttons.Count; i++)
+        {
+            Button button = buttons[i];
+            if (button == null) continue;
+
+            RectTransform rt = button.GetComponent<RectTransform>();
+            if (rt != null)
+            {
+                // Keep the X position unchanged (0), update only the Y position
+                rt.anchoredPosition = new Vector2(0, yPositions[i]);
+            }
+        }
+    }
+
+    private void ShuffleList<T>(List<T> list)
+    {
+        // Fisher-Yates Shuffle Algorithmus
+        for (int i = 0; i < list.Count; i++)
+        {
+            int randomIndex = Random.Range(i, list.Count);
+            T temp = list[i];
+            list[i] = list[randomIndex];
+            list[randomIndex] = temp;
         }
     }
     #endregion

@@ -214,7 +214,7 @@ MonoBehaviour:
   rightFuelPoint: {fileID: 803751244965955082}
   otherSprite: {fileID: 1278442665, guid: 56d5f4c52a28d79409d4a1c1e36fbce1, type: 3}
   otherOtherSprite: {fileID: -958960464, guid: 56d5f4c52a28d79409d4a1c1e36fbce1, type: 3}
-  otherSpriteProbability: 0.04
+  otherSpriteProbability: 0.03
   otherOtherSpriteProbability: 0.01
   playerJumpForce: 9.2
   forceFuelSpawn: 0

@@ -52,6 +52,9 @@ public class MenuUIScript : MonoBehaviour
     public TMP_Text boostingHelpText;
     public TMP_Text pauseHelpText;
     public GameObject deletedProgressText;
+    public GameObject generalOptions;
+    public GameObject gameplayOptions;
+    public GameObject audioOptions;
 
     [Header("Buttons")]
     public Button openOptionsButton;
@@ -103,6 +106,16 @@ public class MenuUIScript : MonoBehaviour
         InitializeControlsInputField(rightInputField, "KeyRightPrimary", KeyCode.Alpha3);
         InitializeControlsInputField(pauseInputField, "KeyPause", KeyCode.Space);
 
+        // Neue Positionierung für Help, Options und Start Buttons
+        AssignExitButtonPosition();
+        AssignRandomButtonPositions();
+        AssignRandomOptionsPanelPositions();
+    }
+    #endregion
+
+    #region Position System
+    private void AssignExitButtonPosition()
+    {
         if (exitWindowWarningButton != null)
         {
             RectTransform buttonTransform = exitWindowWarningButton.GetComponent<RectTransform>();
@@ -117,27 +130,26 @@ public class MenuUIScript : MonoBehaviour
                 buttonTransform.anchoredPosition = new Vector2(randomX, randomY);
             }
         }
-        // Neue Positionierung für Help, Options und Start Buttons
-        AssignRandomButtonPositions();
     }
 
-    private void AssignRandomButtonPositions()
+    public void AssignRandomButtonPositions()
     {
-        // Mögliche Y-Positionen
-        List<float> yPositions = new List<float> { 57f, -133f, -323f };
-
-        // Buttons in einer Liste sammeln
+        // Collect the buttons into a list
         List<Button> buttons = new List<Button>
         {
-            openHelpButton,
-            openOptionsButton,
-            startGameButton
+        openHelpButton,
+        openOptionsButton,
+        startGameButton
         };
 
-        // Y-Positionen mischen
+        // Possible Y-axis positions for the buttons
+        List<float> yPositions = new List<float> { 57f, -133f, -323f };
+
+
+        // Shuffle the list of Y positions
         ShuffleList(yPositions);
 
-        // Positionen zuweisen (nur Y-Position ändern, X bleibt 0)
+        // Assign each button a new Y position from the shuffled list
         for (int i = 0; i < buttons.Count; i++)
         {
             Button button = buttons[i];
@@ -146,8 +158,39 @@ public class MenuUIScript : MonoBehaviour
             RectTransform rt = button.GetComponent<RectTransform>();
             if (rt != null)
             {
-                // X-Position bleibt unverändert (0), nur Y-Position ändern
+                // Keep the X position unchanged (0), update only the Y position
                 rt.anchoredPosition = new Vector2(0, yPositions[i]);
+            }
+        }
+    }
+
+    public void AssignRandomOptionsPanelPositions()
+    {
+        // Create list of panels and positions
+        List<GameObject> panels = new List<GameObject>
+        {
+            generalOptions,
+            gameplayOptions,
+            audioOptions
+        };
+
+        // Define possible positions
+        List<Vector2> positions = new List<Vector2>
+        {
+            new Vector2(-404.2f, 210.35f),
+            new Vector2(404.2f, -210.35f),
+            new Vector2(-404.2f, -210.35f)
+        };
+
+        // Shuffle positions
+        ShuffleList(positions);
+
+        // Assign positions to panels
+        for (int i = 0; i < panels.Count; i++)
+        {
+            if (panels[i] != null)
+            {
+                panels[i].GetComponent<RectTransform>().anchoredPosition = positions[i];
             }
         }
     }
@@ -720,7 +763,6 @@ public class MenuUIScript : MonoBehaviour
     #region Adaptive Input Tutorial Help Panel 
     public void UpdateInputTutorialTexts()
     {
-        Debug.Log("nic");
         // Select current language; 0 = English default
         int localeID = PlayerPrefs.GetInt("Language", 0);
 
