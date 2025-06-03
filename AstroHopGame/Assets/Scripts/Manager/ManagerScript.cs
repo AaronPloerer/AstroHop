@@ -333,6 +333,17 @@ public class ManagerScript : MonoBehaviour
         MenuUIScript.instance.exitWindowWarningButton.interactable = false;
     }
 
+    public void OpenOptionsPanelNoClick()
+    {
+        MenuUIScript.instance.AssignRandomOptionsPanelPositions();
+
+        MenuUIScript.instance.optionsPanel.SetActive(true);
+        MenuUIScript.instance.startGameButton.interactable = false;
+        MenuUIScript.instance.openOptionsButton.interactable = false;
+        MenuUIScript.instance.openHelpButton.interactable = false;
+        MenuUIScript.instance.exitWindowWarningButton.interactable = false;
+    }
+
     public void CloseOptionsPanel()
     {
         MenuUIScript.instance.AssignRandomButtonPositions();
@@ -367,6 +378,18 @@ public class ManagerScript : MonoBehaviour
         MenuUIScript.instance.UpdateInputTutorialTexts();
 
         AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
+        MenuUIScript.instance.helpPanel.SetActive(true);
+        MenuUIScript.instance.startGameButton.interactable = false;
+        MenuUIScript.instance.openOptionsButton.interactable = false;
+        MenuUIScript.instance.openHelpButton.interactable = false;
+        MenuUIScript.instance.exitWindowWarningButton.interactable = false;
+    }
+
+    public void OpenHelpPanelNoClick()
+    {
+        // Update UI in Help panel
+        MenuUIScript.instance.UpdateInputTutorialTexts();
+
         MenuUIScript.instance.helpPanel.SetActive(true);
         MenuUIScript.instance.startGameButton.interactable = false;
         MenuUIScript.instance.openOptionsButton.interactable = false;

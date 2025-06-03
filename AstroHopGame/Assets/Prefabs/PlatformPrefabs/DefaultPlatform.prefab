@@ -143,7 +143,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8483051222464998911, guid: 35735abcdb03f8147b7d797188c649d1, type: 3}
+  m_Sprite: {fileID: 8328257993381758341, guid: b4f79be3c4f28eb4fb3e8c5c24209d98, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -214,9 +214,10 @@ MonoBehaviour:
   rightFuelPoint: {fileID: 803751244965955082}
   otherSprite: {fileID: 1278442665, guid: 56d5f4c52a28d79409d4a1c1e36fbce1, type: 3}
   otherOtherSprite: {fileID: -958960464, guid: 56d5f4c52a28d79409d4a1c1e36fbce1, type: 3}
-  otherSpriteProbability: 0.03
-  otherOtherSpriteProbability: 0.01
+  otherSpriteProbability: 0.035
+  otherOtherSpriteProbability: 0.015
   playerJumpForce: 9.2
+  otherSoundProbability: 0.05
   forceFuelSpawn: 0
 --- !u!251 &3757452036034148599
 PlatformEffector2D:

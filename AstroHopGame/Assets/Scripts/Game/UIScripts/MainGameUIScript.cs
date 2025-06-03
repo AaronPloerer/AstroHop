@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using static LevelGeneratorScript;
@@ -245,10 +246,9 @@ public class MainGameUIScript : MonoBehaviour
     {
         if (leftIcons == null || rightIcons == null) return;
 
-        // Randomly decide which icon goes to which side
-        bool leftOnRight = Random.Range(0, 2) == 0; // 50% chance
+        // 50% chance to change positions
+        bool leftOnRight = Random.Range(0, 2) == 0; 
 
-        // Get RectTransform components
         RectTransform leftRect = leftIcons.GetComponent<RectTransform>();
         RectTransform rightRect = rightIcons.GetComponent<RectTransform>();
 
@@ -272,15 +272,16 @@ public class MainGameUIScript : MonoBehaviour
         if (scoresInfo == null || fuelInfo == null || line == null) return;
 
         // 50% chance to change positions
-        if (Random.Range(0, 2) == 0)
-        {
-            RectTransform scoresRect = scoresInfo.GetComponent<RectTransform>();
-            RectTransform lineRect = line.GetComponent<RectTransform>();
-            RectTransform fuelRect = fuelInfo.GetComponent<RectTransform>();
+        bool changePosition = Random.Range(0, 2) == 0;
 
-            if (scoresRect != null && fuelRect != null && lineRect != null)
+        RectTransform scoresRect = scoresInfo.GetComponent<RectTransform>();
+        RectTransform lineRect = line.GetComponent<RectTransform>();
+        RectTransform fuelRect = fuelInfo.GetComponent<RectTransform>();
+
+        if (scoresRect != null && fuelRect != null && lineRect != null)
+        {
+            if (changePosition)
             {
-                // Apply new positions
                 scoresRect.anchoredPosition = new Vector2(scoresRect.anchoredPosition.x, 185.25f);
                 fuelRect.anchoredPosition = new Vector2(fuelRect.anchoredPosition.x, -297.7f);
                 lineRect.anchoredPosition = new Vector2(lineRect.anchoredPosition.x, -114.9f);
@@ -299,27 +300,28 @@ public class MainGameUIScript : MonoBehaviour
         if (scoreObject == null || highscoreObject == null) return;
 
         // 50% chance to change positions
-        if (Random.Range(0, 2) == 0)
-        {
-            RectTransform scoreRect = scoreObject.GetComponent<RectTransform>();
-            RectTransform highscoreRect = highscoreObject.GetComponent<RectTransform>();
+        bool changePosition = Random.Range(0, 2) == 0;
 
-            if (scoreRect != null && highscoreRect != null)
+        RectTransform scoreRect = scoreObject.GetComponent<RectTransform>();
+        RectTransform highscoreRect = highscoreObject.GetComponent<RectTransform>();
+
+        if (scoreRect != null && highscoreRect != null)
+        {
+            if (changePosition)
             {
                 scoreRect.anchoredPosition = new Vector2(scoreRect.anchoredPosition.x, 120.2f);
                 highscoreRect.anchoredPosition = new Vector2(highscoreRect.anchoredPosition.x, -120.2f);
             }
             else
             {
-                scoreRect.anchoredPosition = new Vector2(scoreRect.anchoredPosition.x, -120.2f);
-                highscoreRect.anchoredPosition = new Vector2(highscoreRect.anchoredPosition.x, 120.2f);
+                scoreRect.anchoredPosition = new Vector2(scoreRect.anchoredPosition.x, 0f);
+                highscoreRect.anchoredPosition = new Vector2(highscoreRect.anchoredPosition.x, 0f);
             }
         }
     }
 
     public void AssignRandomPauseButtonPositions()
     {
-        // Collect the buttons into a list
         List<Button> buttons = new List<Button>
         {
             pauseContinueButton,
@@ -327,13 +329,10 @@ public class MainGameUIScript : MonoBehaviour
             pauseRetryButton
         };
 
-        // Possible Y-axis positions for the buttons
         List<float> yPositions = new List<float> { 22f, -134f, -290f };
 
-        // Shuffle positions
         ShuffleList(yPositions);
 
-        // Assign each button a new Y position from the shuffled list
         for (int i = 0; i < buttons.Count; i++)
         {
             Button button = buttons[i];
@@ -342,7 +341,6 @@ public class MainGameUIScript : MonoBehaviour
             RectTransform rt = button.GetComponent<RectTransform>();
             if (rt != null)
             {
-                // Keep the X position unchanged (0), update only the Y position
                 rt.anchoredPosition = new Vector2(0, yPositions[i]);
             }
         }

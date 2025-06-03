@@ -94,6 +94,8 @@ public class MenuUIScript : MonoBehaviour
     #region Initialization
     void Start()
     {
+        InitializeUI();
+
         // Set up cursor
         ManagerScript.instance.SetPixelCursor(ManagerScript.instance.basicCursor, 0f, 0f);
 
@@ -119,6 +121,24 @@ public class MenuUIScript : MonoBehaviour
     }
     #endregion
 
+    #region Starting UI
+    public void InitializeUI()
+    {
+        int randomChoice = Random.Range(0, 3);
+
+        switch (randomChoice)
+        {
+            case 0:
+                ManagerScript.instance.OpenOptionsPanelNoClick();
+                break;
+            case 1:
+                ManagerScript.instance.OpenHelpPanelNoClick();
+                break;
+                // case 2: Do nothing (implicitly handled)
+        }
+    }
+    #endregion
+
     #region Position System
     private void AssignExitButtonPosition()
     {
@@ -127,10 +147,8 @@ public class MenuUIScript : MonoBehaviour
             RectTransform buttonTransform = exitWindowWarningButton.GetComponent<RectTransform>();
             if (buttonTransform != null)
             {
-                // Random X position: 50% chance for 816.8 or -816.8
                 float randomX = Random.Range(0, 2) == 0 ? 816.8f : -816.8f;
 
-                // Random Y position: 50% chance for 408.9 or -408.9
                 float randomY = Random.Range(0, 2) == 0 ? 408.9f : -408.9f;
 
                 buttonTransform.anchoredPosition = new Vector2(randomX, randomY);
@@ -172,7 +190,6 @@ public class MenuUIScript : MonoBehaviour
 
     public void AssignRandomOptionsPanelPositions()
     {
-        // Create list of panels and positions
         List<GameObject> panels = new List<GameObject>
         {
             generalOptions,
@@ -180,7 +197,6 @@ public class MenuUIScript : MonoBehaviour
             audioOptions
         };
 
-        // Define possible positions
         List<Vector2> positions = new List<Vector2>
         {
             new Vector2(-404.2f, 210.35f),
@@ -188,10 +204,8 @@ public class MenuUIScript : MonoBehaviour
             new Vector2(-404.2f, -210.35f)
         };
 
-        // Shuffle positions
         ShuffleList(positions);
 
-        // Assign positions to panels
         for (int i = 0; i < panels.Count; i++)
         {
             if (panels[i] != null)
@@ -203,7 +217,6 @@ public class MenuUIScript : MonoBehaviour
 
     public void AssignRandomExitButtonPositions()
     {
-        Debug.Log("works");
         if (confirmExitButton == null || cancelExitButton == null) return;
 
         // 50% chance to change positions

@@ -16,11 +16,13 @@ public class PlatformScript : MonoBehaviour
 
     [Header("Behavior Settings")]
     [SerializeField] private float playerJumpForce;                 // Force applied to player bounce
+    [SerializeField] private float otherSoundProbability;
     #endregion
 
     #region Runtime State
     private GameObject spawnedFuel;                           // Reference to spawned fuel object
     public bool forceFuelSpawn;                               // Override for fuel spawning (determined by level genarator)
+    private int whatSprite;
     #endregion
 
     #region Unity Lifecycle
@@ -43,6 +45,7 @@ public class PlatformScript : MonoBehaviour
     #region Sprite Management
     private void TryChangeSprite()
     {
+        whatSprite = 0;
         SpriteRenderer renderer = GetComponent<SpriteRenderer>();
         if (renderer == null) return;
 
@@ -50,6 +53,7 @@ public class PlatformScript : MonoBehaviour
         if (otherSprite != null && Random.value < otherSpriteProbability)
         {
             renderer.sprite = otherSprite;
+            whatSprite = 1;
             return; // Exit after first successful change
         }
 
@@ -57,6 +61,7 @@ public class PlatformScript : MonoBehaviour
         if (otherOtherSprite != null && Random.value < otherOtherSpriteProbability)
         {
             renderer.sprite = otherOtherSprite;
+            whatSprite = 2;
         }
     }
     #endregion
@@ -114,9 +119,31 @@ public class PlatformScript : MonoBehaviour
 
 
         // Play SFX and trigger animations
-        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.jump, AudioManagerScript.instance.jumpVolume);
-        PlayerControllerScript.instance.astronautAnim.SetTrigger("jump");
-        PlayerControllerScript.instance.laserAstronautAnim.SetTrigger("laserjump");
+        if (whatSprite == 0)
+        {
+            if (Random.value < otherSoundProbability)
+            {
+                AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.jump4, AudioManagerScript.instance.jump4Volume);
+            }
+            else
+            {
+                AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.jump, AudioManagerScript.instance.jumpVolume);
+            }
+        }
+        else if (whatSprite == 1)
+        {
+            AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.jump2, AudioManagerScript.instance.jump2Volume);
+        }
+        else
+        {
+            if (whatSprite == 2)
+            {
+                AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.jump3, AudioManagerScript.instance.jump3Volume);
+            }
+
+            PlayerControllerScript.instance.astronautAnim.SetTrigger("jump");
+            PlayerControllerScript.instance.laserAstronautAnim.SetTrigger("laserjump");
+        }
     }
     #endregion
 }

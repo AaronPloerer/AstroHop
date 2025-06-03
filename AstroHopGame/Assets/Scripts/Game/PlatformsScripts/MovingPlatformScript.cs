@@ -16,8 +16,9 @@ public class MovingPlatformScript : MonoBehaviour
     [SerializeField] private float playerJumpForce;   // Force applied to player bounce
     [SerializeField] private float difference;        // Horizontal movement range from start position
     [SerializeField] private float levelWidth;        // Level boundary constraints
-    [SerializeField] private float minSpeed;   // Minimum movement speed
-    [SerializeField] private float maxSpeed;   // Maximum movement speed
+    [SerializeField] private float minSpeed;          // Minimum movement speed
+    [SerializeField] private float maxSpeed;          // Maximum movement speed
+    [SerializeField] private float otherSoundProbability;
     #endregion
 
     #region Runtime State
@@ -28,6 +29,7 @@ public class MovingPlatformScript : MonoBehaviour
     private GameObject spawnedFuel;    // Reference to spawned fuel object
     public bool forceFuelSpawn;        // Override for fuel spawning (determined by level genarator)
     private float speed;
+    private int whatSprite;
     #endregion
 
     #region Unity Lifecycle
@@ -72,6 +74,8 @@ public class MovingPlatformScript : MonoBehaviour
     #region Sprite Management
     private void TryChangeSprite()
     {
+        whatSprite = 0;
+
         // Only attempt to change sprite if an alternate sprite is provided
         if (otherSprite != null && Random.value < otherSpriteProbability)
         {
@@ -79,6 +83,7 @@ public class MovingPlatformScript : MonoBehaviour
             if (renderer != null)
             {
                 renderer.sprite = otherSprite;
+                whatSprite = 1;
             }
         }
     }
@@ -186,7 +191,14 @@ public class MovingPlatformScript : MonoBehaviour
         PlayerControllerScript.instance.rb.linearVelocity = velocity;
 
         // Play SFX and trigger animations
-        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.jump, AudioManagerScript.instance.jumpVolume);
+        if (whatSprite == 0)
+        {
+            AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.jump, AudioManagerScript.instance.jumpVolume);
+        }
+        else
+        {
+            AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.jump4, AudioManagerScript.instance.jump4Volume);
+        }
         PlayerControllerScript.instance.astronautAnim.SetTrigger("jump");
         PlayerControllerScript.instance.laserAstronautAnim.SetTrigger("laserjump");
     }

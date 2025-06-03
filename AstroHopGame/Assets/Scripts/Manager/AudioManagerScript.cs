@@ -30,6 +30,9 @@ public class AudioManagerScript : MonoBehaviour
     public AudioClip click;
     public AudioClip closeClick;
     public AudioClip jump;
+    public AudioClip jump2;
+    public AudioClip jump3;
+    public AudioClip jump4;
     public AudioClip laserShot;
     public AudioClip explosion;
     public AudioClip breaking;
@@ -63,6 +66,9 @@ public class AudioManagerScript : MonoBehaviour
     public float explosionVolume;
     public float laserShotVolume;
     public float jumpVolume;
+    public float jump2Volume;
+    public float jump3Volume;
+    public float jump4Volume;
     public float closeClickVolume;
     public float clickVolume;
     public float collectFuelVolume;
