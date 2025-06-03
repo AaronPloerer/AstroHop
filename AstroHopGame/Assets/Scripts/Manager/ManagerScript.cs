@@ -31,7 +31,7 @@ public class ManagerScript : MonoBehaviour
 
     #region Escape Button Logic
     private float escapeCooldownTimer = 0f;
-    [SerializeField] private  float escapeCooldownTime = 0.1f;
+    [SerializeField] private float escapeCooldownTime;
 
     private void Update()
     {
@@ -40,9 +40,6 @@ public class ManagerScript : MonoBehaviour
 
         // Ignore key press if cooldowndown timer is not done
         if (escapeCooldownTimer <= escapeCooldownTime) return;
-
-        // Reset cooldown time
-        escapeCooldownTimer = 0f;
 
         // Close current interface when Escape is pressed
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -87,6 +84,9 @@ public class ManagerScript : MonoBehaviour
             {
                 OpenExitWinodwWarning();
             }
+
+            // Reset cooldown time
+            escapeCooldownTimer = 0f;
         }
     }
     #endregion
@@ -400,6 +400,8 @@ public class ManagerScript : MonoBehaviour
 
     public void GameOverScreen()
     {
+        MainGameUIScript.instance.AssignRandomGameOverButtonPositions();
+
         // Reset cursor to default appearance
         ManagerScript.instance.SetPixelCursor(ManagerScript.instance.basicCursor, 0f, 0f);
 

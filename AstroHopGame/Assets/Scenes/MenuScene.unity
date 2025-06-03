@@ -8340,7 +8340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6529f09e592308f4b83b8afad3f59367, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  escapeCooldownTime: 0.1
+  escapeCooldownTime: 0.2
   keyBoostPrimary: 0
   keyBoostSecondary: 0
   keyLeftPrimary: 0
@@ -13717,9 +13717,9 @@ MonoBehaviour:
   boostingHelpText: {fileID: 613763393}
   pauseHelpText: {fileID: 1058195080}
   deletedProgressText: {fileID: 431582578}
-  generalOptions: {fileID: 2010177026}
-  gameplayOptions: {fileID: 90183206}
-  audioOptions: {fileID: 1496747784}
+  generalOptions: {fileID: 0}
+  gameplayOptions: {fileID: 0}
+  audioOptions: {fileID: 0}
   openOptionsButton: {fileID: 106877315}
   openHelpButton: {fileID: 2142561818}
   startGameButton: {fileID: 1683206037}

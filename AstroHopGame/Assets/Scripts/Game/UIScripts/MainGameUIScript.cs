@@ -71,6 +71,8 @@ public class MainGameUIScript : MonoBehaviour
     [SerializeField] private Button pauseContinueButton;
     [SerializeField] private Button pauseMainMenuButton;
     [SerializeField] private Button pauseRetryButton;
+    [SerializeField] private Button gameOverRetryButton;
+    [SerializeField] private Button gameOverMainMenuButton;
     #endregion
 
     #region Pause System
@@ -323,6 +325,26 @@ public class MainGameUIScript : MonoBehaviour
             {
                 // Keep the X position unchanged (0), update only the Y position
                 rt.anchoredPosition = new Vector2(0, yPositions[i]);
+            }
+        }
+    }
+
+    public void AssignRandomGameOverButtonPositions()
+    {
+        if (gameOverRetryButton == null || gameOverMainMenuButton == null) return;
+
+        // 50% chance to change positions
+        bool changePos = Random.Range(0, 2) == 0; 
+
+        RectTransform retryRect = gameOverRetryButton.GetComponent<RectTransform>();
+        RectTransform menuRect = gameOverMainMenuButton.GetComponent<RectTransform>();
+
+        if (gameOverRetryButton != null && gameOverMainMenuButton != null)
+        {
+            if (changePos)
+            {
+                retryRect.anchoredPosition = new Vector2(-210f, retryRect.anchoredPosition.y);
+                menuRect.anchoredPosition = new Vector2(210f, menuRect.anchoredPosition.y);
             }
         }
     }
