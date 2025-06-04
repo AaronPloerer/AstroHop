@@ -157,9 +157,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 604892465987584
-    m_Localized: "Les plateformes <color=#EC1321>rouges</color><color=#FFFFFF> se
-      brisent apr\xE8s une seule utilisation.\n<size=30><alpha=#80>Appuie sur [Alt]
-      pour pour passer le tutoriel."
+    m_Localized: "Les plateformes <color=#ECA800>fissur\xE9es</color><color=#FFFFFF>
+      se brisent apr\xE8s une seule utilisation.\n<size=30><alpha=#80>Appuie sur
+      [Alt] pour pour passer le tutoriel."
     m_Metadata:
       m_Items: []
   - m_Id: 604938443948032

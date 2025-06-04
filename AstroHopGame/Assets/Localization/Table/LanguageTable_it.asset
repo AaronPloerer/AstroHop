@@ -160,8 +160,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 604892465987584
-    m_Localized: 'Le piattaforme <color=#EC1321>rosse <color=#FFFFFF>si rompono dopo
-      un solo uso.
+    m_Localized: 'Le piattaforme <color=#ECA800>crepate <color=#FFFFFF>si rompono
+      dopo un solo uso.
 
       <size=30><alpha=#80>Premi [Alt] per saltare il tutorial.'
     m_Metadata:
