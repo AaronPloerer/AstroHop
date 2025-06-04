@@ -96,6 +96,7 @@ public class UfoScript : MonoBehaviour
         if (other.CompareTag("GameViewArea"))
         {
             Destroy(spawnedArrow);
+            UfoSpawnerScript.instance.aliveUfos++;       
             killable = true;
         }
     }

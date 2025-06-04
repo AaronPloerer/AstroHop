@@ -88,7 +88,6 @@ public class UfoSpawnerScript : MonoBehaviour
     private void SpawnEnemy()
     {
         Instantiate(enemyPrefab, RandomSpawnPoint(), transform.rotation);
-        aliveUfos++;         // Track new UFO
     }
 
     private Vector2 RandomSpawnPoint()

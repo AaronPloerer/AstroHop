@@ -217,8 +217,8 @@ public class PlayerControllerScript : MonoBehaviour
 
         if (boostMovement)
         {
-            // ... and reset only when falling down again
-            if (rb.linearVelocityY <= 0.5f)
+            // ... and reset when boost is not active anymore
+            if (!startingBoost)
             {
                 boostMovement = false;
             }
@@ -257,8 +257,8 @@ public class PlayerControllerScript : MonoBehaviour
 
         if (boostMovement)
         {
-            // ... and reset only when falling down again
-            if (rb.linearVelocityY <= 0.5f)
+            // ... and reset when boost is not active anymore
+            if (!startingBoost)
             {
                 boostMovement = false;
             }
