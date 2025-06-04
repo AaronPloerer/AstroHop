@@ -108,7 +108,7 @@ public class ManagerScript : MonoBehaviour
         keyBoostSecondary = (KeyCode)PlayerPrefs.GetInt("KeyBoostSecondary", (int)KeyCode.RightBracket);
         keyLeftPrimary = (KeyCode)PlayerPrefs.GetInt("KeyLeftPrimary", (int)KeyCode.Alpha1);
         keyLeftSecondary = (KeyCode)PlayerPrefs.GetInt("KeyLeftSecondary", (int)KeyCode.Quote);
-        keyRightPrimary = (KeyCode)PlayerPrefs.GetInt("KeyRightPrimary", (int)KeyCode.Alpha2);
+        keyRightPrimary = (KeyCode)PlayerPrefs.GetInt("KeyRightPrimary", (int)KeyCode.Alpha3);
         keyRightSecondary = (KeyCode)PlayerPrefs.GetInt("KeyRightSecondary", (int)KeyCode.Return);
         keyPause = (KeyCode)PlayerPrefs.GetInt("KeyPause", (int)KeyCode.Space);
     }
@@ -374,7 +374,6 @@ public class ManagerScript : MonoBehaviour
 
     public void OpenHelpPanel()
     {
-        // Update UI in Help panel
         MenuUIScript.instance.UpdateInputTutorialTexts();
 
         AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
@@ -399,6 +398,8 @@ public class ManagerScript : MonoBehaviour
 
     public void CloseHelpPanel()
     {
+        MenuUIScript.instance.AssignRandomButtonPositions();
+
         AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.closeClick, AudioManagerScript.instance.closeClickVolume);
         MenuUIScript.instance.helpPanel.SetActive(false);
         MenuUIScript.instance.startGameButton.interactable = true;
@@ -501,6 +502,8 @@ public class ManagerScript : MonoBehaviour
 
     public void CloseExitWindowWarning()
     {
+        MenuUIScript.instance.AssignRandomButtonPositions();
+
         AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.closeClick, AudioManagerScript.instance.closeClickVolume);
         MenuUIScript.instance.exitWindowWarningPanel.SetActive(false);
         MenuUIScript.instance.startGameButton.interactable = true;

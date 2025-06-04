@@ -970,6 +970,7 @@ GameObject:
   - component: {fileID: 160759559}
   - component: {fileID: 160759558}
   - component: {fileID: 160759560}
+  - component: {fileID: 160759561}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -1135,6 +1136,19 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!114 &160759561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160759556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c826a195f35d67247835e3068d0769de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alternativeEntryKey: Game Panels MainMenu2
 --- !u!1 &167076919
 GameObject:
   m_ObjectHideFlags: 0
@@ -4072,6 +4086,7 @@ GameObject:
   - component: {fileID: 673472607}
   - component: {fileID: 673472606}
   - component: {fileID: 673472608}
+  - component: {fileID: 673472609}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -4237,6 +4252,19 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!114 &673472609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 673472604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c826a195f35d67247835e3068d0769de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alternativeEntryKey: Menu PanelExit ButtonCancel2
 --- !u!1 &683556743
 GameObject:
   m_ObjectHideFlags: 0
@@ -4685,6 +4713,7 @@ GameObject:
   - component: {fileID: 799105170}
   - component: {fileID: 799105169}
   - component: {fileID: 799105171}
+  - component: {fileID: 799105172}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -4850,6 +4879,19 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!114 &799105172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799105167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c826a195f35d67247835e3068d0769de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alternativeEntryKey: Game Panels Retry2
 --- !u!1 &801930603
 GameObject:
   m_ObjectHideFlags: 0
@@ -5039,6 +5081,7 @@ GameObject:
   - component: {fileID: 824146535}
   - component: {fileID: 824146534}
   - component: {fileID: 824146536}
+  - component: {fileID: 824146537}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -5204,6 +5247,19 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!114 &824146537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824146532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c826a195f35d67247835e3068d0769de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alternativeEntryKey: Game Panels Retry2
 --- !u!1 &875915209
 GameObject:
   m_ObjectHideFlags: 0
@@ -7514,6 +7570,7 @@ GameObject:
   - component: {fileID: 1320663554}
   - component: {fileID: 1320663553}
   - component: {fileID: 1320663555}
+  - component: {fileID: 1320663556}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -7679,6 +7736,19 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!114 &1320663556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1320663551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c826a195f35d67247835e3068d0769de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alternativeEntryKey: Menu PanelExit ButtonCancel2
 --- !u!1 &1370913359
 GameObject:
   m_ObjectHideFlags: 0
@@ -9043,6 +9113,7 @@ GameObject:
   - component: {fileID: 1556937224}
   - component: {fileID: 1556937223}
   - component: {fileID: 1556937225}
+  - component: {fileID: 1556937226}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -9208,6 +9279,19 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!114 &1556937226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556937221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c826a195f35d67247835e3068d0769de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alternativeEntryKey: Game Panels Yes
 --- !u!1 &1574674988
 GameObject:
   m_ObjectHideFlags: 0
@@ -9220,6 +9304,7 @@ GameObject:
   - component: {fileID: 1574674991}
   - component: {fileID: 1574674990}
   - component: {fileID: 1574674992}
+  - component: {fileID: 1574674993}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -9296,7 +9381,7 @@ MonoBehaviour:
   m_fontSize: 42
   m_fontSizeBase: 42
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 42
   m_fontStyle: 0
@@ -9385,6 +9470,19 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!114 &1574674993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574674988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c826a195f35d67247835e3068d0769de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alternativeEntryKey: Game Panels Continue2
 --- !u!1 &1576630671
 GameObject:
   m_ObjectHideFlags: 0
@@ -11242,6 +11340,7 @@ GameObject:
   - component: {fileID: 1914811926}
   - component: {fileID: 1914811925}
   - component: {fileID: 1914811927}
+  - component: {fileID: 1914811928}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -11407,6 +11506,19 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!114 &1914811928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914811923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c826a195f35d67247835e3068d0769de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alternativeEntryKey: Game Panels MainMenu2
 --- !u!1 &1915777374
 GameObject:
   m_ObjectHideFlags: 0
@@ -11589,6 +11701,7 @@ GameObject:
   - component: {fileID: 2113553271}
   - component: {fileID: 2113553270}
   - component: {fileID: 2113553272}
+  - component: {fileID: 2113553273}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -11754,6 +11867,19 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!114 &2113553273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113553268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c826a195f35d67247835e3068d0769de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alternativeEntryKey: Game Panels Yes
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

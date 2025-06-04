@@ -295,6 +295,54 @@ MonoBehaviour:
     m_Key: Game Tip FailedPickUp
     m_Metadata:
       m_Items: []
+  - m_Id: 13289699767484416
+    m_Key: Menu ButtonPlay2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13290980875698176
+    m_Key: Menu ButtonOptions2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13291066162675712
+    m_Key: Menu ButtonHelp2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13295450535755776
+    m_Key: Menu PanelOptions ButtonClose2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13295486053122048
+    m_Key: Menu PanelExit ButtonCancel2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13295656694185984
+    m_Key: Menu PanelExit ButtonExit2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13300204854837248
+    m_Key: Menu PanelDeleteProgress FirstConfirmButton2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13300959997329408
+    m_Key: Menu PanelDeleteProgress SecondConfirmButton2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13303190368813056
+    m_Key: Game Panels Continue2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13303202746204160
+    m_Key: Game Panels MainMenu2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13303261009281024
+    m_Key: Game Panels Retry2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13306805795946496
+    m_Key: Game Panels Yes
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

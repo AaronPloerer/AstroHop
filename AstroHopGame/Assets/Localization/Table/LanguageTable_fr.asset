@@ -157,9 +157,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 604892465987584
-    m_Localized: "Les plateformes <color=#EC1321>rouges</color><color=#FFFFFF> se
-      brisent apr\xE8s une seule utilisation.\n<size=30><alpha=#80>Appuie sur [Alt]
-      pour pour passer le tutoriel."
+    m_Localized: "Les plateformes <color=#00FF00>vertes <color=#FFFFFF>se brisent
+      apr\xE8s une seule utilisation.\n<size=30><alpha=#80>Appuie sur [Alt] pour
+      pour passer le tutoriel."
     m_Metadata:
       m_Items: []
   - m_Id: 604938443948032
@@ -349,6 +349,54 @@ MonoBehaviour:
   - m_Id: 8607735869341696
     m_Localized: "R\xE9servoir fus\xE9e plein \u2013 impossible de collecter plus
       de carburant pour le boost."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13289699767484416
+    m_Localized: Commencer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13291066162675712
+    m_Localized: Instructions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13290980875698176
+    m_Localized: Options
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13295450535755776
+    m_Localized: Masquer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13295486053122048
+    m_Localized: Retour
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13295656694185984
+    m_Localized: Quitter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13300204854837248
+    m_Localized: Confirmer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13300959997329408
+    m_Localized: Effacer tout
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13303190368813056
+    m_Localized: Reprendre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13303202746204160
+    m_Localized: Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13303261009281024
+    m_Localized: Recommencer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13306805795946496
+    m_Localized: Oui
     m_Metadata:
       m_Items: []
   references:
