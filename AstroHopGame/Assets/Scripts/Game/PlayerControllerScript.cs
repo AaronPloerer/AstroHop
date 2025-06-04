@@ -218,7 +218,7 @@ public class PlayerControllerScript : MonoBehaviour
         if (boostMovement)
         {
             // ... and reset when boost is not active anymore
-            if (!startingBoost)
+            if (!boostKeyDown)
             {
                 boostMovement = false;
             }
