@@ -157,7 +157,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 604892465987584
-    m_Localized: '<color=#00FF00>Green <color=#FFFFFF>platforms break after a single
+    m_Localized: '<color=#EC1321>Red <color=#FFFFFF>platforms break after a single
       use.
 
       <size=30><alpha=#80>Press [Alt] to skip the tutorial.'

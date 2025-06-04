@@ -8,7 +8,8 @@ public class UfoScript : MonoBehaviour
     [Header("Flying Ufo")]
     [SerializeField] private float moveSpeedX;                      // Horizontal movement speed
     [SerializeField] private float moveSpeedY;                      // Vertical movement speed (downward)
-    [SerializeField] private float directionCooldown;               // Minumum time between direction changes
+    [SerializeField] private float directionCooldownMin;               
+    [SerializeField] private float directionCooldownMax;               
     [SerializeField] private SpriteRenderer spriteRenderer;         // Reference to sprite renderer component
     [SerializeField] private Animator ufoAnim;                      // Reference to animator component
     [SerializeField] private float changeChance;
@@ -31,6 +32,7 @@ public class UfoScript : MonoBehaviour
     private GameObject spawnedArrow;     // Reference to instantiated arrow
     private Vector2 arrowPosition;       // Calculated screen-space arrow position
     private bool killable;               // Flag for laser vulnerability (when in camera view)
+    private float directionCooldown;
     #endregion
 
     #region Unity Lifecycle Methods
@@ -114,6 +116,7 @@ public class UfoScript : MonoBehaviour
         xActualDirection = Mathf.Sign(PlayerControllerScript.instance.transform.position.x - transform.position.x);
         broken = false;
         killable = false;
+        directionCooldown = Random.Range(directionCooldownMin, directionCooldownMax);
     }
 
     private void InstantiateArrow()
@@ -145,6 +148,7 @@ public class UfoScript : MonoBehaviour
             {
                 xActualDirection = targetDirection;
                 directionChangeTimer = 0f;            // Reset cooldown
+                directionCooldown = Random.Range(directionCooldownMin, directionCooldownMax);
             }
         }
         else

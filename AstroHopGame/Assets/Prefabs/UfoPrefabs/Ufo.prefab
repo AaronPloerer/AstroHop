@@ -213,7 +213,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeedX: 2
   moveSpeedY: 0.25
-  directionCooldown: 0.5
+  directionCooldownMin: 0.25
+  directionCooldownMax: 0.75
   spriteRenderer: {fileID: 1317375725788529601}
   ufoAnim: {fileID: 4308260773503649271}
   changeChance: 0.1
