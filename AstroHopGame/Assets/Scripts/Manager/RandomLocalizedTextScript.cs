@@ -12,7 +12,7 @@ public class RandomLocalizedText : MonoBehaviour
     {
         _locStringEvent = GetComponent<LocalizeStringEvent>();
 
-        if (Random.value < 1.5f)
+        if (Random.value < 0.5f)
         {
             var ls = _locStringEvent.StringReference;
             ls.TableEntryReference = alternativeEntryKey;
