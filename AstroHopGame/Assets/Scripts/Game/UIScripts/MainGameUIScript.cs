@@ -189,7 +189,7 @@ public class MainGameUIScript : MonoBehaviour
         {
             movingTutorial.text = localeID switch
             {
-                1 => $"Drücke <color={highlight}>{leftKeyString} <color={white}>und <color={highlight}>{rightKeyString} <color={white}>, um nach <color={highlight}>links <color={white}>und <color={highlight}>rechts <color={white}>zu gehen.\n<size=30><alpha=#80>Drücke [Alt], um das Tutorial zu überspringen.",
+                1 => $"Drücke <color={highlight}>{leftKeyString} <color={white}>und <color={highlight}>{rightKeyString}<color={white}>, um nach <color={highlight}>links <color={white}>und <color={highlight}>rechts <color={white}>zu gehen.\n<size=30><alpha=#80>Drücke [Alt], um das Tutorial zu überspringen.",
                 2 => $"Premi <color={highlight}>{leftKeyString} <color={white}>e <color={highlight}>{rightKeyString} <color={white}>per andare a <color={highlight}>sinistra <color={white}>e <color={highlight}>destra<color={white}>.\n<size=30><alpha=#80>Premi [Alt] per saltare il tutorial.",
                 3 => $"Appuyez sur <color={highlight}>{leftKeyString} <color={white}>et <color={highlight}>{rightKeyString} <color={white}>pour aller à <color={highlight}>gauche <color={white}>et à <color={highlight}>droite<color={white}>.\n<size=30><alpha=#80>Appuie sur [Alt] pour pour passer le tutoriel.",
                 _ => $"Press <color={highlight}>{leftKeyString} <color={white}>and <color={highlight}>{rightKeyString} <color={white}>to go <color={highlight}>left <color={white}>and <color={highlight}>right<color={white}>.\n<size=30><alpha=#80>Press [Alt] to skip the tutorial."
