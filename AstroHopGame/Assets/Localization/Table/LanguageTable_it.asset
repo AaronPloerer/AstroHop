@@ -238,8 +238,8 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 6418301782589440
     m_Localized: "Le piattaforme hanno tre varianti:\r\n- Verdi: Statiche e permanenti.\r\n-
-      Rosse: Si rompono dopo un atterraggio, utilizzabili una sola volta.\r\n- Viola:
-      Si muovono a sinistra e destra a velocit\xE0 costante.\r"
+      Verdi e crepate: Si rompono dopo un atterraggio, utilizzabili una sola volta.\r\n-
+      Viola: Si muovono a sinistra e destra a velocit\xE0 costante.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6418419743195136

@@ -221,8 +221,8 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 6418301782589440
     m_Localized: "Platforms come in three varieties:\r\n- Green: Static and permanent.\r\n-
-      Red: Break after a single landing, so they can only be used once.\r\n- Purple:
-      Move left and right at a constant pace.\r"
+      Green and cracked: Break after a single landing, so they can only be used once.\r\n-
+      Purple: Move left and right at a constant pace.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6418419743195136
