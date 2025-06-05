@@ -200,7 +200,7 @@ public class MainGameUIScript : MonoBehaviour
         {
             boostTutorial.text = localeID switch
             {
-                1 => $"Drücke <color={highlight}>{boostKeyString} <color={white}>, um den <color={highlight}>Raketenboost <color={white}>zu nutzen und alle UFOs zu zerstören.\n<size=30><alpha=#80>Drücke [Alt], um das Tutorial zu überspringen.",
+                1 => $"Drücke <color={highlight}>{boostKeyString}<color={white}>, um den <color={highlight}>Raketenboost <color={white}>zu nutzen und alle UFOs zu zerstören.\n<size=30><alpha=#80>Drücke [Alt], um das Tutorial zu überspringen.",
                 2 => $"Premi <color={highlight}>{boostKeyString} <color={white}>per attivare il <color={highlight}>boost <color={white}>e distruggere tutti gli UFO.\n<size=30><alpha=#80>Premi [Alt] per saltare il tutorial.",
                 3 => $"Appuyez sur <color={highlight}>{boostKeyString} <color={white}>pour vous <color={highlight}>propulser <color={white}>et détruire tous les OVNIs.\n<size=30><alpha=#80>Appuie sur [Alt] pour pour passer le tutoriel.",
                 _ => $"Press <color={highlight}>{boostKeyString} <color={white}>to <color={highlight}>boost up <color={white}>and destroy all UFOs.\n<size=30><alpha=#80>Press [Alt] to skip the tutorial."
