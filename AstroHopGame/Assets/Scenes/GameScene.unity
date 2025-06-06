@@ -5692,7 +5692,7 @@ MonoBehaviour:
     maxX: 2.5
     percentageBrokenPlatform: 0
     percantageMovingPlatform: 0
-    fuelSpawnChance: 1
+    fuelSpawnChance: 0
     firstTutorial: {fileID: 1663099691}
     secondTutorial: {fileID: 1429818602}
     thirdTutorial: {fileID: 1429818602}

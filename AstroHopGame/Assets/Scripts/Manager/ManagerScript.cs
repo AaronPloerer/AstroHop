@@ -285,6 +285,18 @@ public class ManagerScript : MonoBehaviour
     #region Scene Management
     public void LoadLoadingSceneOnClick()
     {
+        // Check if all keys are unique using a HashSet
+        HashSet<KeyCode> keySet = new HashSet<KeyCode> { keyBoostPrimary, keyLeftPrimary, keyRightPrimary, keyPause };
+
+        // Only proceed if all 4 keys are distinct
+        if (keySet.Count != 4)
+        {
+            // Show duplicate key warning
+            AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.closeClick, AudioManagerScript.instance.closeClickVolume);
+            MenuUIScript.instance.duplicateKeysWarning.SetActive(true);
+            return;
+        }
+
         // Start coroutine to handle sound and scene change
         StartCoroutine(LoadSceneAfterSound("LoadingScene"));
     }
