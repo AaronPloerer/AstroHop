@@ -309,7 +309,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -6014520929937150712, guid: 476b0d829fe264b4396585b41ae0da34, type: 3}
+  m_Sprite: {fileID: -2619368061446533073, guid: de09988083468944499a174755af0630, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -391,6 +391,9 @@ MonoBehaviour:
   click: {fileID: 8300000, guid: e6f465cdf77d9b2468cd1b99dd36a347, type: 3}
   closeClick: {fileID: 8300000, guid: 0a5f336a4b6ef1a489e11c518bb04218, type: 3}
   jump: {fileID: 8300000, guid: 0835e39247331604b8c907c1bbd7429a, type: 3}
+  jump2: {fileID: 0}
+  jump3: {fileID: 0}
+  jump4: {fileID: 0}
   laserShot: {fileID: 8300000, guid: e68cb8cc290f1d741b511fff4029f25f, type: 3}
   explosion: {fileID: 8300000, guid: 9663dd9081539314f8babd74b0f07f81, type: 3}
   breaking: {fileID: 8300000, guid: 82b1564e2c671f842b203dbd9abfcc16, type: 3}
@@ -414,6 +417,9 @@ MonoBehaviour:
   explosionVolume: 0.1
   laserShotVolume: 0.25
   jumpVolume: 0.25
+  jump2Volume: 0
+  jump3Volume: 0
+  jump4Volume: 0
   closeClickVolume: 0.4
   clickVolume: 0.4
   collectFuelVolume: 0.08
