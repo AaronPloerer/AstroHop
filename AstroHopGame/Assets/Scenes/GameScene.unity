@@ -5694,8 +5694,8 @@ MonoBehaviour:
     percantageMovingPlatform: 0
     fuelSpawnChance: 0
     firstTutorial: {fileID: 1663099691}
-    secondTutorial: {fileID: 1429818602}
-    thirdTutorial: {fileID: 1429818602}
+    secondTutorial: {fileID: 0}
+    thirdTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 6147987595589634864, guid: 27cca06289255304bad2926bbbe31a54, type: 3}
     firstPlatformFuel: 0
     minUfoSpawnTime: 999

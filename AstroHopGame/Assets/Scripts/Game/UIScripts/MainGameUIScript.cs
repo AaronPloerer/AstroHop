@@ -299,7 +299,7 @@ public class MainGameUIScript : MonoBehaviour
         // Check for pause key press
         if (Input.GetKeyDown(ManagerScript.instance.keyPause))
         {
-            PauseWithKeyResponse();
+            //PauseWithKeyResponse();
         }
     }
 

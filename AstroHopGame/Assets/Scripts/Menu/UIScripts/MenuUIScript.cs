@@ -129,7 +129,7 @@ public class MenuUIScript : MonoBehaviour
     #region Toggles Setup
     private void InitializeToggles()
     {
-        bool startingBoostIsOn = PlayerPrefs.GetInt("StartingBoostEnabled", 1) == 1;
+        bool startingBoostIsOn = PlayerPrefs.GetInt("StartingBoostEnabled", 0) == 1;
         
         if (startingBoostIsOn) 
         {

@@ -262,8 +262,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 6418756222844928
     m_Localized: "Le jeu peut \xEAtre mis en pause \xE0 tout moment en cliquant sur
-      le bouton Pause en haut \xE0 gauche ou en appuyant sur la touche Pause (par
-      d\xE9faut : Espace)."
+      le bouton Pause en haut \xE0 gauche."
     m_Metadata:
       m_Items: []
   - m_Id: 6418783104139264

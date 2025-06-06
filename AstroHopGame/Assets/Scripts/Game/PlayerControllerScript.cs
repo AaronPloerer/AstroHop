@@ -90,7 +90,7 @@ public class PlayerControllerScript : MonoBehaviour
 
     private void LoadPotentialBoost()
     {
-        if (PlayerPrefs.GetInt("StartingBoostEnabled", 1) == 1)
+        if (PlayerPrefs.GetInt("StartingBoostEnabled", 0) == 1)
         {
             startingBoostEnabled = true;
         }

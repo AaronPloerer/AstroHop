@@ -255,8 +255,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418756222844928
-    m_Localized: 'The game can be paused at any time by clicking the pause button
-      in the top-left corner or by pressing the Pause key (default: Spacebar).'
+    m_Localized: The game can be paused at any time by clicking the pause button
+      in the top-left corner.
     m_Metadata:
       m_Items: []
   - m_Id: 6418695137001472

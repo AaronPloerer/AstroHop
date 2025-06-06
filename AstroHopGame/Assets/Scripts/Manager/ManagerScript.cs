@@ -42,7 +42,7 @@ public class ManagerScript : MonoBehaviour
         if (escapeCooldownTimer <= escapeCooldownTime) return;
 
         // Close current interface when Escape is pressed
-        if (Input.GetKeyDown(KeyCode.Escape))
+        /*if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (MainGameUIScript.instance != null && MainGameUIScript.instance.pausePanel.activeSelf)
             {
@@ -87,7 +87,7 @@ public class ManagerScript : MonoBehaviour
 
             // Reset cooldown time
             escapeCooldownTimer = 0f;
-        }
+        }*/
     }
     #endregion
 
@@ -247,7 +247,7 @@ public class ManagerScript : MonoBehaviour
     #region Toggles Management
     public void ChangeStartingBoostToggle()
     {
-        if (PlayerPrefs.GetInt("StartingBoostEnabled", 1) == 1)
+        if (PlayerPrefs.GetInt("StartingBoostEnabled", 0) == 1)
         {
             PlayerPrefs.SetInt("StartingBoostEnabled", 0);
             MenuUIScript.instance.startingBoostToggleGraphic.sprite = MenuUIScript.instance.toggleOffSprite;
