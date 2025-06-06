@@ -340,6 +340,7 @@ public class ManagerScript : MonoBehaviour
         if (keySet.Count != 4)
         {
             // Show duplicate key warning
+            AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.closeClick, AudioManagerScript.instance.closeClickVolume);
             MenuUIScript.instance.duplicateKeysWarning.SetActive(true);
             return;
         }
