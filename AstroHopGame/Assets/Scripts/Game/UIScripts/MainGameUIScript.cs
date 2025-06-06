@@ -468,7 +468,6 @@ public class MainGameUIScript : MonoBehaviour
                     currentPhase.fifthTutorial,
                     currentPhase.sixthTutorial,
                     currentPhase.seventhTutorial,
-                    currentPhase.eighthTutorial,
                     currentPhaseIndex
                 ));
                 activeTutorialPhaseIndex = currentPhaseIndex;
@@ -492,7 +491,6 @@ public class MainGameUIScript : MonoBehaviour
             if (phase.fifthTutorial != null) phase.fifthTutorial.SetActive(false);
             if (phase.sixthTutorial != null) phase.sixthTutorial.SetActive(false);
             if (phase.seventhTutorial != null) phase.seventhTutorial.SetActive(false);
-            if (phase.eighthTutorial != null) phase.eighthTutorial.SetActive(false);
         }
 
         // Mark ALL tutorials as shown
@@ -522,7 +520,6 @@ public class MainGameUIScript : MonoBehaviour
             if (phase.fifthTutorial != null) phase.fifthTutorial.SetActive(false);
             if (phase.sixthTutorial != null) phase.sixthTutorial.SetActive(false);
             if (phase.seventhTutorial != null) phase.seventhTutorial.SetActive(false);
-            if (phase.eighthTutorial != null) phase.eighthTutorial.SetActive(false);
         };
 
         // Save in persistent storage that the tutorial was shown
@@ -541,7 +538,6 @@ public class MainGameUIScript : MonoBehaviour
        GameObject fifthText,
        GameObject sixthText,
        GameObject seventhText,
-       GameObject eighthText,
        int phaseIndex)
     {
         // Helper local to show/hide a single text with timing
@@ -610,15 +606,6 @@ public class MainGameUIScript : MonoBehaviour
         if (seventhText != null)
         {
             yield return ShowTutorialElement(seventhText);
-        }
-
-        // Buffer
-        yield return WaitForSecondsUnpaused(timeTutorialPause);
-
-        // 8th element
-        if (eighthText != null)
-        {
-            yield return ShowTutorialElement(eighthText);
         }
 
         // Mark tutorial as shown in PlayerPrefs

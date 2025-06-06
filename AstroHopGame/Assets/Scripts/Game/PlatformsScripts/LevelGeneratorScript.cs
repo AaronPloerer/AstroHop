@@ -56,7 +56,6 @@ public class LevelGeneratorScript : MonoBehaviour
         public GameObject fifthTutorial;
         public GameObject sixthTutorial;
         public GameObject seventhTutorial;
-        public GameObject eighthTutorial;
         public GameObject firstPlatformPrefab;          // Force platform type for phase start
         public bool firstPlatformFuel;                  // Force fuel on first platform
 
