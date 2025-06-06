@@ -51,6 +51,7 @@ public class LevelGeneratorScript : MonoBehaviour
         public float fuelSpawnChance;                   // Base fuel spawn probability
         public GameObject firstTutorial;                // Possible tutorial element
         public GameObject secondTutorial;               // Possible secondary tutorial element
+        public GameObject thirdTutorial;                // Possible third tutorial element
         public GameObject firstPlatformPrefab;          // Force platform type for phase start
         public bool firstPlatformFuel;                  // Force fuel on first platform
 
