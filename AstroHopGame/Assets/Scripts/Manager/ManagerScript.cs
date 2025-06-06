@@ -357,6 +357,7 @@ public class ManagerScript : MonoBehaviour
         {
             // Show duplicate key warning
             MenuUIScript.instance.duplicateKeysWarning.SetActive(true);
+            AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.closeClick, AudioManagerScript.instance.closeClickVolume);
             return;
         }
 
