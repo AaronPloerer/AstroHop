@@ -216,12 +216,13 @@ public class MainGameUIScript : MonoBehaviour
         {
             pauseTutorial.text = localeID switch
             {
-                1 => $"Du kannst <color={highlight}>{pauseKeyString}<color={white}> drücken, um das Spiel zu pausieren.",
-                2 => $"Puoi premere <color={highlight}>{pauseKeyString}<color={white}> per mettere in pausa il gioco.",
-                3 => $"Tu peux appuyer sur <color={highlight}>{pauseKeyString}<color={white}> pour mettre le jeu en pause.",
-                _ => $"You can press <color={highlight}>{pauseKeyString}<color={white}> to pause the game."
+                1 => $"Du kannst <color={highlight}>{pauseKeyString}<color={white}> drücken, um das Spiel zu <color={highlight}>pausieren<color={white}>.",
+                2 => $"Puoi premere <color={highlight}>{pauseKeyString}<color={white}> per <color={highlight}>mettere in pausa<color={white}> il gioco.\n<size=30><alpha=#80>Premi [Alt] per saltare il tutorial.",
+                3 => $"Tu peux appuyer sur <color={highlight}>{pauseKeyString}<color={white}> pour <color={highlight}>mettre<color={white}> le jeu <color={highlight}>en pause<color={white}>.",
+                _ => $"You can press <color={highlight}>{pauseKeyString}<color={white}> to <color={highlight}>pause<color={white}> the game."
             };
         }
+
 
     }
     private void CheckShownTutorials()
