@@ -325,7 +325,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6819690010640384
-    m_Localized: "Fortschritt l\xF6schen"
+    m_Localized: Spiel beenden
     m_Metadata:
       m_Items: []
   - m_Id: 8591763389284352
