@@ -36,7 +36,7 @@ public class MainGameUIScript : MonoBehaviour
     [SerializeField] private Animator sliderBackgroundAnim, sliderFillAnim;
 
     [Header("Tutorial Elements")]
-    [SerializeField] private TMP_Text movingTutorial, boostTutorial;
+    [SerializeField] private TMP_Text movingTutorial, boostTutorial, pauseTutorial;
     public GameObject tutorials;
 
     [Header("Tip Elements")]
@@ -149,16 +149,19 @@ public class MainGameUIScript : MonoBehaviour
         string boostKeyString;
         string leftKeyString;
         string rightKeyString;
+        string pauseKeyString;
 
         try
         {
             KeyCode boostKey = (KeyCode)PlayerPrefs.GetInt("KeyBoostPrimary", (int)KeyCode.W);
             KeyCode leftKey = (KeyCode)PlayerPrefs.GetInt("KeyLeftPrimary", (int)KeyCode.A);
             KeyCode rightKey = (KeyCode)PlayerPrefs.GetInt("KeyRightPrimary", (int)KeyCode.D);
+            KeyCode pauseKey = (KeyCode)PlayerPrefs.GetInt("KeyPause", (int)KeyCode.Space);
 
             boostKeyString = MenuUIScript.instance.GetLocalizedKeyName(boostKey);
             leftKeyString = MenuUIScript.instance.GetLocalizedKeyName(leftKey);
             rightKeyString = MenuUIScript.instance.GetLocalizedKeyName(rightKey);
+            pauseKeyString = MenuUIScript.instance.GetLocalizedKeyName(pauseKey);
         }
         catch
         {
@@ -168,12 +171,14 @@ public class MainGameUIScript : MonoBehaviour
                 boostKeyString = "Z";
                 leftKeyString = "Q";
                 rightKeyString = "D";
+                pauseKeyString = "Spacebar";
             }
             else
             {
                 boostKeyString = "W";
                 leftKeyString = "A";
                 rightKeyString = "D";
+                pauseKeyString = "Spacebar";
             }
         }
 
@@ -204,6 +209,17 @@ public class MainGameUIScript : MonoBehaviour
                 2 => $"Premi <color={highlight}>{boostKeyString} <color={white}>per attivare il <color={highlight}>boost <color={white}>e distruggere tutti gli prefab meteorite.\n<size=30><alpha=#80>Premi [Alt] per saltare il tutorial.",
                 3 => $"Appuyez sur <color={highlight}>{boostKeyString} <color={white}>pour vous <color={highlight}>propulser <color={white}>et détruire tous les prefabs météorite.\n<size=30><alpha=#80>Appuie sur [Alt] pour pour passer le tutoriel.",
                 _ => $"Press <color={highlight}>{boostKeyString} <color={white}>to <color={highlight}>boost up <color={white}>and destroy all meteorite prefabs.\n<size=30><alpha=#80>Press [Alt] to skip the tutorial."
+            };
+        }
+
+        if (pauseTutorial != null)
+        {
+            pauseTutorial.text = localeID switch
+            {
+                1 => $"Du kannst <color={highlight}>{pauseKeyString}<color={white}> drücken, um die Spielgeschwindigkeit auf 0 zu setzen.\n<size=30><alpha=#80>Drücke [Alt], um das Tutorial zu überspringen.",
+                2 => $"Puoi premere <color={highlight}>{pauseKeyString}<color={white}> per impostare la velocità di gioco a 0.\n<size=30><alpha=#80>Premi [Alt] per saltare il tutorial.",
+                3 => $"Tu peux appuyer sur <color={highlight}>{pauseKeyString}<color={white}> pour régler la vitesse du jeu à 0.\n<size=30><alpha=#80>Appuie sur [Alt] pour passer le tutoriel.",
+                _ => $"You can press <color={highlight}>{pauseKeyString}<color={white}> to set the game speed to 0.\n<size=30><alpha=#80>Press [Alt] to skip the tutorial."
             };
         }
     }
