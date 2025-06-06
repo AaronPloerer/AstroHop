@@ -216,10 +216,10 @@ public class MainGameUIScript : MonoBehaviour
         {
             pauseTutorial.text = localeID switch
             {
-                1 => $"Du kannst <color={highlight}>{pauseKeyString}<color={white}> drücken, um die Spielgeschwindigkeit auf 0 zu setzen.\n<size=30><alpha=#80>Drücke [Alt], um das Tutorial zu überspringen.",
-                2 => $"Puoi premere <color={highlight}>{pauseKeyString}<color={white}> per impostare la velocità di gioco a 0.\n<size=30><alpha=#80>Premi [Alt] per saltare il tutorial.",
-                3 => $"Tu peux appuyer sur <color={highlight}>{pauseKeyString}<color={white}> pour régler la vitesse du jeu à 0.\n<size=30><alpha=#80>Appuie sur [Alt] pour passer le tutoriel.",
-                _ => $"You can press <color={highlight}>{pauseKeyString}<color={white}> to set the game speed to 0.\n<size=30><alpha=#80>Press [Alt] to skip the tutorial."
+                1 => $"Du kannst <color={highlight}>{pauseKeyString}<color={white}> drücken, um die <color={highlight}>Spielgeschwindigkeit auf 0<color={white}> zu setzen.\n<size=30><alpha=#80>Drücke [Alt], um das Tutorial zu überspringen.",
+                2 => $"Puoi premere <color={highlight}>{pauseKeyString}<color={white}> per impostare la <color={highlight}>velocità di gioco a 0<color={white}>.\n<size=30><alpha=#80>Premi [Alt] per saltare il tutorial.",
+                3 => $"Tu peux appuyer sur <color={highlight}>{pauseKeyString}<color={white}> pour régler la <color={highlight}>vitesse du jeu à 0<color={white}>.\n<size=30><alpha=#80>Appuie sur [Alt] pour passer le tutoriel.",
+                _ => $"You can press <color={highlight}>{pauseKeyString}<color={white}> to set the game <color={highlight}>speed to 0<color={white}>.\n<size=30><alpha=#80>Press [Alt] to skip the tutorial."
             };
         }
     }
