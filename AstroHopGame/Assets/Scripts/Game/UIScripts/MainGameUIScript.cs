@@ -36,7 +36,7 @@ public class MainGameUIScript : MonoBehaviour
     [SerializeField] private Animator sliderBackgroundAnim, sliderFillAnim;
 
     [Header("Tutorial Elements")]
-    [SerializeField] private TMP_Text movingTutorial, boostTutorial;
+    [SerializeField] private TMP_Text movingTutorial, boostTutorial, pauseTutorial;
     public GameObject tutorials;
 
     [Header("Tip Elements")]
@@ -149,16 +149,19 @@ public class MainGameUIScript : MonoBehaviour
         string boostKeyString;
         string leftKeyString;
         string rightKeyString;
+        string pauseKeyString;
 
         try
         {
             KeyCode boostKey = (KeyCode)PlayerPrefs.GetInt("KeyBoostPrimary", (int)KeyCode.W);
             KeyCode leftKey = (KeyCode)PlayerPrefs.GetInt("KeyLeftPrimary", (int)KeyCode.A);
             KeyCode rightKey = (KeyCode)PlayerPrefs.GetInt("KeyRightPrimary", (int)KeyCode.D);
+            KeyCode pauseKey = (KeyCode)PlayerPrefs.GetInt("KeyPause", (int)KeyCode.Space);
 
             boostKeyString = MenuUIScript.instance.GetLocalizedKeyName(boostKey);
             leftKeyString = MenuUIScript.instance.GetLocalizedKeyName(leftKey);
             rightKeyString = MenuUIScript.instance.GetLocalizedKeyName(rightKey);
+            pauseKeyString = MenuUIScript.instance.GetLocalizedKeyName(pauseKey);
         }
         catch
         {
@@ -168,12 +171,14 @@ public class MainGameUIScript : MonoBehaviour
                 boostKeyString = "Z";
                 leftKeyString = "Q";
                 rightKeyString = "D";
+                pauseKeyString = "Spacebar";
             }
             else
             {
                 boostKeyString = "W";
                 leftKeyString = "A";
                 rightKeyString = "D";
+                pauseKeyString = "Spacebar";
             }
         }
 
@@ -206,6 +211,18 @@ public class MainGameUIScript : MonoBehaviour
                 _ => $"Press <color={highlight}>{boostKeyString} <color={white}>to <color={highlight}>boost up <color={white}>and destroy all UFOs."
             };
         }
+
+        if (pauseTutorial != null)
+        {
+            pauseTutorial.text = localeID switch
+            {
+                1 => $"Du kannst <color={highlight}>{pauseKeyString}<color={white}> drücken, um das Spiel zu pausieren.",
+                2 => $"Puoi premere <color={highlight}>{pauseKeyString}<color={white}> per mettere in pausa il gioco.",
+                3 => $"Tu peux appuyer sur <color={highlight}>{pauseKeyString}<color={white}> pour mettre le jeu en pause.",
+                _ => $"You can press <color={highlight}>{pauseKeyString}<color={white}> to pause the game."
+            };
+        }
+
     }
     private void CheckShownTutorials()
     {
