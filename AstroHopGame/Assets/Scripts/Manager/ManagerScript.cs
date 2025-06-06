@@ -333,17 +333,6 @@ public class ManagerScript : MonoBehaviour
 
     public void CloseOptionsPanel()
     {
-        // Check if all keys are unique using a HashSet
-        HashSet<KeyCode> keySet = new HashSet<KeyCode> { keyBoostPrimary, keyLeftPrimary, keyRightPrimary, keyPause };
-
-        // Only proceed if all 4 keys are distinct
-        if (keySet.Count != 4)
-        {
-            // Show duplicate key warning
-            MenuUIScript.instance.duplicateKeysWarning.SetActive(true);
-            return;
-        }
-
         // Hide warning if it was shown
         MenuUIScript.instance.duplicateKeysWarning.SetActive(false);
 

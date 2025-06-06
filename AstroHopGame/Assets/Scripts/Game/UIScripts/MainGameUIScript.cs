@@ -554,7 +554,7 @@ public class MainGameUIScript : MonoBehaviour
             //
             if (failedBoostAmount >= failedBoostsForTip && !failedPickUpTipOn && (PlayerPrefs.GetInt("InGameTipsEnabled", 1) == 1))
             {
-                StartCoroutine(SpawnFailedBoostTip());
+                //StartCoroutine(SpawnFailedBoostTip());
             }
         }
     }
@@ -578,7 +578,7 @@ public class MainGameUIScript : MonoBehaviour
             failedPickUpAmount++;
             if (failedPickUpAmount >= failedPickUpForTip && !failedBoostTipOn && (PlayerPrefs.GetInt("InGameTipsEnabled", 1) == 1))
             {
-                StartCoroutine(SpawnFailedPickUpTip());
+                //StartCoroutine(SpawnFailedPickUpTip());
             }
         }
     }

@@ -1161,7 +1161,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &167076920
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1951,9 +1951,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 53.7, y: -108}
+  m_AnchoredPosition: {x: 200, y: -45}
   m_SizeDelta: {x: 271.77, y: 139.77}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 1, y: 0.5}
 --- !u!222 &340957953
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2450,9 +2450,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 53.7, y: -158.622}
+  m_AnchoredPosition: {x: 200, y: -95.621994}
   m_SizeDelta: {x: 271.77, y: 139.77}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 1, y: 0.5}
 --- !u!1 &406001268
 GameObject:
   m_ObjectHideFlags: 0
@@ -3241,9 +3241,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -66, y: -158.62202}
+  m_AnchoredPosition: {x: -200, y: -95.622025}
   m_SizeDelta: {x: 271.77, y: 139.77}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &558711771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5692,7 +5692,7 @@ MonoBehaviour:
     maxX: 2.5
     percentageBrokenPlatform: 0
     percantageMovingPlatform: 0
-    fuelSpawnChance: 0
+    fuelSpawnChance: 1
     firstTutorial: {fileID: 1663099691}
     secondTutorial: {fileID: 1429818602}
     thirdTutorial: {fileID: 1429818602}
@@ -6475,7 +6475,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4291419106
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -6769,7 +6769,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1283786501
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6787,7 +6787,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -290}
+  m_AnchoredPosition: {x: 0, y: -227}
   m_SizeDelta: {x: 385, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1283786502
@@ -6991,7 +6991,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -134}
+  m_AnchoredPosition: {x: 0, y: -227}
   m_SizeDelta: {x: 385, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1286490799
@@ -7829,7 +7829,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -8286,7 +8286,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -210, y: -310}
+  m_AnchoredPosition: {x: 0, y: -310}
   m_SizeDelta: {x: 385, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1502734399
@@ -9024,7 +9024,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 22}
+  m_AnchoredPosition: {x: 0, y: -18.999998}
   m_SizeDelta: {x: 385, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1576630673
@@ -10008,9 +10008,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -66, y: -108}
+  m_AnchoredPosition: {x: -200, y: -45}
   m_SizeDelta: {x: 271.77, y: 139.77}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1764043988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11061,7 +11061,7 @@ MonoBehaviour:
   ufoSound: {fileID: 8300000, guid: b8e1c9bb873cb944db06f7131b50f60b, type: 3}
   collectFuel: {fileID: 8300000, guid: 9cb4ba9650b9f3a4093367de34ae799f, type: 3}
   collectFuelToFull: {fileID: 8300000, guid: bd3376393e2086f4781a94295c69cfc9, type: 3}
-  collectFuelIsFull: {fileID: 8300000, guid: 2d7911b04f81607479088963a4d11979, type: 3}
+  collectFuelIsFull: {fileID: 8300000, guid: 9cb4ba9650b9f3a4093367de34ae799f, type: 3}
   failedBoost: {fileID: 8300000, guid: f3574ca4c9e599442b95524f17754283, type: 3}
   sfxBoostTimer: 0
   backgroundMusic: 1
@@ -11079,8 +11079,8 @@ MonoBehaviour:
   clickVolume: 0.4
   collectFuelVolume: 0.1
   collectFuelToFullVolume: 0.08
-  collectFuelIsFullVolume: 0.09
-  failedBoostVolume: 1
+  collectFuelIsFullVolume: 0.1
+  failedBoostVolume: 0
 --- !u!1 &2113553268
 GameObject:
   m_ObjectHideFlags: 0
