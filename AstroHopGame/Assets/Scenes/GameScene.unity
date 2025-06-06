@@ -5872,6 +5872,12 @@ MonoBehaviour:
     fuelSpawnChance: 0
     firstTutorial: {fileID: 1663099691}
     secondTutorial: {fileID: 405442601}
+    thirdTutorial: {fileID: 539876766}
+    fourthTutorial: {fileID: 1094664494}
+    fifthTutorial: {fileID: 801930603}
+    sixthTutorial: {fileID: 1544818593}
+    seventhTutorial: {fileID: 215183990}
+    eighthTutorial: {fileID: 952903204}
     firstPlatformPrefab: {fileID: 6147987595589634864, guid: 27cca06289255304bad2926bbbe31a54, type: 3}
     firstPlatformFuel: 0
     minUfoSpawnTime: 999
@@ -5884,8 +5890,14 @@ MonoBehaviour:
     percentageBrokenPlatform: 0
     percantageMovingPlatform: 0
     fuelSpawnChance: 0
-    firstTutorial: {fileID: 539876766}
+    firstTutorial: {fileID: 0}
     secondTutorial: {fileID: 0}
+    thirdTutorial: {fileID: 0}
+    fourthTutorial: {fileID: 0}
+    fifthTutorial: {fileID: 0}
+    sixthTutorial: {fileID: 0}
+    seventhTutorial: {fileID: 0}
+    eighthTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 6147987595589634864, guid: 27cca06289255304bad2926bbbe31a54, type: 3}
     firstPlatformFuel: 0
     minUfoSpawnTime: 5
@@ -5898,8 +5910,14 @@ MonoBehaviour:
     percentageBrokenPlatform: 0
     percantageMovingPlatform: 0
     fuelSpawnChance: 0.1
-    firstTutorial: {fileID: 801930603}
-    secondTutorial: {fileID: 1544818593}
+    firstTutorial: {fileID: 0}
+    secondTutorial: {fileID: 0}
+    thirdTutorial: {fileID: 0}
+    fourthTutorial: {fileID: 0}
+    fifthTutorial: {fileID: 0}
+    sixthTutorial: {fileID: 0}
+    seventhTutorial: {fileID: 0}
+    eighthTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 6147987595589634864, guid: 27cca06289255304bad2926bbbe31a54, type: 3}
     firstPlatformFuel: 1
     minUfoSpawnTime: 4
@@ -5912,8 +5930,14 @@ MonoBehaviour:
     percentageBrokenPlatform: 0.15
     percantageMovingPlatform: 0
     fuelSpawnChance: 0.1
-    firstTutorial: {fileID: 215183990}
+    firstTutorial: {fileID: 0}
     secondTutorial: {fileID: 0}
+    thirdTutorial: {fileID: 0}
+    fourthTutorial: {fileID: 0}
+    fifthTutorial: {fileID: 0}
+    sixthTutorial: {fileID: 0}
+    seventhTutorial: {fileID: 0}
+    eighthTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 6296993392547905441, guid: 12121649460d1c242b1f28205c91607a, type: 3}
     firstPlatformFuel: 0
     minUfoSpawnTime: 3.75
@@ -5926,8 +5950,14 @@ MonoBehaviour:
     percentageBrokenPlatform: 0
     percantageMovingPlatform: 0.15
     fuelSpawnChance: 0.1
-    firstTutorial: {fileID: 952903204}
+    firstTutorial: {fileID: 0}
     secondTutorial: {fileID: 0}
+    thirdTutorial: {fileID: 0}
+    fourthTutorial: {fileID: 0}
+    fifthTutorial: {fileID: 0}
+    sixthTutorial: {fileID: 0}
+    seventhTutorial: {fileID: 0}
+    eighthTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 5886830857919325583, guid: 80ab51f23303a1a4c9020554536e057b, type: 3}
     firstPlatformFuel: 0
     minUfoSpawnTime: 3.5
@@ -5942,6 +5972,12 @@ MonoBehaviour:
     fuelSpawnChance: 0.1
     firstTutorial: {fileID: 0}
     secondTutorial: {fileID: 0}
+    thirdTutorial: {fileID: 0}
+    fourthTutorial: {fileID: 0}
+    fifthTutorial: {fileID: 0}
+    sixthTutorial: {fileID: 0}
+    seventhTutorial: {fileID: 0}
+    eighthTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
     minUfoSpawnTime: 3.25
@@ -5956,6 +5992,12 @@ MonoBehaviour:
     fuelSpawnChance: 0.1
     firstTutorial: {fileID: 0}
     secondTutorial: {fileID: 0}
+    thirdTutorial: {fileID: 0}
+    fourthTutorial: {fileID: 0}
+    fifthTutorial: {fileID: 0}
+    sixthTutorial: {fileID: 0}
+    seventhTutorial: {fileID: 0}
+    eighthTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
     minUfoSpawnTime: 3
@@ -5970,6 +6012,12 @@ MonoBehaviour:
     fuelSpawnChance: 0.1
     firstTutorial: {fileID: 0}
     secondTutorial: {fileID: 0}
+    thirdTutorial: {fileID: 0}
+    fourthTutorial: {fileID: 0}
+    fifthTutorial: {fileID: 0}
+    sixthTutorial: {fileID: 0}
+    seventhTutorial: {fileID: 0}
+    eighthTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
     minUfoSpawnTime: 2.75
@@ -5984,6 +6032,12 @@ MonoBehaviour:
     fuelSpawnChance: 0.1
     firstTutorial: {fileID: 0}
     secondTutorial: {fileID: 0}
+    thirdTutorial: {fileID: 0}
+    fourthTutorial: {fileID: 0}
+    fifthTutorial: {fileID: 0}
+    sixthTutorial: {fileID: 0}
+    seventhTutorial: {fileID: 0}
+    eighthTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
     minUfoSpawnTime: 2.5
@@ -5998,6 +6052,12 @@ MonoBehaviour:
     fuelSpawnChance: 0.1
     firstTutorial: {fileID: 0}
     secondTutorial: {fileID: 0}
+    thirdTutorial: {fileID: 0}
+    fourthTutorial: {fileID: 0}
+    fifthTutorial: {fileID: 0}
+    sixthTutorial: {fileID: 0}
+    seventhTutorial: {fileID: 0}
+    eighthTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
     minUfoSpawnTime: 2.25
@@ -6012,6 +6072,12 @@ MonoBehaviour:
     fuelSpawnChance: 0.1
     firstTutorial: {fileID: 0}
     secondTutorial: {fileID: 0}
+    thirdTutorial: {fileID: 0}
+    fourthTutorial: {fileID: 0}
+    fifthTutorial: {fileID: 0}
+    sixthTutorial: {fileID: 0}
+    seventhTutorial: {fileID: 0}
+    eighthTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
     minUfoSpawnTime: 2
@@ -6026,6 +6092,12 @@ MonoBehaviour:
     fuelSpawnChance: 0.1
     firstTutorial: {fileID: 0}
     secondTutorial: {fileID: 0}
+    thirdTutorial: {fileID: 0}
+    fourthTutorial: {fileID: 0}
+    fifthTutorial: {fileID: 0}
+    sixthTutorial: {fileID: 0}
+    seventhTutorial: {fileID: 0}
+    eighthTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
     minUfoSpawnTime: 1.75
@@ -6040,6 +6112,12 @@ MonoBehaviour:
     fuelSpawnChance: 0.1
     firstTutorial: {fileID: 0}
     secondTutorial: {fileID: 0}
+    thirdTutorial: {fileID: 0}
+    fourthTutorial: {fileID: 0}
+    fifthTutorial: {fileID: 0}
+    sixthTutorial: {fileID: 0}
+    seventhTutorial: {fileID: 0}
+    eighthTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
     minUfoSpawnTime: 1.5
@@ -6054,6 +6132,12 @@ MonoBehaviour:
     fuelSpawnChance: 0.1
     firstTutorial: {fileID: 0}
     secondTutorial: {fileID: 0}
+    thirdTutorial: {fileID: 0}
+    fourthTutorial: {fileID: 0}
+    fifthTutorial: {fileID: 0}
+    sixthTutorial: {fileID: 0}
+    seventhTutorial: {fileID: 0}
+    eighthTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
     minUfoSpawnTime: 1.25
@@ -6068,6 +6152,12 @@ MonoBehaviour:
     fuelSpawnChance: 0.1
     firstTutorial: {fileID: 0}
     secondTutorial: {fileID: 0}
+    thirdTutorial: {fileID: 0}
+    fourthTutorial: {fileID: 0}
+    fifthTutorial: {fileID: 0}
+    sixthTutorial: {fileID: 0}
+    seventhTutorial: {fileID: 0}
+    eighthTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
     minUfoSpawnTime: 1
@@ -6082,6 +6172,12 @@ MonoBehaviour:
     fuelSpawnChance: 0.1
     firstTutorial: {fileID: 0}
     secondTutorial: {fileID: 0}
+    thirdTutorial: {fileID: 0}
+    fourthTutorial: {fileID: 0}
+    fifthTutorial: {fileID: 0}
+    sixthTutorial: {fileID: 0}
+    seventhTutorial: {fileID: 0}
+    eighthTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
     minUfoSpawnTime: 0.8
@@ -6096,6 +6192,12 @@ MonoBehaviour:
     fuelSpawnChance: 0.1
     firstTutorial: {fileID: 0}
     secondTutorial: {fileID: 0}
+    thirdTutorial: {fileID: 0}
+    fourthTutorial: {fileID: 0}
+    fifthTutorial: {fileID: 0}
+    sixthTutorial: {fileID: 0}
+    seventhTutorial: {fileID: 0}
+    eighthTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
     minUfoSpawnTime: 0.6
@@ -6110,6 +6212,12 @@ MonoBehaviour:
     fuelSpawnChance: 0.1
     firstTutorial: {fileID: 0}
     secondTutorial: {fileID: 0}
+    thirdTutorial: {fileID: 0}
+    fourthTutorial: {fileID: 0}
+    fifthTutorial: {fileID: 0}
+    sixthTutorial: {fileID: 0}
+    seventhTutorial: {fileID: 0}
+    eighthTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
     minUfoSpawnTime: 0.4
@@ -6448,6 +6556,142 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1411381548}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1094664494
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1094664495}
+  - component: {fileID: 1094664498}
+  - component: {fileID: 1094664497}
+  m_Layer: 5
+  m_Name: Pause Tutorial
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1094664495
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094664494}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -89.16194}
+  m_LocalScale: {x: 0.009311406, y: 0.009311406, z: 0.009311406}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1144084728}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 3.637024}
+  m_SizeDelta: {x: 1174, y: 107}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1094664497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094664494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Pause
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 2637e1180a023c445ae703356b092469, type: 2}
+  m_sharedMaterial: {fileID: 84651385474780616, guid: f05493b53858bd04b917eef4866b0279, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 3539992575
+  m_fontColor: {r: 1, g: 1, b: 1, a: 0.78431374}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 57
+  m_fontSizeBase: 57
+  m_fontWeight: 400
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 18
+  m_fontSizeMax: 57
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 1
+  m_wordSpacing: 14
+  m_lineSpacing: 15
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0.08480835, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 1
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1094664498
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094664494}
+  m_CullTransparentMesh: 1
 --- !u!1 &1128770365
 GameObject:
   m_ObjectHideFlags: 0
@@ -6562,6 +6806,7 @@ Transform:
   - {fileID: 1544818594}
   - {fileID: 952903205}
   - {fileID: 215183991}
+  - {fileID: 1094664495}
   - {fileID: 267511157}
   - {fileID: 981286470}
   m_Father: {fileID: 1864715092}
@@ -9331,7 +9576,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1608931794
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10513,6 +10758,7 @@ MonoBehaviour:
   sliderFillAnim: {fileID: 585295634}
   movingTutorial: {fileID: 1663099693}
   boostTutorial: {fileID: 1544818595}
+  pauseTutorial: {fileID: 1094664497}
   tutorials: {fileID: 1144084727}
   timeTipText: 4
   failedBoostTip: {fileID: 267511156}
@@ -10538,7 +10784,7 @@ MonoBehaviour:
   maxFuel: 10000
   lowFuelWarningValue: 3000
   timeTutorialText: 5
-  timeTutorialPause: 1
+  timeTutorialPause: 0.2
 --- !u!1 &1894635508
 GameObject:
   m_ObjectHideFlags: 0

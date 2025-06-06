@@ -36,7 +36,7 @@ public class MainGameUIScript : MonoBehaviour
     [SerializeField] private Animator sliderBackgroundAnim, sliderFillAnim;
 
     [Header("Tutorial Elements")]
-    [SerializeField] private TMP_Text movingTutorial, boostTutorial;
+    [SerializeField] private TMP_Text movingTutorial, boostTutorial, pauseTutorial;
     public GameObject tutorials;
 
     [Header("Tip Elements")]
@@ -149,16 +149,19 @@ public class MainGameUIScript : MonoBehaviour
         string boostKeyString;
         string leftKeyString;
         string rightKeyString;
+        string pauseKeyString;
 
         try
         {
             KeyCode boostKey = (KeyCode)PlayerPrefs.GetInt("KeyBoostPrimary", (int)KeyCode.W);
             KeyCode leftKey = (KeyCode)PlayerPrefs.GetInt("KeyLeftPrimary", (int)KeyCode.A);
             KeyCode rightKey = (KeyCode)PlayerPrefs.GetInt("KeyRightPrimary", (int)KeyCode.D);
+            KeyCode pauseKey = (KeyCode)PlayerPrefs.GetInt("KeyPause", (int)KeyCode.Space);
 
             boostKeyString = MenuUIScript.instance.GetLocalizedKeyName(boostKey);
             leftKeyString = MenuUIScript.instance.GetLocalizedKeyName(leftKey);
             rightKeyString = MenuUIScript.instance.GetLocalizedKeyName(rightKey);
+            pauseKeyString = MenuUIScript.instance.GetLocalizedKeyName(pauseKey);
         }
         catch
         {
@@ -168,12 +171,14 @@ public class MainGameUIScript : MonoBehaviour
                 boostKeyString = "Z";
                 leftKeyString = "Q";
                 rightKeyString = "D";
+                pauseKeyString = "Spacebar";
             }
             else
             {
                 boostKeyString = "W";
                 leftKeyString = "A";
                 rightKeyString = "D";
+                pauseKeyString = "Spacebar";
             }
         }
 
@@ -200,6 +205,17 @@ public class MainGameUIScript : MonoBehaviour
                 2 => $"Premi {boostKeyString} per attivare il boost e distruggere tutti gli UFO.\n<size=30><alpha=#80>Premi [Alt] per saltare il tutorial.",
                 3 => $"Appuyez sur {boostKeyString} pour vous propulser et détruire tous les OVNIs.\n<size=30><alpha=#80>Appuie sur [Alt] pour pour passer le tutoriel.",
                 _ => $"Press {boostKeyString} to boost up and destroy all UFOs.\n<size=30><alpha=#80>Press [Alt] to skip the tutorial."
+            };
+        }
+
+        if (pauseTutorial != null)
+        {
+            pauseTutorial.text = localeID switch
+            {
+                1 => $"Drücke {pauseKeyString}, um das Spiel zu pausieren.\n<size=30><alpha=#80>Drücke [Alt], um das Tutorial zu überspringen.",
+                2 => $"Premi {pauseKeyString} per mettere in pausa il gioco.\n<size=30><alpha=#80>Premi [Alt] per saltare il tutorial.",
+                3 => $"Appuyez sur {pauseKeyString} pour mettre le jeu en pause.\n<size=30><alpha=#80>Appuie sur [Alt] pour passer le tutoriel.",
+                _ => $"Press {pauseKeyString} to pause the game.\n<size=30><alpha=#80>Press [Alt] to skip the tutorial."
             };
         }
     }
@@ -440,10 +456,21 @@ public class MainGameUIScript : MonoBehaviour
                 // If there's an active tutorial: stop it, then mark its phase as shown
                 if (activeTutorialCoroutine != null)
                 {
-                    SkipCurrentTutorial(currentPhaseIndex);
+                    //SkipCurrentTutorial(currentPhaseIndex);
                 }
 
-                activeTutorialCoroutine = StartCoroutine(SpawnSequence(currentPhase.firstTutorial, currentPhase.secondTutorial, currentPhaseIndex));
+                // Start the coroutine using eight separate parameters (plus phaseIndex)
+                activeTutorialCoroutine = StartCoroutine(SpawnSequence(
+                    currentPhase.firstTutorial,
+                    currentPhase.secondTutorial,
+                    currentPhase.thirdTutorial,
+                    currentPhase.fourthTutorial,
+                    currentPhase.fifthTutorial,
+                    currentPhase.sixthTutorial,
+                    currentPhase.seventhTutorial,
+                    currentPhase.eighthTutorial,
+                    currentPhaseIndex
+                ));
                 activeTutorialPhaseIndex = currentPhaseIndex;
             }
         }
@@ -460,6 +487,12 @@ public class MainGameUIScript : MonoBehaviour
         {
             if (phase.firstTutorial != null) phase.firstTutorial.SetActive(false);
             if (phase.secondTutorial != null) phase.secondTutorial.SetActive(false);
+            if (phase.thirdTutorial != null) phase.thirdTutorial.SetActive(false);
+            if (phase.fourthTutorial != null) phase.fourthTutorial.SetActive(false);
+            if (phase.fifthTutorial != null) phase.fifthTutorial.SetActive(false);
+            if (phase.sixthTutorial != null) phase.sixthTutorial.SetActive(false);
+            if (phase.seventhTutorial != null) phase.seventhTutorial.SetActive(false);
+            if (phase.eighthTutorial != null) phase.eighthTutorial.SetActive(false);
         }
 
         // Mark ALL tutorials as shown
@@ -484,6 +517,12 @@ public class MainGameUIScript : MonoBehaviour
         {
             if (phase.firstTutorial != null) phase.firstTutorial.SetActive(false);
             if (phase.secondTutorial != null) phase.secondTutorial.SetActive(false);
+            if (phase.thirdTutorial != null) phase.thirdTutorial.SetActive(false);
+            if (phase.fourthTutorial != null) phase.fourthTutorial.SetActive(false);
+            if (phase.fifthTutorial != null) phase.fifthTutorial.SetActive(false);
+            if (phase.sixthTutorial != null) phase.sixthTutorial.SetActive(false);
+            if (phase.seventhTutorial != null) phase.seventhTutorial.SetActive(false);
+            if (phase.eighthTutorial != null) phase.eighthTutorial.SetActive(false);
         };
 
         // Save in persistent storage that the tutorial was shown
@@ -494,33 +533,101 @@ public class MainGameUIScript : MonoBehaviour
         activeTutorialPhaseIndex = -1;             // Reset phase index
     }
 
-    private IEnumerator SpawnSequence(GameObject firsttext, GameObject secondtext, int phaseIndex)
+    private IEnumerator SpawnSequence(
+       GameObject firstText,
+       GameObject secondText,
+       GameObject thirdText,
+       GameObject fourthText,
+       GameObject fifthText,
+       GameObject sixthText,
+       GameObject seventhText,
+       GameObject eighthText,
+       int phaseIndex)
     {
-        // First tutorial element sequence
-        if (firsttext != null)
+        // Helper local to show/hide a single text with timing
+        IEnumerator ShowTutorialElement(GameObject element)
         {
-            firsttext.SetActive(true);
+            element.SetActive(true);
             yield return WaitForSecondsUnpaused(timeTutorialText);
-            firsttext.SetActive(false);
+            element.SetActive(false);
         }
 
-        // Buffer between tutorial elements
+        // 1st element
+        if (firstText != null)
+        {
+            yield return ShowTutorialElement(firstText);
+        }
+
+        // Buffer
         yield return WaitForSecondsUnpaused(timeTutorialPause);
 
-        // Second tutorial element sequence
-        if (secondtext != null)
+        // 2nd element
+        if (secondText != null)
         {
-            secondtext.SetActive(true);
-            yield return WaitForSecondsUnpaused(timeTutorialText);
-            secondtext.SetActive(false);
+            yield return ShowTutorialElement(secondText);
         }
 
-        // Save in persistent storage that the tutorial was shown
+        // Buffer
+        yield return WaitForSecondsUnpaused(timeTutorialPause);
+
+        // 3rd element
+        if (thirdText != null)
+        {
+            yield return ShowTutorialElement(thirdText);
+        }
+
+        // Buffer
+        yield return WaitForSecondsUnpaused(timeTutorialPause);
+
+        // 4th element
+        if (fourthText != null)
+        {
+            yield return ShowTutorialElement(fourthText);
+        }
+
+        // Buffer
+        yield return WaitForSecondsUnpaused(timeTutorialPause);
+
+        // 5th element
+        if (fifthText != null)
+        {
+            yield return ShowTutorialElement(fifthText);
+        }
+
+        // Buffer
+        yield return WaitForSecondsUnpaused(timeTutorialPause);
+
+        // 6th element
+        if (sixthText != null)
+        {
+            yield return ShowTutorialElement(sixthText);
+        }
+
+        // Buffer
+        yield return WaitForSecondsUnpaused(timeTutorialPause);
+
+        // 7th element
+        if (seventhText != null)
+        {
+            yield return ShowTutorialElement(seventhText);
+        }
+
+        // Buffer
+        yield return WaitForSecondsUnpaused(timeTutorialPause);
+
+        // 8th element
+        if (eighthText != null)
+        {
+            yield return ShowTutorialElement(eighthText);
+        }
+
+        // Mark tutorial as shown in PlayerPrefs
         PlayerPrefs.SetInt("Phase" + phaseIndex + "TutorialShown", 1);
         PlayerPrefs.Save();
 
-        activeTutorialCoroutine = null;            // Reset active coroutine reference
-        activeTutorialPhaseIndex = -1;             // Reset phase index
+        // Reset active coroutine reference
+        activeTutorialCoroutine = null;
+        activeTutorialPhaseIndex = -1;
     }
     #endregion
 
