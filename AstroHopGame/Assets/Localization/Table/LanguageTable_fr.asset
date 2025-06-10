@@ -222,9 +222,9 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 6418301782589440
     m_Localized: "Les plateformes se d\xE9clinent en trois variantes :\r\n- Vertes
-      : Statiques et permanentes.\r\n- Rouges : Se brisent apr\xE8s un seul atterrissage
-      (utilisables une seule fois).\r\n- Violettes : Se d\xE9placent de gauche \xE0
-      droite \xE0 une vitesse constante."
+      : Statiques et permanentes.\r\n- Rouges : Se brisent apr\xE8s le deuxi\xE8me
+      atterrissage (utilisables une seule fois).\r\n- Violettes : Se d\xE9placent
+      de gauche \xE0 droite \xE0 une vitesse constante."
     m_Metadata:
       m_Items: []
   - m_Id: 6418419743195136
