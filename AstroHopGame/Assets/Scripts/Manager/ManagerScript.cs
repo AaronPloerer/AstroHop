@@ -538,12 +538,25 @@ public class ManagerScript : MonoBehaviour
         PlayerPrefs.DeleteKey("Score");
 
         int i = 0;
+
         while (true)
         {
-            string key = "Phase" + i + "TutorialShown";
-            if (PlayerPrefs.HasKey(key))
+            string key1 = "Phase" + i + "TutorialFirstShown";
+            string key2 = "Phase" + i + "TutorialSecondShown";
+            string key3 = "Phase" + i + "TutorialThirdShown";
+            string key4 = "Phase" + i + "TutorialFouthShown";
+            string key5 = "Phase" + i + "TutorialFifthShown";
+            string key6 = "Phase" + i + "TutorialSixthShown";
+            string key7 = "Phase" + i + "TutorialSeventhShown";
+            if (PlayerPrefs.HasKey(key1))
             {
-                PlayerPrefs.DeleteKey(key);
+                PlayerPrefs.DeleteKey(key1);
+                PlayerPrefs.DeleteKey(key2);
+                PlayerPrefs.DeleteKey(key3);
+                PlayerPrefs.DeleteKey(key4);
+                PlayerPrefs.DeleteKey(key5);
+                PlayerPrefs.DeleteKey(key6);
+                PlayerPrefs.DeleteKey(key7);
                 i++;
             }
             else

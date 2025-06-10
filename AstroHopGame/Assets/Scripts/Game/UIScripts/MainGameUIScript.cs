@@ -493,124 +493,122 @@ public class MainGameUIScript : MonoBehaviour
             if (phase.seventhTutorial != null) phase.seventhTutorial.SetActive(false);
         }
 
-        // Mark ALL tutorials as shown
-        for (int i = 0; i < shownTutorial.Length; i++)
+        // Mark ALL tutorial elements of ALL phases as shown
+        for (int phaseIndex = 0; phaseIndex < LevelGeneratorScript.instance.phases.Length; phaseIndex++)
         {
-            shownTutorial[i] = true; // Set in memory
-            PlayerPrefs.SetInt("Phase" + i + "TutorialShown", 1); // Set in storage
+            PlayerPrefs.SetInt($"Phase{phaseIndex}TutorialFirstShown", 1);
+            PlayerPrefs.SetInt($"Phase{phaseIndex}TutorialSecondShown", 1);
+            PlayerPrefs.SetInt($"Phase{phaseIndex}TutorialThirdShown", 1);
+            PlayerPrefs.SetInt($"Phase{phaseIndex}TutorialFourthShown", 1);
+            PlayerPrefs.SetInt($"Phase{phaseIndex}TutorialFifthShown", 1);
+            PlayerPrefs.SetInt($"Phase{phaseIndex}TutorialSixthShown", 1);
+            PlayerPrefs.SetInt($"Phase{phaseIndex}TutorialSeventhShown", 1);
         }
         PlayerPrefs.Save();
 
         // Clear references
         activeTutorialCoroutine = null;
         activeTutorialPhaseIndex = -1;
-        return;                               // Exit and prevent any further execution
     }
 
     private void SkipCurrentTutorial(int currentPhaseIndex)
     {
         StopCoroutine(activeTutorialCoroutine);
 
-        foreach (Phase phase in LevelGeneratorScript.instance.phases)
-        {
-            if (phase.firstTutorial != null) phase.firstTutorial.SetActive(false);
-            if (phase.secondTutorial != null) phase.secondTutorial.SetActive(false);
-            if (phase.thirdTutorial != null) phase.thirdTutorial.SetActive(false);
-            if (phase.fourthTutorial != null) phase.fourthTutorial.SetActive(false);
-            if (phase.fifthTutorial != null) phase.fifthTutorial.SetActive(false);
-            if (phase.sixthTutorial != null) phase.sixthTutorial.SetActive(false);
-            if (phase.seventhTutorial != null) phase.seventhTutorial.SetActive(false);
-        };
-
-        // Save in persistent storage that the tutorial was shown
-        PlayerPrefs.SetInt("Phase" + currentPhaseIndex + "TutorialShown", 1);
+        // Mark all tutorial elements of current phase as shown
+        PlayerPrefs.SetInt($"Phase{currentPhaseIndex}TutorialFirstShown", 1);
+        PlayerPrefs.SetInt($"Phase{currentPhaseIndex}TutorialSecondShown", 1);
+        PlayerPrefs.SetInt($"Phase{currentPhaseIndex}TutorialThirdShown", 1);
+        PlayerPrefs.SetInt($"Phase{currentPhaseIndex}TutorialFourthShown", 1);
+        PlayerPrefs.SetInt($"Phase{currentPhaseIndex}TutorialFifthShown", 1);
+        PlayerPrefs.SetInt($"Phase{currentPhaseIndex}TutorialSixthShown", 1);
+        PlayerPrefs.SetInt($"Phase{currentPhaseIndex}TutorialSeventhShown", 1);
         PlayerPrefs.Save();
 
-        activeTutorialCoroutine = null;            // Reset active coroutine reference
-        activeTutorialPhaseIndex = -1;             // Reset phase index
+        activeTutorialCoroutine = null;
+        activeTutorialPhaseIndex = -1;
     }
 
     private IEnumerator SpawnSequence(
-       GameObject firstText,
-       GameObject secondText,
-       GameObject thirdText,
-       GameObject fourthText,
-       GameObject fifthText,
-       GameObject sixthText,
-       GameObject seventhText,
-       int phaseIndex)
+   GameObject firstText,
+   GameObject secondText,
+   GameObject thirdText,
+   GameObject fourthText,
+   GameObject fifthText,
+   GameObject sixthText,
+   GameObject seventhText,
+   int phaseIndex)
     {
         // Helper local to show/hide a single text with timing
-        IEnumerator ShowTutorialElement(GameObject element)
+        IEnumerator ShowTutorialElement(GameObject element, string elementName)
         {
             element.SetActive(true);
             yield return WaitForSecondsUnpaused(timeTutorialText);
             element.SetActive(false);
+            // Mark this specific tutorial element as shown
+            PlayerPrefs.SetInt($"Phase{phaseIndex}Tutorial{elementName}Shown", 1);
+            PlayerPrefs.Save();
         }
 
         // 1st element
-        if (firstText != null)
+        if (firstText != null && PlayerPrefs.GetInt($"Phase{phaseIndex}TutorialFirstShown", 0) == 0)
         {
-            yield return ShowTutorialElement(firstText);
+            yield return ShowTutorialElement(firstText, "First");
         }
 
         // Buffer
         yield return WaitForSecondsUnpaused(timeTutorialPause);
 
         // 2nd element
-        if (secondText != null)
+        if (secondText != null && PlayerPrefs.GetInt($"Phase{phaseIndex}TutorialSecondShown", 0) == 0)
         {
-            yield return ShowTutorialElement(secondText);
+            yield return ShowTutorialElement(secondText, "Second");
         }
 
         // Buffer
         yield return WaitForSecondsUnpaused(timeTutorialPause);
 
         // 3rd element
-        if (thirdText != null)
+        if (thirdText != null && PlayerPrefs.GetInt($"Phase{phaseIndex}TutorialThirdShown", 0) == 0)
         {
-            yield return ShowTutorialElement(thirdText);
+            yield return ShowTutorialElement(thirdText, "Third");
         }
 
         // Buffer
         yield return WaitForSecondsUnpaused(timeTutorialPause);
 
         // 4th element
-        if (fourthText != null)
+        if (fourthText != null && PlayerPrefs.GetInt($"Phase{phaseIndex}TutorialFourthShown", 0) == 0)
         {
-            yield return ShowTutorialElement(fourthText);
+            yield return ShowTutorialElement(fourthText, "Fourth");
         }
 
         // Buffer
         yield return WaitForSecondsUnpaused(timeTutorialPause);
 
         // 5th element
-        if (fifthText != null)
+        if (fifthText != null && PlayerPrefs.GetInt($"Phase{phaseIndex}TutorialFifthShown", 0) == 0)
         {
-            yield return ShowTutorialElement(fifthText);
+            yield return ShowTutorialElement(fifthText, "Fifth");
         }
 
         // Buffer
         yield return WaitForSecondsUnpaused(timeTutorialPause);
 
         // 6th element
-        if (sixthText != null)
+        if (sixthText != null && PlayerPrefs.GetInt($"Phase{phaseIndex}TutorialSixthShown", 0) == 0)
         {
-            yield return ShowTutorialElement(sixthText);
+            yield return ShowTutorialElement(sixthText, "Sixth");
         }
 
         // Buffer
         yield return WaitForSecondsUnpaused(timeTutorialPause);
 
         // 7th element
-        if (seventhText != null)
+        if (seventhText != null && PlayerPrefs.GetInt($"Phase{phaseIndex}TutorialSeventhShown", 0) == 0)
         {
-            yield return ShowTutorialElement(seventhText);
+            yield return ShowTutorialElement(seventhText, "Seventh");
         }
-
-        // Mark tutorial as shown in PlayerPrefs
-        PlayerPrefs.SetInt("Phase" + phaseIndex + "TutorialShown", 1);
-        PlayerPrefs.Save();
 
         // Reset active coroutine reference
         activeTutorialCoroutine = null;

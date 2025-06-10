@@ -677,5 +677,4 @@ public class MenuUIScript : MonoBehaviour
         }
     }
     #endregion
-
 }

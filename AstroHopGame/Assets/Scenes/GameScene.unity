@@ -5700,7 +5700,6 @@ MonoBehaviour:
     fifthTutorial: {fileID: 1544818593}
     sixthTutorial: {fileID: 215183990}
     seventhTutorial: {fileID: 952903204}
-    eighthTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 6147987595589634864, guid: 27cca06289255304bad2926bbbe31a54, type: 3}
     firstPlatformFuel: 0
     minUfoSpawnTime: 999
@@ -5720,7 +5719,6 @@ MonoBehaviour:
     fifthTutorial: {fileID: 0}
     sixthTutorial: {fileID: 0}
     seventhTutorial: {fileID: 0}
-    eighthTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 6147987595589634864, guid: 27cca06289255304bad2926bbbe31a54, type: 3}
     firstPlatformFuel: 0
     minUfoSpawnTime: 5
@@ -5740,7 +5738,6 @@ MonoBehaviour:
     fifthTutorial: {fileID: 0}
     sixthTutorial: {fileID: 0}
     seventhTutorial: {fileID: 0}
-    eighthTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 6147987595589634864, guid: 27cca06289255304bad2926bbbe31a54, type: 3}
     firstPlatformFuel: 1
     minUfoSpawnTime: 4
@@ -5760,7 +5757,6 @@ MonoBehaviour:
     fifthTutorial: {fileID: 0}
     sixthTutorial: {fileID: 0}
     seventhTutorial: {fileID: 0}
-    eighthTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 6296993392547905441, guid: 12121649460d1c242b1f28205c91607a, type: 3}
     firstPlatformFuel: 0
     minUfoSpawnTime: 3.75
@@ -5780,7 +5776,6 @@ MonoBehaviour:
     fifthTutorial: {fileID: 0}
     sixthTutorial: {fileID: 0}
     seventhTutorial: {fileID: 0}
-    eighthTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 5886830857919325583, guid: 80ab51f23303a1a4c9020554536e057b, type: 3}
     firstPlatformFuel: 0
     minUfoSpawnTime: 3.5
@@ -5800,7 +5795,6 @@ MonoBehaviour:
     fifthTutorial: {fileID: 0}
     sixthTutorial: {fileID: 0}
     seventhTutorial: {fileID: 0}
-    eighthTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
     minUfoSpawnTime: 3.25
@@ -5820,7 +5814,6 @@ MonoBehaviour:
     fifthTutorial: {fileID: 0}
     sixthTutorial: {fileID: 0}
     seventhTutorial: {fileID: 0}
-    eighthTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
     minUfoSpawnTime: 3
@@ -5840,7 +5833,6 @@ MonoBehaviour:
     fifthTutorial: {fileID: 0}
     sixthTutorial: {fileID: 0}
     seventhTutorial: {fileID: 0}
-    eighthTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
     minUfoSpawnTime: 2.75
@@ -5860,7 +5852,6 @@ MonoBehaviour:
     fifthTutorial: {fileID: 0}
     sixthTutorial: {fileID: 0}
     seventhTutorial: {fileID: 0}
-    eighthTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
     minUfoSpawnTime: 2.5
@@ -5880,7 +5871,6 @@ MonoBehaviour:
     fifthTutorial: {fileID: 0}
     sixthTutorial: {fileID: 0}
     seventhTutorial: {fileID: 0}
-    eighthTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
     minUfoSpawnTime: 2.25
@@ -5900,7 +5890,6 @@ MonoBehaviour:
     fifthTutorial: {fileID: 0}
     sixthTutorial: {fileID: 0}
     seventhTutorial: {fileID: 0}
-    eighthTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
     minUfoSpawnTime: 2
@@ -5920,7 +5909,6 @@ MonoBehaviour:
     fifthTutorial: {fileID: 0}
     sixthTutorial: {fileID: 0}
     seventhTutorial: {fileID: 0}
-    eighthTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
     minUfoSpawnTime: 1.75
@@ -5940,7 +5928,6 @@ MonoBehaviour:
     fifthTutorial: {fileID: 0}
     sixthTutorial: {fileID: 0}
     seventhTutorial: {fileID: 0}
-    eighthTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
     minUfoSpawnTime: 1.5
@@ -5960,7 +5947,6 @@ MonoBehaviour:
     fifthTutorial: {fileID: 0}
     sixthTutorial: {fileID: 0}
     seventhTutorial: {fileID: 0}
-    eighthTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
     minUfoSpawnTime: 1.25
@@ -5980,7 +5966,6 @@ MonoBehaviour:
     fifthTutorial: {fileID: 0}
     sixthTutorial: {fileID: 0}
     seventhTutorial: {fileID: 0}
-    eighthTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
     minUfoSpawnTime: 1
@@ -6000,7 +5985,6 @@ MonoBehaviour:
     fifthTutorial: {fileID: 0}
     sixthTutorial: {fileID: 0}
     seventhTutorial: {fileID: 0}
-    eighthTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
     minUfoSpawnTime: 0.8
@@ -6020,7 +6004,6 @@ MonoBehaviour:
     fifthTutorial: {fileID: 0}
     sixthTutorial: {fileID: 0}
     seventhTutorial: {fileID: 0}
-    eighthTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
     minUfoSpawnTime: 0.6
@@ -6040,7 +6023,6 @@ MonoBehaviour:
     fifthTutorial: {fileID: 0}
     sixthTutorial: {fileID: 0}
     seventhTutorial: {fileID: 0}
-    eighthTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
     minUfoSpawnTime: 0.4
@@ -10605,7 +10587,7 @@ MonoBehaviour:
   currentFuel: 0
   maxFuel: 10000
   lowFuelWarningValue: 3000
-  timeTutorialText: 5
+  timeTutorialText: 4
   timeTutorialPause: 0.2
 --- !u!1 &1894635508
 GameObject:
