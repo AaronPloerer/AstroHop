@@ -250,13 +250,12 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 6418451519242240
     m_Localized: "Gli UFO scendono lentamente seguendo la tua posizione orizzontale.
-      Prima che un UFO appaia sullo schermo, una freccia in alto avvisa da quale
-      direzione sta arrivando. Scontrarsi con uno dal basso o dal lato termina la
-      partita.\r\nPuoi eliminarli in tre modi:\r\n- Attacco con Salto: Atterra sopra
-      un UFO per distruggerlo. Rimbalzerai come su una piattaforma.\r\n- Colpo Laser:
-      Clicca con il tasto sinistro del mouse verso il bersaglio. Un raggio laser
-      parte dalla tua posizione e distrugge l\u2019UFO se colpito.\r\n- Propulsione
-      del Razzo: Usa un boost per distruggere qualsiasi UFO che colpisci mentre sali.\r"
+      Scontrarsi con uno dal basso o dal lato termina la partita.\r\nPuoi eliminarli
+      in tre modi:\r\n- Attacco con Salto: Atterra sopra un UFO per distruggerlo.
+      Rimbalzerai come su una piattaforma.\r\n- Colpo Laser: Clicca con il tasto
+      sinistro del mouse verso il bersaglio. Un raggio laser parte dalla tua posizione
+      e distrugge l\u2019UFO se colpito.\r\n- Propulsione del Razzo: Usa un boost
+      per distruggere qualsiasi UFO che colpisci mentre sali.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6418570339680256

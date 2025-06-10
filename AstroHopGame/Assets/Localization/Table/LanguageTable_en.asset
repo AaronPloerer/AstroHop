@@ -231,14 +231,12 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 6418451519242240
     m_Localized: "UFOs slowly hover downward, following your horizontal position.
-      Before one appears on screen, an arrow at the top of the screen warns you from
-      which direction it is coming from. Colliding with one from below or the side
-      ends your run. \r\nHowever, you have three ways to eliminate them:\r\n- Stomp
-      Attack: Jump on top of a UFO to destroy it. You\u2019ll bounce off as if landing
-      on a platform.\r\n- Laser Shot: Click the left mouse button toward your target.
-      A laser beam fires from your position in the cursor\u2019s direction and destroys
-      a UFO if it hits.\r\n- Rocket Boost: Use a boost to destroy any UFO you collide
-      with while thrusting upward.\r"
+      Colliding with one from below or the side ends your run. \r\nHowever, you have
+      three ways to eliminate them:\r\n- Stomp Attack: Jump on top of a UFO to destroy
+      it. You\u2019ll bounce off as if landing on a platform.\r\n- Laser Shot: Click
+      the left mouse button toward your target. A laser beam fires from your position
+      in the cursor\u2019s direction and destroys a UFO if it hits.\r\n- Rocket Boost:
+      Use a boost to destroy any UFO you collide with while boosting upward.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6419343605760000
