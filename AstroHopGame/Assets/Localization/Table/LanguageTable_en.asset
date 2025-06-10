@@ -199,7 +199,7 @@ MonoBehaviour:
       bounce automatically and must move left or right to land on the platforms above.
       If you miss a platform and fall past the bottom edge of the screen, or collide
       with a UFO from the bottom or side, it's game over. \r\nGo as high as you can
-      to achieve the highest score possible.\r\n"
+      to achieve the highest score possible.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6418170840612864

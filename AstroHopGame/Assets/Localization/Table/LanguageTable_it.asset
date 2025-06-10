@@ -204,7 +204,7 @@ MonoBehaviour:
       per atterrare sulle piattaforme superiori. Se manchi una piattaforma e cadi
       oltre lo schermo, o ti scontri con un UFO dal basso o dal lato, la partita
       terminer\xE0.\r\nRaggiungi la massima altezza possibile per ottenere il punteggio
-      pi\xF9 alto.\r"
+      pi\xF9 alto possibile.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6418097113137152
@@ -229,7 +229,7 @@ MonoBehaviour:
       si consuma a un ritmo costante, ma ogni fase di boost consuma almeno il 10%
       del serbatoio totale. Se rimane meno del 10%, il resto viene consumato completamente.\r\nUsa
       il boost per correggere atterraggi mancati o raggiungere piattaforme pi\xF9
-      alte.\r\n"
+      alte.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6418291280052224
