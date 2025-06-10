@@ -286,8 +286,7 @@ MonoBehaviour:
     m_Localized: "\xD6ffne im Hauptmen\xFC das Einstellungsmen\xFC um:\r\n- Die Sprache
       der On-Screen-Texte w\xE4hlen\r\n- Die Lautst\xE4rke von Musik und Soundeffekten
       getrennt anpassen\r\n- Die Tastenbelegung f\xFCr Bewegung, Schub, Schuss und
-      Pause anpassen\r\n- Den automatischen Start-Boost und die In-Game-Tipps zu
-      aktivieren/deaktivieren\r\n"
+      Pause anpassen\r\n- Den automatischen Start-Boost zu aktivieren/deaktivieren\r\n"
     m_Metadata:
       m_Items: []
   - m_Id: 6751468896911360

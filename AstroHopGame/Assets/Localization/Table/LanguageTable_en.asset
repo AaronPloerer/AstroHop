@@ -285,10 +285,21 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418934363324416
-    m_Localized: "Open the Settings menu from the Main Menu to:\r\n- Choose the language
-      of the on-screen texts\r\n- Adjust the volume of music and sound effects separately\r\n\r-
-      Customize the key bindings for movement, boost, shooting, and pause\r\n\r-
-      Enable or disable the automatic start boost and in-game tips \r"
+    m_Localized: 'Open the Settings menu from the Main Menu to:
+
+      - Choose
+      the language of the on-screen texts
+
+      - Adjust the volume of music and
+      sound effects separately
+
+      - Customize the key bindings for movement,
+      boost, shooting, and pause
+
+      - Enable or disable the automatic start
+      boost
+
+'
     m_Metadata:
       m_Items: []
   - m_Id: 6751468896911360
