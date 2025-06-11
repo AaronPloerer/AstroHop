@@ -197,11 +197,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418067216138240
-    m_Localized: "Jump up using the floating platforms scattered through space. \r\nYou
-      bounce automatically and must move left or right to land on the platforms above.
-      If you miss a platform and fall past the bottom edge of the screen, or collide
-      with a UFO from the bottom or side, it's game over. \r\nGo as high as you can
-      to achieve the highest score possible.\r"
+    m_Localized: "Jump higher and higher by using the floating platforms scattered
+      through space.\r\nYou bounce automatically and must move left or right to land
+      on the platforms above. If you miss a platform and fall past the bottom edge
+      of the screen, or collide with a UFO from the bottom or side, it's game over.
+      \r\nGo as high as you can to achieve the highest score possible.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6418170840612864
@@ -237,10 +237,10 @@ MonoBehaviour:
       which direction it is coming from. Colliding with one from below or the side
       ends your run. \r\nHowever, you have three ways to eliminate them:\r\n- Laser
       Shot: Click the left mouse button toward your target. A laser beam fires from
-      your position in the cursor\u2019s direction and destroys a UFO if it hits.\r\n-
-      Stomp Attack: Jump on top of a UFO to destroy it. You\u2019ll bounce off as
-      if landing on a platform.\r\n- Rocket Boost: Use a boost to destroy any UFO
-      you collide with while thrusting upward.\r"
+      your position in the cursor\u2019s direction and destroys a UFO if it gets
+      hit.\r\n- Stomp Attack: Jump on top of a UFO to destroy it. You\u2019ll bounce
+      off as if landing on a platform.\r\n- Rocket Boost: Use a boost to destroy
+      any UFO you collide with while thrusting upward.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6419343605760000

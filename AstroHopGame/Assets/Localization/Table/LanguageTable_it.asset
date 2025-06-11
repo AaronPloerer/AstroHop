@@ -254,9 +254,10 @@ MonoBehaviour:
       direzione sta arrivando. Scontrarsi con uno dal basso o dal lato termina la
       partita.\r\nPuoi eliminarli in tre modi:\r\n- Colpo Laser: Clicca con il tasto
       sinistro del mouse verso il bersaglio. Un raggio laser parte dalla tua posizione
-      e distrugge l\u2019UFO se colpito.\r\n- Attacco con Salto: Atterra sopra un
-      UFO per distruggerlo. Rimbalzerai come su una piattaforma.\r\n- Propulsione
-      del Razzo: Usa un boost per distruggere qualsiasi UFO che colpisci mentre sali.\r"
+      dirigendosi verso il cursore e distrugge un UFO se viene colpito.\r\n- Attacco
+      con Salto: Atterra sopra un UFO per distruggerlo. Rimbalzerai come su una piattaforma.\r\n-
+      Propulsione del Razzo: Usa un boost per distruggere qualsiasi UFO che colpisci
+      mentre sali.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6418570339680256
@@ -285,7 +286,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 6418846614290432
     m_Localized: "Durante la partita, sul lato destro dello schermo vedrai sempre:\r\nPunteggio
-      Attuale: La tua altezza in tempo reale.\r\nRecord: La massima altezza mai raggiunta.\r\nCarburante:
+      Attuale: La tua altezza in tempo reale.\r\nRecord: L'altezza massima mai raggiunta.\r\nCarburante:
       La quantit\xE0 rimanente di carburante nel serbatoio."
     m_Metadata:
       m_Items: []
@@ -298,7 +299,7 @@ MonoBehaviour:
       la lingua dei testi sullo schermo\r\n- Regolare separatamente il volume della
       musica e degli effetti sonori\r\n- Personalizzare l\u2019assegnazione dei tasti
       per movimento, boost, sparo e pausa\r\n- Attivare o disattivare il boost di
-      partenza automatico e i suggerimenti in gioco\r\n"
+      partenza automatico e i suggerimenti in gioco\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6751468896911360
