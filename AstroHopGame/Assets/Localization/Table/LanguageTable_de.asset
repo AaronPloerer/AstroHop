@@ -191,10 +191,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 6418067216138240
     m_Localized: "Springe mit Hilfe der im Weltraum verteilten, schwebenden Plattformen
-      immer h\xF6her. \r\nDu h\xFCpfst automatisch und musst dich nach links oder
+      immer h\xF6her. \r\nDu springst automatisch und musst dich nach links oder
       rechts bewegen, um auf den oberen Plattformen zu landen. Verfehlst du eine
       Plattform und f\xE4llst aus dem Bildschirm oder kollidierst du von unten oder
-      der Seite mit einem UFO, ist das Spiel vorbei. \r\nSteige so hoch wie m\xF6glich,
+      der Seite mit einem UFO, ist das Spiel vorbei. \r\nGelange so hoch wie m\xF6glich,
       um die h\xF6chste Punktzahl wie m\xF6glich zu erreichen.\r"
     m_Metadata:
       m_Items: []
@@ -212,14 +212,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6419343605760000
-    m_Localized: "Deine Rakete erm\xF6glicht es dir, nach oben zu boosten. Wenn Treibstoff
-      im Tank ist, halte die Boost-Taste gedr\xFCckt (Pfeiltaste nach oben oder in
-      Einstellungen gew\xE4hlte Taste), um zu fliegen. Springe zum Auftanken auf
-      Plattformen mit Treibstofftanks. \r\nW\xE4hrend eines Boosts wird dein Treibstoff
-      kontinuierlich verbraucht, aber jede Boost-Phase verbraucht mindestens 10\u202F%
-      deines gesamten Tanks - sind weniger als 10\u202F% \xFCbrig, wird der Rest
-      komplett verbraucht. \r\nNutze den Boost, um verpasste Landungen zu korrigieren
-      oder h\xF6here Plattformen zu erreichen.\r"
+    m_Localized: "Deine Rakete erm\xF6glicht es dir, nach oben zu boosten. Falls
+      Treibstoff im Tank ist, halte die Boost-Taste gedr\xFCckt (Pfeiltaste nach
+      oben oder in Einstellungen gew\xE4hlte Taste), um nach oben zu fliegen. Zum
+      Auftanken ber\xFChre Treibstofftanks, die auf manchen Plattformen erscheinen.\r\nW\xE4hrend
+      eines Boosts wird dein Treibstoff kontinuierlich verbraucht, aber jedes Mal,
+      wenn du boostest, werden mindestens 10\u202F% deines gesamten Tanks verbraucht.
+      Wenn du mit weniger als 10\u202F% Treibstoff zu boosten beginnst, wird alles
+      verbraucht.\r\nNutze Boosts, um verpasste Landungen zu korrigieren oder h\xF6here
+      Plattformen zu erreichen.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6418291280052224
@@ -241,10 +242,11 @@ MonoBehaviour:
       Position. Bevor ein UFO auf dem Bildschirm erscheint, zeigt ein Pfeil am oberen
       Rand an, aus welcher Richtung es kommt. Eine Kollision von unten oder von der
       Seite beendet deinen Lauf.\r\nDu kannst UFOs jedoch auf drei Arten vernichten:\r\n-
-      Sprung: Springe auf einem UFO wie auf einer Plattform, um es zu zerst\xF6ren.\r\n-
       Laserschuss: Klicke mit der linken Maustaste in Zielrichtung. Ein Laserstrahl
-      zerst\xF6rt das UFO, wenn es getroffen wird.\r\n- Raketenschub: Fliege mit
-      einem Boost in ein UFO hinein, um es zu vernichten."
+      wird von deiner Position aus in Richtung des Cursors abgefeuert und zerst\xF6rt
+      ein UFO, wenn es getroffen wird.\r\n- Sprung: Springe auf ein UFO, um es zu
+      zerst\xF6ren. Du prallst dabei wie auf einer Plattform auf.\r\n- Raketenschub:
+      Fliege mit einem Boost gegen ein UFO, um es zu vernichten.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6418570339680256
@@ -283,10 +285,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 6418934363324416
     m_Localized: "\xD6ffne im Hauptmen\xFC das Einstellungsmen\xFC um:\r\n- Die Sprache
-      der On-Screen-Texte w\xE4hlen\r\n- Die Lautst\xE4rke von Musik und Soundeffekten
-      getrennt anpassen\r\n- Die Tastenbelegung f\xFCr Bewegung, Schub, Schuss und
-      Pause anpassen\r\n- Den automatischen Start-Boost und die In-Game-Tipps zu
-      aktivieren/deaktivieren\r\n"
+      der On-Screen-Texte zu w\xE4hlen\r\n- Die Lautst\xE4rke von Musik und Soundeffekten
+      getrennt anzupassen\r\n- Die Tastenbelegung f\xFCr Bewegung, Schub, Schuss
+      und Pause anzupassen\r\n- Den automatischen Start-Boost und die In-Game-Tipps
+      zu aktivieren/deaktivieren\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6751468896911360
