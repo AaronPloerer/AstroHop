@@ -222,14 +222,14 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6419343605760000
-    m_Localized: "Hai un razzo un boost verticale. Se il razzo contiene carburante,
+    m_Localized: "Hai un razzo per boost verticali. Se il razzo contiene carburante,
       tieni premuto il tasto Boost (Freccia Su o tasto selezionato in Impostazioni)
-      per volare verso l\u2019alto. Per fare rifornimento, colpisci i serbatoi di
-      carburante che compaiono su alcune piattaforme.\r\nDurante il boost, il carburante
-      si consuma a un ritmo costante, ma ogni fase di boost consuma almeno il 10%
-      del serbatoio totale. Se rimane meno del 10%, il resto viene consumato completamente.\r\nUsa
-      il boost per correggere atterraggi mancati o raggiungere piattaforme pi\xF9
-      alte.\r"
+      per volare verso l\u2019alto. Per fare rifornimento, tocca i serbatoi di carburante
+      che compaiono su alcune piattaforme.\r\nDurante il boost, il carburante si
+      consuma a un ritmo costante, ma ogni volta che fai un boost, viene consumato
+      almeno il 10% del serbatoio totale. Se inizi il boost con meno del 10% di carburante
+      rimanente, verr\xE0 consumato tutto.\r\nUtilizza boost per correggere atterraggi
+      mancati o raggiungere piattaforme pi\xF9 alte.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6418291280052224
@@ -252,10 +252,10 @@ MonoBehaviour:
     m_Localized: "Gli UFO scendono lentamente seguendo la tua posizione orizzontale.
       Prima che un UFO appaia sullo schermo, una freccia in alto avvisa da quale
       direzione sta arrivando. Scontrarsi con uno dal basso o dal lato termina la
-      partita.\r\nPuoi eliminarli in tre modi:\r\n- Attacco con Salto: Atterra sopra
-      un UFO per distruggerlo. Rimbalzerai come su una piattaforma.\r\n- Colpo Laser:
-      Clicca con il tasto sinistro del mouse verso il bersaglio. Un raggio laser
-      parte dalla tua posizione e distrugge l\u2019UFO se colpito.\r\n- Propulsione
+      partita.\r\nPuoi eliminarli in tre modi:\r\n- Colpo Laser: Clicca con il tasto
+      sinistro del mouse verso il bersaglio. Un raggio laser parte dalla tua posizione
+      e distrugge l\u2019UFO se colpito.\r\n- Attacco con Salto: Atterra sopra un
+      UFO per distruggerlo. Rimbalzerai come su una piattaforma.\r\n- Propulsione
       del Razzo: Usa un boost per distruggere qualsiasi UFO che colpisci mentre sali.\r"
     m_Metadata:
       m_Items: []

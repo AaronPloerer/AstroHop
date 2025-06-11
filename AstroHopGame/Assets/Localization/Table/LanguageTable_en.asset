@@ -144,9 +144,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 604769543520256
-    m_Localized: "<color=#ECA800>Left-click <color=#FFFFFF>to <color=#ECA800>shoot
-      <color=#FFFFFFFF>towards the UFOs.\n<size=30><alpha=#80>Press [Alt] to skip
-      the tutorial. \n"
+    m_Localized: '<color=#ECA800>Left-click <color=#FFFFFF>to <color=#ECA800>shoot
+      <color=#FFFFFFFF>towards the UFOs.
+
+      <size=30><alpha=#80>Press [Alt] to
+      skip the tutorial. '
     m_Metadata:
       m_Items: []
   - m_Id: 604853593178112
@@ -233,21 +235,22 @@ MonoBehaviour:
     m_Localized: "UFOs slowly hover downward, following your horizontal position.
       Before one appears on screen, an arrow at the top of the screen warns you from
       which direction it is coming from. Colliding with one from below or the side
-      ends your run. \r\nHowever, you have three ways to eliminate them:\r\n- Stomp
-      Attack: Jump on top of a UFO to destroy it. You\u2019ll bounce off as if landing
-      on a platform.\r\n- Laser Shot: Click the left mouse button toward your target.
-      A laser beam fires from your position in the cursor\u2019s direction and destroys
-      a UFO if it hits.\r\n- Rocket Boost: Use a boost to destroy any UFO you collide
-      with while thrusting upward.\r"
+      ends your run. \r\nHowever, you have three ways to eliminate them:\r\n- Laser
+      Shot: Click the left mouse button toward your target. A laser beam fires from
+      your position in the cursor\u2019s direction and destroys a UFO if it hits.\r\n-
+      Stomp Attack: Jump on top of a UFO to destroy it. You\u2019ll bounce off as
+      if landing on a platform.\r\n- Rocket Boost: Use a boost to destroy any UFO
+      you collide with while thrusting upward.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6419343605760000
     m_Localized: "You carry a rocket for vertical boosting. If it contains fuel,
       hold the Boost key (Up Arrow or key selected in Settings) to fly upward. To
-      refuel, jump into fuel tanks that spawn on certain platforms. \r\nWhile boosting,
-      your fuel drains at a constant rate, but each boost phase consumes at least
-      10% of your total tank - if less than 10% is left, the rest is consumed completely.\r\nUse
-      rocket boosts to correct missed landings or reach higher ledges."
+      refuel, jump into fuel tanks that spawn on certain platforms.\r\nWhile boosting,
+      your fuel drains at a constant rate, but each time you boost, at least 10%
+      of your total rocket tank is consumed. If you start boosting with less than
+      10% fuel remaining, all of it will be used.\r\nUse rocket boosts to correct
+      missed landings or reach higher ledges.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6418570339680256

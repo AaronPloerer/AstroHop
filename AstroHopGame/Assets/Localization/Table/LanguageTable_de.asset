@@ -215,11 +215,11 @@ MonoBehaviour:
     m_Localized: "Deine Rakete erm\xF6glicht es dir, nach oben zu boosten. Wenn Treibstoff
       im Tank ist, halte die Boost-Taste gedr\xFCckt (Pfeiltaste nach oben oder in
       Einstellungen gew\xE4hlte Taste), um zu fliegen. Springe zum Auftanken auf
-      Plattformen mit Treibstofftanks. \r\nW\xE4hrend eines Boosts wird dein Treibstoff
-      kontinuierlich verbraucht, aber jede Boost-Phase verbraucht mindestens 10\u202F%
-      deines gesamten Tanks - sind weniger als 10\u202F% \xFCbrig, wird der Rest
-      komplett verbraucht. \r\nNutze den Boost, um verpasste Landungen zu korrigieren
-      oder h\xF6here Plattformen zu erreichen.\r"
+      Plattformen mit Treibstofftanks.\r\nW\xE4hrend eines Boosts wird dein Treibstoff
+      kontinuierlich verbraucht, aber jedes Mal, wenn du boostest, werden mindestens
+      10\u202F% deines gesamten Tanks verbraucht. Wenn du mit weniger als 10\u202F%
+      Treibstoff beginnst, wird alles verbraucht.\r\nNutze Boosts, um verpasste Landungen
+      zu korrigieren oder h\xF6here Plattformen zu erreichen.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6418291280052224
@@ -241,10 +241,10 @@ MonoBehaviour:
       Position. Bevor ein UFO auf dem Bildschirm erscheint, zeigt ein Pfeil am oberen
       Rand an, aus welcher Richtung es kommt. Eine Kollision von unten oder von der
       Seite beendet deinen Lauf.\r\nDu kannst UFOs jedoch auf drei Arten vernichten:\r\n-
-      Sprung: Springe auf einem UFO wie auf einer Plattform, um es zu zerst\xF6ren.\r\n-
       Laserschuss: Klicke mit der linken Maustaste in Zielrichtung. Ein Laserstrahl
-      zerst\xF6rt das UFO, wenn es getroffen wird.\r\n- Raketenschub: Fliege mit
-      einem Boost in ein UFO hinein, um es zu vernichten."
+      zerst\xF6rt das UFO, wenn es getroffen wird.\r\n- Sprung: Springe auf einem
+      UFO wie auf einer Plattform, um es zu zerst\xF6ren.\r\n- Raketenschub: Fliege
+      mit einem Boost in ein UFO hinein, um es zu vernichten.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6418570339680256
