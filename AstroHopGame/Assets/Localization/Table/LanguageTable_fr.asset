@@ -198,8 +198,8 @@ MonoBehaviour:
       vers la gauche ou la droite pour atterrir sur les plateformes situ\xE9es au-dessus.
       Si vous manquez une plateforme et tombez en dessous du bord inf\xE9rieur de
       l\u2019\xE9cran, ou si vous entrez en collision avec un OVNI par le bas ou
-      sur le c\xF4t\xE9, la partie est termin\xE9e. \r\nGravissez la plus grande
-      hauteur possible pour obtenir le meilleur score.\r"
+      sur le c\xF4t\xE9, la partie est termin\xE9e. \r\nAllez le plus haut possible
+      afin d'obtenir le meilleur score possible.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6418097113137152
@@ -236,13 +236,13 @@ MonoBehaviour:
       Avant qu\u2019un OVNI n\u2019apparaisse \xE0 l\u2019\xE9cran, une fl\xE8che
       en haut vous avertit de la direction d\u2019o\xF9 il arrive. Entrer en collision
       avec un OVNI par le bas ou sur le c\xF4t\xE9 met fin \xE0 la partie.\r\nVous
-      pouvez n\xE9anmoins d\xE9truire les OVNI de trois mani\xE8res :\r\n- Attaque
-      \xE0 l\u2019\xE9crasement : Sautez sur le dessus d\u2019un OVNI pour le d\xE9truire.
-      Vous rebondirez comme sur une plateforme.\r\n- Tir laser : Cliquez avec le
-      bouton gauche de la souris en direction de votre cible. Un rayon laser part
-      de votre position dans la direction du curseur et d\xE9truit l\u2019OVNI s\u2019il
-      le touche.\r\n- Boost fus\xE9e : Activez un boost pour d\xE9truire tout OVNI
-      que vous percuterez en montant.\r"
+      pouvez n\xE9anmoins d\xE9truire les OVNI de trois mani\xE8res :\r\n- Tir laser
+      : Cliquez avec le bouton gauche de la souris en direction de votre cible. Un
+      rayon laser part de votre position dans la direction du curseur et d\xE9truit
+      l\u2019OVNI s\u2019il le touche.\r\n- Attaque \xE0 l\u2019\xE9crasement : Sautez
+      sur le dessus d\u2019un OVNI pour le d\xE9truire. Vous rebondirez comme sur
+      une plateforme.\r\n- Boost fus\xE9e : Activez un boost pour d\xE9truire tout
+      OVNI que vous percuterez en montant.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6418570339680256
@@ -292,13 +292,14 @@ MonoBehaviour:
   - m_Id: 6419343605760000
     m_Localized: "Vous disposez d\u2019une fus\xE9e pour vous propulser verticalement.
       Si elle contient du carburant, maintenez la touche Boost enfonc\xE9e (Fl\xE8che
-      haut ou touche s\xE9lectionn\xE9e dans les Param\xE8tres) pour voler vers le
-      haut. Pour refaire le plein, sautez dans les r\xE9servoirs de carburant qui
-      apparaissent sur certaines plateformes.\r\nPendant le boost, votre carburant
-      s\u2019\xE9puise \xE0 un rythme constant, mais chaque phase de boost consomme
-      au moins 10\u202F% de votre capacit\xE9 totale\u202F; si moins de 10\u202F%
-      reste, le reste est consomm\xE9 int\xE9gralement.\r\nUtilisez la fus\xE9e pour
-      corriger un atterrissage rat\xE9 ou atteindre des plateformes plus \xE9lev\xE9es.\r"
+      haut ou touche s\xE9lectionn\xE9e dans les Param\xE8tres) pour vous propulser.
+      Pour refaire le plein, sautez sur les r\xE9servoirs de carburant qui apparaissent
+      sur certaines plateformes.\r\nPendant le boost, votre carburant s\u2019\xE9puise
+      \xE0 un rythme constant, mais chaque fois que vous boostez, au moins 10\u202F%
+      de votre capacit\xE9 totale est consomm\xE9e. Si vous commencez \xE0 booster
+      avec moins de 10\u202F% de carburant restant, tout sera consomm\xE9.\r\nUtilisez
+      la fus\xE9e pour corriger un atterrissage rat\xE9 ou atteindre des plateformes
+      plus \xE9lev\xE9es.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6751468896911360
