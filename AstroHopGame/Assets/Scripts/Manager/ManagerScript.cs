@@ -239,7 +239,7 @@ public class ManagerScript : MonoBehaviour
     public void ChangeSFXVolume()
     {
         // Set and save SFX volume to permanent storage
-        float selectedVolume = MenuUIScript.instance.musicSlider.value;
+        float selectedVolume = MenuUIScript.instance.sfxSlider.value;
         PlayerPrefs.SetFloat("SfxVolume", selectedVolume);
 
         // Update SFX source immediately
