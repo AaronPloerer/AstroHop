@@ -638,7 +638,6 @@ public class MenuUIScript : MonoBehaviour
     #region Adaptive Input Tutorial Help Panel 
     public void UpdateInputTutorialTexts()
     {
-        Debug.Log("nic");
         // Select current language; 0 = English default
         int localeID = PlayerPrefs.GetInt("Language", 0);
 
