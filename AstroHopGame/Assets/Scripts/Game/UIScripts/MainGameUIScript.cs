@@ -371,8 +371,22 @@ public class MainGameUIScript : MonoBehaviour
     private void UpdatePercentageDisplay()
     {
         // Calculate and format percentage (0-100)
-        float fuelPercentage = (currentFuel / maxFuel) * 100;
-        int displayPercentage = Mathf.Clamp(Mathf.FloorToInt(fuelPercentage), 0, 100);
+        int displayPercentage;
+
+        if (currentFuel <= 0f)
+        {
+            displayPercentage = 0;
+        }
+        else if (currentFuel >= maxFuel)
+        {
+            displayPercentage = 100;
+        }
+        else
+        {
+            float fuelPercentage = (currentFuel / maxFuel) * 100;
+            displayPercentage = Mathf.Clamp(Mathf.RoundToInt(fuelPercentage), 1, 99);
+        }
+
         percentageText.text = displayPercentage.ToString() + "%";
     }
 
