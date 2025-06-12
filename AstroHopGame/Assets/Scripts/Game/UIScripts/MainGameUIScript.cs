@@ -401,11 +401,11 @@ public class MainGameUIScript : MonoBehaviour
         // Change fill animation based on fuel percentage
         if (rocketSlider.value == maxFuel)
         {
-            sliderFillAnim.SetTrigger("max");
+            sliderFillAnim.SetTrigger("high");
         }
         else if (rocketSlider.value < lowFuelWarningValue)
         {
-            sliderFillAnim.SetTrigger("low");
+            sliderFillAnim.SetTrigger("high");
         }
         else
         {
@@ -438,7 +438,7 @@ public class MainGameUIScript : MonoBehaviour
         // Modify boost animation depending of fuel percentage
         if (rocketSlider.value < lowFuelWarningValue)
         {
-            PlayerControllerScript.instance.astronautAnim.SetBool("low", true);
+            PlayerControllerScript.instance.astronautAnim.SetBool("low", false);
         }
         else
         {

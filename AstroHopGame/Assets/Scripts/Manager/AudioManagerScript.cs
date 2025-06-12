@@ -153,7 +153,7 @@ public class AudioManagerScript : MonoBehaviour
         // Determine boost clip and volume based on boost state
         bool fuelIsHigh = (MainGameUIScript.instance.currentFuel > MainGameUIScript.instance.lowFuelWarningValue || PlayerControllerScript.instance.startingBoost);
 
-        AudioClip targetClip = fuelIsHigh ? highFuelBoost : lowFuelBoost;
+        AudioClip targetClip = fuelIsHigh ? highFuelBoost : highFuelBoost;
 
         if(fuelIsHigh)
         {
@@ -161,7 +161,7 @@ public class AudioManagerScript : MonoBehaviour
         }
         else
         {
-            sfxBoostSource.volume = sfxSource.volume * lowBoostVolume;
+            sfxBoostSource.volume = sfxSource.volume * highBoostVolume;
         }
 
         // Start boost SFX if not already playing
