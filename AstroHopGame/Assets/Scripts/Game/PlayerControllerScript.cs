@@ -171,7 +171,6 @@ public class PlayerControllerScript : MonoBehaviour
         // Ensure minimum fuel is consumed per boost activation
         if (lostFuel < minFuelLoss)
         {
-            lostFuel++;                                       // To have rounding to -10% on fuelbar 
             float remainingFuel = minFuelLoss - lostFuel;
             MainGameUIScript.instance.currentFuel -= remainingFuel;
 
