@@ -157,10 +157,10 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 604892465987584
-    m_Localized: '<color=#EC1321>Red <color=#FFFFFF>platforms break after a single
-      use.
+    m_Localized: '<color=#EC1321>Red <color=#FFFFFF>platforms can be used only once.
 
-      <size=30><alpha=#80>Press [Alt] to skip the tutorial.'
+      <size=30><alpha=#80>Press
+      [Alt] to skip the tutorial.'
     m_Metadata:
       m_Items: []
   - m_Id: 604938443948032
