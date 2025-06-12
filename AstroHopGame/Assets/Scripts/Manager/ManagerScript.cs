@@ -128,7 +128,10 @@ public class ManagerScript : MonoBehaviour
     public void LanguageDropdown()
     {
         // Add click sound when selecting language
-        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
+        if (MenuUIScript.instance.optionsPanel.activeSelf)
+        {
+            AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
+        }
 
         // Load language from UI language dropdown
         int selectedLocale = MenuUIScript.instance.languageDropdown.value;
