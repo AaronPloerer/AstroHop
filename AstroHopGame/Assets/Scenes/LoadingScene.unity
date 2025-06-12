@@ -1429,7 +1429,6 @@ MonoBehaviour:
   - Score at least 400 to start your next game with a boost!
   - Jump on the UFOs - they can be used as platforms too!
   - Save your fuel and collect more to unleash a longer boost.
-  - Watch the arrows at the top - they warn you where the next UFOs are coming from.
   - Boosting upward gives you enough power to destroy any UFOs in your way!
   - Use your boost at the right moment - it might just save your life!
   - Destroy the UFOs fast! If you don't, they'll turn into trouble later.
@@ -1437,7 +1436,6 @@ MonoBehaviour:
   - Erziele mindestens 400 Punkte, um das folgende Spiel mit einem Boost zu starten!
   - Spring auf die UFOs - sie dienen auch als Plattformen!
   - "Spare deinen Treibstoff und sammle mehr, um einen l\xE4ngeren Boost freizuschalten."
-  - Achte auf die Pfeile oben - sie zeigen, wo die folgenden UFOs auftauchen werden.
   - "Ein Boost gibt dir genug Kraft, um alle UFOs auf deinem Weg zu zerst\xF6ren!"
   - Setze deinen Boost im richtigen Moment ein - er kann dir das Leben retten!
   - "Zerst\xF6re die UFOs schnell! Sonst werden sie sp\xE4ter zum Problem."
@@ -1446,8 +1444,6 @@ MonoBehaviour:
   - Salta sugli UFO - possono essere usati anche come piattaforme!
   - "Risparmia carburante e raccogline altro per poter scatenare un boost pi\xF9
     lungo."
-  - Presta attenzione alle frecce in alto - ti avvisano da dove arriveranno i prossimi
-    UFO.
   - Con un boost otterrai abbastanza potenza per distruggere tutti gli UFO sulla
     tua strada!
   - Usa il boost al momento giusto - potrebbe salvarti la vita!
@@ -1458,8 +1454,6 @@ MonoBehaviour:
   - 'Sautez sur les OVNIs : ils peuvent aussi servir de plateformes !'
   - "\xC9conomisez votre carburant et collectez-en davantage pour d\xE9clencher un
     boost plus long."
-  - "Regardez les fl\xE8ches apparaissant en haut : elles vous avertissent d\u2019o\xF9
-    viennent les prochains OVNIs."
   - "En augmentant votre puissance, vous pouvez d\xE9truire tous les OVNIs sur votre
     chemin !"
   - 'Utilisez votre boost au bon moment : il pourrait bien vous sauver la vie !'
