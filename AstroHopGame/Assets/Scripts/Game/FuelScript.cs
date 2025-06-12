@@ -33,7 +33,14 @@ public class FuelScript : MonoBehaviour
         }
         else
         {
-            AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.collectFuel, AudioManagerScript.instance.collectFuelVolume);
+            if (Random.value < 0.5f)
+            {
+                AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.collectFuel, AudioManagerScript.instance.collectFuelVolume);
+            }
+            else
+            {
+                AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.collectFuel2, AudioManagerScript.instance.collectFuel2Volume);
+            }
             MainGameUIScript.instance.failedPickUpAmount = 0;
         }
     }

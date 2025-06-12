@@ -41,6 +41,7 @@ public class AudioManagerScript : MonoBehaviour
     public AudioClip highFuelBoost;
     public AudioClip ufoSound;
     public AudioClip collectFuel;
+    public AudioClip collectFuel2;
     public AudioClip collectFuelToFull;
     public AudioClip collectFuelIsFull;
     public AudioClip failedBoost;
@@ -72,6 +73,7 @@ public class AudioManagerScript : MonoBehaviour
     public float closeClickVolume;
     public float clickVolume;
     public float collectFuelVolume;
+    public float collectFuel2Volume;
     public float collectFuelToFullVolume;
     public float collectFuelIsFullVolume;
     public float failedBoostVolume;

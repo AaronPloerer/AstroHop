@@ -11625,6 +11625,7 @@ MonoBehaviour:
   highFuelBoost: {fileID: 8300000, guid: dd404fea0f9c2654c971ca5111bca70f, type: 3}
   ufoSound: {fileID: 8300000, guid: b8e1c9bb873cb944db06f7131b50f60b, type: 3}
   collectFuel: {fileID: 8300000, guid: 9cb4ba9650b9f3a4093367de34ae799f, type: 3}
+  collectFuel2: {fileID: 8300000, guid: c6cf6dc502d68a14880e85bcfad51ad3, type: 3}
   collectFuelToFull: {fileID: 8300000, guid: bd3376393e2086f4781a94295c69cfc9, type: 3}
   collectFuelIsFull: {fileID: 8300000, guid: 2d7911b04f81607479088963a4d11979, type: 3}
   failedBoost: {fileID: 8300000, guid: f3574ca4c9e599442b95524f17754283, type: 3}
@@ -11646,6 +11647,7 @@ MonoBehaviour:
   closeClickVolume: 0.4
   clickVolume: 0.4
   collectFuelVolume: 0.1
+  collectFuel2Volume: 0.24
   collectFuelToFullVolume: 0.08
   collectFuelIsFullVolume: 0.09
   failedBoostVolume: 1

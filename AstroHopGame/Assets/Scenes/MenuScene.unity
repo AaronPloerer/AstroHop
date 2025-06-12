@@ -520,6 +520,7 @@ MonoBehaviour:
   highFuelBoost: {fileID: 8300000, guid: dd404fea0f9c2654c971ca5111bca70f, type: 3}
   ufoSound: {fileID: 8300000, guid: b8e1c9bb873cb944db06f7131b50f60b, type: 3}
   collectFuel: {fileID: 8300000, guid: 9cb4ba9650b9f3a4093367de34ae799f, type: 3}
+  collectFuel2: {fileID: 0}
   collectFuelToFull: {fileID: 8300000, guid: bd3376393e2086f4781a94295c69cfc9, type: 3}
   collectFuelIsFull: {fileID: 8300000, guid: 2d7911b04f81607479088963a4d11979, type: 3}
   failedBoost: {fileID: 8300000, guid: f3574ca4c9e599442b95524f17754283, type: 3}
@@ -541,6 +542,7 @@ MonoBehaviour:
   closeClickVolume: 0.4
   clickVolume: 0.4
   collectFuelVolume: 0.08
+  collectFuel2Volume: 0
   collectFuelToFullVolume: 0.08
   collectFuelIsFullVolume: 0.08
   failedBoostVolume: 1
@@ -12398,7 +12400,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 1074.77, y: -90.099945}
-  m_SizeDelta: {x: 90, y: 98.258}
+  m_SizeDelta: {x: 82.702705, y: 98.258}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1104128766
 MonoBehaviour:
@@ -12420,7 +12422,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2150871330291307017, guid: 4d546c6c6542a4144bf57bcd16065b2d, type: 3}
+  m_Sprite: {fileID: -4285058652498584846, guid: e280ed874fb33dd4fa73b591e83e3d3c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
