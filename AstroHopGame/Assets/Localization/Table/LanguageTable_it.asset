@@ -285,7 +285,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 6418846614290432
     m_Localized: "Durante la partita, sul lato destro dello schermo vedrai sempre:\r\nPunteggio
-      Attuale: La tua altezza in tempo reale.\r\nRecord: La massima altezza mai raggiunta.\r\nCarburante:
+      Attuale: La tua altezza in tempo reale.\r\nRecord: L'altezza massima mai raggiunta.\r\nCarburante:
       La quantit\xE0 rimanente di carburante nel serbatoio."
     m_Metadata:
       m_Items: []
