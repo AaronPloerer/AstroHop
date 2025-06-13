@@ -3746,7 +3746,7 @@ Transform:
   m_GameObject: {fileID: 597198706}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -11.6, z: 10}
+  m_LocalPosition: {x: 0, y: -10.4, z: 10}
   m_LocalScale: {x: 138.4009, y: 10.44, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5820,7 +5820,7 @@ MonoBehaviour:
   movingPlatformPrefab: {fileID: 5886830857919325583, guid: 80ab51f23303a1a4c9020554536e057b, type: 3}
   levelWidth: 5.4
   spawnBuffer: 8
-  despawnBuffer: 5
+  despawnBuffer: 3.531286
   phases:
   - height: 250
     minY: 1
@@ -6084,7 +6084,7 @@ Transform:
   m_GameObject: {fileID: 1017728174}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.61, z: 0}
+  m_LocalPosition: {x: 0, y: -1.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9541,8 +9541,8 @@ Transform:
   m_GameObject: {fileID: 1651023144}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 12.577536, y: 10.115256, z: 1}
+  m_LocalPosition: {x: 0, y: 0.00079, z: 10}
+  m_LocalScale: {x: 12.577536, y: 7.142662, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 519420032}
