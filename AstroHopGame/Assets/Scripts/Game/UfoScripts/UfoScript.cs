@@ -189,6 +189,7 @@ public class UfoScript : MonoBehaviour
         AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.explosion, AudioManagerScript.instance.explosionVolume);
         Instantiate(explosionPrefab, transform.position, Quaternion.identity);
         UfoSpawnerScript.instance.aliveUfos--;
+        MainGameUIScript.instance.destroyedUfoCounter++;
         Destroy(spawnedArrow);
         Destroy(gameObject);
     }
@@ -201,6 +202,7 @@ public class UfoScript : MonoBehaviour
 
         // If true: play SFX and animation, ...
         AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.jump, AudioManagerScript.instance.jumpVolume);
+        MainGameUIScript.instance.jumpCounter++;
         AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.explosion, AudioManagerScript.instance.explosionVolume);
         GetComponent<Animator>().SetTrigger("broken");
 
@@ -212,6 +214,7 @@ public class UfoScript : MonoBehaviour
 
         // ... remove the UFO from the counter
         UfoSpawnerScript.instance.aliveUfos--;
+        MainGameUIScript.instance.destroyedUfoCounter++;
     }
 
     private void HandlePlayerCollision()
@@ -223,6 +226,7 @@ public class UfoScript : MonoBehaviour
             AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.explosion, AudioManagerScript.instance.explosionVolume);
             Instantiate(explosionPrefab, transform.position, Quaternion.identity);
             UfoSpawnerScript.instance.aliveUfos--;
+            MainGameUIScript.instance.destroyedUfoCounter++;
             Destroy(gameObject);
         }
         else

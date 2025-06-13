@@ -123,5 +123,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ec53be52f08e0f4a94cb7e65991e588, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeDuration: 0.6
+  fadeDuration: 6
   explosionAnim: {fileID: 352309830391309601}

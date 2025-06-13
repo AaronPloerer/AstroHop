@@ -12,6 +12,7 @@ public class GoalTextScript : MonoBehaviour
     [SerializeField] private float textOffsetX;                 // X-offset for line goals
     [SerializeField] private float textOffsetY;                 // Y-offset for line goals
     [SerializeField] private float minSpacefromHighscoreText;   // Min distance from highscore text 
+    [SerializeField] private float firstMilestoneY;
     #endregion
 
     #region Runtime State
@@ -40,7 +41,7 @@ public class GoalTextScript : MonoBehaviour
     private void InitializeReferences()
     {
         cameraTransform = Camera.main.transform;     // Reference camera transforn
-        nextTextSpawnY = textSpawnSpacing;           // Start spawning from first interval
+        nextTextSpawnY = firstMilestoneY;           // Start spawning from first interval
     }
 
     private void CreateHighscoreGoal()

@@ -87,6 +87,7 @@ public class PlatformScript : MonoBehaviour
 
         // Play SFX and trigger animations
         AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.jump, AudioManagerScript.instance.jumpVolume);
+        MainGameUIScript.instance.jumpCounter++;
         PlayerControllerScript.instance.astronautAnim.SetTrigger("jump");
         PlayerControllerScript.instance.laserAstronautAnim.SetTrigger("laserjump");
     }

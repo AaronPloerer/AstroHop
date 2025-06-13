@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -25,6 +25,10 @@ public class MainGameUIScript : MonoBehaviour
     [Header("Score Elements")]
     public TMP_Text scoreText;
     public TMP_Text highscoreText;
+    public TMP_Text boostScoreText;
+    public TMP_Text xPositionText;
+    public TMP_Text jumpCounterText;
+    public TMP_Text destroyedUfoCounterText;
     public TMP_Text finalScore;
     public TMP_Text highScore;
 
@@ -78,6 +82,9 @@ public class MainGameUIScript : MonoBehaviour
     public float positionToScore;
     public int highScoreNumber;
     private float highestPos;
+    public float boostScore;
+    public int jumpCounter;
+    public int destroyedUfoCounter;
     #endregion
 
     #region Fuel System
@@ -111,6 +118,14 @@ public class MainGameUIScript : MonoBehaviour
         scoreText.text = score.ToString();
         int highscore = PlayerPrefs.GetInt("HighScore", 0);
         highscoreText.text = highscore.ToString();
+        boostScore = 0;
+        boostScoreText.text = boostScore.ToString();
+        int xPosition = 0;
+        xPositionText.text = xPosition.ToString();
+        jumpCounter = 0;
+        jumpCounterText.text = jumpCounter.ToString();
+        destroyedUfoCounter = 0;
+        destroyedUfoCounterText.text = destroyedUfoCounter.ToString();
 
         // Track initial player position for scoring
         highestPos = PlayerControllerScript.instance.transform.position.y;
@@ -194,9 +209,9 @@ public class MainGameUIScript : MonoBehaviour
         {
             movingTutorial.text = localeID switch
             {
-                1 => $"Drücke <color={highlight}>{leftKeyString} <color={white}>und <color={highlight}>{rightKeyString}<color={white}>, um nach <color={highlight}>links <color={white}>und <color={highlight}>rechts <color={white}>zu gehen.\n<size=30><alpha=#80>Drücke [Alt], um das Tutorial zu überspringen.",
+                1 => $"DrÃ¼cke <color={highlight}>{leftKeyString} <color={white}>und <color={highlight}>{rightKeyString}<color={white}>, um nach <color={highlight}>links <color={white}>und <color={highlight}>rechts <color={white}>zu gehen.\n<size=30><alpha=#80>DrÃ¼cke [Alt], um das Tutorial zu Ã¼berspringen.",
                 2 => $"Premi <color={highlight}>{leftKeyString} <color={white}>e <color={highlight}>{rightKeyString} <color={white}>per andare a <color={highlight}>sinistra <color={white}>e <color={highlight}>destra<color={white}>.\n<size=30><alpha=#80>Premi [Alt] per saltare il tutorial.",
-                3 => $"Appuyez sur <color={highlight}>{leftKeyString} <color={white}>et <color={highlight}>{rightKeyString} <color={white}>pour aller à <color={highlight}>gauche <color={white}>et à <color={highlight}>droite<color={white}>.\n<size=30><alpha=#80>Appuie sur [Alt] pour pour passer le tutoriel.",
+                3 => $"Appuyez sur <color={highlight}>{leftKeyString} <color={white}>et <color={highlight}>{rightKeyString} <color={white}>pour aller Ã  <color={highlight}>gauche <color={white}>et Ã  <color={highlight}>droite<color={white}>.\n<size=30><alpha=#80>Appuie sur [Alt] pour pour passer le tutoriel.",
                 _ => $"Press <color={highlight}>{leftKeyString} <color={white}>and <color={highlight}>{rightKeyString} <color={white}>to go <color={highlight}>left <color={white}>and <color={highlight}>right<color={white}>.\n<size=30><alpha=#80>Press [Alt] to skip the tutorial."
             };
         }
@@ -205,9 +220,9 @@ public class MainGameUIScript : MonoBehaviour
         {
             boostTutorial.text = localeID switch
             {
-                1 => $"Drücke <color={highlight}>{boostKeyString}<color={white}>, um den <color={highlight}>Raketenboost <color={white}>zu nutzen und alle UFOs zu zerstören.\n<size=30><alpha=#80>Drücke [Alt], um das Tutorial zu überspringen.",
+                1 => $"DrÃ¼cke <color={highlight}>{boostKeyString}<color={white}>, um den <color={highlight}>Raketenboost <color={white}>zu nutzen und alle UFOs zu zerstÃ¶ren.\n<size=30><alpha=#80>DrÃ¼cke [Alt], um das Tutorial zu Ã¼berspringen.",
                 2 => $"Premi <color={highlight}>{boostKeyString} <color={white}>per attivare il <color={highlight}>boost <color={white}>e distruggere tutti gli UFO.\n<size=30><alpha=#80>Premi [Alt] per saltare il tutorial.",
-                3 => $"Appuyez sur <color={highlight}>{boostKeyString} <color={white}>pour vous <color={highlight}>propulser <color={white}>et détruire tous les OVNIs.\n<size=30><alpha=#80>Appuie sur [Alt] pour pour passer le tutoriel.",
+                3 => $"Appuyez sur <color={highlight}>{boostKeyString} <color={white}>pour vous <color={highlight}>propulser <color={white}>et dÃ©truire tous les OVNIs.\n<size=30><alpha=#80>Appuie sur [Alt] pour pour passer le tutoriel.",
                 _ => $"Press <color={highlight}>{boostKeyString} <color={white}>to <color={highlight}>boost up <color={white}>and destroy all UFOs.\n<size=30><alpha=#80>Press [Alt] to skip the tutorial."
             };
         }
@@ -216,7 +231,7 @@ public class MainGameUIScript : MonoBehaviour
         {
             pauseTutorial.text = localeID switch
             {
-                1 => $"Du kannst <color={highlight}>{pauseKeyString}<color={white}> drücken, um das Spiel zu <color={highlight}>pausieren<color={white}>.\n<size=30><alpha=#80>Drücke [Alt], um das Tutorial zu überspringen.",
+                1 => $"Du kannst <color={highlight}>{pauseKeyString}<color={white}> drÃ¼cken, um das Spiel zu <color={highlight}>pausieren<color={white}>.\n<size=30><alpha=#80>DrÃ¼cke [Alt], um das Tutorial zu Ã¼berspringen.",
                 2 => $"Puoi premere <color={highlight}>{pauseKeyString}<color={white}> per <color={highlight}>mettere in pausa<color={white}> il gioco.\n<size=30><alpha=#80>Premi [Alt] per saltare il tutorial.",
                 3 => $"Tu peux appuyer sur <color={highlight}>{pauseKeyString}<color={white}> pour <color={highlight}>mettre<color={white}> le jeu <color={highlight}>en pause<color={white}>.\n<size=30><alpha=#80>Appuie sur [Alt] pour passer le tutoriel.",
                 _ => $"You can press <color={highlight}>{pauseKeyString}<color={white}> to <color={highlight}>pause<color={white}> the game.\n<size=30><alpha=#80>Press [Alt] to skip the tutorial."
@@ -230,7 +245,7 @@ public class MainGameUIScript : MonoBehaviour
         shownTutorial = new bool[LevelGeneratorScript.instance.phases.Length];
         for (int i = 0; i < shownTutorial.Length; i++)
         {
-            shownTutorial[i] = PlayerPrefs.GetInt("Phase" + i + "TutorialShown", 0) == 1;
+            shownTutorial[i] = false;
         }
     }
     #endregion
@@ -350,6 +365,16 @@ public class MainGameUIScript : MonoBehaviour
             // Update new camera height record
             highestPos = (CameraScript.instance.transform.position.y);
         }
+
+        int boostScoreInt = Mathf.FloorToInt(boostScore * positionToScore);
+        boostScoreText.text = boostScoreInt.ToString();    
+
+        int xPosition = Mathf.FloorToInt(PlayerControllerScript.instance.transform.position.x * positionToScore);
+        xPositionText.text = xPosition.ToString();
+
+        jumpCounterText.text = jumpCounter.ToString();
+
+        destroyedUfoCounterText.text = destroyedUfoCounter.ToString();
     }
     #endregion
 
@@ -379,15 +404,15 @@ public class MainGameUIScript : MonoBehaviour
         }
         else if (currentFuel >= maxFuel)
         {
-            displayPercentage = 100;
+            displayPercentage = 1000;
         }
         else
         {
-            float fuelPercentage = (currentFuel / maxFuel) * 100;
-            displayPercentage = Mathf.Clamp(Mathf.RoundToInt(fuelPercentage), 1, 99);
+            float fuelPercentage = (currentFuel / maxFuel) * 1000;
+            displayPercentage = Mathf.Clamp(Mathf.RoundToInt(fuelPercentage), 1, 999);
         }
 
-        percentageText.text = displayPercentage.ToString() + "%";
+        percentageText.text = displayPercentage.ToString() + "â€°";
     }
 
     private void HandleFuelAnimations()
@@ -462,7 +487,7 @@ public class MainGameUIScript : MonoBehaviour
         // Safety checks for valid phase index and initialization status
         if (currentPhaseIndex >= 0 && currentPhaseIndex < phases.Length && shownTutorial != null)
         {
-            // Check from persistent storage if current tutorial was not ýet shown
+            // Check from persistent storage if current tutorial was not Ã½et shown
             Phase currentPhase = phases[currentPhaseIndex];
             bool tutorialNotSpawned = !shownTutorial[currentPhaseIndex];
 

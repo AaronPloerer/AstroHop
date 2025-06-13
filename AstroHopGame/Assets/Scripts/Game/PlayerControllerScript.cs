@@ -210,6 +210,7 @@ public class PlayerControllerScript : MonoBehaviour
             velocity.y = boostForce;
             MainGameUIScript.instance.currentFuel -= fuelLossRate * Time.fixedDeltaTime;
             lostFuel += fuelLossRate * Time.fixedDeltaTime;
+            MainGameUIScript.instance.boostScore += boostForce * Time.fixedDeltaTime;
 
             boostMovement = true;   // Set boost upward movement flag...
         }
