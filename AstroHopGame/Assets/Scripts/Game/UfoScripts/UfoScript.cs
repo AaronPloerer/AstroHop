@@ -95,8 +95,7 @@ public class UfoScript : MonoBehaviour
         // Activate vulnerability when entering game view zone
         if (other.CompareTag("GameViewArea"))
         {
-            Destroy(spawnedArrow);
-            UfoSpawnerScript.instance.aliveUfos++;       
+            Destroy(spawnedArrow);    
             killable = true;
         }
     }
