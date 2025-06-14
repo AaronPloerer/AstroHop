@@ -197,10 +197,6 @@ public class MainGameUIScript : MonoBehaviour
             }
         }
 
-        // Color constants to format text and highlight words
-        const string highlight = "#ECA800";
-        const string white = "#FFFFFF";
-
         // Select current language; 0 = English default
         int localeID = PlayerPrefs.GetInt("Language", 0);
 
@@ -209,10 +205,10 @@ public class MainGameUIScript : MonoBehaviour
         {
             movingTutorial.text = localeID switch
             {
-                1 => $"Drücke <color={highlight}>{leftKeyString} <color={white}>und <color={highlight}>{rightKeyString}<color={white}>, um nach <color={highlight}>links <color={white}>und <color={highlight}>rechts <color={white}>zu gehen.\n<size=30><alpha=#80>Drücke [Alt], um das Tutorial zu überspringen.",
-                2 => $"Premi <color={highlight}>{leftKeyString} <color={white}>e <color={highlight}>{rightKeyString} <color={white}>per andare a <color={highlight}>sinistra <color={white}>e <color={highlight}>destra<color={white}>.\n<size=30><alpha=#80>Premi [Alt] per saltare il tutorial.",
-                3 => $"Appuyez sur <color={highlight}>{leftKeyString} <color={white}>et <color={highlight}>{rightKeyString} <color={white}>pour aller à <color={highlight}>gauche <color={white}>et à <color={highlight}>droite<color={white}>.\n<size=30><alpha=#80>Appuie sur [Alt] pour pour passer le tutoriel.",
-                _ => $"Press <color={highlight}>{leftKeyString} <color={white}>and <color={highlight}>{rightKeyString} <color={white}>to go <color={highlight}>left <color={white}>and <color={highlight}>right<color={white}>.\n<size=30><alpha=#80>Press [Alt] to skip the tutorial."
+                1 => $"Drücke {leftKeyString} und {rightKeyString}, um nach links und rechts zu gehen.\n<size=30><alpha=#80>Drücke [Alt], um das Tutorial zu überspringen.",
+                2 => $"Premi {leftKeyString} e {rightKeyString} per andare a sinistra e destra.\n<size=30><alpha=#80>Premi [Alt] per saltare il tutorial.",
+                3 => $"Appuyez sur {leftKeyString} et {rightKeyString} pour aller à gauche et à droite.\n<size=30><alpha=#80>Appuie sur [Alt] pour pour passer le tutoriel.",
+                _ => $"Press {leftKeyString} and {rightKeyString} to go left and right.\n<size=30><alpha=#80>Press [Alt] to skip the tutorial."
             };
         }
 
@@ -220,10 +216,10 @@ public class MainGameUIScript : MonoBehaviour
         {
             boostTutorial.text = localeID switch
             {
-                1 => $"Drücke <color={highlight}>{boostKeyString}<color={white}>, um den <color={highlight}>Raketenboost <color={white}>zu nutzen und alle UFOs zu zerstören.\n<size=30><alpha=#80>Drücke [Alt], um das Tutorial zu überspringen.",
-                2 => $"Premi <color={highlight}>{boostKeyString} <color={white}>per attivare il <color={highlight}>boost <color={white}>e distruggere tutti gli UFO.\n<size=30><alpha=#80>Premi [Alt] per saltare il tutorial.",
-                3 => $"Appuyez sur <color={highlight}>{boostKeyString} <color={white}>pour vous <color={highlight}>propulser <color={white}>et détruire tous les OVNIs.\n<size=30><alpha=#80>Appuie sur [Alt] pour pour passer le tutoriel.",
-                _ => $"Press <color={highlight}>{boostKeyString} <color={white}>to <color={highlight}>boost up <color={white}>and destroy all UFOs.\n<size=30><alpha=#80>Press [Alt] to skip the tutorial."
+                1 => $"Drücke {boostKeyString}, um den Raketenboost zu nutzen und alle UFOs zu zerstören.\n<size=30><alpha=#80>Drücke [Alt], um das Tutorial zu überspringen.",
+                2 => $"Premi {boostKeyString} per attivare il boost e distruggere tutti gli UFO.\n<size=30><alpha=#80>Premi [Alt] per saltare il tutorial.",
+                3 => $"Appuyez sur {boostKeyString} pour vous propulser et détruire tous les OVNIs.\n<size=30><alpha=#80>Appuie sur [Alt] pour pour passer le tutoriel.",
+                _ => $"Press {boostKeyString} to boost up and destroy all UFOs.\n<size=30><alpha=#80>Press [Alt] to skip the tutorial."
             };
         }
 
@@ -231,10 +227,10 @@ public class MainGameUIScript : MonoBehaviour
         {
             pauseTutorial.text = localeID switch
             {
-                1 => $"Du kannst <color={highlight}>{pauseKeyString}<color={white}> drücken, um das Spiel zu <color={highlight}>pausieren<color={white}>.\n<size=30><alpha=#80>Drücke [Alt], um das Tutorial zu überspringen.",
-                2 => $"Puoi premere <color={highlight}>{pauseKeyString}<color={white}> per <color={highlight}>mettere in pausa<color={white}> il gioco.\n<size=30><alpha=#80>Premi [Alt] per saltare il tutorial.",
-                3 => $"Tu peux appuyer sur <color={highlight}>{pauseKeyString}<color={white}> pour <color={highlight}>mettre<color={white}> le jeu <color={highlight}>en pause<color={white}>.\n<size=30><alpha=#80>Appuie sur [Alt] pour passer le tutoriel.",
-                _ => $"You can press <color={highlight}>{pauseKeyString}<color={white}> to <color={highlight}>pause<color={white}> the game.\n<size=30><alpha=#80>Press [Alt] to skip the tutorial."
+                1 => $"Du kannst {pauseKeyString} drücken, um das Spiel zu pausieren.\n<size=30><alpha=#80>Drücke [Alt], um das Tutorial zu überspringen.",
+                2 => $"Puoi premere {pauseKeyString} per mettere in pausa il gioco.\n<size=30><alpha=#80>Premi [Alt] per saltare il tutorial.",
+                3 => $"Tu peux appuyer sur {pauseKeyString} pour mettre le jeu en pause.\n<size=30><alpha=#80>Appuie sur [Alt] pour passer le tutoriel.",
+                _ => $"You can press {pauseKeyString} to pause the game.\n<size=30><alpha=#80>Press [Alt] to skip the tutorial."
             };
         }
 
@@ -367,10 +363,11 @@ public class MainGameUIScript : MonoBehaviour
         }
 
         int boostScoreInt = Mathf.FloorToInt(boostScore * positionToScore);
-        boostScoreText.text = boostScoreInt.ToString();    
+        boostScoreText.text = boostScoreInt.ToString();
 
-        int xPosition = Mathf.FloorToInt(PlayerControllerScript.instance.transform.position.x * positionToScore);
-        xPositionText.text = xPosition.ToString();
+        float rawX = PlayerControllerScript.instance.transform.position.x * positionToScore;
+        float flooredX = Mathf.Floor(rawX * 100f) / 100f;
+        xPositionText.text = flooredX.ToString("F2");
 
         jumpCounterText.text = jumpCounter.ToString();
 

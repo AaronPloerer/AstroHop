@@ -144,11 +144,10 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 604769543520256
-    m_Localized: '<color=#ECA800>Left-click <color=#FFFFFF>to <color=#ECA800>shoot
-      <color=#FFFFFFFF>towards the UFOs.
+    m_Localized: 'Left-click to shoot towards the UFOs.
 
-      <size=30><alpha=#80>Press [Alt] to
-      skip the tutorial. '
+      <size=30><alpha=#80>Press
+      [Alt] to skip the tutorial. '
     m_Metadata:
       m_Items: []
   - m_Id: 604853593178112
@@ -159,14 +158,14 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 604892465987584
-    m_Localized: '<color=#EC1321>Red <color=#FFFFFF>platforms break after a single
-      use.
+    m_Localized: 'Red platforms break after a single use.
 
-      <size=30><alpha=#80>Press [Alt] to skip the tutorial.'
+      <size=30><alpha=#80>Press
+      [Alt] to skip the tutorial.'
     m_Metadata:
       m_Items: []
   - m_Id: 604938443948032
-    m_Localized: '<color=#BE23FE>Purple <color=#FFFFFF>platforms move left and right.
+    m_Localized: 'Purple platforms move left and right.
 
       <size=30><alpha=#80>Press
       [Alt] to skip the tutorial.'

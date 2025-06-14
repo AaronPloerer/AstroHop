@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+
 public class LevelGeneratorScript : MonoBehaviour
 {
     #region Singleton Instance
@@ -22,9 +23,15 @@ public class LevelGeneratorScript : MonoBehaviour
     #region Platform Prefabs and Settings
     [Header("Platform Prefabs")]
     // Standard, Broken and Moving Platform Templates
-    [SerializeField] private GameObject platformPrefab;        
+    [SerializeField] private GameObject platformPrefab;
     [SerializeField] private GameObject brokenPlatformPrefab;
     [SerializeField] private GameObject movingPlatformPrefab;
+
+    [Header("Decorative Platforms")]
+    [SerializeField] private GameObject[] decorativePrefabs;      // Array of decorative platform prefabs
+    [SerializeField] private float decorativeMinY;                // Minimum vertical distance between decorative platforms
+    [SerializeField] private float decorativeMaxY;                // Maximum vertical distance between decorative platforms
+    [SerializeField] private float spawnBufferDecorative;         // Vertical buffer for platform spawning
 
     [Header("Level Dimensions")]
     [SerializeField] private float levelWidth;         // Horizontal play area boundary
@@ -35,7 +42,7 @@ public class LevelGeneratorScript : MonoBehaviour
     #region Phase Configuration
     [System.Serializable]
     public class Phase
-    { 
+    {
         public float height;                 // Score threshold to reach next phase
 
         // Platform position
@@ -75,6 +82,10 @@ public class LevelGeneratorScript : MonoBehaviour
     public int currentPhaseIndex;         // Index of current phase
     private Phase currentPhase;           // Reference to current phase data
     private bool isFirstPlatformOfPhase;  // Flag for first platform of phase for special customization
+
+    // Decorative platforms
+    private float lastDecorativeSpawnY = -10f;    // Y-position of last decorative spawn
+    private List<GameObject> decorativePlatforms = new List<GameObject>(); // Track decorative platforms
     #endregion
 
     #region Unity Lifecycle Methods
@@ -88,6 +99,7 @@ public class LevelGeneratorScript : MonoBehaviour
     {
         HandlePhaseProgression();
         HandlePlatformSpawning();
+        HandleDecorativeSpawning();
     }
     #endregion
 
@@ -102,6 +114,7 @@ public class LevelGeneratorScript : MonoBehaviour
         highestSpawnY = spawnPosition.y;          // Initialize tracking value
         isFirstPlatformOfPhase = false;           // Turn off phase-start flag
         mustSpawnFuel = false;                    // Turn off force-fuel-spawn flag
+        lastDecorativeSpawnY = spawnPosition.y;   // Initialize decorative tracking
     }
 
     private void CreateInitialPlatform()
@@ -134,7 +147,7 @@ public class LevelGeneratorScript : MonoBehaviour
         {
             CreatePlatform();
         }
-        CheckDespawnPlatforms(); 
+        CheckDespawnPlatforms();
     }
 
     private void CheckDespawnPlatforms()
@@ -272,7 +285,7 @@ public class LevelGeneratorScript : MonoBehaviour
         // Set forceFuelSpawn based on foce-fuel-spawn flag on whichever component exists
         if (standardPlatform != null) standardPlatform.forceFuelSpawn = mustSpawnFuel;
         if (movingPlatform != null) movingPlatform.forceFuelSpawn = mustSpawnFuel;
-        if (brokenPlatform != null) brokenPlatform.forceFuelSpawn = mustSpawnFuel; 
+        if (brokenPlatform != null) brokenPlatform.forceFuelSpawn = mustSpawnFuel;
     }
     #endregion
 
@@ -293,6 +306,107 @@ public class LevelGeneratorScript : MonoBehaviour
         else
         {
             chosenPlatform = platformPrefab;
+        }
+    }
+    #endregion
+
+    #region Decorative Platform System
+    private void HandleDecorativeSpawning()
+    {
+        // Spawn new decorative platforms when camera approaches top buffer
+        if (cameraTransform.position.y + spawnBufferDecorative > lastDecorativeSpawnY)
+        {
+            TrySpawnDecorative();
+        }
+        CheckDespawnDecoratives();
+    }
+
+    private void TrySpawnDecorative()
+    {
+        if (cameraTransform.position.y + spawnBufferDecorative > lastDecorativeSpawnY)
+        {
+            Vector3 candidatePosition = CalculateDecorativePosition();
+            GameObject prefab = decorativePrefabs[Random.Range(0, decorativePrefabs.Length)];
+
+            if (IsValidDecorativePosition(candidatePosition, prefab))
+            {
+                SpawnDecorative(candidatePosition, prefab);
+            }
+
+            // Update position even if no valid spot found
+            lastDecorativeSpawnY = candidatePosition.y;
+        }
+    }
+
+    private Vector3 CalculateDecorativePosition()
+    {
+        Vector3 position = Vector3.zero;
+
+        // Random vertical placement upwards
+        float yOffset = Random.Range(decorativeMinY, decorativeMaxY);
+        position.y = lastDecorativeSpawnY + yOffset;
+
+        // Random horizontal placement within level bounds
+        position.x = Random.Range(-levelWidth, levelWidth);
+
+        return position;
+    }
+
+    private bool IsValidDecorativePosition(Vector3 position, GameObject prefab)
+    {
+        // Get the child object with BoxCollider2D
+        Transform child = prefab.transform.GetChild(0);
+
+        // Get the BoxCollider2D from the child
+        BoxCollider2D decorCollider = child.GetComponent<BoxCollider2D>();
+
+        // Calculate world position of the collider
+        Vector3 childOffset = child.localPosition;
+        Vector2 worldCenter = position + childOffset + (Vector3)decorCollider.offset;
+
+        // Check for overlaps with functional platforms
+        Collider2D[] hits = Physics2D.OverlapBoxAll(
+            worldCenter,
+            decorCollider.size,
+            0
+        );
+
+        foreach (Collider2D hit in hits)
+        {
+            if (hit == null) continue;
+            return false;
+
+        }
+        return true;
+    }
+
+    private void SpawnDecorative(Vector3 position, GameObject prefab)
+    {
+        GameObject decor = Instantiate(prefab, position, Quaternion.identity);
+        decorativePlatforms.Add(decor);
+        lastDecorativeSpawnY = position.y;
+    }
+
+    private void CheckDespawnDecoratives()
+    {
+        // Calculate removal threshold below camera
+        float despawnThreshold = cameraTransform.position.y - despawnBuffer;
+        List<GameObject> toRemove = new List<GameObject>();
+
+        // Identify decoratives below threshold
+        foreach (GameObject decor in decorativePlatforms)
+        {
+            if (decor != null && decor.transform.position.y < despawnThreshold)
+            {
+                toRemove.Add(decor);
+            }
+        }
+
+        // Remove tracking and destroy old decoratives
+        foreach (GameObject decor in toRemove)
+        {
+            decorativePlatforms.Remove(decor);
+            Destroy(decor);
         }
     }
     #endregion

@@ -146,10 +146,10 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 604769543520256
-    m_Localized: 'Clicca il <color=#ECA800>tasto sinistro <color=#FFFFFF>per sparare
-      verso gli UFO.
+    m_Localized: 'Clicca il tasto sinistro per sparare verso gli UFO.
 
-      <size=30><alpha=#80>Premi [Alt] per saltare il tutorial.'
+      <size=30><alpha=#80>Premi
+      [Alt] per saltare il tutorial.'
     m_Metadata:
       m_Items: []
   - m_Id: 604853593178112
@@ -160,18 +160,17 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 604892465987584
-    m_Localized: 'Le piattaforme <color=#EC1321>rosse <color=#FFFFFF>si rompono dopo
-      un solo uso.
+    m_Localized: 'Le piattaforme rosse si rompono dopo un solo uso.
 
-      <size=30><alpha=#80>Premi [Alt] per saltare il tutorial.'
+      <size=30><alpha=#80>Premi
+      [Alt] per saltare il tutorial.'
     m_Metadata:
       m_Items: []
   - m_Id: 604938443948032
-    m_Localized: 'Le piattaforme <color=#BE23FE>viola <color=#FFFFFF>si muovono a
-      sinistra e a destra.
+    m_Localized: 'Le piattaforme viola si muovono a sinistra e a destra.
 
-      <size=30><alpha=#80>Premi [Alt] per saltare il
-      tutorial.'
+      <size=30><alpha=#80>Premi
+      [Alt] per saltare il tutorial.'
     m_Metadata:
       m_Items: []
   - m_Id: 4223074929999872
