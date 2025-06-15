@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: e2841fc1c5607c24f82b3e2290f84746
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8060337625938782852
+    second: ComplexPanelButtons_0
+  - first:
+      213: -1841457192184574591
+    second: ComplexPanelButtons_1
+  - first:
+      213: 5917502169694965752
+    second: ComplexPanelButtons_2
+  - first:
+      213: -8283050315462546730
+    second: ComplexPanelButtons_3
+  - first:
+      213: -467344888030148892
+    second: ComplexPanelButtons_4
+  - first:
+      213: -5183598531574889095
+    second: ComplexPanelButtons_5
+  - first:
+      213: 5685865362106281123
+    second: ComplexPanelButtons_6
+  - first:
+      213: 7441049122367448234
+    second: ComplexPanelButtons_7
+  - first:
+      213: -8379387227044885700
+    second: ComplexPanelButtons_8
+  - first:
+      213: -6694921870207339569
+    second: ComplexPanelButtons_9
+  - first:
+      213: 4424778557629913845
+    second: ComplexPanelButtons_10
+  - first:
+      213: -7937371262330115992
+    second: ComplexPanelButtons_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ComplexPanelButtons_0
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 142
+        width: 105
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c75143c72ade32090800000000000000
+      internalID: -8060337625938782852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComplexPanelButtons_1
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 142
+        width: 105
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18d00cea074d176e0800000000000000
+      internalID: -1841457192184574591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComplexPanelButtons_2
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 130
+        width: 163
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ff854efed03f1250800000000000000
+      internalID: 5917502169694965752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComplexPanelButtons_3
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 130
+        width: 163
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6daea22af91bc0d80800000000000000
+      internalID: -8283050315462546730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComplexPanelButtons_4
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 100
+        width: 105
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e64e59ec48a389f0800000000000000
+      internalID: -467344888030148892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComplexPanelButtons_5
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 99
+        width: 105
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9750e3379982018b0800000000000000
+      internalID: -5183598531574889095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComplexPanelButtons_6
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 79
+        width: 163
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3acea0dfb6048ee40800000000000000
+      internalID: 5685865362106281123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComplexPanelButtons_7
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 79
+        width: 163
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa4a1fe90cae34760800000000000000
+      internalID: 7441049122367448234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComplexPanelButtons_8
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 59
+        width: 105
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3b4b8086bf66bb80800000000000000
+      internalID: -8379387227044885700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComplexPanelButtons_9
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 59
+        width: 105
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc33c4fb70cd613a0800000000000000
+      internalID: -6694921870207339569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComplexPanelButtons_10
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 27
+        width: 163
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fadb4997a8f76d30800000000000000
+      internalID: 4424778557629913845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComplexPanelButtons_11
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 27
+        width: 163
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8686b6214eac8d190800000000000000
+      internalID: -7937371262330115992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ComplexPanelButtons_0: -8060337625938782852
+      ComplexPanelButtons_1: -1841457192184574591
+      ComplexPanelButtons_10: 4424778557629913845
+      ComplexPanelButtons_11: -7937371262330115992
+      ComplexPanelButtons_2: 5917502169694965752
+      ComplexPanelButtons_3: -8283050315462546730
+      ComplexPanelButtons_4: -467344888030148892
+      ComplexPanelButtons_5: -5183598531574889095
+      ComplexPanelButtons_6: 5685865362106281123
+      ComplexPanelButtons_7: 7441049122367448234
+      ComplexPanelButtons_8: -8379387227044885700
+      ComplexPanelButtons_9: -6694921870207339569
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
