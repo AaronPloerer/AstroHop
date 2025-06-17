@@ -198,12 +198,65 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418067216138240
-    m_Localized: "Salta sempre pi\xF9 in alto usando le piattaforme fluttuanti sparse
-      nello spazio.\r\nRimbalzi automaticamente e devi muoverti a sinistra o destra
-      per atterrare sulle piattaforme superiori. Se manchi una piattaforma e cadi
-      oltre lo schermo, o ti scontri con un UFO dal basso o dal lato, la partita
-      terminer\xE0.\r\nRaggiungi la massima altezza possibile per ottenere il punteggio
-      pi\xF9 alto possibile.\r"
+    m_Localized: "Salta strategicamente sempre pi\xF9 in alto usando le piattaforme
+      fluttuanti nello spazio circostante. Rimbalzi automaticamente a ogni atterraggio
+      e devi muoverti accuratamente a sinistra o a destra per atterrare con successo
+      sulle piattaforme posizionate direttamente sopra di te. Se dovessi mancare
+      completamente una piattaforma e cadere oltre il bordo inferiore dello schermo,
+      o in alternativa, se entrassi in collisione con un UFO dalla parte inferiore
+      o laterale, la partita termina immediatamente. Il tuo obiettivo primario \xE8
+      semplicemente salire il pi\xF9 in alto possibile per ottenere il punteggio
+      pi\xF9 alto raggiungibile. Dovrai usare i tuoi tasti di movimento sinistra/destra
+      designati (Frecce Sinistra/Destra o i tasti selezionati nel menu Impostazioni)
+      per muoverti con attenzione verso le prossime piattaforme di atterraggio. Hai
+      con te un razzo progettato per spinte verticali. Se contiene ancora carburante,
+      tieni premuto il tasto Boost (Freccia Su o tasto selezionato in Impostazioni)
+      per volare potentemente verso l'alto. Per fare rifornimento al tuo serbatoio
+      del razzo, devi toccare serbatoi di carburante che compaiono periodicamente
+      su piattaforme specifiche. Durante il boost, il tuo prezioso carburante si
+      consuma a un ritmo costante e regolare, ma \xE8 importante notare che ogni
+      singola volta che attivi un boost, consumer\xE0 almeno il 10% della capacit\xE0
+      totale del tuo serbatoio. Se inizi un boost con meno del 10% di carburante
+      rimanente, tutto quel carburante rimasto verr\xE0 completamente utilizzato.
+      Puoi usare efficacemente i boost del razzo in momenti critici per correggere
+      atterraggi mancati o per raggiungere potenzialmente sporgenze pi\xF9 alte che
+      sembrano fuori dalla normale portata di salto. Le piattaforme stesse si presentano
+      in tre distinte variet\xE0: Piattaforme Verdi: Statiche e permanenti; Piattaforme
+      Rosse: Si rompono immediatamente dopo un singolo atterraggio e possono di conseguenza
+      essere utilizzate solo una volta; Piattaforme Viola: Si muovono costantemente
+      a sinistra e a destra a velocit\xE0 costante. Gli UFO fluttuano lentamente
+      verso il basso, seguendo la tua posizione orizzontale. Prima che uno appaia
+      effettivamente visibile sul tuo schermo, vedrai una freccia visualizzata nella
+      parte superiore dello schermo che ti avverte chiaramente della precisa direzione
+      orizzontale da cui sta arrivando. Entrare in collisione con uno dal basso o
+      lateralmente termina la tua partita all'istante. Tuttavia, possiedi tre modi
+      distinti per eliminarli: Colpo Laser: Clicca semplicemente il tasto sinistro
+      del mouse puntato verso il tuo bersaglio. Un raggio laser viene sparato istantaneamente
+      dalla tua posizione attuale nella direzione del cursore e distrugger\xE0 un
+      UFO se colpito con successo; Attacco con Stomp: Salta direttamente sopra a
+      un UFO per distruggerlo. Rimbalzerai in alto come se fossi atterrato su una
+      piattaforma standard; Boost del Razzo: Usa un boost del razzo attivo per distruggere
+      qualsiasi UFO con cui entri in collisione mentre stai effettuando una spinta
+      verso l'alto. Dopo aver totalizzato 400 punti o pi\xF9, sbloccherai un boost
+      di partenza automatico disponibile nella tua prossima partita, che essenzialmente
+      ti lancer\xE0 verso l'alto fino a un'altezza equivalente al 50% del tuo punteggio
+      precedente. Puoi facilmente attivare o disattivare questa particolare funzione
+      successivamente all'interno del menu Impostazioni. L'intero gioco pu\xF2 essere
+      comodamente messo in pausa in qualsiasi momento cliccando il pulsante di pausa
+      situato nell'angolo in alto a sinistra dello schermo o alternativamente premendo
+      il tasto Pausa designato (predefinito: Barra spaziatrice). Durante una sessione
+      di gioco attiva, troverai costantemente sul lato destro dello schermo le seguenti
+      informazioni chiave visualizzate: Punteggio Attuale: Mostra il tuo punteggio
+      di altezza in tempo reale; Miglior Punteggio: Visualizza il miglior punteggio
+      di altezza che sei mai riuscito a raggiungere; Quantit\xE0 di Carburante: Indica
+      chiaramente il livello di carburante rimanente nel razzo. Puoi sempre aprire
+      il menu Impostazioni direttamente dal Menu Principale per eseguire diverse
+      operazioni: Scegliere la lingua preferita per tutti i testi sullo schermo,
+      regolare separatamente i livelli del volume sia della musica che degli effetti
+      sonori, personalizzare le assegnazioni dei tasti specifici utilizzati per il
+      movimento a sinistra, il movimento a destra, il boost e le funzioni di pausa
+      e, inoltre, attivare o disattivare sia la funzione di boost di partenza automatica
+      che la visualizzazione dei suggerimenti in gioco."
     m_Metadata:
       m_Items: []
   - m_Id: 6418097113137152

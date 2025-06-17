@@ -190,13 +190,72 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418067216138240
-    m_Localized: "Sautez \xE0 l\u2019aide de plateformes flottantes dispers\xE9es
-      dans l\u2019espace. \r\nVous rebondissez automatiquement et devez vous d\xE9placer
-      vers la gauche ou la droite pour atterrir sur les plateformes situ\xE9es au-dessus.
-      Si vous manquez une plateforme et tombez en dessous du bord inf\xE9rieur de
-      l\u2019\xE9cran, ou si vous entrez en collision avec un OVNI par le bas ou
-      sur le c\xF4t\xE9, la partie est termin\xE9e. \r\nAllez le plus haut possible
-      afin d'obtenir le meilleur score possible.\r"
+    m_Localized: "Sautez toujours plus haut en utilisant strat\xE9giquement les plateformes
+      flottantes dispers\xE9es dans l'espace tout autour de vous. Vous rebondissez
+      automatiquement \xE0 l'atterrissage et devez vous d\xE9placer \xE0 gauche ou
+      \xE0 droite pour atterrir avec succ\xE8s sur les plateformes positionn\xE9es
+      directement au-dessus de vous. Si vous manquez compl\xE8tement une plateforme
+      et tombez sous le bord inf\xE9rieur de l'\xE9cran, ou alternativement, si vous
+      entrez en collision avec un OVNI par le dessous ou sur le c\xF4t\xE9, la partie
+      se termine imm\xE9diatement. Votre objectif principal est simplement d'arriver
+      le plus haut possible pour obtenir le score le plus \xE9lev\xE9. Vous devrez
+      utiliser vos touches de d\xE9placement gauche/droite d\xE9sign\xE9es (les fl\xE8ches
+      Gauche/Droite ou les touches s\xE9lectionn\xE9es dans le menu Param\xE8tres)
+      pour vous diriger soigneusement vers les prochaines plateformes d'atterrissage.
+      Vous disposez d'une fus\xE9e con\xE7ue pour les propulsions verticales. Si
+      elle contient du carburant, maintenez enfonc\xE9e la touche Boost (Fl\xE8che
+      Haut ou touche s\xE9lectionn\xE9e dans les Param\xE8tres) pour voler puissamment
+      vers le haut. Pour recharger votre r\xE9servoir de fus\xE9e, vous devez sauter
+      sur des r\xE9servoirs de carburant qui apparaissent p\xE9riodiquement sur certaines
+      plateformes sp\xE9cifiques. Pendant un boost, votre pr\xE9cieux carburant se
+      consume \xE0 un rythme constant et r\xE9gulier, mais il est important de noter
+      que chaque fois que vous activez un boost, il consommera au moins 10% de la
+      capacit\xE9 totale de votre r\xE9servoir. Si vous commencez un boost avec moins
+      de 10% de carburant restant, tout le carburant restant sera compl\xE8tement
+      utilis\xE9. Vous pouvez utiliser efficacement les boosts de la fus\xE9e \xE0
+      des moments critiques pour corriger des atterrissages manqu\xE9s ou potentiellement
+      atteindre des plateformes plus hautes semblant hors de port\xE9e lors d\u2019un
+      saut normal. Les plateformes elles-m\xEAmes se pr\xE9sentent en trois vari\xE9t\xE9s
+      distinctes: Plateformes Vertes: Celles-ci sont statiques et permanentes; Plateformes
+      Rouges: Celles-ci se brisent imm\xE9diatement apr\xE8s un seul atterrissage
+      et ne peuvent par cons\xE9quent \xEAtre utilis\xE9es qu'une seule fois; Plateformes
+      Mauves: Celles-ci se d\xE9placent constamment \xE0 gauche et \xE0 droite \xE0
+      un rythme constant. Les OVNI flottent lentement vers le bas, tout en suivant
+      votre position horizontale. Avant qu'un n'apparaisse visiblement \xE0 l'\xE9cran,
+      vous verrez une fl\xE8che affich\xE9e en haut de celui-ci qui sert \xE0 vous
+      avertir clairement de la direction horizontale pr\xE9cise d'o\xF9 il vient.
+      Entrer en collision avec un OVNI par le dessous ou sur le c\xF4t\xE9 met fin
+      imm\xE9diatement \xE0 votre partie. Cependant, vous poss\xE9dez trois fa\xE7ons
+      distinctes de les \xE9liminer: Tir Laser: Cliquez simplement sur le bouton
+      gauche de la souris point\xE9 vers votre cible. Un rayon laser est alors tir\xE9
+      instantan\xE9ment de votre position actuelle dans la direction du curseur et
+      d\xE9truira un OVNI s'il est touch\xE9 avec succ\xE8s; Attaque par \xC9crasement
+      (Stomp): Sautez directement sur le dessus d'un UFO afin de le d\xE9truire.
+      Vous rebondirez ensuite comme si vous veniez d'atterrir sur une plateforme
+      standard; Boost de la Fus\xE9e: Utilisez un boost de fus\xE9e actif pour d\xE9truire
+      tout OVNI avec lequel vous entrez en collision pendant que vous effectuez une
+      pouss\xE9e puissante vers le haut. Apr\xE8s avoir atteint un score de 400 points
+      ou plus, vous d\xE9bloquerez par la suite un boost de d\xE9part automatique
+      disponible d\xE8s votre prochaine partie, qui lance essentiellement vers le
+      haut \xE0 une hauteur \xE9quivalente \xE0 50% de votre meilleur score pr\xE9c\xE9dent.
+      Vous pouvez facilement activer ou d\xE9sactiver cette fonctionnalit\xE9 particuli\xE8re
+      plus tard dans le menu Param\xE8tres. Le jeu entier peut \xEAtre commod\xE9ment
+      mis en pause \xE0 tout moment en cliquant sur le bouton pause situ\xE9 dans
+      le coin sup\xE9rieur gauche de l'\xE9cran ou alternativement en appuyant sur
+      la touche Pause d\xE9sign\xE9e (par d\xE9faut: Barre d'espace). Pendant une
+      session de jeu active, vous trouverez constamment affich\xE9es sur le c\xF4t\xE9
+      droit de l'\xE9cran les informations cl\xE9s suivantes: Score Actuel: Celui-ci
+      montre votre score de hauteur en temps r\xE9el; Meilleur Score: Celui-ci affiche
+      le meilleur score de hauteur que vous ayez jamais r\xE9ussi \xE0 atteindre;
+      Quantit\xE9 de Carburante: Celui-ci indique clairement votre niveau de carburant
+      restant dans la fus\xE9e. Vous pouvez toujours ouvrir le menu Param\xE8tres
+      directement depuis le Menu Principal afin d'accomplir plusieurs t\xE2ches:
+      Choisir la langue pr\xE9f\xE9r\xE9e pour tous les textes \xE0 l'\xE9cran, ajuster
+      s\xE9par\xE9ment les niveaux de volume \xE0 la fois de la musique et des effets
+      sonores, personnaliser les liaisons de touches sp\xE9cifiques utilis\xE9es
+      pour le mouvement gauche, le mouvement droit, les fonctions de boost et de
+      pause, et de plus, activer ou d\xE9sactiver \xE0 la fois la fonctionnalit\xE9
+      de boost de d\xE9part automatique ainsi que l'affichage des conseils en jeu.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6418097113137152

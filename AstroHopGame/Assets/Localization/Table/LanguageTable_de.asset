@@ -188,12 +188,65 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418067216138240
-    m_Localized: "Springe mit Hilfe der im Weltraum verteilten, schwebenden Plattformen
-      immer h\xF6her. \r\nDu springst automatisch und musst dich nach links oder
-      rechts bewegen, um auf den oberen Plattformen zu landen. Verfehlst du eine
-      Plattform und f\xE4llst aus dem Bildschirm oder kollidierst du von unten oder
-      der Seite mit einem UFO, ist das Spiel vorbei. \r\nGelange so hoch wie m\xF6glich,
-      um die h\xF6chste Punktzahl wie m\xF6glich zu erreichen.\r"
+    m_Localized: "Springe immer weiter nach oben mit Hilfe der zahlreichen, im Weltraum
+      verteilten, schwebenden Plattformen. Du springst automatisch und musst dich
+      nach links oder rechts bewegen um erfolgreich auf den oberen Plattformen sicher
+      zu landen. Solltest du eine Plattform versehentlich verfehlen und daraufhin
+      aus dem unteren Bildschirmrand fallen oder von unten oder auch von der Seite
+      mit einem UFO kollidieren, dann ist das Spiel sofort vorbei. Dein eigentliches
+      Ziel ist es, die h\xF6chstm\xF6gliche Punktzahl zu erreichen, indem du einfach
+      so hoch wie irgendwie m\xF6glich steigst. Hierf\xFCr musst du die Bewegungstasten
+      benutzen (also die Pfeiltasten links/rechts oder die in den Einstellungen gew\xE4hlten
+      Tasten), um dich pr\xE4zise zu den als n\xE4chstes anvisierten Landeplattformen
+      hin zu bewegen. Im Spiel hast du eine Rakete dabei, die dir kr\xE4ftige Raketensch\xFCbe
+      nach oben erlaubt. Soweit sich \xFCberhaupt noch Treibstoff im Tank befindet,
+      kannst du die Boost-Taste gedr\xFCckt halten (das ist normalerweise die Pfeiltaste
+      oben oder eine in den Einstellungen gew\xE4hlte Taste), um damit kontrolliert
+      aufzusteigen. Um aufzutanken, musst du die Treibstofftanks ber\xFChren, die
+      gelegentlich auf manchen ausgew\xE4hlten Plattformen erscheinen. W\xE4hrend
+      des laufenden Boosts wird dein wertvoller Treibstoff kontinuierlich und konstant
+      verbraucht, und es ist wichtig zu wissen, dass jedes einzelne Mal, wenn du
+      boostest, mindestens 10% deines gesamten Tankvolumens aufgebraucht wird. F\xE4ngst
+      du einen Boost mit weniger als 10% Resttreibstoff an, wird logischerweise der
+      gesamte verbliebene Vorrat restlos aufgebraucht. Du kannst solche Boosts sehr
+      gut nutzen, um beispielsweise knapp verpasste Landungen noch zu korrigieren
+      oder auch, um deutlich h\xF6her gelegene Plattformen zu erreichen. Plattformen
+      gibt es in drei unterschiedlichen Varianten: Gr\xFCne Plattformen: Diese sind
+      v\xF6llig statisch und daher dauerhaft vorhanden; Rote Plattformen: Diese zerbrechen
+      sofort nach genau einem Sprung und sind folglich nur ein einziges Mal nutzbar;
+      Lila Plattformen: Diese bewegen sich st\xE4ndig und konstant nach links sowie
+      rechts. Gef\xE4hrliche UFOs schweben ziemlich langsam nach unten und verfolgen
+      dabei deine aktuelle horizontale Position. Bevor ein UFO \xFCberhaupt auf dem
+      Bildschirm erscheint, erscheint ein deutlicher Pfeil am oberen Rand, der dir
+      anzeigt, aus welcher Richtung es genau kommt. Eine Kollision von unten oder
+      von der Seite aus beendet sofort deinen Lauf. Aber zum Gl\xFCck kannst du UFOs
+      selbst immerhin auf drei verschiedene Arten vernichten: Laserschuss: Ganz einfach
+      mit der linken Maustaste in die gew\xFCnschte Zielrichtung klicken. Daraufhin
+      wird ein Laserstrahl direkt von deiner Position aus in Richtung des Cursors
+      abgefeuert und zerst\xF6rt sofort ein UFO bei einem Treffer; Stomp-Angriff:
+      Springe einfach direkt auf ein UFO, um es dadurch zu zerst\xF6ren. Im Anschluss
+      prallst du dabei ab, als ob du auf einer normalen Plattform gelandet w\xE4rst;
+      Raketenschub: Fliege einfach mit einem aktivierten Boost frontal gegen ein
+      UFO, um es dadurch zu vernichten. Nachdem du einen Punktestand von 400 Punkten
+      oder mehr erreicht hast, schaltest du automatisch beim n\xE4chsten Spiellauf
+      einen besonderen automatischen Start\u2011Boost frei, welcher dich dann bis
+      zu 50% der maximalen H\xF6he deines vorangegangenen Spiels nach oben katapultiert.
+      Nat\xFCrlich kannst du in den Einstellungen jederzeit diese Funktion ganz nach
+      Belieben ein- oder auch wieder ausschalten. Das laufende Spiel kannst du \xFCbrigens
+      jederzeit problemlos pausieren, entweder \xFCber das Pausensymbol oben links
+      oder alternativ einfach mit der Pause-Taste (Standardbelegung: die Leertaste).
+      W\xE4hrend du aktiv spielst, siehst du st\xE4ndig und dauerhaft auf der rechten
+      Seite des Bildschirms immer folgende wichtige Informationen angezeigt: Aktueller
+      Punktestand: Das ist deine jeweils aktuelle H\xF6he in Echtzeit; Dein Rekord:
+      Hier steht die absolut h\xF6chste H\xF6he, die du bisher je erreicht hast;
+      Dein Treibstoffvorrat: Hier wird dein noch verbleibender Raketentreibstoff
+      angezeigt. Du kannst nat\xFCrlich auch im Hauptmen\xFC das komplette Einstellungsmen\xFC
+      \xF6ffnen, um dort verschiedene umfassende Anpassungen vorzunehmen: etwa um
+      die Sprache der On\u2011Screen\u2011Texte auszuw\xE4hlen, um die Lautst\xE4rke
+      von Musik und Soundeffekten voneinander getrennt einzustellen, um die Tastenbelegung
+      f\xFCr Linksbewegung, Rechtsbewegung, Boost, Schuss und nat\xFCrlich auch Pause
+      zu individualisieren, sowie auch, um den automatischen Start\u2011Boost und
+      die In\u2011Game\u2011Tipps je nach Bedarf zu aktivieren oder auch zu deaktivieren."
     m_Metadata:
       m_Items: []
   - m_Id: 6418097113137152
