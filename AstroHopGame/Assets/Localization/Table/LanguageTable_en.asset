@@ -220,36 +220,40 @@ MonoBehaviour:
       range. Platforms themselves come in three distinct varieties: Green platforms:
       These are static and permanent; Red platforms: These break immediately after
       a single landing and can consequently only be used just the one time; Purple
-      platforms: These steadily move left and right at a constant pace. UFOs slowly
-      hover downward, all the while following your horizontal position. Before one
-      actually appears visibly on your screen, you will see an arrow displayed at
-      the top of the screen which serves to warn you clearly of the precise horizontal
-      direction it's coming from. Colliding with one from below or the side ends
-      your run immediately. However, you possess three distinct ways available to
-      eliminate them: Laser Shot: Simply click the left mouse button pointed toward
-      your target. A laser beam then fires instantly from your current position in
-      the cursor\u2019s direction and will destroy a UFO if it successfully gets
-      hit; Stomp Attack: Jump directly on top of a UFO in order to destroy it.. You\u2019ll
-      bounce off as if you had just landed on a standard platform; Rocket Boost:
-      Use an active rocket boost to destroy any UFO you collide with while you are
-      thrusting powerfully upward. After scoring 400 points or more, you will subsequently
-      unlock an automatic starting boost that becomes available on your very next
-      run, which essentially launches you upward to a height equivalent to 50% of
-      your previous best score. You can easily toggle this particular feature either
-      on or off later on within the Settings menu. The entire game can be conveniently
-      paused at any time whatsoever by clicking the pause button located in the top-left
-      corner of the screen or alternatively by pressing the designated Pause key
-      (default: Spacebar). During an active game session, you will consistently find
-      on the right side of the screen, the following key information displayed: Current
-      Score: This shows your real-time height score; High Score: This displays the
-      best height score you\u2019ve ever managed to reach; Fuel Amount: This clearly
-      indicates your remaining rocket fuel level. You can always open up the Settings
-      menu directly from the Main Menu in order to accomplish several tasks: Choose
-      the preferred language for all of the on-screen texts, separately adjust the
-      volume levels of both the music and the sound effects, customize the specific
-      key bindings used for left movement, right movement, boosting and pause functions,
-      and additionally, enable or disable both the automatic start boost feature
-      as well as the display of in-game tips."
+      platforms: These steadily move left and right at a constant pace; White Platforms:
+      You are not able to jump on them. UFOs slowly hover downward, all the while
+      following your horizontal position. Before one actually appears visibly on
+      your screen, you will see an arrow displayed at the top of the screen which
+      serves to warn you clearly of the precise horizontal direction it's coming
+      from. Colliding with one from below or the side ends your run immediately.
+      However, you possess three distinct ways available to eliminate them: Laser
+      Shot: Simply click the left mouse button pointed toward your target. A laser
+      beam then fires instantly from your current position in the cursor\u2019s direction
+      and will destroy a UFO if it successfully gets hit; Stomp Attack: Jump directly
+      on top of a UFO in order to destroy it.. You\u2019ll bounce off as if you had
+      just landed on a standard platform; Rocket Boost: Use an active rocket boost
+      to destroy any UFO you collide with while you are thrusting powerfully upward.
+      After scoring 400 points or more, you will subsequently unlock an automatic
+      starting boost that becomes available on your very next run, which essentially
+      launches you upward to a height equivalent to 50% of your previous best score.
+      You can easily toggle this particular feature either on or off later on within
+      the Settings menu. The entire game can be conveniently paused at any time whatsoever
+      by clicking the pause button located in the top-left corner of the screen or
+      alternatively by pressing the designated Pause key (default: Spacebar). During
+      an active game session, you will consistently find on the right side of the
+      screen, the following key information displayed: Jump Counter: This shows how
+      often you bounced in the current game; High Score: This displays the best height
+      score you\u2019ve ever managed to reach; Total Boost Distance: This shows how
+      much you boosted in the current game; Fuel Amount: This clearly indicates your
+      remaining rocket fuel level; Horizontal Position: This show your real-time
+      horizontal position; Current Score: This shows your real-time height score;
+      Destroyed UFO Counter: This shows how many UFOs you have destroyed in the current
+      game. You can always open up the Settings menu directly from the Main Menu
+      in order to accomplish several tasks: Choose the preferred language for all
+      of the on-screen texts, separately adjust the volume levels of both the music
+      and the sound effects, customize the specific key bindings used for left movement,
+      right movement, boosting and pause functions, and additionally, enable or disable
+      both the automatic start boost feature as well as the display of in-game tips.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6418170840612864
@@ -390,6 +394,93 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 8607735869341696
     m_Localized: "Rocket tank full \u2013 cannot collect more fuel."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18010094231879680
+    m_Localized: 'Getting hit by a UFO from the side or from below causes a Game
+      Over!
+
+      <size=30><alpha=#80>Press [Alt] to skip the tutorial.
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18010280597389312
+    m_Localized: "Each Boost uses at least 100\u2030 of your Rocket tank.\n<size=30><alpha=#80>Press
+      [Alt] to skip the tutorial."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18010389888368640
+    m_Localized: 'Jump on UFOs like on platforms and destroy them on impact.
+
+      <size=30><alpha=#80>Press
+      [Alt] to skip the tutorial.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18010429671342080
+    m_Localized: 'Score over 400 to unlock a Starting Boost for your next run.
+
+      <size=30><alpha=#80>Press
+      [Alt] to skip the tutorial.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18010529256701952
+    m_Localized: "The Starting Boost launches you to 50\u202F% of your previous score
+      height.\n<size=30><alpha=#80>Press [Alt] to skip the tutorial."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18010594322939904
+    m_Localized: 'Toggle Starting Boost on/off in Settings found in the Main Menu.
+
+      <size=30><alpha=#80>Press
+      [Alt] to skip the tutorial.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18010716234579968
+    m_Localized: "Toggle in\u2011game tips on/off in Settings as well. \n<size=30><alpha=#80>Press
+      [Alt] to skip the tutorial."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18011710775361536
+    m_Localized: 'In Settings, you can also change language, adjust volume and change
+      controls.
+
+      <size=30><alpha=#80>Press [Alt] to skip the tutorial.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18011742543020032
+    m_Localized: 'Numbers on the game area show score milestones.
+
+      <size=30><alpha=#80>Press
+      [Alt] to skip the tutorial.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18011897493192704
+    m_Localized: 'On the right side you can see: Jump Counter, High Score, Total
+      Boost Distance,...
+
+      <size=30><alpha=#80>Press [Alt] to skip the tutorial.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18012035863281664
+    m_Localized: "\u2026Fuel Amount, Horizontal Position, Current Score, Destroyed
+      UFO Counter.\n<size=30><alpha=#80>Press [Alt] to skip the tutorial."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18012064992722944
+    m_Localized: 'Reach the highest score possible!
+
+      <size=30><alpha=#80>Press
+      [Alt] to skip the tutorial.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18012105635528704
+    m_Localized: 'Look at the Help Menu for a more detailed guide.
+
+      <size=30><alpha=#80>Press
+      [Alt] to skip the tutorial.
+
+'
     m_Metadata:
       m_Items: []
   references:

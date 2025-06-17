@@ -295,6 +295,58 @@ MonoBehaviour:
     m_Key: Game Tip FailedPickUp
     m_Metadata:
       m_Items: []
+  - m_Id: 18010094231879680
+    m_Key: Ufo Tutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18010280597389312
+    m_Key: Minimum Fuel Tutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18010389888368640
+    m_Key: Jump On Ufo Tutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18010429671342080
+    m_Key: Starting Boost Unlock Tutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18010529256701952
+    m_Key: Starting Boost Tutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18010594322939904
+    m_Key: Starting Boost Toggle Tutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18010716234579968
+    m_Key: In-game Tips Toggle Tutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18011710775361536
+    m_Key: Other Setting Tutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18011742543020032
+    m_Key: Milestones Tutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18011897493192704
+    m_Key: UI Tutorial 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18012035863281664
+    m_Key: UI Tutorial 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18012064992722944
+    m_Key: Goal Tutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18012105635528704
+    m_Key: Help Tutorial
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

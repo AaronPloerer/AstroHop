@@ -224,39 +224,44 @@ MonoBehaviour:
       in tre distinte variet\xE0: Piattaforme Verdi: Statiche e permanenti; Piattaforme
       Rosse: Si rompono immediatamente dopo un singolo atterraggio e possono di conseguenza
       essere utilizzate solo una volta; Piattaforme Viola: Si muovono costantemente
-      a sinistra e a destra a velocit\xE0 costante. Gli UFO fluttuano lentamente
-      verso il basso, seguendo la tua posizione orizzontale. Prima che uno appaia
-      effettivamente visibile sul tuo schermo, vedrai una freccia visualizzata nella
-      parte superiore dello schermo che ti avverte chiaramente della precisa direzione
-      orizzontale da cui sta arrivando. Entrare in collisione con uno dal basso o
-      lateralmente termina la tua partita all'istante. Tuttavia, possiedi tre modi
-      distinti per eliminarli: Colpo Laser: Clicca semplicemente il tasto sinistro
-      del mouse puntato verso il tuo bersaglio. Un raggio laser viene sparato istantaneamente
-      dalla tua posizione attuale nella direzione del cursore e distrugger\xE0 un
-      UFO se colpito con successo; Attacco con Stomp: Salta direttamente sopra a
-      un UFO per distruggerlo. Rimbalzerai in alto come se fossi atterrato su una
-      piattaforma standard; Boost del Razzo: Usa un boost del razzo attivo per distruggere
-      qualsiasi UFO con cui entri in collisione mentre stai effettuando una spinta
-      verso l'alto. Dopo aver totalizzato 400 punti o pi\xF9, sbloccherai un boost
-      di partenza automatico disponibile nella tua prossima partita, che essenzialmente
-      ti lancer\xE0 verso l'alto fino a un'altezza equivalente al 50% del tuo punteggio
-      precedente. Puoi facilmente attivare o disattivare questa particolare funzione
-      successivamente all'interno del menu Impostazioni. L'intero gioco pu\xF2 essere
-      comodamente messo in pausa in qualsiasi momento cliccando il pulsante di pausa
-      situato nell'angolo in alto a sinistra dello schermo o alternativamente premendo
-      il tasto Pausa designato (predefinito: Barra spaziatrice). Durante una sessione
-      di gioco attiva, troverai costantemente sul lato destro dello schermo le seguenti
-      informazioni chiave visualizzate: Punteggio Attuale: Mostra il tuo punteggio
-      di altezza in tempo reale; Miglior Punteggio: Visualizza il miglior punteggio
-      di altezza che sei mai riuscito a raggiungere; Quantit\xE0 di Carburante: Indica
-      chiaramente il livello di carburante rimanente nel razzo. Puoi sempre aprire
+      a sinistra e a destra a velocit\xE0 costante; Piattaforme Bianche: Impossibile
+      saltarci. Gli UFO fluttuano lentamente verso il basso, seguendo la tua posizione
+      orizzontale. Prima che uno appaia effettivamente visibile sul tuo schermo,
+      vedrai una freccia visualizzata nella parte superiore dello schermo che ti
+      avverte chiaramente della precisa direzione orizzontale da cui sta arrivando.
+      Entrare in collisione con uno dal basso o lateralmente termina la tua partita
+      all'istante. Tuttavia, possiedi tre modi distinti per eliminarli: Colpo Laser:
+      Clicca semplicemente il tasto sinistro del mouse puntato verso il tuo bersaglio.
+      Un raggio laser viene sparato istantaneamente dalla tua posizione attuale nella
+      direzione del cursore e distrugger\xE0 un UFO se colpito con successo; Attacco
+      con Stomp: Salta direttamente sopra a un UFO per distruggerlo. Rimbalzerai
+      in alto come se fossi atterrato su una piattaforma standard; Boost del Razzo:
+      Usa un boost del razzo attivo per distruggere qualsiasi UFO con cui entri in
+      collisione mentre stai effettuando una spinta verso l'alto. Dopo aver totalizzato
+      400 punti o pi\xF9, sbloccherai un boost di partenza automatico disponibile
+      nella tua prossima partita, che essenzialmente ti lancer\xE0 verso l'alto fino
+      a un'altezza equivalente al 50% del tuo punteggio precedente. Puoi facilmente
+      attivare o disattivare questa particolare funzione successivamente all'interno
+      del menu Impostazioni. L'intero gioco pu\xF2 essere comodamente messo in pausa
+      in qualsiasi momento cliccando il pulsante di pausa situato nell'angolo in
+      alto a sinistra dello schermo o alternativamente premendo il tasto Pausa designato
+      (predefinito: Barra spaziatrice). Durante una sessione di gioco attiva, troverai
+      costantemente sul lato destro dello schermo le seguenti informazioni chiave
+      visualizzate: Contatore salti: Questo mostra quante volte hai saltato nella
+      partita corrente; Punteggio massimo: Questo mostra il miglior punteggio di
+      altezza che tu abbia mai raggiunto; Distanza totale con il boost: Questo mostra
+      quanto hai accelerato nella partita corrente; Carburante: Questo indica chiaramente
+      il tuo livello di carburante rimanente; Posizione orizzontale: Questo mostra
+      la tua posizione orizzontale in tempo reale; Punteggio attuale: Questo mostra
+      il tuo punteggio di altezza in tempo reale; Contatore UFO distrutti: Questo
+      mostra quanti UFO hai distrutto nella partita corrente. Puoi sempre aprire
       il menu Impostazioni direttamente dal Menu Principale per eseguire diverse
       operazioni: Scegliere la lingua preferita per tutti i testi sullo schermo,
       regolare separatamente i livelli del volume sia della musica che degli effetti
       sonori, personalizzare le assegnazioni dei tasti specifici utilizzati per il
       movimento a sinistra, il movimento a destra, il boost e le funzioni di pausa
       e, inoltre, attivare o disattivare sia la funzione di boost di partenza automatica
-      che la visualizzazione dei suggerimenti in gioco."
+      che la visualizzazione dei suggerimenti in gioco.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6418097113137152
@@ -403,6 +408,88 @@ MonoBehaviour:
   - m_Id: 8607735869341696
     m_Localized: "Serbatoio razzo pieno \u2013 non puoi raccogliere altro carburante
       per il boost."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18010094231879680
+    m_Localized: "Se vieni colpito da un UFO di lato o dal basso, \xE8 Game Over!\n<size=30><alpha=#80>Press
+      [Alt] to skip the tutorial."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18010280597389312
+    m_Localized: "Ogni Boost consuma almeno il 100\u2030 del tuo serbatoio razzo.\n<size=30><alpha=#80>Press
+      [Alt] to skip the tutorial."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18010389888368640
+    m_Localized: 'Salta sugli UFO come sulle piattaforme e distruggili all''impatto.
+
+      <size=30><alpha=#80>Press
+      [Alt] to skip the tutorial.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18010429671342080
+    m_Localized: 'Totalizza oltre 400 punti per sbloccare un Boost Iniziale per la
+      tua prossima partita.
+
+      <size=30><alpha=#80>Press [Alt] to skip the tutorial.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18010529256701952
+    m_Localized: 'Il Boost Iniziale ti lancia fino al 50% dell''altezza del tuo punteggio
+      precedente.
+
+      <size=30><alpha=#80>Press [Alt] to skip the tutorial.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18010594322939904
+    m_Localized: 'Attiva/disattiva il Boost Iniziale nelle Impostazioni del Menu
+      Principale.
+
+      <size=30><alpha=#80>Press [Alt] to skip the tutorial.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18010716234579968
+    m_Localized: "Attiva/disattiva anche i suggerimenti in-game nelle Impostazioni.
+      \n<size=30><alpha=#80>Press [Alt] to skip the tutorial."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18011710775361536
+    m_Localized: 'Nelle Impostazioni puoi anche cambiare lingua e regolare volume.
+
+      <size=30><alpha=#80>Press
+      [Alt] to skip the tutorial.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18011742543020032
+    m_Localized: 'I numeri nell''area di gioco indicano i traguardi del punteggio.
+
+      <size=30><alpha=#80>Press
+      [Alt] to skip the tutorial.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18011897493192704
+    m_Localized: 'Sul lato destro puoi vedere: Contatore salti, Punteggio massimo,
+      Distanza totale con il boost,...
+
+      <size=30><alpha=#80>Press [Alt] to
+      skip the tutorial.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18012035863281664
+    m_Localized: '...Carburante, Posizione orizzontale, Punteggio attuale, Contatore
+      UFO distrutti.
+
+      <size=30><alpha=#80>Press [Alt] to skip the tutorial.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18012064992722944
+    m_Localized: "Raggiungi il punteggio pi\xF9 alto possibile!\n<size=30><alpha=#80>Press
+      [Alt] to skip the tutorial."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18012105635528704
+    m_Localized: "Guarda nel Menu Aiuto per una guida pi\xF9 dettagliata.\n<size=30><alpha=#80>Press
+      [Alt] to skip the tutorial.\n"
     m_Metadata:
       m_Items: []
   references:

@@ -220,42 +220,46 @@ MonoBehaviour:
       Rouges: Celles-ci se brisent imm\xE9diatement apr\xE8s un seul atterrissage
       et ne peuvent par cons\xE9quent \xEAtre utilis\xE9es qu'une seule fois; Plateformes
       Mauves: Celles-ci se d\xE9placent constamment \xE0 gauche et \xE0 droite \xE0
-      un rythme constant. Les OVNI flottent lentement vers le bas, tout en suivant
-      votre position horizontale. Avant qu'un n'apparaisse visiblement \xE0 l'\xE9cran,
-      vous verrez une fl\xE8che affich\xE9e en haut de celui-ci qui sert \xE0 vous
-      avertir clairement de la direction horizontale pr\xE9cise d'o\xF9 il vient.
-      Entrer en collision avec un OVNI par le dessous ou sur le c\xF4t\xE9 met fin
-      imm\xE9diatement \xE0 votre partie. Cependant, vous poss\xE9dez trois fa\xE7ons
-      distinctes de les \xE9liminer: Tir Laser: Cliquez simplement sur le bouton
-      gauche de la souris point\xE9 vers votre cible. Un rayon laser est alors tir\xE9
-      instantan\xE9ment de votre position actuelle dans la direction du curseur et
-      d\xE9truira un OVNI s'il est touch\xE9 avec succ\xE8s; Attaque par \xC9crasement
-      (Stomp): Sautez directement sur le dessus d'un UFO afin de le d\xE9truire.
-      Vous rebondirez ensuite comme si vous veniez d'atterrir sur une plateforme
-      standard; Boost de la Fus\xE9e: Utilisez un boost de fus\xE9e actif pour d\xE9truire
-      tout OVNI avec lequel vous entrez en collision pendant que vous effectuez une
-      pouss\xE9e puissante vers le haut. Apr\xE8s avoir atteint un score de 400 points
-      ou plus, vous d\xE9bloquerez par la suite un boost de d\xE9part automatique
-      disponible d\xE8s votre prochaine partie, qui lance essentiellement vers le
-      haut \xE0 une hauteur \xE9quivalente \xE0 50% de votre meilleur score pr\xE9c\xE9dent.
-      Vous pouvez facilement activer ou d\xE9sactiver cette fonctionnalit\xE9 particuli\xE8re
-      plus tard dans le menu Param\xE8tres. Le jeu entier peut \xEAtre commod\xE9ment
-      mis en pause \xE0 tout moment en cliquant sur le bouton pause situ\xE9 dans
-      le coin sup\xE9rieur gauche de l'\xE9cran ou alternativement en appuyant sur
-      la touche Pause d\xE9sign\xE9e (par d\xE9faut: Barre d'espace). Pendant une
-      session de jeu active, vous trouverez constamment affich\xE9es sur le c\xF4t\xE9
-      droit de l'\xE9cran les informations cl\xE9s suivantes: Score Actuel: Celui-ci
-      montre votre score de hauteur en temps r\xE9el; Meilleur Score: Celui-ci affiche
-      le meilleur score de hauteur que vous ayez jamais r\xE9ussi \xE0 atteindre;
-      Quantit\xE9 de Carburante: Celui-ci indique clairement votre niveau de carburant
-      restant dans la fus\xE9e. Vous pouvez toujours ouvrir le menu Param\xE8tres
-      directement depuis le Menu Principal afin d'accomplir plusieurs t\xE2ches:
-      Choisir la langue pr\xE9f\xE9r\xE9e pour tous les textes \xE0 l'\xE9cran, ajuster
-      s\xE9par\xE9ment les niveaux de volume \xE0 la fois de la musique et des effets
-      sonores, personnaliser les liaisons de touches sp\xE9cifiques utilis\xE9es
+      un rythme constant; Plateformes Blanches: Impossible de sauter dessus. Les
+      OVNI flottent lentement vers le bas, tout en suivant votre position horizontale.
+      Avant qu'un n'apparaisse visiblement \xE0 l'\xE9cran, vous verrez une fl\xE8che
+      affich\xE9e en haut de celui-ci qui sert \xE0 vous avertir clairement de la
+      direction horizontale pr\xE9cise d'o\xF9 il vient. Entrer en collision avec
+      un OVNI par le dessous ou sur le c\xF4t\xE9 met fin imm\xE9diatement \xE0 votre
+      partie. Cependant, vous poss\xE9dez trois fa\xE7ons distinctes de les \xE9liminer:
+      Tir Laser: Cliquez simplement sur le bouton gauche de la souris point\xE9 vers
+      votre cible. Un rayon laser est alors tir\xE9 instantan\xE9ment de votre position
+      actuelle dans la direction du curseur et d\xE9truira un OVNI s'il est touch\xE9
+      avec succ\xE8s; Attaque par \xC9crasement (Stomp): Sautez directement sur le
+      dessus d'un UFO afin de le d\xE9truire. Vous rebondirez ensuite comme si vous
+      veniez d'atterrir sur une plateforme standard; Boost de la Fus\xE9e: Utilisez
+      un boost de fus\xE9e actif pour d\xE9truire tout OVNI avec lequel vous entrez
+      en collision pendant que vous effectuez une pouss\xE9e puissante vers le haut.
+      Apr\xE8s avoir atteint un score de 400 points ou plus, vous d\xE9bloquerez
+      par la suite un boost de d\xE9part automatique disponible d\xE8s votre prochaine
+      partie, qui lance essentiellement vers le haut \xE0 une hauteur \xE9quivalente
+      \xE0 50% de votre meilleur score pr\xE9c\xE9dent. Vous pouvez facilement activer
+      ou d\xE9sactiver cette fonctionnalit\xE9 particuli\xE8re plus tard dans le
+      menu Param\xE8tres. Le jeu entier peut \xEAtre commod\xE9ment mis en pause
+      \xE0 tout moment en cliquant sur le bouton pause situ\xE9 dans le coin sup\xE9rieur
+      gauche de l'\xE9cran ou alternativement en appuyant sur la touche Pause d\xE9sign\xE9e
+      (par d\xE9faut: Barre d'espace). Pendant une session de jeu active, vous trouverez
+      constamment affich\xE9es sur le c\xF4t\xE9 droit de l'\xE9cran les informations
+      cl\xE9s suivantes: Compteur de sauts: Ceci montre combien de fois tu as rebondi
+      dans la partie actuelle; Meilleur score: Ceci affiche le meilleur score de
+      hauteur que tu aies jamais atteint; Distance totale de boost: Ceci montre la
+      distance boost\xE9e dans la partie actuelle; Carburant: Ceci indique clairement
+      ton niveau de carburant restant; Position horizontale: Ceci montre ta position
+      horizontale en temps r\xE9el; Score actuel: Ceci montre ton score de hauteur
+      en temps r\xE9el; Compteur d'OVNI d\xE9truits: Ceci montre combien d'OVNIs
+      tu as d\xE9truits dans la partie actuelle. Vous pouvez toujours ouvrir le menu
+      Param\xE8tres directement depuis le Menu Principal afin d'accomplir plusieurs
+      t\xE2ches: Choisir la langue pr\xE9f\xE9r\xE9e pour tous les textes \xE0 l'\xE9cran,
+      ajuster s\xE9par\xE9ment les niveaux de volume \xE0 la fois de la musique et
+      des effets sonores, personnaliser les liaisons de touches sp\xE9cifiques utilis\xE9es
       pour le mouvement gauche, le mouvement droit, les fonctions de boost et de
       pause, et de plus, activer ou d\xE9sactiver \xE0 la fois la fonctionnalit\xE9
-      de boost de d\xE9part automatique ainsi que l'affichage des conseils en jeu.\r"
+      de boost de d\xE9part automatique ainsi que l'affichage des conseils en jeu."
     m_Metadata:
       m_Items: []
   - m_Id: 6418097113137152
@@ -407,6 +411,75 @@ MonoBehaviour:
   - m_Id: 8607735869341696
     m_Localized: "R\xE9servoir fus\xE9e plein \u2013 impossible de collecter plus
       de carburant pour le boost."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18010094231879680
+    m_Localized: "Se faire toucher par un OVNI sur le c\xF4t\xE9 ou par en dessous
+      cause un Game Over !\n<size=30><alpha=#80>Press [Alt] to skip the tutorial."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18010280597389312
+    m_Localized: "Chaque Boost utilise au moins 100\u202F\u2030 de ton r\xE9servoir
+      fus\xE9e.\n<size=30><alpha=#80>Press [Alt] to skip the tutorial."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18010389888368640
+    m_Localized: "Sautez sur les OVNI comme sur des plateformes et d\xE9truisez-les
+      \xE0 l'impact.\n<size=30><alpha=#80>Press [Alt] to skip the tutorial.\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18010429671342080
+    m_Localized: "Marquez plus de 400 points pour d\xE9bloquer un Boost de D\xE9part
+      pour votre prochaine partie.\n<size=30><alpha=#80>Press [Alt] to skip the tutorial."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18010529256701952
+    m_Localized: "Le Boost de D\xE9part vous propulse jusqu'\xE0 50% de la hauteur
+      de votre score pr\xE9c\xE9dent.\n<size=30><alpha=#80>Press [Alt] to skip the
+      tutorial."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18010594322939904
+    m_Localized: "Activez/d\xE9sactivez le Boost de D\xE9part dans les Param\xE8tres
+      du menu principal.\n<size=30><alpha=#80>Press [Alt] to skip the tutorial."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18010716234579968
+    m_Localized: "Activez/d\xE9sactivez \xE9galement les Astuces en jeu dans les
+      Param\xE8tres.\n<size=30><alpha=#80>Press [Alt] to skip the tutorial."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18011710775361536
+    m_Localized: "Dans les Param\xE8tres, vous pouvez aussi changer la langue, ajuster
+      le volume et modifier les contr\xF4les.\n<size=30><alpha=#80>Press [Alt] to
+      skip the tutorial."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18011742543020032
+    m_Localized: 'Les chiffres dans la zone de jeu indiquent les jalons de score.
+
+      <size=30><alpha=#80>Press
+      [Alt] to skip the tutorial.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18011897493192704
+    m_Localized: "\xC0 droite, vous voyez : Compteur de sauts, Meilleur score, Distance
+      totale de boost,...\n<size=30><alpha=#80>Press [Alt] to skip the tutorial."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18012035863281664
+    m_Localized: "...Carburant, Position horizontale, Score actuel, Compteur d'OVNI
+      d\xE9truits.\n<size=30><alpha=#80>Press [Alt] to skip the tutorial."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18012064992722944
+    m_Localized: "Atteignez le score le plus \xE9lev\xE9 possible !\n<size=30><alpha=#80>Press
+      [Alt] to skip the tutorial."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18012105635528704
+    m_Localized: "Consultez le menu Aide pour un guide plus d\xE9taill\xE9.\n<size=30><alpha=#80>Press
+      [Alt] to skip the tutorial."
     m_Metadata:
       m_Items: []
   references:

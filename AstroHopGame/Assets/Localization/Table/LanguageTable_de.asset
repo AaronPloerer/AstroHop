@@ -215,35 +215,39 @@ MonoBehaviour:
       v\xF6llig statisch und daher dauerhaft vorhanden; Rote Plattformen: Diese zerbrechen
       sofort nach genau einem Sprung und sind folglich nur ein einziges Mal nutzbar;
       Lila Plattformen: Diese bewegen sich st\xE4ndig und konstant nach links sowie
-      rechts. Gef\xE4hrliche UFOs schweben ziemlich langsam nach unten und verfolgen
-      dabei deine aktuelle horizontale Position. Bevor ein UFO \xFCberhaupt auf dem
-      Bildschirm erscheint, erscheint ein deutlicher Pfeil am oberen Rand, der dir
-      anzeigt, aus welcher Richtung es genau kommt. Eine Kollision von unten oder
-      von der Seite aus beendet sofort deinen Lauf. Aber zum Gl\xFCck kannst du UFOs
-      selbst immerhin auf drei verschiedene Arten vernichten: Laserschuss: Ganz einfach
-      mit der linken Maustaste in die gew\xFCnschte Zielrichtung klicken. Daraufhin
-      wird ein Laserstrahl direkt von deiner Position aus in Richtung des Cursors
-      abgefeuert und zerst\xF6rt sofort ein UFO bei einem Treffer; Stomp-Angriff:
-      Springe einfach direkt auf ein UFO, um es dadurch zu zerst\xF6ren. Im Anschluss
-      prallst du dabei ab, als ob du auf einer normalen Plattform gelandet w\xE4rst;
-      Raketenschub: Fliege einfach mit einem aktivierten Boost frontal gegen ein
-      UFO, um es dadurch zu vernichten. Nachdem du einen Punktestand von 400 Punkten
-      oder mehr erreicht hast, schaltest du automatisch beim n\xE4chsten Spiellauf
-      einen besonderen automatischen Start\u2011Boost frei, welcher dich dann bis
-      zu 50% der maximalen H\xF6he deines vorangegangenen Spiels nach oben katapultiert.
-      Nat\xFCrlich kannst du in den Einstellungen jederzeit diese Funktion ganz nach
-      Belieben ein- oder auch wieder ausschalten. Das laufende Spiel kannst du \xFCbrigens
-      jederzeit problemlos pausieren, entweder \xFCber das Pausensymbol oben links
-      oder alternativ einfach mit der Pause-Taste (Standardbelegung: die Leertaste).
-      W\xE4hrend du aktiv spielst, siehst du st\xE4ndig und dauerhaft auf der rechten
-      Seite des Bildschirms immer folgende wichtige Informationen angezeigt: Aktueller
-      Punktestand: Das ist deine jeweils aktuelle H\xF6he in Echtzeit; Dein Rekord:
-      Hier steht die absolut h\xF6chste H\xF6he, die du bisher je erreicht hast;
-      Dein Treibstoffvorrat: Hier wird dein noch verbleibender Raketentreibstoff
-      angezeigt. Du kannst nat\xFCrlich auch im Hauptmen\xFC das komplette Einstellungsmen\xFC
-      \xF6ffnen, um dort verschiedene umfassende Anpassungen vorzunehmen: etwa um
-      die Sprache der On\u2011Screen\u2011Texte auszuw\xE4hlen, um die Lautst\xE4rke
-      von Musik und Soundeffekten voneinander getrennt einzustellen, um die Tastenbelegung
+      rechts; Wei\xDFe Plattformen: Kein Springen m\xF6glich. Gef\xE4hrliche UFOs
+      schweben ziemlich langsam nach unten und verfolgen dabei deine aktuelle horizontale
+      Position. Bevor ein UFO \xFCberhaupt auf dem Bildschirm erscheint, erscheint
+      ein deutlicher Pfeil am oberen Rand, der dir anzeigt, aus welcher Richtung
+      es genau kommt. Eine Kollision von unten oder von der Seite aus beendet sofort
+      deinen Lauf. Aber zum Gl\xFCck kannst du UFOs selbst immerhin auf drei verschiedene
+      Arten vernichten: Laserschuss: Ganz einfach mit der linken Maustaste in die
+      gew\xFCnschte Zielrichtung klicken. Daraufhin wird ein Laserstrahl direkt von
+      deiner Position aus in Richtung des Cursors abgefeuert und zerst\xF6rt sofort
+      ein UFO bei einem Treffer; Stomp-Angriff: Springe einfach direkt auf ein UFO,
+      um es dadurch zu zerst\xF6ren. Im Anschluss prallst du dabei ab, als ob du
+      auf einer normalen Plattform gelandet w\xE4rst; Raketenschub: Fliege einfach
+      mit einem aktivierten Boost frontal gegen ein UFO, um es dadurch zu vernichten.
+      Nachdem du einen Punktestand von 400 Punkten oder mehr erreicht hast, schaltest
+      du automatisch beim n\xE4chsten Spiellauf einen besonderen automatischen Start\u2011Boost
+      frei, welcher dich dann bis zu 50% der maximalen H\xF6he deines vorangegangenen
+      Spiels nach oben katapultiert. Nat\xFCrlich kannst du in den Einstellungen
+      jederzeit diese Funktion ganz nach Belieben ein- oder auch wieder ausschalten.
+      Das laufende Spiel kannst du \xFCbrigens jederzeit problemlos pausieren, entweder
+      \xFCber das Pausensymbol oben links oder alternativ einfach mit der Pause-Taste
+      (Standardbelegung: die Leertaste). W\xE4hrend du aktiv spielst, siehst du st\xE4ndig
+      und dauerhaft auf der rechten Seite des Bildschirms immer folgende wichtige
+      Informationen angezeigt: Sprungz\xE4hler: Dies zeigt, wie oft du im aktuellen
+      Spiel gesprungen bist; Rekord: Dies zeigt die h\xF6chste Punktzahl, die du
+      jemals erreicht hast; Gesamt-Boost-Distanz: Dies zeigt, wie viel du im aktuellen
+      Spiel geboostet hast; Treibstoffvorrat: Dies zeigt deinen verbleibenden Treibstoffstand
+      an; Horizontale Position: Dies zeigt deine horizontale Position in Echtzeit;
+      Aktuelle Punktzahl: Dies zeigt deine aktuelle H\xF6henpunktzahl; Zerst\xF6rte-UFOs-Z\xE4hler:
+      Dies zeigt, wie viele UFOs du im aktuellen Spiel zerst\xF6rt hast. Du kannst
+      nat\xFCrlich auch im Hauptmen\xFC das komplette Einstellungsmen\xFC \xF6ffnen,
+      um dort verschiedene umfassende Anpassungen vorzunehmen: etwa um die Sprache
+      der On\u2011Screen\u2011Texte auszuw\xE4hlen, um die Lautst\xE4rke von Musik
+      und Soundeffekten voneinander getrennt einzustellen, um die Tastenbelegung
       f\xFCr Linksbewegung, Rechtsbewegung, Boost, Schuss und nat\xFCrlich auch Pause
       zu individualisieren, sowie auch, um den automatischen Start\u2011Boost und
       die In\u2011Game\u2011Tipps je nach Bedarf zu aktivieren oder auch zu deaktivieren."
@@ -392,6 +396,80 @@ MonoBehaviour:
   - m_Id: 8607735869341696
     m_Localized: "Raketentank voll \u2013 kann keinen weiteren Treibstoff f\xFCr
       den Boost aufnehmen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18010094231879680
+    m_Localized: 'Wenn man von einem UFO seitlich oder von unten getroffen wird,
+      endet das Spiel!
+
+      <size=30><alpha=#80>Press [Alt] to skip the tutorial.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18010280597389312
+    m_Localized: "Jeder Boost verbraucht mindestens 100\u2030 deines Raketentanks.
+      bist du immun und zerst\xF6rst alle UFOs auf deinem Weg.\n<size=30><alpha=#80>Press
+      [Alt] to skip the tutorial."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18010389888368640
+    m_Localized: "Springe auf UFOs wie auf Plattformen und zerst\xF6re sie beim Aufprall.\n<size=30><alpha=#80>Press
+      [Alt] to skip the tutorial."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18010429671342080
+    m_Localized: "Erziele \xFCber 400 Punktzahl, um einen Start-Boost f\xFCr dein
+      n\xE4chstes Spiel freizuschalten.\n<size=30><alpha=#80>Press [Alt] to skip
+      the tutorial."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18010529256701952
+    m_Localized: "Der Start-Boost katapultiert dich auf 50% der H\xF6he deiner vorherigen
+      Punktzahl.\n<size=30><alpha=#80>Press [Alt] to skip the tutorial."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18010594322939904
+    m_Localized: "Schalte den Start-Boost in den Einstellungen im Hauptmen\xFC an/aus.\n<size=30><alpha=#80>Press
+      [Alt] to skip the tutorial."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18010716234579968
+    m_Localized: 'Schalte auch die In-Game-Tipps in den Einstellungen an/aus.
+
+      <size=30><alpha=#80>Press
+      [Alt] to skip the tutorial.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18011710775361536
+    m_Localized: "In den Einstellungen kannst du auch die Sprache \xE4ndern, Lautst\xE4rke
+      anpassen und Steuerung \xE4ndern.\n<size=30><alpha=#80>Press [Alt] to skip
+      the tutorial."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18011742543020032
+    m_Localized: 'Zahlen im Spielbereich zeigen Punktzahl-Meilensteine an.
+
+      <size=30><alpha=#80>Press
+      [Alt] to skip the tutorial.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18011897493192704
+    m_Localized: "Auf der rechten Seite siehst du: Sprungz\xE4hler, Rekord, Gesamt-Boost-Distanz,...\n<size=30><alpha=#80>Press
+      [Alt] to skip the tutorial."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18012035863281664
+    m_Localized: "...Treibstoffvorrat, Horizontale Position, Aktuelle Punktzahl,
+      Zerst\xF6rte-UFOs-Z\xE4hler.\n<size=30><alpha=#80>Press [Alt] to skip the tutorial."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18012064992722944
+    m_Localized: "Erreiche die h\xF6chstm\xF6gliche Punktzahl!\n<size=30><alpha=#80>Press
+      [Alt] to skip the tutorial."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18012105635528704
+    m_Localized: "Sieh im Hilfemen\xFC nach, um eine detailliertere Anleitung zu
+      erhalten.\n<size=30><alpha=#80>Press [Alt] to skip the tutorial."
     m_Metadata:
       m_Items: []
   references:
