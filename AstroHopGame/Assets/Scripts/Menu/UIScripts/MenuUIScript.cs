@@ -101,6 +101,8 @@ public class MenuUIScript : MonoBehaviour
         InitializeControlsInputField(leftInputField, "KeyLeftPrimary", KeyCode.A);
         InitializeControlsInputField(rightInputField, "KeyRightPrimary", KeyCode.D);
         InitializeControlsInputField(pauseInputField, "KeyPause", KeyCode.Space);
+
+        deletedProgressText.SetActive(false);
     }
     #endregion
 
