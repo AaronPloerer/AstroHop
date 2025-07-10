@@ -5695,7 +5695,6 @@ MonoBehaviour:
     fuelSpawnChance: 0
     firstTutorial: {fileID: 1663099691}
     secondTutorial: {fileID: 1429818602}
-    thirdTutorial: {fileID: 1429818602}
     firstPlatformPrefab: {fileID: 6147987595589634864, guid: 27cca06289255304bad2926bbbe31a54, type: 3}
     firstPlatformFuel: 0
     minUfoSpawnTime: 999
@@ -5710,7 +5709,6 @@ MonoBehaviour:
     fuelSpawnChance: 0
     firstTutorial: {fileID: 539876766}
     secondTutorial: {fileID: 0}
-    thirdTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 6147987595589634864, guid: 27cca06289255304bad2926bbbe31a54, type: 3}
     firstPlatformFuel: 0
     minUfoSpawnTime: 5
@@ -5725,7 +5723,6 @@ MonoBehaviour:
     fuelSpawnChance: 0.1
     firstTutorial: {fileID: 801930603}
     secondTutorial: {fileID: 1544818593}
-    thirdTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 6147987595589634864, guid: 27cca06289255304bad2926bbbe31a54, type: 3}
     firstPlatformFuel: 1
     minUfoSpawnTime: 4
@@ -5740,7 +5737,6 @@ MonoBehaviour:
     fuelSpawnChance: 0.1
     firstTutorial: {fileID: 215183990}
     secondTutorial: {fileID: 0}
-    thirdTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 6296993392547905441, guid: 12121649460d1c242b1f28205c91607a, type: 3}
     firstPlatformFuel: 0
     minUfoSpawnTime: 3.75
@@ -5755,7 +5751,6 @@ MonoBehaviour:
     fuelSpawnChance: 0.1
     firstTutorial: {fileID: 952903204}
     secondTutorial: {fileID: 0}
-    thirdTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 5886830857919325583, guid: 80ab51f23303a1a4c9020554536e057b, type: 3}
     firstPlatformFuel: 0
     minUfoSpawnTime: 3.5
@@ -5770,7 +5765,6 @@ MonoBehaviour:
     fuelSpawnChance: 0.1
     firstTutorial: {fileID: 0}
     secondTutorial: {fileID: 0}
-    thirdTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
     minUfoSpawnTime: 3.25
@@ -5785,7 +5779,6 @@ MonoBehaviour:
     fuelSpawnChance: 0.1
     firstTutorial: {fileID: 0}
     secondTutorial: {fileID: 0}
-    thirdTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
     minUfoSpawnTime: 3
@@ -5800,7 +5793,6 @@ MonoBehaviour:
     fuelSpawnChance: 0.1
     firstTutorial: {fileID: 0}
     secondTutorial: {fileID: 0}
-    thirdTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
     minUfoSpawnTime: 2.75
@@ -5815,7 +5807,6 @@ MonoBehaviour:
     fuelSpawnChance: 0.1
     firstTutorial: {fileID: 0}
     secondTutorial: {fileID: 0}
-    thirdTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
     minUfoSpawnTime: 2.5
@@ -5830,7 +5821,6 @@ MonoBehaviour:
     fuelSpawnChance: 0.1
     firstTutorial: {fileID: 0}
     secondTutorial: {fileID: 0}
-    thirdTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
     minUfoSpawnTime: 2.25
@@ -5845,7 +5835,6 @@ MonoBehaviour:
     fuelSpawnChance: 0.1
     firstTutorial: {fileID: 0}
     secondTutorial: {fileID: 0}
-    thirdTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
     minUfoSpawnTime: 2
@@ -5860,7 +5849,6 @@ MonoBehaviour:
     fuelSpawnChance: 0.1
     firstTutorial: {fileID: 0}
     secondTutorial: {fileID: 0}
-    thirdTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
     minUfoSpawnTime: 1.75
@@ -5875,7 +5863,6 @@ MonoBehaviour:
     fuelSpawnChance: 0.1
     firstTutorial: {fileID: 0}
     secondTutorial: {fileID: 0}
-    thirdTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
     minUfoSpawnTime: 1.5
@@ -5890,7 +5877,6 @@ MonoBehaviour:
     fuelSpawnChance: 0.1
     firstTutorial: {fileID: 0}
     secondTutorial: {fileID: 0}
-    thirdTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
     minUfoSpawnTime: 1.25
@@ -5905,7 +5891,6 @@ MonoBehaviour:
     fuelSpawnChance: 0.1
     firstTutorial: {fileID: 0}
     secondTutorial: {fileID: 0}
-    thirdTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
     minUfoSpawnTime: 1
@@ -5920,7 +5905,6 @@ MonoBehaviour:
     fuelSpawnChance: 0.1
     firstTutorial: {fileID: 0}
     secondTutorial: {fileID: 0}
-    thirdTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
     minUfoSpawnTime: 0.8
@@ -5935,7 +5919,6 @@ MonoBehaviour:
     fuelSpawnChance: 0.1
     firstTutorial: {fileID: 0}
     secondTutorial: {fileID: 0}
-    thirdTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
     minUfoSpawnTime: 0.6
@@ -5950,7 +5933,6 @@ MonoBehaviour:
     fuelSpawnChance: 0.1
     firstTutorial: {fileID: 0}
     secondTutorial: {fileID: 0}
-    thirdTutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
     minUfoSpawnTime: 0.4
@@ -9302,6 +9284,7 @@ GameObject:
   - component: {fileID: 1608931796}
   - component: {fileID: 1608931795}
   - component: {fileID: 1608931798}
+  - component: {fileID: 1608931799}
   m_Layer: 5
   m_Name: Pause Button
   m_TagString: Untagged
@@ -9444,6 +9427,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1608931799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608931793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1651023144
 GameObject:
   m_ObjectHideFlags: 0
