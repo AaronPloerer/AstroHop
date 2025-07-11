@@ -244,9 +244,14 @@ public class MenuUIScript : MonoBehaviour
         }
         else
         {
-            // For non-special keys: get English name and append identifier
-            string englishName = GetEnglishKeyName(key);
-            return $"{englishName} (ENG)";
+            // Other key: determine name by keyboard layout (key with same name but different position)
+            switch (GetActiveKeyboardLayoutLanguage())
+            {
+                case "de": return GetGermanKeyName(key) + " (ENG)";
+                case "fr": return GetFrenchKeyName(key) + " (ENG)";
+                case "it": return GetItalianKeyName(key) + " (ENG)";
+                default: return GetEnglishKeyName(key) + " (ENG)";
+            }
         }
     }
 
@@ -297,6 +302,8 @@ public class MenuUIScript : MonoBehaviour
         switch (key)
         {
             // Character Keys (QWERTZ)
+            case KeyCode.Z: return "Y";
+            case KeyCode.Y: return "Z";
             case KeyCode.BackQuote: return "Ö";
             case KeyCode.LeftBracket: return "ß";
             case KeyCode.RightBracket: return "´";
@@ -459,6 +466,10 @@ public class MenuUIScript : MonoBehaviour
         switch (key)
         {
             // Character Keys (AZERTY)
+            case KeyCode.Q: return "A";
+            case KeyCode.A: return "Q";
+            case KeyCode.W: return "Z";
+            case KeyCode.Z: return "W";
             case KeyCode.BackQuote: return "M";
             case KeyCode.LeftBracket: return "'";
             case KeyCode.RightBracket: return "=";
