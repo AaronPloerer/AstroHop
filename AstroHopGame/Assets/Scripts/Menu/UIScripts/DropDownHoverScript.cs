@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 [RequireComponent(typeof(BoxCollider2D))]
 public class SpriteSwitcher : MonoBehaviour
@@ -11,6 +12,9 @@ public class SpriteSwitcher : MonoBehaviour
     [SerializeField] private Sprite normalSprite;
     [SerializeField] private Sprite hoverSprite;
     [SerializeField] private Sprite clickedSprite;
+
+    [Header("Dropdown Reference")]
+    [SerializeField] private TMP_Dropdown dropdownToSelect;
 
     private BoxCollider2D col;
     #endregion
@@ -38,9 +42,12 @@ public class SpriteSwitcher : MonoBehaviour
 
     void OnMouseExit()
     {
-        // When mouse exits the collider area
-        if (normalSprite != null)
-            targetImage.sprite = normalSprite;
+        // Only revert to normal if mouse button is not held down when exiting
+        if (!Input.GetMouseButton(0))
+        {
+            if (normalSprite != null)
+                targetImage.sprite = normalSprite;
+        }
     }
 
     void OnMouseDown()
@@ -70,6 +77,12 @@ public class SpriteSwitcher : MonoBehaviour
             // Mouse up outside: revert to normal
             if (normalSprite != null)
                 targetImage.sprite = normalSprite;
+        }
+
+        // Select the dropdown 
+        if (dropdownToSelect != null)
+        {
+            dropdownToSelect.Show();
         }
     }
     #endregion

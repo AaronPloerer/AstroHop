@@ -1075,6 +1075,7 @@ GameObject:
   - component: {fileID: 105542942}
   - component: {fileID: 105542941}
   - component: {fileID: 105542940}
+  - component: {fileID: 105542944}
   m_Layer: 5
   m_Name: Exit Window Warning Button
   m_TagString: Untagged
@@ -1217,6 +1218,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 105542938}
   m_CullTransparentMesh: 1
+--- !u!114 &105542944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105542938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &106877313
 GameObject:
   m_ObjectHideFlags: 0
@@ -5104,6 +5117,7 @@ GameObject:
   - component: {fileID: 481729240}
   - component: {fileID: 481729239}
   - component: {fileID: 481729242}
+  - component: {fileID: 481729243}
   m_Layer: 5
   m_Name: Close Options Button
   m_TagString: Untagged
@@ -5247,6 +5261,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &481729243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481729237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &506398751
 GameObject:
   m_ObjectHideFlags: 0
@@ -14904,6 +14930,7 @@ GameObject:
   - component: {fileID: 1399255301}
   - component: {fileID: 1399255300}
   - component: {fileID: 1399255304}
+  - component: {fileID: 1399255305}
   m_Layer: 5
   m_Name: Close Help Button
   m_TagString: Untagged
@@ -15047,6 +15074,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1399255305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1399255299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4721af98f27b424da71a4811a8cc9e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1409914535
 GameObject:
   m_ObjectHideFlags: 0
@@ -17212,6 +17251,7 @@ MonoBehaviour:
   normalSprite: {fileID: 6687851822966965590, guid: 75051eb108651fe44b9dda214a83318a, type: 3}
   hoverSprite: {fileID: -6408775633568255793, guid: 713df1de8d8b9bd4796d60958325b1a8, type: 3}
   clickedSprite: {fileID: -354252705906616202, guid: 713df1de8d8b9bd4796d60958325b1a8, type: 3}
+  dropdownToSelect: {fileID: 47169552}
 --- !u!114 &1644956884
 MonoBehaviour:
   m_ObjectHideFlags: 0

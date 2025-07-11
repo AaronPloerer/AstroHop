@@ -1,11 +1,14 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;            // for Button
 
-public class ButtonAnimationScript : MonoBehaviour, IPointerExitHandler, IPointerEnterHandler
+public class ButtonAnimationScript : MonoBehaviour,
+    IPointerEnterHandler, IPointerExitHandler, IPointerUpHandler
 {
     #region Parameters
     private Animator animator;                        // Reference to the button's Animator component
-    private bool isHovered;                           // Track if cursor is over the button
+    private bool isHovered;                           // Track if cursor is over the button 
+    private Button _button;                           // Unity UI Button component
     #endregion
 
     #region Initialization
@@ -13,6 +16,9 @@ public class ButtonAnimationScript : MonoBehaviour, IPointerExitHandler, IPointe
     {
         // Get reference to Animator component
         animator = GetComponent<Animator>();
+
+        // Get reference to Button component
+        _button = GetComponent<Button>();
     }
     #endregion
 
@@ -26,17 +32,12 @@ public class ButtonAnimationScript : MonoBehaviour, IPointerExitHandler, IPointe
     {
         isHovered = false;       // Mark cursor as outside button
     }
-    #endregion
 
-    #region Animation Control Logic
-    private void Update()
+    public void OnPointerUp(PointerEventData eventData)
     {
-        // Reset animation if cursor left button during press (unvalid press) to be able to reactivate pressed animation OR instantly when it's a toggle
-        if (!isHovered)
-        {
-            animator.SetBool("Pressed", false);
-            EventSystem.current.SetSelectedGameObject(null);
-        }
+        // Always activate button
+        if (_button != null)
+            _button.onClick.Invoke();
     }
     #endregion
 }

@@ -76,16 +76,7 @@ public class InputFieldAnimationScript : MonoBehaviour, IPointerEnterHandler, IP
     // Called when mouse button is released
     public void OnPointerUp(PointerEventData eventData)
     {
-        // If releasing mouse button outside the field, clear selection
-        if (!isHovered)
-        {
-            MenuUIScript.instance.selectedInputField = null;
-        }
-        else
-        {
-            // Play interaction sound
-            AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
-        }
+        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
         UpdateAppearance();
     }
 
