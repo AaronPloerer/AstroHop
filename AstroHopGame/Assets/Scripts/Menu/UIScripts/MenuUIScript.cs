@@ -675,9 +675,6 @@ public class MenuUIScript : MonoBehaviour
         switch (key)
         {
             // Character Keys (AZERTY)
-            case KeyCode.A: return "Q";
-            case KeyCode.Q: return "A";
-            case KeyCode.W: return "Z";
             case KeyCode.BackQuote: return "M";
             case KeyCode.LeftBracket: return "'";
             case KeyCode.RightBracket: return "=";
