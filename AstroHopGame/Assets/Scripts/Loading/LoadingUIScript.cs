@@ -15,6 +15,9 @@ public class LoadingUIScript : MonoBehaviour
     #region Tip Handling
     void Start()
     {
+        // Set up cursor
+        ManagerScript.instance.SetPixelCursor(ManagerScript.instance.basicCursor, 0f, 0f);
+
         // Get language from permanent storage (default = englsiH)
         int localeID = PlayerPrefs.GetInt("Language", 0);
 
