@@ -7497,8 +7497,8 @@ MonoBehaviour:
   keyPause: 0
   cursorScale: 3
   basicCursor: {fileID: 4577612974103712230, guid: 6d9614b4d76fe5a47b42073a5e1895b5, type: 3}
-  laserCursor: {fileID: -3755658901651073972, guid: 6d9614b4d76fe5a47b42073a5e1895b5, type: 3}
-  laserCursorActive: {fileID: -7504687786432176828, guid: 6d9614b4d76fe5a47b42073a5e1895b5, type: 3}
+  laserCursor: {fileID: -9104740331178860659, guid: 681a36a58ac770a43abcf9568faf9dc6, type: 3}
+  laserCursorActive: {fileID: 2693487033842987021, guid: 681a36a58ac770a43abcf9568faf9dc6, type: 3}
 --- !u!4 &1380312161
 Transform:
   m_ObjectHideFlags: 0
