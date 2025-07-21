@@ -1,2 +1,2 @@
 # AstroHop
-Erstellte Prototypen für Bachelorarbeit
+Benutzerfreundlicher Prototyp 
