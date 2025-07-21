@@ -1,2 +1,2 @@
 # AstroHop
-UX-Versions of the AstroHop Game
+Erstellte Prototypen für Bachelorarbeit
