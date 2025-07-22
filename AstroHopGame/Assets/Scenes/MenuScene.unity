@@ -5780,7 +5780,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9ce943132aefc140905c27d835af9e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ufoSpawnTimer: 5
+  ufoSpawnTimer: 0.5
   ufoSprite: {fileID: 1528856633745995381, guid: 79357b135204e32448dcd79ffd430456, type: 3}
   leftMinY: {fileID: 1333363171}
   leftMaxY: {fileID: 1609845849}
