@@ -125,8 +125,8 @@ public class PlayerControllerScript : MonoBehaviour
         // Get movement direction from input
         float targetDirection = 0f;
 
-        bool leftPressed = Input.GetKey(ManagerScript.instance.keyLeftPrimary) || Input.GetKey(ManagerScript.instance.keyLeftSecondary);
-        bool rightPressed = Input.GetKey(ManagerScript.instance.keyRightPrimary) || Input.GetKey(ManagerScript.instance.keyRightSecondary);
+        bool leftPressed = Input.GetKey(ManagerScript.instance.keyLeftPrimary);
+        bool rightPressed = Input.GetKey(ManagerScript.instance.keyRightPrimary);
 
         if (leftPressed) targetDirection -= 1f;
         if (rightPressed) targetDirection += 1f;
