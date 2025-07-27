@@ -23,6 +23,15 @@ public class SingleInstanceEnforcer : MonoBehaviour
     #endregion
 
     #region Cleanup
+    void OnDestroy()
+    {
+        // Clean up the mutex
+        if (mutex != null)
+        {
+            mutex.ReleaseMutex();
+            mutex.Dispose();
+        }
+    }
     void OnApplicationQuit()
     {
         // Clean up the mutex
