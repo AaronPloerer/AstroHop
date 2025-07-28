@@ -239,4 +239,6 @@ MonoBehaviour:
   levelWidth: 5.5
   minSpeed: 0.5
   maxSpeed: 2
+  normalSpeed: 1
+  otherSoundProbability: 0
   forceFuelSpawn: 0

@@ -10,6 +10,7 @@ public class UfoScript : MonoBehaviour
     [SerializeField] private float moveSpeedY;                      // Vertical movement speed (downward)
     [SerializeField] private float directionCooldownMin;               
     [SerializeField] private float directionCooldownMax;               
+    [SerializeField] private float directionCooldownNormal;               
     [SerializeField] private SpriteRenderer spriteRenderer;         // Reference to sprite renderer component
     [SerializeField] private Animator ufoAnim;                      // Reference to animator component
     [SerializeField] private float changeChance;
@@ -148,7 +149,15 @@ public class UfoScript : MonoBehaviour
             {
                 xActualDirection = targetDirection;
                 directionChangeTimer = 0f;            // Reset cooldown
-                directionCooldown = Random.Range(directionCooldownMin, directionCooldownMax);
+                float randomValueforCooldownTime = Random.value; // 0 to 1
+                if (randomValueforCooldownTime < 0.2f)  // 20% chance
+                {
+                    directionCooldown = Random.Range(directionCooldownMin, directionCooldownMax);
+                }
+                else  // 80% chance
+                {
+                    directionCooldown = directionCooldownNormal;
+                }
             }
         }
         else

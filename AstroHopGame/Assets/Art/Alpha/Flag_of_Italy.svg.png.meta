@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Flag_of_Italy.svg_0: 7571644670771465164
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

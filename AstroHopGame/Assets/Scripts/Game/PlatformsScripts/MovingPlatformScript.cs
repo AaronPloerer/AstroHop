@@ -18,6 +18,7 @@ public class MovingPlatformScript : MonoBehaviour
     [SerializeField] private float levelWidth;        // Level boundary constraints
     [SerializeField] private float minSpeed;          // Minimum movement speed
     [SerializeField] private float maxSpeed;          // Maximum movement speed
+    [SerializeField] private float normalSpeed;       // Normal movement speed
     [SerializeField] private float otherSoundProbability;
     #endregion
 
@@ -67,7 +68,16 @@ public class MovingPlatformScript : MonoBehaviour
         rightBound = startX + difference;
         leftBound = startX - difference;
 
-        speed = Random.Range(minSpeed, maxSpeed);
+        float randomValueForSpeed = Random.value; 
+
+        if (randomValueForSpeed < 0.2f) // 20% chance
+        {
+            speed = Random.Range(minSpeed, maxSpeed);
+        }
+        else // 80% chance
+        {
+            speed = normalSpeed;
+        }
     }
     #endregion
 
