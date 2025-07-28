@@ -3,34 +3,40 @@ using System.Threading;
 
 public class SingleInstanceEnforcer : MonoBehaviour
 {
-    #region Mutex Properties
     private static Mutex mutex = null;
-    private const string mutexName = "AstroHopMutexName15"; // Unique identifier
-    #endregion
+    private const string mutexName = "AstroHopMutexName15";
+    private static bool ownsMutex = false;
 
-    #region Initialization
     void Awake()
     {
-        // Attempt to create/claim the mutex
         mutex = new Mutex(true, mutexName, out bool isNewMutexCreated);
+        ownsMutex = isNewMutexCreated;
 
-        // If the mutex already exists
-        if (!isNewMutexCreated)
+        if (!ownsMutex)
         {
-            Application.Quit(); // Close immediately
+            Application.Quit();
         }
     }
-    #endregion
 
-    #region Cleanup
-    void OnApplicationQuit()
+    void OnDestroy()
     {
-        // Clean up the mutex
-        if (mutex != null)
+        if (mutex != null && ownsMutex)
         {
             mutex.ReleaseMutex();
             mutex.Dispose();
+            mutex = null;
+            ownsMutex = false;
         }
     }
-    #endregion
+
+    void OnApplicationQuit()
+    {
+        if (mutex != null && ownsMutex)
+        {
+            mutex.ReleaseMutex();
+            mutex.Dispose();
+            mutex = null;
+            ownsMutex = false;
+        }
+    }
 }
