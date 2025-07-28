@@ -44,7 +44,11 @@ public class ManagerScript : MonoBehaviour
         // Close current interface when Escape is pressed
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (MainGameUIScript.instance != null && MainGameUIScript.instance.pausePanel.activeSelf)
+            if (MainGameUIScript.instance != null && MainGameUIScript.instance.gameOverPanel.activeSelf)
+            {
+                // Nothing
+            }
+            else if (MainGameUIScript.instance != null && MainGameUIScript.instance.pausePanel.activeSelf)
             {
                 ContinueGame();
             }
