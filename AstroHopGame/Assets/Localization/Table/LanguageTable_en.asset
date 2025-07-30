@@ -406,8 +406,10 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18010280597389312
-    m_Localized: "Each Boost uses at least 100\u2030 of your Rocket tank.\n<size=30><alpha=#80>Press
-      [Alt] to skip the tutorial."
+    m_Localized: 'Each Boost uses at least 10% of your Rocket tank.
+
+      <size=30><alpha=#80>Press
+      [Alt] to skip the tutorial.'
     m_Metadata:
       m_Items: []
   - m_Id: 18010389888368640

@@ -406,8 +406,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18010280597389312
-    m_Localized: "Jeder Boost verbraucht mindestens 100\u2030 deines Raketentanks.
-      bist du immun und zerst\xF6rst alle UFOs auf deinem Weg.\n<size=30><alpha=#80>Press
+    m_Localized: "Jeder Boost verbraucht mindestens 10% deines Raketentanks. bist
+      du immun und zerst\xF6rst alle UFOs auf deinem Weg.\n<size=30><alpha=#80>Press
       [Alt] to skip the tutorial."
     m_Metadata:
       m_Items: []

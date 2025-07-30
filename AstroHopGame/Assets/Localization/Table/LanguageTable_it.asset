@@ -416,8 +416,10 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18010280597389312
-    m_Localized: "Ogni Boost consuma almeno il 100\u2030 del tuo serbatoio razzo.\n<size=30><alpha=#80>Press
-      [Alt] to skip the tutorial."
+    m_Localized: 'Ogni Boost consuma almeno il 10% del tuo serbatoio razzo.
+
+      <size=30><alpha=#80>Press
+      [Alt] to skip the tutorial.'
     m_Metadata:
       m_Items: []
   - m_Id: 18010389888368640

@@ -419,8 +419,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18010280597389312
-    m_Localized: "Chaque Boost utilise au moins 100\u202F\u2030 de ton r\xE9servoir
-      fus\xE9e.\n<size=30><alpha=#80>Press [Alt] to skip the tutorial."
+    m_Localized: "Chaque Boost utilise au moins 10% de ton r\xE9servoir fus\xE9e.\n<size=30><alpha=#80>Press
+      [Alt] to skip the tutorial."
     m_Metadata:
       m_Items: []
   - m_Id: 18010389888368640
