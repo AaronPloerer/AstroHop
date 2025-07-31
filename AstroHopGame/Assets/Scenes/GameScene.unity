@@ -13538,10 +13538,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 80%
+  m_text: "80\u2030"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f7b611388a1c46641ba578f354870e0b, type: 2}
-  m_sharedMaterial: {fileID: 7893418669977491062, guid: f7b611388a1c46641ba578f354870e0b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1235f2da115847642bcb106ed1d8a760, type: 2}
+  m_sharedMaterial: {fileID: -3293010084141511636, guid: 1235f2da115847642bcb106ed1d8a760, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
