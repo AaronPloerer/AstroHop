@@ -176,9 +176,9 @@ public class MainGameUIScript : MonoBehaviour
 
         try
         {
-            KeyCode boostKey = (KeyCode)PlayerPrefs.GetInt("KeyBoostPrimary", (int)KeyCode.W);
-            KeyCode leftKey = (KeyCode)PlayerPrefs.GetInt("KeyLeftPrimary", (int)KeyCode.A);
-            KeyCode rightKey = (KeyCode)PlayerPrefs.GetInt("KeyRightPrimary", (int)KeyCode.D);
+            KeyCode boostKey = (KeyCode)PlayerPrefs.GetInt("KeyBoostPrimary", (int)KeyCode.F2);
+            KeyCode leftKey = (KeyCode)PlayerPrefs.GetInt("KeyLeftPrimary", (int)KeyCode.Alpha1);
+            KeyCode rightKey = (KeyCode)PlayerPrefs.GetInt("KeyRightPrimary", (int)KeyCode.Alpha3);
             KeyCode pauseKey = (KeyCode)PlayerPrefs.GetInt("KeyPause", (int)KeyCode.Space);
 
             boostKeyString = MenuUIScript.instance.GetLocalizedKeyName(boostKey);
@@ -191,16 +191,16 @@ public class MainGameUIScript : MonoBehaviour
             // Fallback to default keys
             if (PlayerPrefs.GetInt("Language", 0) == 3)
             {
-                boostKeyString = "Z";
-                leftKeyString = "Q";
-                rightKeyString = "D";
+                boostKeyString = "F2";
+                leftKeyString = "1";
+                rightKeyString = "3";
                 pauseKeyString = "Spacebar";
             }
             else
             {
-                boostKeyString = "W";
-                leftKeyString = "A";
-                rightKeyString = "D";
+                boostKeyString = "F2";
+                leftKeyString = "1";
+                rightKeyString = "3";
                 pauseKeyString = "Spacebar";
             }
         }
