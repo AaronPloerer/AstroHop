@@ -153,9 +153,9 @@ public class MainGameUIScript : MonoBehaviour
             KeyCode leftKey = (KeyCode)PlayerPrefs.GetInt("KeyLeftPrimary", (int)KeyCode.A);
             KeyCode rightKey = (KeyCode)PlayerPrefs.GetInt("KeyRightPrimary", (int)KeyCode.D);
 
-            boostKeyString = MenuUIScript.instance.GetLocalizedKeyName(boostKey);
-            leftKeyString = MenuUIScript.instance.GetLocalizedKeyName(leftKey);
-            rightKeyString = MenuUIScript.instance.GetLocalizedKeyName(rightKey);
+            boostKeyString = "W";
+            leftKeyString = "L";
+            rightKeyString = "R";
         }
         catch
         {
