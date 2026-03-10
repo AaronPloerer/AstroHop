@@ -125,8 +125,8 @@ public class PlayerControllerScript : MonoBehaviour
         // Get movement direction from input
         float targetDirection = 0f;
 
-        bool leftPressed = Input.GetKey(ManagerScript.instance.keyLeftPrimary) || Input.GetKey(ManagerScript.instance.keyLeftSecondary);
-        bool rightPressed = Input.GetKey(ManagerScript.instance.keyRightPrimary) || Input.GetKey(ManagerScript.instance.keyRightSecondary);
+        bool leftPressed = Input.GetKey(ManagerScript.instance.keyLeftPrimary);
+        bool rightPressed = Input.GetKey(ManagerScript.instance.keyRightPrimary);
 
         if (leftPressed) targetDirection -= 1f;
         if (rightPressed) targetDirection += 1f;
@@ -142,7 +142,7 @@ public class PlayerControllerScript : MonoBehaviour
     private void HandleBoostInput()
     {
         // Astronaut uses boost íf he has enough fuel and the correct key gets pressed 
-        boostKeyDown = Input.GetKey(ManagerScript.instance.keyBoostPrimary) || Input.GetKey(ManagerScript.instance.keyBoostSecondary);
+        boostKeyDown = Input.GetKey(ManagerScript.instance.keyBoostPrimary);
         isBoostingWithKey = (boostKeyDown && MainGameUIScript.instance.currentFuel > 0 && !startingBoost);
 
         // Play SFX for failed boost when there's no fuel and key is pressed
@@ -159,7 +159,7 @@ public class PlayerControllerScript : MonoBehaviour
         if (isBoostingWithKey) MainGameUIScript.instance.failedBoostAmount = 0;
 
         // Handle boost key release by managing minimum fuel consumption and resetting sound flag
-        if (Input.GetKeyUp(ManagerScript.instance.keyBoostPrimary) || Input.GetKeyUp(ManagerScript.instance.keyBoostSecondary))
+        if (Input.GetKeyUp(ManagerScript.instance.keyBoostPrimary))
         {
             ApplyMinimumFuelLoss();
             lostFuel = 0f;

@@ -95,26 +95,6 @@ public class MenuUIScript : MonoBehaviour
 
         // Set up starting boost toggle 
         InitializeToggles();
-
-        // Set up control input fields
-        InitializeControlsInputField(boostInputField, "KeyBoostPrimary", KeyCode.W);
-        InitializeControlsInputField(leftInputField, "KeyLeftPrimary", KeyCode.A);
-        InitializeControlsInputField(rightInputField, "KeyRightPrimary", KeyCode.D);
-        InitializeControlsInputField(pauseInputField, "KeyPause", KeyCode.Space);
-    }
-    #endregion
-
-    #region Input Field Setup
-    private void InitializeControlsInputField(TMP_InputField field, string savedKey, KeyCode defaultKey)
-    {
-        // Remove visual elements
-        field.selectionColor = new Color(0f, 0f, 0f, 0f);  // Selection highlight
-        field.caretColor = new Color(0, 0, 0, 0);          // Blinking cursor (transparent)
-        field.caretWidth = 0;                              // Ensure no caret space
-
-        // Initialize input field for custom controls
-        RefreshKeyDisplay(field, savedKey, defaultKey);
-        field.onSelect.AddListener(delegate { OnControlsInputFieldSelected(field, savedKey); });
     }
     #endregion
 
@@ -158,13 +138,6 @@ public class MenuUIScript : MonoBehaviour
     #endregion
 
     #region Key Rebinding Logic
-    public void RefreshKeyDisplay(TMP_InputField field, string savedKey, KeyCode defaultKey)
-    {
-        // Update displayed key name in selected language
-        KeyCode currentKey = (KeyCode)PlayerPrefs.GetInt(savedKey, (int)defaultKey);
-        field.text = GetLocalizedKeyName(currentKey);
-    }
-
     void OnControlsInputFieldSelected(TMP_InputField field, string savedKey)
     {
         selectedInputField = field;
@@ -220,7 +193,6 @@ public class MenuUIScript : MonoBehaviour
         if (savedKey == "KeyBoostPrimary") ManagerScript.instance.keyBoostPrimary = key;
         else if (savedKey == "KeyLeftPrimary") ManagerScript.instance.keyLeftPrimary = key;
         else if (savedKey == "KeyRightPrimary") ManagerScript.instance.keyRightPrimary = key;
-        else if (savedKey == "KeyPause") ManagerScript.instance.keyPause = key;
     }
 
     public string GetLocalizedKeyName(KeyCode key)

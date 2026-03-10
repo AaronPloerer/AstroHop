@@ -29,92 +29,18 @@ public class ManagerScript : MonoBehaviour
     }
     #endregion
 
-    #region Escape Button Logic
-    private float escapeCooldownTimer = 0f;
-    [SerializeField] private  float escapeCooldownTime = 0.2f;
-
-    private void Update()
-    {
-        // Update cooldown timer
-        escapeCooldownTimer += Time.deltaTime;
-
-        // Ignore key press if cooldowndown timer is not done
-        if (escapeCooldownTimer <= escapeCooldownTime) return;
-
-        // Close current interface when Escape is pressed
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (MainGameUIScript.instance != null && MainGameUIScript.instance.gameOverPanel.activeSelf)
-            {
-                // Nothing
-            }
-            else if (MainGameUIScript.instance != null && MainGameUIScript.instance.pausePanel.activeSelf)
-            {
-                ContinueGame();
-            }
-            else if (MainGameUIScript.instance != null && MainGameUIScript.instance.warningMainMenuPanel.activeSelf)
-            {
-                PauseGame();
-            }
-            else if (MainGameUIScript.instance != null && MainGameUIScript.instance.warningRetryPanel.activeSelf)
-            {
-                PauseGame();
-            }
-            else if (MenuUIScript.instance != null && MenuUIScript.instance.deleteProgressConfirmPanel.activeSelf)
-            {
-                CloseDeleteProgressConfirmPanel();
-            }
-            else if (MenuUIScript.instance != null && MenuUIScript.instance.deleteProgressPanel.activeSelf)
-            {
-                CloseDeleteProgressPanel();
-            }
-            else if (MenuUIScript.instance != null && MenuUIScript.instance.optionsPanel.activeSelf)
-            {
-                CloseOptionsPanel();
-            }
-            else if (MenuUIScript.instance != null && MenuUIScript.instance.helpPanel.activeSelf)
-            {
-                CloseHelpPanel();
-            }
-            else if (MenuUIScript.instance != null && MenuUIScript.instance.exitWindowWarningPanel.activeSelf)
-            {
-                CloseExitWindowWarning();
-            }
-            else if (MainGameUIScript.instance != null)
-            {
-                PauseGame();
-            }
-            else if (MenuUIScript.instance != null)
-            {
-                OpenExitWinodwWarning();
-            }
-
-            // Reset cooldown time
-            escapeCooldownTimer = 0f;
-        }
-    }
-    #endregion
-
     #region Input Management
     [Header("Input Bindings")]
     public KeyCode keyBoostPrimary;        // Primary key binding for boost
-    public KeyCode keyBoostSecondary;      // Secondary key binding for boost
     public KeyCode keyLeftPrimary;         // Primary key binding for left movement
-    public KeyCode keyLeftSecondary;       // Secondary key binding for left movement
-    public KeyCode keyRightPrimary;        // Primary key binding for right movement
-    public KeyCode keyRightSecondary;      // Secondary key binding for right movement
-    public KeyCode keyPause;               // Key binding for pause
+    public KeyCode keyRightPrimary;        // Primary key binding for right movements
 
     void InitializeInput()
     {
         // Load saved key bindings from permanent storage or use defaults
         keyBoostPrimary = (KeyCode)PlayerPrefs.GetInt("KeyBoostPrimary", (int)KeyCode.W);
-        keyBoostSecondary = (KeyCode)PlayerPrefs.GetInt("KeyBoostSecondary", (int)KeyCode.UpArrow);
         keyLeftPrimary = (KeyCode)PlayerPrefs.GetInt("KeyLeftPrimary", (int)KeyCode.A);
-        keyLeftSecondary = (KeyCode)PlayerPrefs.GetInt("KeyLeftSecondary", (int)KeyCode.LeftArrow);
         keyRightPrimary = (KeyCode)PlayerPrefs.GetInt("KeyRightPrimary", (int)KeyCode.D);
-        keyRightSecondary = (KeyCode)PlayerPrefs.GetInt("KeyRightSecondary", (int)KeyCode.RightArrow);
-        keyPause = (KeyCode)PlayerPrefs.GetInt("KeyPause", (int)KeyCode.Space);
     }
     #endregion
 
@@ -151,13 +77,6 @@ public class ManagerScript : MonoBehaviour
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[localeID];                  // Change lactive language
         PlayerPrefs.SetInt("Language", localeID);                                                                       // Save selected language in permanenet storage
         localizationActive = false;                                                                                     // Release lock flag
-        if (MenuUIScript.instance != null)
-        {
-            MenuUIScript.instance.RefreshKeyDisplay(MenuUIScript.instance.boostInputField, "KeyBoostPrimary", KeyCode.W);      // Localize control displays inputs  
-            MenuUIScript.instance.RefreshKeyDisplay(MenuUIScript.instance.leftInputField, "KeyLeftPrimary", KeyCode.A);
-            MenuUIScript.instance.RefreshKeyDisplay(MenuUIScript.instance.rightInputField, "KeyRightPrimary", KeyCode.D);
-            MenuUIScript.instance.RefreshKeyDisplay(MenuUIScript.instance.pauseInputField, "KeyPause", KeyCode.Space);
-        }
     }
     #endregion
 
@@ -340,20 +259,9 @@ public class ManagerScript : MonoBehaviour
 
     public void CloseOptionsPanel()
     {
-        // Check if all keys are unique using a HashSet
-        HashSet<KeyCode> keySet = new HashSet<KeyCode> { keyBoostPrimary, keyLeftPrimary, keyRightPrimary, keyPause };
-
-        // Only proceed if all 4 keys are distinct
-        if (keySet.Count != 4)
-        {
-            // Show duplicate key warning
-            AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.closeClick, AudioManagerScript.instance.closeClickVolume);
-            MenuUIScript.instance.duplicateKeysWarning.SetActive(true);
-            return;
-        }
-
-        // Hide warning if it was shown
-        MenuUIScript.instance.duplicateKeysWarning.SetActive(false);
+        // Force close dropdown first and clear its focus
+        MenuUIScript.instance.languageDropdown.Hide();
+        UnityEngine.EventSystems.EventSystem.current.SetSelectedGameObject(null);
 
         MenuUIScript.instance.deletedProgressText.SetActive(false);
 

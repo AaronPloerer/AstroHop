@@ -63,8 +63,6 @@ public class MainGameUIScript : MonoBehaviour
     #region Pause System
     [Header("Pause System")]
     public bool paused;
-    [SerializeField] private float pauseCooldownDuration;
-    private float pauseCooldownTimer;
     #endregion
 
     #region Cursor System
@@ -118,7 +116,6 @@ public class MainGameUIScript : MonoBehaviour
         // Reset flags and timer
         laserIndicatorActive = false;
         paused = false;
-        pauseCooldownTimer = 0;
     }
 
     private void InitializeFuelSystem()
@@ -149,19 +146,16 @@ public class MainGameUIScript : MonoBehaviour
         string boostKeyString;
         string leftKeyString;
         string rightKeyString;
-        string pauseKeyString;
 
         try
         {
             KeyCode boostKey = (KeyCode)PlayerPrefs.GetInt("KeyBoostPrimary", (int)KeyCode.W);
             KeyCode leftKey = (KeyCode)PlayerPrefs.GetInt("KeyLeftPrimary", (int)KeyCode.A);
             KeyCode rightKey = (KeyCode)PlayerPrefs.GetInt("KeyRightPrimary", (int)KeyCode.D);
-            KeyCode pauseKey = (KeyCode)PlayerPrefs.GetInt("KeyPause", (int)KeyCode.Space);
 
             boostKeyString = MenuUIScript.instance.GetLocalizedKeyName(boostKey);
             leftKeyString = MenuUIScript.instance.GetLocalizedKeyName(leftKey);
             rightKeyString = MenuUIScript.instance.GetLocalizedKeyName(rightKey);
-            pauseKeyString = MenuUIScript.instance.GetLocalizedKeyName(pauseKey);
         }
         catch
         {
@@ -171,14 +165,12 @@ public class MainGameUIScript : MonoBehaviour
                 boostKeyString = "Z";
                 leftKeyString = "Q";
                 rightKeyString = "D";
-                pauseKeyString = "Spacebar";
             }
             else
             {
                 boostKeyString = "W";
                 leftKeyString = "A";
                 rightKeyString = "D";
-                pauseKeyString = "Spacebar";
             }
         }
 
@@ -216,10 +208,10 @@ public class MainGameUIScript : MonoBehaviour
         {
             pauseTutorial.text = localeID switch
             {
-                1 => $"Du kannst <color={highlight}>{pauseKeyString}<color={white}> drücken, um das Spiel zu <color={highlight}>pausieren<color={white}>.\n<size=30><alpha=#80>Drücke [Alt], um das Tutorial zu überspringen.",
-                2 => $"Puoi premere <color={highlight}>{pauseKeyString}<color={white}> per <color={highlight}>mettere in pausa<color={white}> il gioco.\n<size=30><alpha=#80>Premi [Alt] per saltare il tutorial.",
-                3 => $"Tu peux appuyer sur <color={highlight}>{pauseKeyString}<color={white}> pour <color={highlight}>mettre<color={white}> le jeu <color={highlight}>en pause<color={white}>.\n<size=30><alpha=#80>Appuie sur [Alt] pour passer le tutoriel.",
-                _ => $"You can press <color={highlight}>{pauseKeyString}<color={white}> to <color={highlight}>pause<color={white}> the game.\n<size=30><alpha=#80>Press [Alt] to skip the tutorial."
+                1 => $"Du kannst <color={highlight}>?<color={white}> drücken, um das Spiel zu <color={highlight}>pausieren<color={white}>.\n<size=30><alpha=#80>Drücke [Alt], um das Tutorial zu überspringen.",
+                2 => $"Puoi premere <color={highlight}>?<color={white}> per <color={highlight}>mettere in pausa<color={white}> il gioco.\n<size=30><alpha=#80>Premi [Alt] per saltare il tutorial.",
+                3 => $"Tu peux appuyer sur <color={highlight}>?<color={white}> pour <color={highlight}>mettre<color={white}> le jeu <color={highlight}>en pause<color={white}>.\n<size=30><alpha=#80>Appuie sur [Alt] pour passer le tutoriel.",
+                _ => $"You can press <color={highlight}>?<color={white}> to <color={highlight}>pause<color={white}> the game.\n<size=30><alpha=#80>Press [Alt] to skip the tutorial."
             };
         }
 
@@ -241,7 +233,6 @@ public class MainGameUIScript : MonoBehaviour
         // Stop uddating gameplay system if player reference is missing
         if (PlayerControllerScript.instance == null) return;
 
-        PauseWithKey();
         UpdateScoreDisplays();
         HandleFuelSystem();
         UpdateCursor();
@@ -287,44 +278,6 @@ public class MainGameUIScript : MonoBehaviour
         // Convert screen position to game world position
         Vector3 mousePos = Input.mousePosition;
         return Camera.main.ScreenToWorldPoint(mousePos);
-    }
-    #endregion
-
-    #region Pause Management
-    private void PauseWithKey()
-    {
-        // Count time since last pause 
-        pauseCooldownTimer += Time.deltaTime;
-
-        // Check for pause key press
-        if (Input.GetKeyDown(ManagerScript.instance.keyPause))
-        {
-            PauseWithKeyResponse();
-        }
-    }
-
-    private void PauseWithKeyResponse()
-    {
-        // Don't process pause input, if game is not playing or if cooldown is still active (to prevent double-clicking and spamming)
-        if (!PlayerControllerScript.instance.isAlive ||
-        gameOverPanel.activeSelf ||
-        pauseCooldownTimer < pauseCooldownDuration)
-        {
-            return;
-        }
-
-        // Inverse current pause panel state
-        if (!pausePanel.activeSelf)
-        {
-            ManagerScript.instance.PauseGame();
-        }
-        else
-        {
-            ManagerScript.instance.ContinueGame();
-        }
-
-        // Reset cooldown
-        pauseCooldownTimer = 0;
     }
     #endregion
 
