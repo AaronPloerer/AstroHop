@@ -149,10 +149,6 @@ public class MainGameUIScript : MonoBehaviour
 
         try
         {
-            KeyCode boostKey = (KeyCode)PlayerPrefs.GetInt("KeyBoostPrimary", (int)KeyCode.W);
-            KeyCode leftKey = (KeyCode)PlayerPrefs.GetInt("KeyLeftPrimary", (int)KeyCode.A);
-            KeyCode rightKey = (KeyCode)PlayerPrefs.GetInt("KeyRightPrimary", (int)KeyCode.D);
-
             boostKeyString = "W";
             leftKeyString = "L";
             rightKeyString = "R";
@@ -403,12 +399,6 @@ public class MainGameUIScript : MonoBehaviour
     #region Tutorial Management
     private void HandleTutorials()
     {
-        // Skip complete tutorial and save it as seen when pressing any Alt key
-        if (Input.GetKey(KeyCode.LeftAlt) || Input.GetKey(KeyCode.RightAlt))
-        {
-            SkipTutorials();
-        }
-
         int currentPhaseIndex = LevelGeneratorScript.instance.currentPhaseIndex;
         Phase[] phases = LevelGeneratorScript.instance.phases;
 
