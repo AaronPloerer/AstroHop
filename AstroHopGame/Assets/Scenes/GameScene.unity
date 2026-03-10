@@ -150,6 +150,7 @@ RectTransform:
   - {fileID: 1894635509}
   - {fileID: 1273235576}
   - {fileID: 1608931794}
+  - {fileID: 281673388}
   - {fileID: 875915212}
   - {fileID: 324337413}
   - {fileID: 1690805691}
@@ -1842,6 +1843,162 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!1 &281673387
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 281673388}
+  - component: {fileID: 281673392}
+  - component: {fileID: 281673391}
+  - component: {fileID: 281673390}
+  - component: {fileID: 281673389}
+  - component: {fileID: 281673393}
+  m_Layer: 5
+  m_Name: Pause Button (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &281673388
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281673387}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5917639}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 887.76, y: -422}
+  m_SizeDelta: {x: 114.047, y: 124.14099}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &281673389
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281673387}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3bb2a6528cba0b745a858edc74e386da, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &281673390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281673387}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 3
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 281673391}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &281673391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281673387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -4565277893826926653, guid: 386f9af3b392f0a47a0cd70c50558886, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &281673392
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281673387}
+  m_CullTransparentMesh: 1
+--- !u!114 &281673393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281673387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f425aa81b6d81143ab3cd4cc22a7dd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoostButton
 --- !u!1 &324337412
 GameObject:
   m_ObjectHideFlags: 0
@@ -5734,7 +5891,7 @@ MonoBehaviour:
     maxX: 2.5
     percentageBrokenPlatform: 0
     percantageMovingPlatform: 0
-    fuelSpawnChance: 0
+    fuelSpawnChance: 1
     firstTutorial: {fileID: 1663099691}
     secondTutorial: {fileID: 1429818602}
     firstPlatformPrefab: {fileID: 6147987595589634864, guid: 27cca06289255304bad2926bbbe31a54, type: 3}
@@ -7541,14 +7698,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6529f09e592308f4b83b8afad3f59367, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  escapeCooldownTime: 0.2
   keyBoostPrimary: 0
-  keyBoostSecondary: 0
   keyLeftPrimary: 0
-  keyLeftSecondary: 0
   keyRightPrimary: 0
-  keyRightSecondary: 0
-  keyPause: 0
   cursorScale: 3
   basicCursor: {fileID: 4577612974103712230, guid: 6d9614b4d76fe5a47b42073a5e1895b5, type: 3}
   laserCursor: {fileID: -3755658901651073972, guid: 6d9614b4d76fe5a47b42073a5e1895b5, type: 3}
@@ -8264,8 +8416,8 @@ MonoBehaviour:
   isAlive: 0
   falling: 0
   crashing: 0
-  boostKeyDown: 0
-  isBoostingWithKey: 0
+  boostButtonDown: 0
+  isBoostingWithButton: 0
   boostMovement: 0
   startingBoost: 0
   startingBoostEnabled: 0
@@ -10573,7 +10725,6 @@ MonoBehaviour:
   fallingText: {fileID: 1145186843}
   crashingText: {fileID: 1420768796}
   paused: 0
-  pauseCooldownDuration: 0.1
   validClickArea: {fileID: 1651023146}
   laserIndicatorActive: 0
   positionToScore: 10

@@ -362,7 +362,7 @@ public class MainGameUIScript : MonoBehaviour
         }
 
         // Handle boost effect animation while boosting
-        if (PlayerControllerScript.instance.isBoostingWithKey && MainGameUIScript.instance.paused == false)
+        if (PlayerControllerScript.instance.isBoostingWithButton && MainGameUIScript.instance.paused == false)
         {
             sliderBackgroundAnim.SetBool("boosting", true);
         }
@@ -375,7 +375,7 @@ public class MainGameUIScript : MonoBehaviour
     private void HandlePlayerAnimation()
     {
         // Control boost animation for astronaut character
-        if (PlayerControllerScript.instance.isBoostingWithKey && MainGameUIScript.instance.paused == false)
+        if (PlayerControllerScript.instance.isBoostingWithButton && MainGameUIScript.instance.paused == false)
         {
             PlayerControllerScript.instance.astronautAnim.SetBool("boost", true);
         }

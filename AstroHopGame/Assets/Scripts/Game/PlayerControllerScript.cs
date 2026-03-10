@@ -43,8 +43,8 @@ public class PlayerControllerScript : MonoBehaviour
     public bool isAlive;                       // Player is alive: game started and is not over
     public bool falling;                       // Player fell down out of the screen
     public bool crashing;                      // Player hit a UFO from the bottom or side
-    public bool boostKeyDown;                  // Use presses key for boost action
-    public bool isBoostingWithKey;             // Player boosts in-game
+    public bool boostButtonDown;                  // Use presses key for boost action
+    public bool isBoostingWithButton;             // Player boosts in-game
     public bool boostMovement;                 // Player is moving upwards because of a boost (during and after)
     public bool startingBoost;                 // Initial boost should be activated
     public bool startingBoostEnabled;          // Initial boost is enabled in options panel and can appear in game
@@ -80,7 +80,7 @@ public class PlayerControllerScript : MonoBehaviour
         falling = false;
         crashing = false;
         failedBoostSfxPlayed = false;
-        isBoostingWithKey = false;
+        isBoostingWithButton = false;
         boostMovement = false;
         isPausedPlayer = false;
         movement = 0f;
@@ -141,12 +141,10 @@ public class PlayerControllerScript : MonoBehaviour
 
     private void HandleBoostInput()
     {
-        // Astronaut uses boost íf he has enough fuel and the correct key gets pressed 
-        boostKeyDown = Input.GetKey(ManagerScript.instance.keyBoostPrimary);
-        isBoostingWithKey = (boostKeyDown && MainGameUIScript.instance.currentFuel > 0 && !startingBoost);
+        isBoostingWithButton = (boostButtonDown && MainGameUIScript.instance.currentFuel > 0 && !startingBoost);
 
         // Play SFX for failed boost when there's no fuel and key is pressed
-        if (boostKeyDown && !startingBoost && MainGameUIScript.instance.currentFuel <= 0 && !failedBoostSfxPlayed)
+        if (boostButtonDown && !startingBoost && MainGameUIScript.instance.currentFuel <= 0 && !failedBoostSfxPlayed)
         {
             AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.failedBoost, AudioManagerScript.instance.failedBoostVolume);
             failedBoostSfxPlayed = true;
@@ -156,14 +154,18 @@ public class PlayerControllerScript : MonoBehaviour
         }
 
         // Reset failed boost counter on successful boost
-        if (isBoostingWithKey) MainGameUIScript.instance.failedBoostAmount = 0;
+        if (isBoostingWithButton) MainGameUIScript.instance.failedBoostAmount = 0;
 
-        // Handle boost key release by managing minimum fuel consumption and resetting sound flag
-        if (Input.GetKeyUp(ManagerScript.instance.keyBoostPrimary))
+        // Handle when button is released
+        if (!boostButtonDown)
         {
-            ApplyMinimumFuelLoss();
-            lostFuel = 0f;
-            failedBoostSfxPlayed = false;
+            failedBoostSfxPlayed = false; // Always reset on release to replay it
+
+            if (lostFuel > 0)
+            {
+                ApplyMinimumFuelLoss();
+                lostFuel = 0f;
+            }
         }
     }
     private void ApplyMinimumFuelLoss()
@@ -205,7 +207,7 @@ public class PlayerControllerScript : MonoBehaviour
     private void HandleBoost(ref Vector2 velocity)
     {
         // Apply vertical boost and consume fuel from input (boost-key pressed)
-        if (isBoostingWithKey)
+        if (isBoostingWithButton)
         {
             velocity.y = boostForce;
             MainGameUIScript.instance.currentFuel -= fuelLossRate * Time.fixedDeltaTime;
@@ -311,7 +313,7 @@ public class PlayerControllerScript : MonoBehaviour
         {
             AudioManagerScript.instance.PauseBoostSFX();
         }
-        else if (startingBoost || isBoostingWithKey)
+        else if (startingBoost || isBoostingWithButton)
         {
             AudioManagerScript.instance.PlayBoostSFX();
         }
