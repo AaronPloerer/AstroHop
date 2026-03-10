@@ -59,6 +59,7 @@ public class PlayerControllerScript : MonoBehaviour
     private bool isPausedPlayer;                // Pause state flag
     private Vector2 storedVelocity;             // Velocity storage during pause
     private RigidbodyType2D originalBodyType;   // Original rigidbody type
+    private float tiltCalibration = 0f;         // Calibrate phone tilt
     #endregion
 
     #region Initialization
@@ -86,6 +87,10 @@ public class PlayerControllerScript : MonoBehaviour
         movement = 0f;
         lostFuel = 0f;
         currentDirection = 0f;
+
+        #if !UNITY_EDITOR
+        tiltCalibration = Input.acceleration.x;
+        #endif
     }
 
     private void LoadPotentialBoost()
@@ -125,11 +130,33 @@ public class PlayerControllerScript : MonoBehaviour
         // Get movement direction from input
         float targetDirection = 0f;
 
-        bool leftPressed = Input.GetKey(ManagerScript.instance.keyLeftPrimary);
-        bool rightPressed = Input.GetKey(ManagerScript.instance.keyRightPrimary);
+        #if UNITY_EDITOR // Keyboard controls when testing in Unity Editor
+
+        bool leftPressed = Input.GetKey(KeyCode.A);
+        bool rightPressed = Input.GetKey(KeyCode.D);
 
         if (leftPressed) targetDirection -= 1f;
         if (rightPressed) targetDirection += 1f;
+
+        #else // Phone tilt controls on mobile device
+
+            float tilt = Input.acceleration.x - tiltCalibration;
+
+            // Sensitivity multiplier
+            float tiltSensitivity = 2f;
+
+            // Dead zone to prevent micro movement
+            float deadZone = 0.05f;
+            if (Mathf.Abs(tilt) < deadZone)
+                tilt = 0f;
+
+            // Apply sensitivity
+            tilt *= tiltSensitivity;
+
+            // Clamp movement so it doesn't become too strong
+            targetDirection = Mathf.Clamp(tilt, -1f, 1f);
+
+        #endif
 
         // Smoothly transition between directions
         currentDirection = Mathf.MoveTowards(currentDirection, targetDirection, sensitivity * Time.deltaTime);
@@ -182,7 +209,7 @@ public class PlayerControllerScript : MonoBehaviour
             }
         }
     }
-    #endregion
+#endregion
 
     #region Physics & Movement Management
     void FixedUpdate()

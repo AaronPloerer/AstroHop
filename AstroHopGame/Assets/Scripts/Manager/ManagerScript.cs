@@ -24,23 +24,7 @@ public class ManagerScript : MonoBehaviour
     #region Initialization
     private void Start()
     {
-        InitializeInput();
         InitializeLanguage();
-    }
-    #endregion
-
-    #region Input Management
-    [Header("Input Bindings")]
-    public KeyCode keyBoostPrimary;        // Primary key binding for boost
-    public KeyCode keyLeftPrimary;         // Primary key binding for left movement
-    public KeyCode keyRightPrimary;        // Primary key binding for right movements
-
-    void InitializeInput()
-    {
-        // Load saved key bindings from permanent storage or use defaults
-        keyBoostPrimary = (KeyCode)PlayerPrefs.GetInt("KeyBoostPrimary", (int)KeyCode.W);
-        keyLeftPrimary = (KeyCode)PlayerPrefs.GetInt("KeyLeftPrimary", (int)KeyCode.A);
-        keyRightPrimary = (KeyCode)PlayerPrefs.GetInt("KeyRightPrimary", (int)KeyCode.D);
     }
     #endregion
 
