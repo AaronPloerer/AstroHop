@@ -49,7 +49,6 @@ public class LaserSpawnerScript : MonoBehaviour
         if (ShouldProcessInput())
         {
             UpdateLaserCooldown();
-            HandleLaserInput();
         }
     }
     #endregion
@@ -77,26 +76,14 @@ public class LaserSpawnerScript : MonoBehaviour
         laserCurrentTime += Time.deltaTime;
     }
 
-    private void HandleLaserInput()
+    public void TryFireInDirection(Vector2 aimDirection)
     {
-        // Process mouse click input
-        if (Input.GetMouseButtonDown(0) && laserCurrentTime > laserTimer)
-        {
-            Vector2 clickPosition = GetMouseWorldPosition2D();
-            if (MainGameUIScript.instance.validClickArea.OverlapPoint(clickPosition))
-            {
-                FireLaser(clickPosition);
-                ResetLaserCooldown();
-                ShowLaserIndicator();
-            }
-        }
-    }
+        if (!ShouldProcessInput() || laserCurrentTime <= laserTimer) return;
 
-    private Vector2 GetMouseWorldPosition2D()
-    {
-        // Convert screen click to game world position
-        Vector3 mousePos = Input.mousePosition;
-        return Camera.main.ScreenToWorldPoint(mousePos);
+        Vector2 targetPosition = (Vector2)spawnPoint.position + aimDirection;
+        FireLaser(targetPosition);
+        ResetLaserCooldown();
+        ShowLaserIndicator();
     }
     #endregion
 
