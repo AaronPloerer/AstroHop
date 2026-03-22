@@ -16,6 +16,15 @@ public class AimJoystick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         outerRect = GetComponent<RectTransform>();
     }
 
+    void Update()
+    {
+        // Show and update aim preview always when pressed
+        if (isPressed)
+        {
+            AimPreviewScript.instance.ShowPreview(inputDirection); 
+        }
+    }
+
     public void OnPointerDown(PointerEventData eventData)
     {
         isPressed = true;
@@ -29,6 +38,9 @@ public class AimJoystick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
     public void OnPointerUp(PointerEventData eventData)
     {
+        // Hide preview line
+        AimPreviewScript.instance.HidePreview();
+
         // Shoot in the direction the joystick was pointing on release
         if (inputDirection.magnitude > 0.1f)
         {

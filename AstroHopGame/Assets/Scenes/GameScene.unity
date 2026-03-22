@@ -9775,6 +9775,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1585414346}
   - component: {fileID: 1585414347}
+  - component: {fileID: 1585414348}
   m_Layer: 0
   m_Name: Laser Spawner
   m_TagString: Untagged
@@ -9814,6 +9815,27 @@ MonoBehaviour:
   laserPrefab: {fileID: 5503084813750872193, guid: 945378ec4f6790e4c8c71a510d2265ec, type: 3}
   spawnPoint: {fileID: 1585414346}
   laserIndicator: {fileID: 1018588574}
+--- !u!114 &1585414348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585414345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a51bd07123f22114f91e1e41de68bbba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AimPreviewScript
+  aimDotSprite: {fileID: 21300000, guid: 107b06425ccd71f4faeec9c8d2916e18, type: 3}
+  dotSpacing: 1
+  maxDots: 30
+  transparency: 0.45
+  ufoLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  sortingLayer: Background
+  sortingOrder: 5
 --- !u!1 &1588530111
 GameObject:
   m_ObjectHideFlags: 0
