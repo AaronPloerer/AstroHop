@@ -35,8 +35,6 @@ public class AimPreviewScript : MonoBehaviour
     {
         ClearDots();
 
-        if (aimDirection.magnitude < 0.1f) return;      // No direction yet, show nothing
-
         Vector2 origin = transform.position;
         Vector2 direction = aimDirection.normalized;
 

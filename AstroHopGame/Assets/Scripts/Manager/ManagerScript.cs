@@ -301,6 +301,8 @@ public class ManagerScript : MonoBehaviour
 
         // Disable pause functionality
         MainGameUIScript.instance.pauseButton.interactable = false;
+        MainGameUIScript.instance.boostButton.interactable = false;
+        MainGameUIScript.instance.aimConroller.GetComponent<AimJoystick>().enabled = false;
 
         // Save score
         int finalScore = int.Parse(MainGameUIScript.instance.scoreText.text);
@@ -459,6 +461,8 @@ public class ManagerScript : MonoBehaviour
     {
         AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
         MainGameUIScript.instance.pauseButton.interactable = false;
+        MainGameUIScript.instance.boostButton.interactable = false;
+        MainGameUIScript.instance.aimConroller.GetComponent<AimJoystick>().enabled = false;
         MainGameUIScript.instance.paused = true;
         MainGameUIScript.instance.tutorials.SetActive(false);
         MainGameUIScript.instance.pausePanel.SetActive(true);
@@ -479,6 +483,8 @@ public class ManagerScript : MonoBehaviour
         MainGameUIScript.instance.tutorials.SetActive(true);
         MainGameUIScript.instance.pausePanel.SetActive(false);
         MainGameUIScript.instance.pauseButton.interactable = true;
+        MainGameUIScript.instance.boostButton.interactable = true;
+        MainGameUIScript.instance.aimConroller.GetComponent<AimJoystick>().enabled = true;
         MainGameUIScript.instance.paused = false;
 
         // Change to game cursor

@@ -51,13 +51,17 @@ public class MainGameUIScript : MonoBehaviour
     private bool failedPickUpTipOn;
 
     [Header("Panel Elements")]
-    public Button pauseButton;
     public GameObject pausePanel;
     public GameObject gameOverPanel;
     public GameObject warningMainMenuPanel;
     public GameObject warningRetryPanel;
     public GameObject fallingText;
     public GameObject crashingText;
+
+    [Header("Buttons")]
+    public Button pauseButton;
+    public GameObject aimConroller;
+    public Button boostButton;
     #endregion
 
     #region Pause System

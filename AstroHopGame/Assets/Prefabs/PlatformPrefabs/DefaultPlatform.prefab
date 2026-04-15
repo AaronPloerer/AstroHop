@@ -101,6 +101,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5379533022814424039
 SpriteRenderer:
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -119,6 +120,8 @@ SpriteRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -140,10 +143,12 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8483051222464998911, guid: 35735abcdb03f8147b7d797188c649d1, type: 3}
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: -4973891055154240078, guid: 751494068ef0d274484b06a299ccc0dd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -152,7 +157,6 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!68 &6763979264703285389
 EdgeCollider2D:
@@ -209,7 +213,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57d34d8629d8cd84fbda303a2b1af87f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserCollider: {fileID: 3727972690639314713, guid: 945378ec4f6790e4c8c71a510d2265ec, type: 3}
   rocketFuel: {fileID: 5993806398105575849, guid: 3262db29b2c9ead4a9bdbad9a5707b32, type: 3}
   leftFuelPoint: {fileID: 6756487866187003615}
   rightFuelPoint: {fileID: 803751244965955082}

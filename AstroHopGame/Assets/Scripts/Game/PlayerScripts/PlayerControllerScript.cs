@@ -29,7 +29,9 @@ public class PlayerControllerScript : MonoBehaviour
     #region Parameters
     [Header("Settings")]
     [SerializeField] private float movementSpeed;                       // Base horizontal movement speed
-    [SerializeField] private float sensitivity;                         // Responsiveness of directional changes
+    [SerializeField] private float movementSmoothing;                   // Responsiveness of directional changes
+    [SerializeField] private float tiltStrength;                        // How much tilt leads to how much speed
+    [SerializeField] private float deadZone;                            // How much tilting does not lead to movement
     [SerializeField] private float fuelLossRate;                        // Fuel consumption rate during boost
     [SerializeField] private float minFuelLoss;                         // Minimum fuel loss for single boost
     [SerializeField] private float boostForce;                          // Upward force applied during boost
@@ -59,7 +61,6 @@ public class PlayerControllerScript : MonoBehaviour
     private bool isPausedPlayer;                // Pause state flag
     private Vector2 storedVelocity;             // Velocity storage during pause
     private RigidbodyType2D originalBodyType;   // Original rigidbody type
-    private float tiltCalibration = 0f;         // Calibrate phone tilt
     #endregion
 
     #region Initialization
@@ -87,10 +88,6 @@ public class PlayerControllerScript : MonoBehaviour
         movement = 0f;
         lostFuel = 0f;
         currentDirection = 0f;
-
-        #if !UNITY_EDITOR
-        tiltCalibration = Input.acceleration.x;
-        #endif
     }
 
     private void LoadPotentialBoost()
@@ -138,28 +135,24 @@ public class PlayerControllerScript : MonoBehaviour
         if (leftPressed) targetDirection -= 1f;
         if (rightPressed) targetDirection += 1f;
 
-        #else // Phone tilt controls on mobile device
+#else // Phone tilt controls on mobile device
 
-            float tilt = Input.acceleration.x - tiltCalibration;
-
-            // Sensitivity multiplier
-            float tiltSensitivity = 2f;
+            float tilt = Input.acceleration.x;
 
             // Dead zone to prevent micro movement
-            float deadZone = 0.05f;
             if (Mathf.Abs(tilt) < deadZone)
                 tilt = 0f;
 
             // Apply sensitivity
-            tilt *= tiltSensitivity;
+            tilt *= tiltStrength;
 
             // Clamp movement so it doesn't become too strong
             targetDirection = Mathf.Clamp(tilt, -1f, 1f);
 
-        #endif
+#endif
 
         // Smoothly transition between directions
-        currentDirection = Mathf.MoveTowards(currentDirection, targetDirection, sensitivity * Time.deltaTime);
+        currentDirection = Mathf.Lerp(currentDirection, targetDirection, movementSmoothing * Time.deltaTime);
 
 
         // Calculate horizontal movement from direction and speed

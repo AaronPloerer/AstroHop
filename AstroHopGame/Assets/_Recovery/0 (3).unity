@@ -150,8 +150,8 @@ RectTransform:
   - {fileID: 1238816147}
   - {fileID: 1113720388}
   - {fileID: 1608931794}
-  - {fileID: 771507884}
   - {fileID: 281673388}
+  - {fileID: 771507884}
   - {fileID: 1030599507}
   m_Father: {fileID: 1864715092}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5225,7 +5225,7 @@ GameObject:
   - component: {fileID: 856847380}
   - component: {fileID: 856847382}
   m_Layer: 5
-  m_Name: Laser Joystick Knob Area and Logic
+  m_Name: Laser Joystick Knob Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6562,7 +6562,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1030599506}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -11316,15 +11316,13 @@ MonoBehaviour:
   failedPickUpTip: {fileID: 981286469}
   failedPickUpForTip: 3
   failedPickUpAmount: 0
+  pauseButton: {fileID: 1608931795}
   pausePanel: {fileID: 111727878}
   gameOverPanel: {fileID: 1588530111}
   warningMainMenuPanel: {fileID: 1915777374}
   warningRetryPanel: {fileID: 1555304741}
   fallingText: {fileID: 1145186843}
   crashingText: {fileID: 1420768796}
-  pauseButton: {fileID: 1608931795}
-  aimConroller: {fileID: 856847378}
-  boostButton: {fileID: 281673390}
   paused: 0
   validClickArea: {fileID: 1651023146}
   laserIndicatorActive: 0
