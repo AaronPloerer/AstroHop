@@ -1,8 +1,9 @@
-using UnityEngine;
-using UnityEngine.SceneManagement;
 using System.Collections;
-using UnityEngine.Localization.Settings;
 using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.Localization.Settings;
+using UnityEngine.SceneManagement;
 public class ManagerScript : MonoBehaviour
 {
     #region Singleton
@@ -260,7 +261,7 @@ public class ManagerScript : MonoBehaviour
     public void OpenHelpPanel()
     {
         // Update UI in Help panel
-        MenuUIScript.instance.UpdateInputTutorialTexts();
+        MenuUIScript.instance.UpdateInputTutorialText();
 
         AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
         MenuUIScript.instance.helpPanel.SetActive(true);
@@ -299,10 +300,14 @@ public class ManagerScript : MonoBehaviour
         // Reset cursor to default appearance
         ManagerScript.instance.SetPixelCursor(ManagerScript.instance.basicCursor, 0f, 0f);
 
-        // Disable pause functionality
+        // Disable pause and boost functionality
         MainGameUIScript.instance.pauseButton.interactable = false;
         MainGameUIScript.instance.boostButton.interactable = false;
-        MainGameUIScript.instance.aimConroller.GetComponent<AimJoystick>().enabled = false;
+
+        // Reset and disable joystick
+        var joystick = MainGameUIScript.instance.aimConroller.GetComponent<AimJoystick>();
+        joystick.ForceReset();         // Snap knob to center and hide preview 
+        joystick.enabled = false;      // Then disable
 
         // Save score
         int finalScore = int.Parse(MainGameUIScript.instance.scoreText.text);
@@ -434,7 +439,7 @@ public class ManagerScript : MonoBehaviour
         MenuUIScript.instance.openHelpButton.interactable = true;
         MenuUIScript.instance.exitWindowWarningButton.interactable = true;
 
-        // Wipe progression data and phase tutorial frags
+        // Wipe progression data and reshow tutorials
         PlayerPrefs.DeleteKey("HighScore");
         PlayerPrefs.DeleteKey("Score");
 
@@ -460,14 +465,20 @@ public class ManagerScript : MonoBehaviour
     public void PauseGame()
     {
         AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
-        MainGameUIScript.instance.pauseButton.interactable = false;
-        MainGameUIScript.instance.boostButton.interactable = false;
-        MainGameUIScript.instance.aimConroller.GetComponent<AimJoystick>().enabled = false;
         MainGameUIScript.instance.paused = true;
         MainGameUIScript.instance.tutorials.SetActive(false);
         MainGameUIScript.instance.pausePanel.SetActive(true);
         MainGameUIScript.instance.warningMainMenuPanel.SetActive(false);
         MainGameUIScript.instance.warningRetryPanel.SetActive(false);
+
+        // Disable pause and boost functionality
+        MainGameUIScript.instance.pauseButton.interactable = false;
+        MainGameUIScript.instance.boostButton.interactable = false;
+
+        // Reset and disable joystick
+        var joystick = MainGameUIScript.instance.aimConroller.GetComponent<AimJoystick>();
+        joystick.ForceReset();         // Snap knob to center and hide preview 
+        joystick.enabled = false;      // Then disable
 
         // Change to default cursor
 
@@ -482,10 +493,12 @@ public class ManagerScript : MonoBehaviour
         AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.closeClick, AudioManagerScript.instance.closeClickVolume);
         MainGameUIScript.instance.tutorials.SetActive(true);
         MainGameUIScript.instance.pausePanel.SetActive(false);
-        MainGameUIScript.instance.pauseButton.interactable = true;
-        MainGameUIScript.instance.boostButton.interactable = true;
-        MainGameUIScript.instance.aimConroller.GetComponent<AimJoystick>().enabled = true;
         MainGameUIScript.instance.paused = false;
+
+        // Enable pause, aim and boost functionality
+        MainGameUIScript.instance.pauseButton.interactable = false;
+        MainGameUIScript.instance.boostButton.interactable = false;
+        MainGameUIScript.instance.aimConroller.GetComponent<AimJoystick>().enabled = true;
 
         // Change to game cursor
         ManagerScript.instance.SetPixelCursor(ManagerScript.instance.laserCursor, 0.5f, 0.5f);

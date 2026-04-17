@@ -13,7 +13,7 @@ public class AimPreviewScript : MonoBehaviour
     }
     #endregion
 
-    #region Settings
+    #region Parameters
     [Header("Preview Settings")]
     [SerializeField] private Sprite aimDotSprite;                                   // Same sprite as the real laser
     [SerializeField] private float dotSpacing;                                     // Distance between each preview dot

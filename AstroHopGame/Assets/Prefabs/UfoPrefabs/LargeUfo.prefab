@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4308260773503649271}
   - component: {fileID: 6945885606530580206}
   m_Layer: 3
-  m_Name: Ufo
+  m_Name: LargeUfo
   m_TagString: Ufo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.99, y: -3, z: 0}
-  m_LocalScale: {x: 1.4, y: 1.4, z: 1.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 1344248277, guid: 3cbfecca186b0b949bf40c3f0bb2fd84, type: 3}
+  m_Sprite: {fileID: 4593316814284887494, guid: 7d51b98b34ca2054d9218176a5b096a3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -133,7 +133,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.21875, y: 0.75}
+    oldSize: {x: 1.6875, y: 1.0625}
     newSize: {x: 1.21875, y: 0.75}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -141,18 +141,28 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.60988045, y: -0.0000049471855}
-      - {x: -0.6096995, y: -0.0949091}
-      - {x: -0.27740976, y: -0.27038783}
-      - {x: -0.13918519, y: -0.37510574}
-      - {x: 0.1404553, y: -0.3742711}
-      - {x: 0.26849267, y: -0.25088727}
-      - {x: 0.6101601, y: -0.094545126}
-      - {x: 0.61122286, y: -0.00052270293}
-      - {x: 0.3603473, y: 0.12661916}
-      - {x: 0.1416553, y: 0.3753796}
-      - {x: -0.14122438, y: 0.37491274}
-      - {x: -0.36049855, y: 0.12753767}
+    - - {x: -0.7497878, y: 0.12506771}
+      - {x: -0.8441081, y: 0.00038558245}
+      - {x: -0.8436644, y: -0.12492123}
+      - {x: -0.7498636, y: -0.2501924}
+      - {x: -0.5326805, y: -0.34406734}
+      - {x: -0.37584993, y: -0.3444938}
+      - {x: -0.28115058, y: -0.46886718}
+      - {x: 0.28142506, y: -0.46893042}
+      - {x: 0.37518975, y: -0.3439604}
+      - {x: 0.5313511, y: -0.34408164}
+      - {x: 0.74990034, y: -0.24977493}
+      - {x: 0.844455, y: -0.12530565}
+      - {x: 0.8438245, y: 0.00036230683}
+      - {x: 0.750381, y: 0.1252892}
+      - {x: 0.5004568, y: 0.18834358}
+      - {x: 0.46867943, y: 0.31228328}
+      - {x: 0.31230974, y: 0.46898866}
+      - {x: 0.18766722, y: 0.5315006}
+      - {x: -0.18807411, y: 0.53167987}
+      - {x: -0.31275177, y: 0.46985197}
+      - {x: -0.46885347, y: 0.31233907}
+      - {x: -0.50048745, y: 0.18787402}
   m_UseDelaunayMesh: 0
 --- !u!50 &-6536061304401074750
 Rigidbody2D:

@@ -3,13 +3,16 @@ using UnityEngine.EventSystems;
 
 public class AimJoystick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDragHandler
 {
+    #region Parameters
     [SerializeField] private RectTransform knob;
     [SerializeField] private float knobRange = 60f;                // Area in which knob can be moved
     [SerializeField] private float aimPreviewSmoothing = 10f;      // Higher = more responsive, lower = smoother
     [SerializeField] private float knobSmoothing = 50f;            // Higher = more responsive, lower = smoother
     [SerializeField] private float holdThreshold = 0.5f;           // Seconds before minimum movement check activates
     public float minimumShootingFingerMovement;                    // How much movement is needed to be able to shoot
+    #endregion
 
+    #region Ruintime State
     private RectTransform outerRect;
     private bool isPressed = false;
     private Vector2 inputDirection = Vector2.zero;
@@ -17,7 +20,9 @@ public class AimJoystick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     private Vector2 initialLocalTouchPosition = Vector2.zero;
     private Vector2 targetKnobPosition = Vector2.zero;
     private float pressTime = 0f;
+    #endregion
 
+    #region Unity Lifecycle
     void Start()
     {
         outerRect = GetComponent<RectTransform>();
@@ -47,7 +52,9 @@ public class AimJoystick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
             AimPreviewScript.instance.HidePreview();
         }
     }
+    #endregion
 
+    #region Input Events
     public void OnPointerDown(PointerEventData eventData)
     {
         isPressed = true;
@@ -110,5 +117,22 @@ public class AimJoystick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         smoothedDirection = Vector2.zero;
         knob.anchoredPosition = Vector2.zero;
         initialLocalTouchPosition = Vector2.zero;
+    }
+    #endregion
+
+    public void ForceReset()
+    {
+        isPressed = false;
+        pressTime = 0f;                         // Prevents minimumMet from being true after reset
+
+        inputDirection = Vector2.zero;
+        smoothedDirection = Vector2.zero;
+
+        initialLocalTouchPosition = Vector2.zero;
+        targetKnobPosition = Vector2.zero;
+
+        knob.anchoredPosition = Vector2.zero;   // Snap directly, no lerp
+
+        AimPreviewScript.instance.HidePreview();
     }
 }
