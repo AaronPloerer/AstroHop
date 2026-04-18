@@ -5,14 +5,16 @@ public class MovingPlatformScript : MonoBehaviour
     #region Settings and Components
     [Header("References")]
     [SerializeField] private GameObject rocketFuel;          // Fuel prefab to spawn
+    [SerializeField] private GameObject rocketFuelSuper;     // Super fuel prefab to spawn
     [SerializeField] private Transform leftFuelPoint;        // Left fuel spawn boundary
     [SerializeField] private Transform rightFuelPoint;       // Right fuel spawn boundary
 
-    [Header("Behavior Settings")]
-    [SerializeField] private float playerJumpForce;   // Force applied to player bounce
-    [SerializeField] private float difference;        // Horizontal movement range from start position
-    [SerializeField] private float levelWidth;        // Level boundary constraints
-    [SerializeField] private float speed;             // Platform movement speed
+    [Header("Settings")]
+    [SerializeField] private float playerJumpForce;                 // Force applied to player bounce
+    [SerializeField] private float difference;                      // Horizontal movement range from start position
+    [SerializeField] private float levelWidth;                      // Level boundary constraints
+    [SerializeField] private float speed;                           // Platform movement speed
+    [SerializeField] private float chanceForSuperFuel;              // Probability of spawning super fuel
     #endregion
 
     #region Runtime State
@@ -73,8 +75,16 @@ public class MovingPlatformScript : MonoBehaviour
 
         if (shouldSpawn)
         {
+            // Super or normal fuel based on chance
+            GameObject fuelPrefab = Random.value < chanceForSuperFuel
+                ? rocketFuelSuper
+                : rocketFuel;
+
+            // First tank is always normal
+            if (forceFuelSpawn) { fuelPrefab = rocketFuel; }
+
             // Create fuel instance at random horizontal position
-            spawnedFuel = Instantiate(rocketFuel, GetFuelPosition(), Quaternion.identity);
+            spawnedFuel = Instantiate(fuelPrefab, GetFuelPosition(), Quaternion.identity);
         }
     }
 

@@ -204,11 +204,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rocketFuel: {fileID: 5993806398105575849, guid: 3262db29b2c9ead4a9bdbad9a5707b32, type: 3}
+  rocketFuelSuper: {fileID: 5993806398105575849, guid: e18468fe9d4ed174cae0ea918baf0ab2, type: 3}
   leftFuelPoint: {fileID: 8932431664957158864}
   rightFuelPoint: {fileID: 2014045906165343439}
   breakingPlatformAnim: {fileID: 2641596883710027528}
   playerJumpForce: 9.2
   fallDownSpeed: 0.18
+  chanceForSuperFuel: 0.1
   forceFuelSpawn: 0
 --- !u!95 &2641596883710027528
 Animator:

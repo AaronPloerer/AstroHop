@@ -6154,7 +6154,7 @@ MonoBehaviour:
     maxX: 2.8
     percentageBrokenPlatform: 0
     percantageMovingPlatform: 0
-    fuelSpawnChance: 0.08
+    fuelSpawnChance: 0.1
     tutorial: {fileID: 801930603}
     firstPlatformPrefab: {fileID: 6147987595589634864, guid: 27cca06289255304bad2926bbbe31a54, type: 3}
     firstPlatformFuel: 1
@@ -6168,7 +6168,7 @@ MonoBehaviour:
     maxX: 3.1
     percentageBrokenPlatform: 0
     percantageMovingPlatform: 0
-    fuelSpawnChance: 0.08
+    fuelSpawnChance: 0.1
     tutorial: {fileID: 539876766}
     firstPlatformPrefab: {fileID: 6147987595589634864, guid: 27cca06289255304bad2926bbbe31a54, type: 3}
     firstPlatformFuel: 0
@@ -6182,7 +6182,7 @@ MonoBehaviour:
     maxX: 3.7
     percentageBrokenPlatform: 0
     percantageMovingPlatform: 0.15
-    fuelSpawnChance: 0.08
+    fuelSpawnChance: 0.1
     tutorial: {fileID: 952903204}
     firstPlatformPrefab: {fileID: 5886830857919325583, guid: 80ab51f23303a1a4c9020554536e057b, type: 3}
     firstPlatformFuel: 0
@@ -6196,7 +6196,7 @@ MonoBehaviour:
     maxX: 3.4
     percentageBrokenPlatform: 0.15
     percantageMovingPlatform: 0
-    fuelSpawnChance: 0.08
+    fuelSpawnChance: 0.1
     tutorial: {fileID: 215183990}
     firstPlatformPrefab: {fileID: 6296993392547905441, guid: 12121649460d1c242b1f28205c91607a, type: 3}
     firstPlatformFuel: 0
@@ -6210,7 +6210,7 @@ MonoBehaviour:
     maxX: 5.5
     percentageBrokenPlatform: 0.1
     percantageMovingPlatform: 0.125
-    fuelSpawnChance: 0.08
+    fuelSpawnChance: 0.1
     tutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
@@ -6224,7 +6224,7 @@ MonoBehaviour:
     maxX: 5.5
     percentageBrokenPlatform: 0.15
     percantageMovingPlatform: 0.176
-    fuelSpawnChance: 0.08
+    fuelSpawnChance: 0.1
     tutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
@@ -6238,7 +6238,7 @@ MonoBehaviour:
     maxX: 4
     percentageBrokenPlatform: 0.2
     percantageMovingPlatform: 0.25
-    fuelSpawnChance: 0.08
+    fuelSpawnChance: 0.1
     tutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
@@ -6252,7 +6252,7 @@ MonoBehaviour:
     maxX: 4.3
     percentageBrokenPlatform: 0.25
     percantageMovingPlatform: 0.333
-    fuelSpawnChance: 0.08
+    fuelSpawnChance: 0.1
     tutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
@@ -6266,7 +6266,7 @@ MonoBehaviour:
     maxX: 4.6
     percentageBrokenPlatform: 0.3
     percantageMovingPlatform: 0.429
-    fuelSpawnChance: 0.08
+    fuelSpawnChance: 0.1
     tutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
@@ -6280,7 +6280,7 @@ MonoBehaviour:
     maxX: 4.9
     percentageBrokenPlatform: 0.35
     percantageMovingPlatform: 0.538
-    fuelSpawnChance: 0.08
+    fuelSpawnChance: 0.1
     tutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
@@ -6294,7 +6294,7 @@ MonoBehaviour:
     maxX: 5.2
     percentageBrokenPlatform: 0.45
     percantageMovingPlatform: 0.818
-    fuelSpawnChance: 0.08
+    fuelSpawnChance: 0.1
     tutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
@@ -6308,7 +6308,7 @@ MonoBehaviour:
     maxX: 5.5
     percentageBrokenPlatform: 0.5
     percantageMovingPlatform: 1
-    fuelSpawnChance: 0.08
+    fuelSpawnChance: 0.1
     tutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
@@ -6322,7 +6322,7 @@ MonoBehaviour:
     maxX: 5.5
     percentageBrokenPlatform: 0.55
     percantageMovingPlatform: 1
-    fuelSpawnChance: 0.08
+    fuelSpawnChance: 0.1
     tutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
@@ -6336,7 +6336,7 @@ MonoBehaviour:
     maxX: 5.5
     percentageBrokenPlatform: 0.6
     percantageMovingPlatform: 1
-    fuelSpawnChance: 0.08
+    fuelSpawnChance: 0.1
     tutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
@@ -6350,7 +6350,7 @@ MonoBehaviour:
     maxX: 5.5
     percentageBrokenPlatform: 0.65
     percantageMovingPlatform: 1
-    fuelSpawnChance: 0.08
+    fuelSpawnChance: 0.1
     tutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
@@ -6364,7 +6364,7 @@ MonoBehaviour:
     maxX: 5.5
     percentageBrokenPlatform: 0.7
     percantageMovingPlatform: 1
-    fuelSpawnChance: 0.08
+    fuelSpawnChance: 0.1
     tutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
@@ -6378,7 +6378,7 @@ MonoBehaviour:
     maxX: 5.5
     percentageBrokenPlatform: 0.75
     percantageMovingPlatform: 1
-    fuelSpawnChance: 0.08
+    fuelSpawnChance: 0.1
     tutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
@@ -6392,7 +6392,7 @@ MonoBehaviour:
     maxX: 5.5
     percentageBrokenPlatform: 0.8
     percantageMovingPlatform: 1
-    fuelSpawnChance: 0.08
+    fuelSpawnChance: 0.1
     tutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
@@ -6406,7 +6406,7 @@ MonoBehaviour:
     maxX: 5.5
     percentageBrokenPlatform: 0.85
     percantageMovingPlatform: 1
-    fuelSpawnChance: 0.08
+    fuelSpawnChance: 0.1
     tutorial: {fileID: 0}
     firstPlatformPrefab: {fileID: 0}
     firstPlatformFuel: 0
@@ -8693,8 +8693,8 @@ MonoBehaviour:
   movementSmoothing: 11
   tiltStrength: 2.5
   deadZone: 0.03
-  fuelLossRate: 2700
-  minFuelLoss: 1000
+  fuelLossRate: 5400
+  minFuelLoss: 2000
   boostForce: 8
   startingBoostForce: 20
   relativeStartingBoostDistance: 0.5

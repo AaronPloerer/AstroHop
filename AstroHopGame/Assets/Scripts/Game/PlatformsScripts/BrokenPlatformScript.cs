@@ -5,13 +5,15 @@ public class BrokenPlatformScript : MonoBehaviour
     #region Settings and Components
     [Header("References")]
     [SerializeField] private GameObject rocketFuel;          // Fuel prefab to spawn
+    [SerializeField] private GameObject rocketFuelSuper;     // Super fuel prefab to spawn
     [SerializeField] private Transform leftFuelPoint;        // Left fuel spawn boundary
     [SerializeField] private Transform rightFuelPoint;       // Right fuel spawn boundary
     [SerializeField] private Animator breakingPlatformAnim;  // Platform break animation
 
-    [Header("Behavior Settings")]
+    [Header("Settings")]
     [SerializeField] private float playerJumpForce;       // Force applied to player bounce
     [SerializeField] private float fallDownSpeed;         // Speed of destroyed platform descent
+    [SerializeField] private float chanceForSuperFuel;    // Probability of spawning super fuel
     #endregion
 
     #region Runtime State
@@ -68,8 +70,16 @@ public class BrokenPlatformScript : MonoBehaviour
 
         if (shouldSpawn)
         {
+            // Super or normal fuel based on chance
+            GameObject fuelPrefab = Random.value < chanceForSuperFuel
+                ? rocketFuelSuper
+                : rocketFuel;
+
+            // First tank is always normal
+            if (forceFuelSpawn) { fuelPrefab = rocketFuel; }
+
             // Create fuel instance at random horizontal position
-            spawnedFuel = Instantiate(rocketFuel, GetFuelPosition(), Quaternion.identity);
+            spawnedFuel = Instantiate(fuelPrefab, GetFuelPosition(), Quaternion.identity);
         }
     }
 

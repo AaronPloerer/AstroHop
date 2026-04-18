@@ -5,11 +5,13 @@ public class PlatformScript : MonoBehaviour
     #region Components/References
     [Header("References")]
     [SerializeField] private GameObject rocketFuel;           // Fuel prefab to spawn
+    [SerializeField] private GameObject rocketFuelSuper;      // Super fuel prefab to spawn
     [SerializeField] private Transform leftFuelPoint;         // Left fuel spawn boundary
     [SerializeField] private Transform rightFuelPoint;        // Right fuel spawn boundary
 
-    [Header("Behavior Settings")]
+    [Header("Settings")]
     [SerializeField] private float playerJumpForce;                 // Force applied to player bounce
+    [SerializeField] private float chanceForSuperFuel;              // Probability of spawning super fuel
     #endregion
 
     #region Runtime State
@@ -40,14 +42,20 @@ public class PlatformScript : MonoBehaviour
         bool shouldSpawn = (forceFuelSpawn &&
              !PlayerControllerScript.instance.startingBoost) ||
              (Random.value < LevelGeneratorScript.instance.CurrentPhase.fuelSpawnChance &&
-             leftFuelPoint != null &&
-             rightFuelPoint != null &&
              !PlayerControllerScript.instance.startingBoost);
 
         if (shouldSpawn)
         {
+            // Super or normal fuel based on chance
+            GameObject fuelPrefab = Random.value < chanceForSuperFuel
+                ? rocketFuelSuper
+                : rocketFuel;
+
+            // First tank is always normal
+            if (forceFuelSpawn) { fuelPrefab = rocketFuel; }
+
             // Create fuel instance at random horizontal position
-            spawnedFuel = Instantiate(rocketFuel, GetFuelPosition(), Quaternion.identity);
+            spawnedFuel = Instantiate(fuelPrefab, GetFuelPosition(), Quaternion.identity);
         }
     }
 
