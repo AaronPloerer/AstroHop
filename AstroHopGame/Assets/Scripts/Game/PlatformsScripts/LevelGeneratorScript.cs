@@ -56,6 +56,8 @@ public class LevelGeneratorScript : MonoBehaviour
         // UFO spawn settings
         public float minUfoSpawnTime;  // Minimum time between UFO spawns
         public float maxUfoSpawnTime;  // Maximum time between UFO spawns
+        public float chanceFastUfo;    // Probability for fast UFO
+
     }
 
     public Phase[] phases;

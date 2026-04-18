@@ -20,7 +20,8 @@ public class UfoSpawnerScript : MonoBehaviour
 
     #region Components/References
     [Header("References")]
-    [SerializeField] private GameObject enemyPrefab;     // UFO prefab to spawn
+    [SerializeField] private GameObject enemyPrefab;     // Normal UFO prefab to spawn
+    [SerializeField] private GameObject enemyFastPrefab; // Small, fast UFO prefab to spawn
     [SerializeField] private Transform minPos;           // Left spawn point
     [SerializeField] private Transform maxPos;           // Right spawn point
     #endregion        
@@ -87,7 +88,12 @@ public class UfoSpawnerScript : MonoBehaviour
     #region Spawn Utilities
     private void SpawnEnemy()
     {
-        Instantiate(enemyPrefab, RandomSpawnPoint(), transform.rotation);
+        // Spawn fast or normal prefab based on current phase chance
+        GameObject prefabToSpawn = Random.value < LevelGeneratorScript.instance.CurrentPhase.chanceFastUfo
+            ? enemyFastPrefab
+            : enemyPrefab;
+
+        Instantiate(prefabToSpawn, RandomSpawnPoint(), transform.rotation);
         aliveUfos++;         // Track new UFO
     }
 

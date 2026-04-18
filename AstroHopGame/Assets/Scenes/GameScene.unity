@@ -6146,6 +6146,7 @@ MonoBehaviour:
     firstPlatformFuel: 1
     minUfoSpawnTime: 999
     maxUfoSpawnTime: 999
+    chanceFastUfo: 0
   - height: 400
     minY: 0.8
     maxY: 1.4
@@ -6159,6 +6160,7 @@ MonoBehaviour:
     firstPlatformFuel: 1
     minUfoSpawnTime: 999
     maxUfoSpawnTime: 999
+    chanceFastUfo: 0
   - height: 600
     minY: 0.9
     maxY: 1.6
@@ -6172,6 +6174,7 @@ MonoBehaviour:
     firstPlatformFuel: 0
     minUfoSpawnTime: 7
     maxUfoSpawnTime: 7.5
+    chanceFastUfo: 0
   - height: 1000
     minY: 1.1
     maxY: 2
@@ -6185,6 +6188,7 @@ MonoBehaviour:
     firstPlatformFuel: 0
     minUfoSpawnTime: 6.5
     maxUfoSpawnTime: 7.5
+    chanceFastUfo: 0
   - height: 1400
     minY: 1
     maxY: 1.8
@@ -6198,6 +6202,7 @@ MonoBehaviour:
     firstPlatformFuel: 0
     minUfoSpawnTime: 6
     maxUfoSpawnTime: 7.5
+    chanceFastUfo: 0
   - height: 1800
     minY: 1.2
     maxY: 2.2
@@ -6211,6 +6216,7 @@ MonoBehaviour:
     firstPlatformFuel: 0
     minUfoSpawnTime: 5.625
     maxUfoSpawnTime: 7.125
+    chanceFastUfo: 0
   - height: 2200
     minY: 1.3
     maxY: 2.3
@@ -6224,6 +6230,7 @@ MonoBehaviour:
     firstPlatformFuel: 0
     minUfoSpawnTime: 5.25
     maxUfoSpawnTime: 6.75
+    chanceFastUfo: 0
   - height: 2600
     minY: 1.4
     maxY: 2.5
@@ -6237,6 +6244,7 @@ MonoBehaviour:
     firstPlatformFuel: 0
     minUfoSpawnTime: 4.875
     maxUfoSpawnTime: 6.375
+    chanceFastUfo: 0
   - height: 3000
     minY: 1.5
     maxY: 2.7
@@ -6250,6 +6258,7 @@ MonoBehaviour:
     firstPlatformFuel: 0
     minUfoSpawnTime: 4.5
     maxUfoSpawnTime: 6
+    chanceFastUfo: 0
   - height: 3400
     minY: 1.6
     maxY: 2.9
@@ -6263,6 +6272,7 @@ MonoBehaviour:
     firstPlatformFuel: 0
     minUfoSpawnTime: 4.125
     maxUfoSpawnTime: 5.625
+    chanceFastUfo: 0.05
   - height: 3800
     minY: 1.9
     maxY: 2.9
@@ -6276,6 +6286,7 @@ MonoBehaviour:
     firstPlatformFuel: 0
     minUfoSpawnTime: 3.75
     maxUfoSpawnTime: 5.25
+    chanceFastUfo: 0.1
   - height: 4200
     minY: 2.2
     maxY: 2.9
@@ -6289,6 +6300,7 @@ MonoBehaviour:
     firstPlatformFuel: 0
     minUfoSpawnTime: 3.375
     maxUfoSpawnTime: 4.875
+    chanceFastUfo: 0.2
   - height: 4600
     minY: 2.5
     maxY: 2.9
@@ -6302,6 +6314,7 @@ MonoBehaviour:
     firstPlatformFuel: 0
     minUfoSpawnTime: 3
     maxUfoSpawnTime: 4.5
+    chanceFastUfo: 0.3
   - height: 5000
     minY: 2.5
     maxY: 2.9
@@ -6315,6 +6328,7 @@ MonoBehaviour:
     firstPlatformFuel: 0
     minUfoSpawnTime: 2.625
     maxUfoSpawnTime: 3.75
+    chanceFastUfo: 0.4
   - height: 5400
     minY: 2.5
     maxY: 2.9
@@ -6328,6 +6342,7 @@ MonoBehaviour:
     firstPlatformFuel: 0
     minUfoSpawnTime: 2.25
     maxUfoSpawnTime: 3
+    chanceFastUfo: 0.5
   - height: 5800
     minY: 2.5
     maxY: 2.9
@@ -6341,6 +6356,7 @@ MonoBehaviour:
     firstPlatformFuel: 0
     minUfoSpawnTime: 1.875
     maxUfoSpawnTime: 2.25
+    chanceFastUfo: 0.6
   - height: 6200
     minY: 2.5
     maxY: 2.9
@@ -6354,6 +6370,7 @@ MonoBehaviour:
     firstPlatformFuel: 0
     minUfoSpawnTime: 1.4
     maxUfoSpawnTime: 1.6
+    chanceFastUfo: 0.7
   - height: 6600
     minY: 2.5
     maxY: 2.9
@@ -6367,6 +6384,7 @@ MonoBehaviour:
     firstPlatformFuel: 0
     minUfoSpawnTime: 1.2
     maxUfoSpawnTime: 1.4
+    chanceFastUfo: 0.8
   - height: 7000
     minY: 2.5
     maxY: 2.9
@@ -6380,6 +6398,7 @@ MonoBehaviour:
     firstPlatformFuel: 0
     minUfoSpawnTime: 1
     maxUfoSpawnTime: 1.2
+    chanceFastUfo: 0.9
   - height: 7400
     minY: 2.5
     maxY: 2.9
@@ -6393,6 +6412,7 @@ MonoBehaviour:
     firstPlatformFuel: 0
     minUfoSpawnTime: 0.8
     maxUfoSpawnTime: 1
+    chanceFastUfo: 1
   currentPhaseIndex: 0
 --- !u!4 &1017728176
 Transform:
@@ -8328,6 +8348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 8429646015450481629, guid: 1f938f1b4227cf24499bec2883f7c9b6, type: 3}
+  enemyFastPrefab: {fileID: 8429646015450481629, guid: 9c2a5f255a19dc44183b5e6c3ec24b21, type: 3}
   minPos: {fileID: 1088557700}
   maxPos: {fileID: 131787823}
   spawnTimer: 0
