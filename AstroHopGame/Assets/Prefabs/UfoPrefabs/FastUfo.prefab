@@ -229,6 +229,7 @@ MonoBehaviour:
   jumpForce: 9.2
   fallSpeed: 8
   explosionPrefab: {fileID: 3103710315566421101, guid: 12c6c7f94ef01f04c9076d1d66f78a6d, type: 3}
+  hapticDelayTime: 0.075
   ufoWarningArrowPrefab: {fileID: 1106065371948493989, guid: 241cf9bc123f6cc448d2f275e1d75be6, type: 3}
   arrowPositionInViewY: 4.53
   maxArrowPositionX: 5.9

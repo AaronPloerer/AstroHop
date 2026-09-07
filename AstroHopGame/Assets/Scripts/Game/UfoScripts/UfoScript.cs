@@ -1,5 +1,7 @@
 using System.Linq;
+using Unity.Hierarchy;
 using UnityEngine;
+using System.Collections;
 
 public class UfoScript : MonoBehaviour
 {
@@ -16,6 +18,7 @@ public class UfoScript : MonoBehaviour
     [SerializeField] private float jumpForce;                       // Force applied to player when jumped on
     [SerializeField] private float fallSpeed;                       // Falling speed of jumped on UFO
     [SerializeField] private GameObject explosionPrefab;            // Explosion effect prefab
+    [SerializeField] private float hapticDelayTime;                 // Time between collision and haptic Feedback
 
     [Header("Warning Arrow")]
     [SerializeField] private GameObject ufoWarningArrowPrefab;      // Off-screen UFO indicator prefab
@@ -187,6 +190,7 @@ public class UfoScript : MonoBehaviour
 
         // Play explosion SFX and animation and remove UFO from the UFO counter as well as from the scene (with arrow)
         AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.explosion, AudioManagerScript.instance.explosionVolume);
+        AndroidHaptics.TriggerHapticFeedback(hapticDelayTime);
         Instantiate(explosionPrefab, transform.position, Quaternion.identity);
         UfoSpawnerScript.instance.aliveUfos--;
         Destroy(spawnedArrow);
@@ -202,6 +206,14 @@ public class UfoScript : MonoBehaviour
         // If true: play SFX and animation, ...
         AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.jump, AudioManagerScript.instance.jumpVolume);
         AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.explosion, AudioManagerScript.instance.explosionVolume);
+        PlayerControllerScript.instance.astronautAnim.SetTrigger("jump");
+        PlayerControllerScript.instance.laserAstronautAnim.SetTrigger("jump");
+        PlayerControllerScript.instance.astronautSkin1Anim.SetTrigger("jump");
+        PlayerControllerScript.instance.astronautSkin2Anim.SetTrigger("jump");
+        PlayerControllerScript.instance.astronautSkin3Anim.SetTrigger("jump");
+        PlayerControllerScript.instance.astronautSkin4Anim.SetTrigger("jump");
+        PlayerControllerScript.instance.astronautSkin5Anim.SetTrigger("jump");
+        AndroidHaptics.TriggerHapticFeedback(hapticDelayTime);
         GetComponent<Animator>().SetTrigger("broken");
 
         // ... set destruction state flag,
@@ -221,6 +233,7 @@ public class UfoScript : MonoBehaviour
         {
             // UFO destruction sequence like with laser collision
             AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.explosion, AudioManagerScript.instance.explosionVolume);
+            AndroidHaptics.TriggerHapticFeedback(hapticDelayTime);
             Instantiate(explosionPrefab, transform.position, Quaternion.identity);
             UfoSpawnerScript.instance.aliveUfos--;
             Destroy(gameObject);
@@ -229,6 +242,7 @@ public class UfoScript : MonoBehaviour
         {
             // Player death sequence with position-adjusted explosion
             AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.explosion, AudioManagerScript.instance.explosionVolume);
+            AndroidHaptics.TriggerHapticFeedback(hapticDelayTime);
             Vector3 explosionPos = PlayerControllerScript.instance.transform.position + Vector3.up * 1.07f;
             Instantiate(explosionPrefab, explosionPos, Quaternion.identity);
 
@@ -242,6 +256,11 @@ public class UfoScript : MonoBehaviour
         }
     }
 
+    private IEnumerator DelayedHaptic()
+    {
+        yield return new WaitForSeconds(hapticDelayTime);
+        AndroidHaptics.TriggerHapticFeedback();
+    }
     private void HandleBoundaryCollision()
     {
         // Clean up UFO that leaves play area

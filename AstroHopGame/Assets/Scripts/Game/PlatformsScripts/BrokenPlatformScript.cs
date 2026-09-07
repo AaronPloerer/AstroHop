@@ -142,7 +142,12 @@ public class BrokenPlatformScript : MonoBehaviour
         // Play SFX and trigger animations
         AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.jump, AudioManagerScript.instance.jumpVolume);
         PlayerControllerScript.instance.astronautAnim.SetTrigger("jump");
-        PlayerControllerScript.instance.laserAstronautAnim.SetTrigger("laserjump");
+        PlayerControllerScript.instance.laserAstronautAnim.SetTrigger("jump");
+        PlayerControllerScript.instance.astronautSkin1Anim.SetTrigger("jump");
+        PlayerControllerScript.instance.astronautSkin2Anim.SetTrigger("jump");
+        PlayerControllerScript.instance.astronautSkin3Anim.SetTrigger("jump");
+        PlayerControllerScript.instance.astronautSkin4Anim.SetTrigger("jump");
+        PlayerControllerScript.instance.astronautSkin5Anim.SetTrigger("jump");
     }
 
     private void BreakPlatform()

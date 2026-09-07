@@ -1,0 +1,795 @@
+fileFormatVersion: 2
+guid: 26729336bd604544bb1c851df4eeb994
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6625748973764671661
+    second: AstronautSkins_0
+  - first:
+      213: -3186170015486601120
+    second: AstronautSkins_1
+  - first:
+      213: 8650091536975276123
+    second: AstronautSkins_2
+  - first:
+      213: 847710557601072658
+    second: AstronautSkins_3
+  - first:
+      213: 3625716894140675754
+    second: AstronautSkins_4
+  - first:
+      213: -6363720616936213408
+    second: AstronautSkins_5
+  - first:
+      213: -3542689984950975826
+    second: AstronautSkins_6
+  - first:
+      213: 6508319200701825911
+    second: AstronautSkins_7
+  - first:
+      213: -7900374442363854330
+    second: AstronautSkins_8
+  - first:
+      213: 1785357237540461498
+    second: AstronautSkins_9
+  - first:
+      213: -6510814932393759894
+    second: AstronautSkins_10
+  - first:
+      213: 4052997431224633854
+    second: AstronautSkins_11
+  - first:
+      213: -1304093392277414
+    second: AstronautSkins_12
+  - first:
+      213: 3824590870713107314
+    second: AstronautSkins_13
+  - first:
+      213: 5591489341862053625
+    second: AstronautSkins_14
+  - first:
+      213: -2713177382991360665
+    second: AstronautSkins_15
+  - first:
+      213: -5450623886407413563
+    second: AstronautSkins_16
+  - first:
+      213: 3929181415264512608
+    second: AstronautSkins_17
+  - first:
+      213: -3548370479666605028
+    second: AstronautSkins_18
+  - first:
+      213: -5119459073412616188
+    second: AstronautSkins_19
+  - first:
+      213: 7671170455359470071
+    second: AstronautSkins_20
+  - first:
+      213: 5486863990741891152
+    second: AstronautSkins_21
+  - first:
+      213: 7270277176045705212
+    second: AstronautSkins_22
+  - first:
+      213: -2397644851615051540
+    second: AstronautSkins_23
+  - first:
+      213: 3646329433861803015
+    second: AstronautSkins_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AstronautSkins_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 107
+        width: 22
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35709dfb96c9c04a0800000000000000
+      internalID: -6625748973764671661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AstronautSkins_1
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 107
+        width: 22
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0689be0804378c3d0800000000000000
+      internalID: -3186170015486601120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AstronautSkins_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 107
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5826083c6c4b0870800000000000000
+      internalID: 8650091536975276123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AstronautSkins_3
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 107
+        width: 22
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2160922c24ca3cb00800000000000000
+      internalID: 847710557601072658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AstronautSkins_4
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 107
+        width: 22
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa6336b2e42215230800000000000000
+      internalID: 3625716894140675754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AstronautSkins_5
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 58
+        width: 22
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 064ffa9b0d58fa7a0800000000000000
+      internalID: -6363720616936213408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AstronautSkins_6
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 58
+        width: 22
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea2c9a98a36d5dec0800000000000000
+      internalID: -3542689984950975826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AstronautSkins_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 58
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 773cfaa94d1325a50800000000000000
+      internalID: 6508319200701825911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AstronautSkins_8
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 58
+        width: 22
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 602e35a7d4b3c5290800000000000000
+      internalID: -7900374442363854330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AstronautSkins_9
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 58
+        width: 22
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abb95c4c2fcd6c810800000000000000
+      internalID: 1785357237540461498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AstronautSkins_10
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 58
+        width: 22
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6b6c549050f4a5a0800000000000000
+      internalID: -6510814932393759894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AstronautSkins_11
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 58
+        width: 22
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef907b3a0b32f3830800000000000000
+      internalID: 4052997431224633854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AstronautSkins_12
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 58
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5079981fed5bfff0800000000000000
+      internalID: -1304093392277414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AstronautSkins_13
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 58
+        width: 22
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2738e04222da31530800000000000000
+      internalID: 3824590870713107314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AstronautSkins_14
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 58
+        width: 22
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f602137ee5f89d40800000000000000
+      internalID: 5591489341862053625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AstronautSkins_15
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 7
+        width: 22
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76d0d229b8bd85ad0800000000000000
+      internalID: -2713177382991360665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AstronautSkins_16
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 7
+        width: 22
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c05d66347e7b54b0800000000000000
+      internalID: -5450623886407413563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AstronautSkins_17
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 7
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06a68e2fda1478630800000000000000
+      internalID: 3929181415264512608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AstronautSkins_18
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 7
+        width: 22
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c145dfb49d7a1cec0800000000000000
+      internalID: -3548370479666605028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AstronautSkins_19
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 7
+        width: 22
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4003717c81704f8b0800000000000000
+      internalID: -5119459073412616188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AstronautSkins_20
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 6
+        width: 22
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f93c23b2e8757a60800000000000000
+      internalID: 7671170455359470071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AstronautSkins_21
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 6
+        width: 22
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0587d0b9ab1452c40800000000000000
+      internalID: 5486863990741891152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AstronautSkins_22
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 6
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf795d0729635e460800000000000000
+      internalID: 7270277176045705212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AstronautSkins_23
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 6
+        width: 22
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce0d0f1f5bad9bed0800000000000000
+      internalID: -2397644851615051540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AstronautSkins_24
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 6
+        width: 22
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70c426f0d4d5a9230800000000000000
+      internalID: 3646329433861803015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c022cd71f2b98ad4b809758a36e49153
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      AstronautSkins_0: -6625748973764671661
+      AstronautSkins_1: -3186170015486601120
+      AstronautSkins_10: -6510814932393759894
+      AstronautSkins_11: 4052997431224633854
+      AstronautSkins_12: -1304093392277414
+      AstronautSkins_13: 3824590870713107314
+      AstronautSkins_14: 5591489341862053625
+      AstronautSkins_15: -2713177382991360665
+      AstronautSkins_16: -5450623886407413563
+      AstronautSkins_17: 3929181415264512608
+      AstronautSkins_18: -3548370479666605028
+      AstronautSkins_19: -5119459073412616188
+      AstronautSkins_2: 8650091536975276123
+      AstronautSkins_20: 7671170455359470071
+      AstronautSkins_21: 5486863990741891152
+      AstronautSkins_22: 7270277176045705212
+      AstronautSkins_23: -2397644851615051540
+      AstronautSkins_24: 3646329433861803015
+      AstronautSkins_3: 847710557601072658
+      AstronautSkins_4: 3625716894140675754
+      AstronautSkins_5: -6363720616936213408
+      AstronautSkins_6: -3542689984950975826
+      AstronautSkins_7: 6508319200701825911
+      AstronautSkins_8: -7900374442363854330
+      AstronautSkins_9: 1785357237540461498
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

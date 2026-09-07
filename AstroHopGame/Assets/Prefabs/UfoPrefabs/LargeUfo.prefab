@@ -85,7 +85,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -155374130, guid: 99dc6c81d3bd5f74c9804f449a5ef79b, type: 3}
+  m_Sprite: {fileID: -6284908856546867061, guid: 1cf40907880991944a8feae53b615be6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -233,6 +233,7 @@ MonoBehaviour:
   jumpForce: 9.2
   fallSpeed: 8
   explosionPrefab: {fileID: 3103710315566421101, guid: 12c6c7f94ef01f04c9076d1d66f78a6d, type: 3}
+  hapticDelayTime: 0.075
   ufoWarningArrowPrefab: {fileID: 1106065371948493989, guid: 241cf9bc123f6cc448d2f275e1d75be6, type: 3}
   arrowPositionInViewY: 4.53
   maxArrowPositionX: 5.9

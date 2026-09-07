@@ -1,5 +1,6 @@
-using UnityEngine;
 using System.Collections;
+using UnityEngine;
+using static UnityEngine.InputManagerEntry;
 
 public class PlayerControllerScript : MonoBehaviour
 {
@@ -24,6 +25,16 @@ public class PlayerControllerScript : MonoBehaviour
     public Rigidbody2D rb;                     // Player's Rigidbody2D component
     public Animator astronautAnim;             // Primary astronaut animator 
     public Animator laserAstronautAnim;        // Animator for astronaut with laser indicator
+    public GameObject skin1;
+    public GameObject skin2;
+    public GameObject skin3;
+    public GameObject skin4;
+    public GameObject skin5;
+    public Animator astronautSkin1Anim;
+    public Animator astronautSkin2Anim;
+    public Animator astronautSkin3Anim;
+    public Animator astronautSkin4Anim;
+    public Animator astronautSkin5Anim;
     #endregion
 
     #region Parameters
@@ -68,6 +79,7 @@ public class PlayerControllerScript : MonoBehaviour
     {
         InitializeComponents();
         ResetStates();
+        ApplySelectedSkin();
         LoadPotentialBoost();
     }
 
@@ -88,6 +100,17 @@ public class PlayerControllerScript : MonoBehaviour
         movement = 0f;
         lostFuel = 0f;
         currentDirection = 0f;
+    }
+
+    private void ApplySelectedSkin()
+    {
+        int selectedSkin = PlayerPrefs.GetInt("Skin", 0);
+
+        skin1.SetActive(selectedSkin == 1);
+        skin2.SetActive(selectedSkin == 2);
+        skin3.SetActive(selectedSkin == 3);
+        skin4.SetActive(selectedSkin == 4);
+        skin5.SetActive(selectedSkin == 5);
     }
 
     private void LoadPotentialBoost()

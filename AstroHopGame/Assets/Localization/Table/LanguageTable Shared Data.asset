@@ -295,6 +295,10 @@ MonoBehaviour:
     m_Key: Game Tip FailedPickUp
     m_Metadata:
       m_Items: []
+  - m_Id: 178533994857496576
+    m_Key: MenuButtonSkins
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

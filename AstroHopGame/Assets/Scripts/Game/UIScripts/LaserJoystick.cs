@@ -20,6 +20,7 @@ public class AimJoystick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     private Vector2 initialLocalTouchPosition = Vector2.zero;
     private Vector2 targetKnobPosition = Vector2.zero;
     private float pressTime = 0f;
+    private bool wasMinimumMet = false;
     #endregion
 
     #region Unity Lifecycle
@@ -42,6 +43,13 @@ public class AimJoystick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         // Only show aiming preview if shooting is possible
         bool minimumMet = (pressTime > 0.0f && pressTime < holdThreshold)
                   || smoothedDirection.magnitude > minimumShootingFingerMovement;
+
+        // Haptic when preview hides due to finger returning to center
+        if (wasMinimumMet && !minimumMet && isPressed)
+        {
+            AndroidHaptics.TriggerHapticFeedback();
+        }
+        wasMinimumMet = minimumMet;
 
         if (minimumMet)
         {

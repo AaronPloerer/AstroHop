@@ -353,6 +353,10 @@ MonoBehaviour:
       de carburant pour le boost."
     m_Metadata:
       m_Items: []
+  - m_Id: 178533994857496576
+    m_Localized: Skins
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -61,7 +61,7 @@ public class MainGameUIScript : MonoBehaviour
     [Header("Buttons")]
     public Button pauseButton;
     public GameObject aimConroller;
-    public Button boostButton;
+    public BoostButton boostButton;
     #endregion
 
     #region Pause System

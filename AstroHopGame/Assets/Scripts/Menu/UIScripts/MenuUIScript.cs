@@ -42,6 +42,7 @@ public class MenuUIScript : MonoBehaviour
     #region UI References
     [Header("Panels and Text")]
     public GameObject optionsPanel;
+    public GameObject skinsPanel;
     public GameObject helpPanel;
     public GameObject exitWindowWarningPanel;
     public GameObject deleteProgressPanel;
@@ -54,6 +55,7 @@ public class MenuUIScript : MonoBehaviour
 
     [Header("Buttons")]
     public Button openOptionsButton;
+    public Button openSkinsButton;
     public Button openHelpButton;
     public Button startGameButton;
     public Button exitWindowWarningButton;

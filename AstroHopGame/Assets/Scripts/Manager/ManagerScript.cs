@@ -231,6 +231,23 @@ public class ManagerScript : MonoBehaviour
     }
     #endregion
 
+    #region Pause Management
+    [SerializeField] private float pauseToggleCooldown; // unscaled seconds
+    private float lastPauseToggleTime = -999f;
+
+    public void TogglePauseGame()
+    {
+        // Prevent double-toggle from spam/double taps
+        if (Time.unscaledTime - lastPauseToggleTime < pauseToggleCooldown) return;
+        lastPauseToggleTime = Time.unscaledTime;
+
+        if (MainGameUIScript.instance.paused)
+            ContinueGame();
+        else
+            PauseGame();
+    }
+    #endregion
+
     #region Button Management
     public void OpenOptionsPanel()
     {
@@ -238,6 +255,7 @@ public class ManagerScript : MonoBehaviour
         MenuUIScript.instance.optionsPanel.SetActive(true);
         MenuUIScript.instance.startGameButton.interactable = false;
         MenuUIScript.instance.openOptionsButton.interactable = false;
+        MenuUIScript.instance.openSkinsButton.interactable = false;
         MenuUIScript.instance.openHelpButton.interactable = false;
         MenuUIScript.instance.exitWindowWarningButton.interactable = false;
     }
@@ -254,12 +272,38 @@ public class ManagerScript : MonoBehaviour
         MenuUIScript.instance.optionsPanel.SetActive(false);
         MenuUIScript.instance.startGameButton.interactable = true;
         MenuUIScript.instance.openOptionsButton.interactable = true;
+        MenuUIScript.instance.openSkinsButton.interactable = true;
         MenuUIScript.instance.openHelpButton.interactable = true;
         MenuUIScript.instance.exitWindowWarningButton.interactable = true;
     }
 
-    public void OpenHelpPanel()
+    public void OpenSkinsPanel()
     {
+        // Update UI in Help panel
+        MenuUIScript.instance.UpdateInputTutorialText();
+
+        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
+        MenuUIScript.instance.skinsPanel.SetActive(true);
+        MenuUIScript.instance.startGameButton.interactable = false;
+        MenuUIScript.instance.openOptionsButton.interactable = false;
+        MenuUIScript.instance.openSkinsButton.interactable = false;
+        MenuUIScript.instance.openHelpButton.interactable = false;
+        MenuUIScript.instance.exitWindowWarningButton.interactable = false;
+    }
+
+    public void CloseSkinsPanel()
+    {
+        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.closeClick, AudioManagerScript.instance.closeClickVolume);
+        MenuUIScript.instance.skinsPanel.SetActive(false);
+        MenuUIScript.instance.startGameButton.interactable = true;
+        MenuUIScript.instance.openOptionsButton.interactable = true;
+        MenuUIScript.instance.openSkinsButton.interactable = true;
+        MenuUIScript.instance.openHelpButton.interactable = true;
+        MenuUIScript.instance.exitWindowWarningButton.interactable = true;
+    }
+
+    public void OpenHelpPanel() 
+    { 
         // Update UI in Help panel
         MenuUIScript.instance.UpdateInputTutorialText();
 
@@ -267,6 +311,7 @@ public class ManagerScript : MonoBehaviour
         MenuUIScript.instance.helpPanel.SetActive(true);
         MenuUIScript.instance.startGameButton.interactable = false;
         MenuUIScript.instance.openOptionsButton.interactable = false;
+        MenuUIScript.instance.openSkinsButton.interactable = false;
         MenuUIScript.instance.openHelpButton.interactable = false;
         MenuUIScript.instance.exitWindowWarningButton.interactable = false;
     }
@@ -277,6 +322,7 @@ public class ManagerScript : MonoBehaviour
         MenuUIScript.instance.helpPanel.SetActive(false);
         MenuUIScript.instance.startGameButton.interactable = true;
         MenuUIScript.instance.openOptionsButton.interactable = true;
+        MenuUIScript.instance.openSkinsButton.interactable = true;
         MenuUIScript.instance.openHelpButton.interactable = true;
         MenuUIScript.instance.exitWindowWarningButton.interactable = true;
     }
@@ -300,14 +346,16 @@ public class ManagerScript : MonoBehaviour
         // Reset cursor to default appearance
         ManagerScript.instance.SetPixelCursor(ManagerScript.instance.basicCursor, 0f, 0f);
 
-        // Disable pause and boost functionality
+        // Disable pause functionality
         MainGameUIScript.instance.pauseButton.interactable = false;
-        MainGameUIScript.instance.boostButton.interactable = false;
 
         // Reset and disable joystick
         var joystick = MainGameUIScript.instance.aimConroller.GetComponent<AimJoystick>();
         joystick.ForceReset();         // Snap knob to center and hide preview 
         joystick.enabled = false;      // Then disable
+
+        // Force-release boost
+        MainGameUIScript.instance.boostButton.GetComponent<BoostButton>().ForceRelease();
 
         // Save score
         int finalScore = int.Parse(MainGameUIScript.instance.scoreText.text);
@@ -367,6 +415,7 @@ public class ManagerScript : MonoBehaviour
         MenuUIScript.instance.exitWindowWarningPanel.SetActive(true);
         MenuUIScript.instance.startGameButton.interactable = false;
         MenuUIScript.instance.openOptionsButton.interactable = false;
+        MenuUIScript.instance.openSkinsButton.interactable = false;
         MenuUIScript.instance.openHelpButton.interactable = false;
         MenuUIScript.instance.exitWindowWarningButton.interactable = false;
     }
@@ -377,6 +426,7 @@ public class ManagerScript : MonoBehaviour
         MenuUIScript.instance.exitWindowWarningPanel.SetActive(false);
         MenuUIScript.instance.startGameButton.interactable = true;
         MenuUIScript.instance.openOptionsButton.interactable = true;
+        MenuUIScript.instance.openSkinsButton.interactable = true;
         MenuUIScript.instance.openHelpButton.interactable = true;
         MenuUIScript.instance.exitWindowWarningButton.interactable = true;
     }
@@ -398,6 +448,7 @@ public class ManagerScript : MonoBehaviour
         MenuUIScript.instance.deleteProgressPanel.SetActive(true);
         MenuUIScript.instance.startGameButton.interactable = false;
         MenuUIScript.instance.openOptionsButton.interactable = false;
+        MenuUIScript.instance.openSkinsButton.interactable = false;
         MenuUIScript.instance.openHelpButton.interactable = false;
         MenuUIScript.instance.exitWindowWarningButton.interactable = false;
     }
@@ -408,6 +459,7 @@ public class ManagerScript : MonoBehaviour
         MenuUIScript.instance.deleteProgressPanel.SetActive(false);
         MenuUIScript.instance.startGameButton.interactable = true;
         MenuUIScript.instance.openOptionsButton.interactable = true;
+        MenuUIScript.instance.openSkinsButton.interactable = true;
         MenuUIScript.instance.openHelpButton.interactable = true;
         MenuUIScript.instance.exitWindowWarningButton.interactable = true;
     }
@@ -425,6 +477,7 @@ public class ManagerScript : MonoBehaviour
         MenuUIScript.instance.deleteProgressConfirmPanel.SetActive(false);
         MenuUIScript.instance.startGameButton.interactable = true;
         MenuUIScript.instance.openOptionsButton.interactable = true;
+        MenuUIScript.instance.openSkinsButton.interactable = true;
         MenuUIScript.instance.openHelpButton.interactable = true;
         MenuUIScript.instance.exitWindowWarningButton.interactable = true;
     }
@@ -436,6 +489,7 @@ public class ManagerScript : MonoBehaviour
         MenuUIScript.instance.deleteProgressConfirmPanel.SetActive(false);
         MenuUIScript.instance.startGameButton.interactable = true;
         MenuUIScript.instance.openOptionsButton.interactable = true;
+        MenuUIScript.instance.openSkinsButton.interactable = true;
         MenuUIScript.instance.openHelpButton.interactable = true;
         MenuUIScript.instance.exitWindowWarningButton.interactable = true;
 
@@ -459,6 +513,12 @@ public class ManagerScript : MonoBehaviour
         }
         PlayerPrefs.Save();
     }
+
+    public void SelectSkin(int skinIndex)
+    {
+        PlayerPrefs.SetInt("Skin", skinIndex);
+        PlayerPrefs.Save();
+    }
     #endregion
 
     #region Pause Management
@@ -471,14 +531,13 @@ public class ManagerScript : MonoBehaviour
         MainGameUIScript.instance.warningMainMenuPanel.SetActive(false);
         MainGameUIScript.instance.warningRetryPanel.SetActive(false);
 
-        // Disable pause and boost functionality
-        MainGameUIScript.instance.pauseButton.interactable = false;
-        MainGameUIScript.instance.boostButton.interactable = false;
-
         // Reset and disable joystick
         var joystick = MainGameUIScript.instance.aimConroller.GetComponent<AimJoystick>();
         joystick.ForceReset();         // Snap knob to center and hide preview 
         joystick.enabled = false;      // Then disable
+
+        // Force-release boost
+        MainGameUIScript.instance.boostButton.GetComponent<BoostButton>().ForceRelease();
 
         // Change to default cursor
 
@@ -495,9 +554,7 @@ public class ManagerScript : MonoBehaviour
         MainGameUIScript.instance.pausePanel.SetActive(false);
         MainGameUIScript.instance.paused = false;
 
-        // Enable pause, aim and boost functionality
-        MainGameUIScript.instance.pauseButton.interactable = false;
-        MainGameUIScript.instance.boostButton.interactable = false;
+        // Enable aim functionality
         MainGameUIScript.instance.aimConroller.GetComponent<AimJoystick>().enabled = true;
 
         // Change to game cursor

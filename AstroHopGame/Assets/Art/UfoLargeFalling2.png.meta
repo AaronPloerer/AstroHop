@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 99dc6c81d3bd5f74c9804f449a5ef79b
+guid: f96ff76f8117e1740be699c73519dbf0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9215642942338064441
-    second: UfoLarge 1_0
+      213: 2274169742932712811
+    second: UfoLargeFalling2_0
   - first:
-      213: 3704039050098644444
-    second: UfoLarge 1_1
+      213: -6666418333077870022
+    second: UfoLargeFalling2_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -129,45 +129,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UfoLarge_0
+      name: UfoLargeFalling2_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 9
-        width: 54
-        height: 34
+        x: 18
+        y: 5
+        width: 41
+        height: 41
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 455a541bf0a166749b6c9b0b0bd7c68b
-      internalID: -155374130
+      spriteID: b6d127605597f8f10800000000000000
+      internalID: 2274169742932712811
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UfoLarge_1
+      name: UfoLargeFalling2_1
       rect:
         serializedVersion: 2
         x: 70
-        y: 9
-        width: 54
-        height: 34
+        y: 5
+        width: 41
+        height: 41
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 0587e125edcd6cb4bb66d859a6c0cea1
-      internalID: -477346173
+      spriteID: a3aedb4a8df1c73a0800000000000000
+      internalID: -6666418333077870022
       vertices: []
       indices: 
       edges: []
@@ -176,7 +176,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 887b86606c749d246887eeed6d954517
+    spriteID: 6d07cee6b786a7c43ba464824717bfb1
     internalID: 0
     vertices: []
     indices: 
@@ -188,8 +188,8 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      UfoLarge_0: -155374130
-      UfoLarge_1: -477346173
+      UfoLargeFalling2_0: 2274169742932712811
+      UfoLargeFalling2_1: -6666418333077870022
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
