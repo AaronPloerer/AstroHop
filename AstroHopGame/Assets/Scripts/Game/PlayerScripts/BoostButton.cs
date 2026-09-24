@@ -15,7 +15,7 @@ public class BoostButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     public void OnPointerDown(PointerEventData eventData)
     {
         // Ignore new presses while paused or game over
-        if (MainGameUIScript.instance.paused || MainGameUIScript.instance.gameOverPanel.activeSelf) return;
+        if (MainGameUIScript.instance.paused || MainGameUIScript.instance.gameOverPanel.activeSelf || PlayerControllerScript.instance.startingBoost) return;
 
         // Prevent accidental rapid re-press
         if (Time.unscaledTime - lastBoostPressTime < boostPressCooldown) return;

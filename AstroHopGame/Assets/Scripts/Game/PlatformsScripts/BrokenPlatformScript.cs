@@ -12,6 +12,7 @@ public class BrokenPlatformScript : MonoBehaviour
 
     [Header("Settings")]
     [SerializeField] private float playerJumpForce;       // Force applied to player bounce
+    [SerializeField] private float hapticDelayTime;       // Time between collision and haptic Feedback
     [SerializeField] private float fallDownSpeed;         // Speed of destroyed platform descent
     [SerializeField] private float chanceForSuperFuel;    // Probability of spawning super fuel
     #endregion
@@ -155,6 +156,7 @@ public class BrokenPlatformScript : MonoBehaviour
         // Disable platform and play SFX and trigger animations
         GetComponent<Collider2D>().enabled = false;
         AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.breaking, AudioManagerScript.instance.breakingVolume);
+        AndroidHaptics.TriggerHapticFeedback(hapticDelayTime);
         breakingPlatformAnim.SetTrigger("break");
         destroyed = true;
         Destroy(spawnedFuel);      // Remove associated fuel item

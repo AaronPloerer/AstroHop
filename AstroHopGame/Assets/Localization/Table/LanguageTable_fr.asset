@@ -107,7 +107,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 322549373206528
-    m_Localized: "Premier contact rat\xE9. Mort par collision avec OVNI."
+    m_Localized: "Premier contact rat\xE9. Mort par collision."
     m_Metadata:
       m_Items: []
   - m_Id: 322758924828672
@@ -139,33 +139,25 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 604724567998464
-    m_Localized: "Ne quitter pas l\u2019\xE9cran !\n\r<size=30><alpha=#80>Appuie
-      sur [Alt] pour pour passer le tutoriel."
+    m_Localized: "Incline ton \xE9cran pour te d\xE9placer."
     m_Metadata:
       m_Items: []
-  - m_Id: 604769543520256
-    m_Localized: '<color=#ECA800>Clic gauche</color> pour <color=#ECA800>tirer<color=#FFFFFF>
-      sur les OVNIs.
-
-      <size=30><alpha=#80>Appuie sur [Alt] pour pour passer
-      le tutoriel.'
+  - m_Id: 180702060588564480
+    m_Localized: "Tire, fonce avec ton Boost, saute ou \xE9vite les UFOs."
     m_Metadata:
       m_Items: []
   - m_Id: 604853593178112
-    m_Localized: "R\xE9cup\xE9rez du carburant pour recharger votre Boost de Fus\xE9e.\n<size=30><alpha=#80>Appuie
-      sur [Alt] pour pour passer le tutoriel."
+    m_Localized: "R\xE9cup\xE8re du carburant pour recharger ton Boost."
     m_Metadata:
       m_Items: []
   - m_Id: 604892465987584
     m_Localized: "Les plateformes <color=#EC1321>rouges</color><color=#FFFFFF> se
-      brisent apr\xE8s une seule utilisation.\n<size=30><alpha=#80>Appuie sur [Alt]
-      pour pour passer le tutoriel."
+      brisent apr\xE8s une seule utilisation."
     m_Metadata:
       m_Items: []
   - m_Id: 604938443948032
     m_Localized: "Les plateformes <color=#BE23FE>violettes</color><color=#FFFFFF>
-      se d\xE9placent de gauche \xE0 droite.\n<size=30><alpha=#80>Appuie sur [Alt]
-      pour pour passer le tutoriel."
+      se d\xE9placent de gauche \xE0 droite."
     m_Metadata:
       m_Items: []
   - m_Id: 4223074929999872
@@ -185,7 +177,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6408009740713984
-    m_Localized: "Plus de carburant : ramassez des r\xE9servoirs pour le boost fus\xE9e."
+    m_Localized: Peux pas collecter plus de carburant !
     m_Metadata:
       m_Items: []
   - m_Id: 6417898709975040
@@ -207,9 +199,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418170840612864
-    m_Localized: "Utilisez les touches de d\xE9placement gauche/droite (Fl\xE8che
-      gauche/droite ou touches s\xE9lectionn\xE9es dans les Param\xE8tres) pour vous
-      positionner sous la plateforme sur laquelle vous souhaitez atterrir."
+    m_Localized: "Inclinez votre t\xE9l\xE9phone \xE0 gauche et \xE0 droite pour
+      vous positionner sous la plateforme sur laquelle vous souhaitez atterrir."
     m_Metadata:
       m_Items: []
   - m_Id: 6418195234684928
@@ -221,10 +212,10 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418301782589440
-    m_Localized: "Les plateformes se d\xE9clinent en trois variantes :\r\n- Vertes
-      : Statiques et permanentes.\r\n- Rouges : Se brisent apr\xE8s un seul atterrissage
-      (utilisables une seule fois).\r\n- Violettes : Se d\xE9placent de gauche \xE0
-      droite \xE0 une vitesse constante."
+    m_Localized: "Les plateformes se d\xE9clinent en trois variantes :\n- Vertes
+      : Statiques et permanentes.\n- Violettes : Se d\xE9placent de gauche \xE0 droite
+      \xE0 une vitesse constante.\n- Rouges : Se brisent apr\xE8s un seul atterrissage
+      (utilisables une seule fois)."
     m_Metadata:
       m_Items: []
   - m_Id: 6418419743195136
@@ -237,12 +228,11 @@ MonoBehaviour:
       en haut vous avertit de la direction d\u2019o\xF9 il arrive. Entrer en collision
       avec un OVNI par le bas ou sur le c\xF4t\xE9 met fin \xE0 la partie.\r\nVous
       pouvez n\xE9anmoins d\xE9truire les OVNI de trois mani\xE8res :\r\n- Tir laser
-      : Cliquez avec le bouton gauche de la souris en direction de votre cible. Un
-      rayon laser part de votre position dans la direction du curseur et d\xE9truit
-      l\u2019OVNI s\u2019il le touche.\r\n- Attaque \xE0 l\u2019\xE9crasement : Sautez
-      sur le dessus d\u2019un OVNI pour le d\xE9truire. Vous rebondirez comme sur
-      une plateforme.\r\n- Boost fus\xE9e : Activez un boost pour d\xE9truire tout
-      OVNI que vous percuterez en montant.\r"
+      : Visez et rel\xE2chez le stick en direction de votre cible. Un rayon laser
+      part de votre position et d\xE9truit l'OVNI s'il le touche.\r\n- Attaque \xE0
+      l\u2019\xE9crasement : Sautez sur le dessus d\u2019un OVNI pour le d\xE9truire.
+      Vous rebondirez comme sur une plateforme.\r\n- Boost fus\xE9e : Activez un
+      boost pour d\xE9truire tout OVNI que vous percuterez en montant.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6418570339680256
@@ -250,7 +240,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418695137001472
-    m_Localized: "Apr\xE8s avoir obtenu un score d\u2019au moins 400, vous d\xE9bloquez
+    m_Localized: "Apr\xE8s avoir obtenu un score d\u2019au moins 500, vous d\xE9bloquez
       un boost de d\xE9part automatique pour votre prochaine partie, qui vous propulse
       jusqu\u2019\xE0 50\u202F% de votre score pr\xE9c\xE9dent. Vous pouvez activer
       ou d\xE9sactiver cette option dans les param\xE8tres."
@@ -262,8 +252,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 6418756222844928
     m_Localized: "Le jeu peut \xEAtre mis en pause \xE0 tout moment en cliquant sur
-      le bouton Pause en haut \xE0 gauche ou en appuyant sur la touche Pause (par
-      d\xE9faut : Espace)."
+      le bouton Pause en haut \xE0 gauche."
     m_Metadata:
       m_Items: []
   - m_Id: 6418783104139264
@@ -283,23 +272,22 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 6418934363324416
     m_Localized: "Ouvrez le menu Param\xE8tres depuis le menu principal pour :\r\n-
-      Choisir la langue des textes \xE0 l\u2019\xE9cran\r\n- R\xE9gler s\xE9par\xE9ment
-      le volume de la musique et des effets sonores\r\n- Personnaliser les raccourcis
-      clavier pour le d\xE9placement, le boost, le tir et la pause\r\n- Activer ou
-      d\xE9sactiver le boost de d\xE9part automatique et les astuces en jeu\r"
+      Choisir la langue des textes \xE0 l\u2019\xE9cran\r\n- R\xE9gler le volume
+      de la musique et des effets sonores\r\n- \xC9changer la position du Stick de
+      Tir et du Bouton Boost\r\n- Activer ou d\xE9sactiver le boost de d\xE9part
+      automatique et les astuces en jeu\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6419343605760000
-    m_Localized: "Vous disposez d\u2019une fus\xE9e pour vous propulser verticalement.
-      Si elle contient du carburant, maintenez la touche Boost enfonc\xE9e (Fl\xE8che
-      haut ou touche s\xE9lectionn\xE9e dans les Param\xE8tres) pour vous propulser.
+    m_Localized: "Vous disposez d'une fus\xE9e pour vous propulser verticalement.
+      Si elle contient du carburant, appuyez sur le bouton Boost pour vous propulser.
       Pour refaire le plein, sautez sur les r\xE9servoirs de carburant qui apparaissent
-      sur certaines plateformes.\r\nPendant le boost, votre carburant s\u2019\xE9puise
-      \xE0 un rythme constant, mais chaque fois que vous boostez, au moins 10\u202F%
-      de votre capacit\xE9 totale est consomm\xE9e. Si vous commencez \xE0 booster
-      avec moins de 10\u202F% de carburant restant, tout sera consomm\xE9.\r\nUtilisez
-      la fus\xE9e pour corriger un atterrissage rat\xE9 ou atteindre des plateformes
-      plus \xE9lev\xE9es."
+      sur certaines plateformes. Les r\xE9servoirs rouges restaurent 20 % de carburant,
+      tandis que les bleus vous remplissent au maximum.\nPendant le boost, votre
+      carburant s'\xE9puise \xE0 un rythme constant, mais chaque boost consomme au
+      moins 20 % de votre capacit\xE9 totale. Si vous commencez \xE0 booster avec
+      moins de 20 % de carburant restant, tout sera consomm\xE9.\nUtilisez la fus\xE9e
+      pour corriger un atterrissage rat\xE9 ou atteindre des plateformes plus \xE9lev\xE9es."
     m_Metadata:
       m_Items: []
   - m_Id: 6751468896911360
@@ -349,12 +337,37 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 8607735869341696
-    m_Localized: "R\xE9servoir fus\xE9e plein \u2013 impossible de collecter plus
-      de carburant pour le boost."
+    m_Localized: Collecte du carburant pour le boost !
     m_Metadata:
       m_Items: []
   - m_Id: 178533994857496576
     m_Localized: Skins
+    m_Metadata:
+      m_Items: []
+  - m_Id: 180976597200797696
+    m_Localized: 'Regarder une pub
+
+      pour revivre'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 181097022450827264
+    m_Localized: "D\xE9bloquer \xE0 1000 points"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 181097114461274112
+    m_Localized: "D\xE9bloquer \xE0 2500 points"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 181097117191766016
+    m_Localized: "D\xE9bloquer \xE0 4500 points"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 181097119892897792
+    m_Localized: "D\xE9bloquer \xE0 6500 points"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 181097121469956096
+    m_Localized: "D\xE9bloquer \xE0 9000 points"
     m_Metadata:
       m_Items: []
   references:

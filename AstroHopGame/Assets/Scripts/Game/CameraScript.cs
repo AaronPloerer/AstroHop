@@ -33,5 +33,11 @@ public class CameraScript : MonoBehaviour
             transform.position = newPos;
         }
     }
+
+    // Allows retargeting the camera to a newly instantiated player (e.g. after revive)
+    public void SetTarget(Transform newTarget)
+    {
+        target = newTarget;
+    }
     #endregion
 }

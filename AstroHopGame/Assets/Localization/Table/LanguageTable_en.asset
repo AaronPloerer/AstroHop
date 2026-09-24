@@ -107,7 +107,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 322549373206528
-    m_Localized: First contact went bad. Died on collision with UFO.
+    m_Localized: First contact failed. Died on collision.
     m_Metadata:
       m_Items: []
   - m_Id: 322758924828672
@@ -139,37 +139,24 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 604724567998464
-    m_Localized: "Don\u2019t fall out of the screen!\n<size=30><alpha=#80>Press [Alt]
-      to skip the tutorial.\n"
+    m_Localized: Tilt the screen to move.
     m_Metadata:
       m_Items: []
-  - m_Id: 604769543520256
-    m_Localized: '<color=#ECA800>Left-click <color=#FFFFFF>to <color=#ECA800>shoot
-      <color=#FFFFFFFF>towards the UFOs.
-
-      <size=30><alpha=#80>Press [Alt] to
-      skip the tutorial. '
+  - m_Id: 180702060588564480
+    m_Localized: Shoot, jump on or avoid UFOs.
     m_Metadata:
       m_Items: []
   - m_Id: 604853593178112
-    m_Localized: 'Get Fuel to charge up your Rocket Boost.
-
-      <size=30><alpha=#80>Press
-      [Alt] to skip the tutorial.'
+    m_Localized: Collect fuel to power up your Boost.
     m_Metadata:
       m_Items: []
   - m_Id: 604892465987584
-    m_Localized: '<color=#EC1321>Red <color=#FFFFFF>platforms break after a single
+    m_Localized: <color=#EC1321>Red <color=#FFFFFF>platforms break after a single
       use.
-
-      <size=30><alpha=#80>Press [Alt] to skip the tutorial.'
     m_Metadata:
       m_Items: []
   - m_Id: 604938443948032
-    m_Localized: '<color=#BE23FE>Purple <color=#FFFFFF>platforms move left and right.
-
-      <size=30><alpha=#80>Press
-      [Alt] to skip the tutorial.'
+    m_Localized: <color=#BE23FE>Purple <color=#FFFFFF>platforms move left and right.
     m_Metadata:
       m_Items: []
   - m_Id: 4223074929999872
@@ -189,7 +176,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6408009740713984
-    m_Localized: "No fuel \u2013 collect tanks for rocket boost."
+    m_Localized: Can't collect more fuel!
     m_Metadata:
       m_Items: []
   - m_Id: 6417898709975040
@@ -205,8 +192,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418170840612864
-    m_Localized: Use your left/right movement keys (Left/Right Arrows or keys selected
-      in Settings) to move toward your upcoming landing platforms.
+    m_Localized: Tilt your phone left and right to move toward your upcoming landing
+      platforms.
     m_Metadata:
       m_Items: []
   - m_Id: 6418097113137152
@@ -222,9 +209,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418301782589440
-    m_Localized: "Platforms come in three varieties:\r\n- Green: Static and permanent.\r\n-
-      Red: Break after a single landing, so they can only be used once.\r\n- Purple:
-      Move left and right at a constant pace.\r"
+    m_Localized: 'Platforms come in three varieties:
+
+      - Green: Static and permanent.
+
+      -
+      Purple: Move left and right at a constant pace.
+
+      - Red: Break after a
+      single landing, so they can only be used once.'
     m_Metadata:
       m_Items: []
   - m_Id: 6418419743195136
@@ -236,21 +229,25 @@ MonoBehaviour:
       Before one appears on screen, an arrow at the top of the screen warns you from
       which direction it is coming from. Colliding with one from below or the side
       ends your run. \r\nHowever, you have three ways to eliminate them:\r\n- Laser
-      Shot: Click the left mouse button toward your target. A laser beam fires from
-      your position in the cursor\u2019s direction and destroys a UFO if it gets
-      hit.\r\n- Stomp Attack: Jump on top of a UFO to destroy it. You\u2019ll bounce
-      off as if landing on a platform.\r\n- Rocket Boost: Use a boost to destroy
-      any UFO you collide with while thrusting upward.\r"
+      Shot: Aim and release the joystick in the direction of your target. A laser
+      beam fires from your position and destroys a UFO if it hits.\r\n- Stomp Attack:
+      Jump on top of a UFO to destroy it. You\u2019ll bounce off as if landing on
+      a platform.\r\n- Rocket Boost: Use a boost to destroy any UFO you collide with
+      while thrusting upward.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6419343605760000
-    m_Localized: "You carry a rocket for vertical boosting. If it contains fuel,
-      hold the Boost key (Up Arrow or key selected in Settings) to fly upward. To
-      refuel, jump into fuel tanks that spawn on certain platforms.\r\nWhile boosting,
-      your fuel drains at a constant rate, but each time you boost, at least 10%
-      of your total rocket tank is consumed. If you start boosting with less than
-      10% fuel remaining, all of it will be used.\r\nUse rocket boosts to correct
-      missed landings or reach higher ledges.\r"
+    m_Localized: 'You carry a rocket for vertical boosting. If it contains fuel,
+      press the Boost Button to fly upward. To refuel, jump into fuel tanks that
+      spawn on certain platforms. Red tanks restore 20% fuel, while blue tanks refill
+      you to the max.
+
+      While boosting, your fuel drains at a constant rate,
+      but each boost consumes at least 20% of your total rocket tank. If you start
+      boosting with less than 20% fuel remaining, it will all be used.
+
+      Use
+      rocket boosts to correct missed landings or reach higher ledges.'
     m_Metadata:
       m_Items: []
   - m_Id: 6418570339680256
@@ -258,12 +255,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418756222844928
-    m_Localized: 'The game can be paused at any time by clicking the pause button
-      in the top-left corner or by pressing the Pause key (default: Spacebar).'
+    m_Localized: The game can be paused at any time by clicking the pause button
+      in the top-left corner.
     m_Metadata:
       m_Items: []
   - m_Id: 6418695137001472
-    m_Localized: After scoring 400 or more, you unlock an automatic starting boost
+    m_Localized: After scoring 500 or more, you unlock an automatic starting boost
       on your next run, which launches you up to 50% of your previous score. You
       can toggle this feature on or off in Settings.
     m_Metadata:
@@ -290,8 +287,8 @@ MonoBehaviour:
   - m_Id: 6418934363324416
     m_Localized: "Open the Settings menu from the Main Menu to:\r\n- Choose the language
       of the on-screen texts\r\n- Adjust the volume of music and sound effects separately\r\n\r-
-      Customize the key bindings for movement, boost, shooting, and pause\r\n\r-
-      Enable or disable the automatic start boost and in-game tips \r"
+      Swap the position of the Shooting Joystick and the Boost Button\r\n\r- Enable
+      or disable the automatic start boost and in-game tips \r"
     m_Metadata:
       m_Items: []
   - m_Id: 6751468896911360
@@ -341,11 +338,37 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 8607735869341696
-    m_Localized: "Rocket tank full \u2013 cannot collect more fuel."
+    m_Localized: Collect fuel for boost!
     m_Metadata:
       m_Items: []
   - m_Id: 178533994857496576
     m_Localized: Skins
+    m_Metadata:
+      m_Items: []
+  - m_Id: 180976597200797696
+    m_Localized: 'Watch ad
+
+      to revive'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 181097022450827264
+    m_Localized: Unlock at score 1000
+    m_Metadata:
+      m_Items: []
+  - m_Id: 181097114461274112
+    m_Localized: Unlock at score 2500
+    m_Metadata:
+      m_Items: []
+  - m_Id: 181097117191766016
+    m_Localized: Unlock at score 4500
+    m_Metadata:
+      m_Items: []
+  - m_Id: 181097119892897792
+    m_Localized: Unlock at score 6500
+    m_Metadata:
+      m_Items: []
+  - m_Id: 181097121469956096
+    m_Localized: Unlock at score 9000
     m_Metadata:
       m_Items: []
   references:

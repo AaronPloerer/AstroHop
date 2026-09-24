@@ -28,6 +28,23 @@ public class MainGameUIScript : MonoBehaviour
     public TMP_Text finalScore;
     public TMP_Text highScore;
 
+    [Header("Skin Unlock Thresholds")]
+    public int unlockSkinScore1;
+    public int unlockSkinScore2;
+    public int unlockSkinScore3;
+    public int unlockSkinScore4;
+    public int unlockSkinScore5;
+
+    [Header("Skin Unlock Notifications")]
+    public GameObject skin1UnlockNotification;
+    public GameObject skin2UnlockNotification;
+    public GameObject skin3UnlockNotification;
+    public GameObject skin4UnlockNotification;
+    public GameObject skin5UnlockNotification;
+    [SerializeField] private RectTransform scores;
+    [SerializeField] private float scoresUnlockOffsetX = 78.78f;
+    private Vector2 scoresOriginalPosition;
+
     [Header("Slider Elements")]
     [SerializeField] private Slider rocketSlider;
     [SerializeField] private GameObject rocketSliderFill, rocketSliderBackground;
@@ -36,13 +53,12 @@ public class MainGameUIScript : MonoBehaviour
     [SerializeField] private Animator sliderBackgroundAnim, sliderFillAnim;
 
     [Header("Tutorial Elements")]
-    [SerializeField] private TMP_Text movingTutorial, boostTutorial, pauseTutorial;
     public GameObject tutorials;
 
     [Header("Tip Elements")]
-    [SerializeField] private int timeTipText;                       
+    [SerializeField] private int timeTipText;
     public GameObject failedBoostTip;
-    [SerializeField] private int failedBoostsForTip;                  
+    [SerializeField] private int failedBoostsForTip;
     public int failedBoostAmount;
     private bool failedBoostTipOn;
     public GameObject failedPickUpTip;
@@ -57,11 +73,18 @@ public class MainGameUIScript : MonoBehaviour
     public GameObject warningRetryPanel;
     public GameObject fallingText;
     public GameObject crashingText;
+    public Button reviveButton;
 
-    [Header("Buttons")]
+    [Header("Game Buttons")]
     public Button pauseButton;
     public GameObject aimConroller;
     public BoostButton boostButton;
+
+    [Header("For Inverted Controls")]
+    [SerializeField] private GameObject shootJoystick;
+    [SerializeField] private GameObject boostButtonAndBar;
+    [SerializeField] private float shootJoystickInvertedControlsOffsetX;
+    [SerializeField] private float boostUIInvertedControlsOffsetX;
     #endregion
 
     #region Pause System
@@ -101,6 +124,7 @@ public class MainGameUIScript : MonoBehaviour
         InitializeGameState();
         InitializeFuelSystem();
         InitializeTipTutorialSystem();
+        ApplyInvertedControlsLayout();
     }
 
     private void InitializeGameState()
@@ -117,6 +141,9 @@ public class MainGameUIScript : MonoBehaviour
         // Track initial player position for scoring
         highestPos = PlayerControllerScript.instance.transform.position.y;
 
+        // Cache original position of Scores object before any unlock shift is applied
+        scoresOriginalPosition = scores.anchoredPosition;
+
         // Reset flags and timer
         laserIndicatorActive = false;
         paused = false;
@@ -132,7 +159,7 @@ public class MainGameUIScript : MonoBehaviour
 
     private void InitializeTipTutorialSystem()
     {
-        SetUpTipVariables();;
+        SetUpTipVariables(); ;
         CheckShownTutorials();
     }
 
@@ -149,6 +176,25 @@ public class MainGameUIScript : MonoBehaviour
         for (int i = 0; i < shownTutorial.Length; i++)
         {
             shownTutorial[i] = PlayerPrefs.GetInt("Phase" + i + "TutorialShown", 0) == 1;
+        }
+    }
+
+    private void ApplyInvertedControlsLayout()
+    {
+        if (PlayerPrefs.GetInt("InvertedControls", 0) != 1) return;
+
+        if (shootJoystick != null)
+        {
+            Vector3 pos = shootJoystick.transform.localPosition;
+            pos.x += shootJoystickInvertedControlsOffsetX;
+            shootJoystick.transform.localPosition = pos;
+        }
+
+        if (boostButtonAndBar != null)
+        {
+            Vector3 pos = boostButtonAndBar.transform.localPosition;
+            pos.x += boostUIInvertedControlsOffsetX;
+            boostButtonAndBar.transform.localPosition = pos;
         }
     }
     #endregion
@@ -211,7 +257,7 @@ public class MainGameUIScript : MonoBehaviour
     private void UpdateScoreDisplays()
     {
         // Only update score if camera reaches new height record
-        if ((CameraScript.instance.transform.position.y) > highestPos && (CameraScript.instance.transform.position.y) > 0) 
+        if ((CameraScript.instance.transform.position.y) > highestPos && (CameraScript.instance.transform.position.y) > 0)
         {
             // Convert height to score using position multiplier
             int score = Mathf.FloorToInt(CameraScript.instance.transform.position.y * positionToScore);
@@ -228,6 +274,52 @@ public class MainGameUIScript : MonoBehaviour
 
             // Update new camera height record
             highestPos = (CameraScript.instance.transform.position.y);
+        }
+    }
+    #endregion
+
+    #region Skin Unlock System
+    // Permanently unlocks any skin whose threshold has just been reached.
+    public void CheckSkinUnlocks(int score)
+    {
+        TryUnlockSkin(1, unlockSkinScore1, score);
+        TryUnlockSkin(2, unlockSkinScore2, score);
+        TryUnlockSkin(3, unlockSkinScore3, score);
+        TryUnlockSkin(4, unlockSkinScore4, score);
+        TryUnlockSkin(5, unlockSkinScore5, score);
+    }
+
+    private void TryUnlockSkin(int skinIndex, int requiredScore, int score)
+    {
+        if (score < requiredScore) return;
+        if (PlayerPrefs.GetInt("SkinUnlocked" + skinIndex, 0) == 1) return; // Already unlocked, nothing to do
+
+        PlayerPrefs.SetInt("SkinUnlocked" + skinIndex, 1);
+        PlayerPrefs.Save();
+
+        // Notify skin unlock
+        skin1UnlockNotification.SetActive(false);
+        skin2UnlockNotification.SetActive(false);
+        skin3UnlockNotification.SetActive(false);
+        skin4UnlockNotification.SetActive(false);
+        skin5UnlockNotification.SetActive(false);
+
+        GetSkinUnlockNotification(skinIndex).SetActive(true);
+
+        // Shift Scores left 
+        scores.anchoredPosition = scoresOriginalPosition + new Vector2(scoresUnlockOffsetX, 0f);
+    }
+
+    private GameObject GetSkinUnlockNotification(int skinIndex)
+    {
+        switch (skinIndex)
+        {
+            case 1: return skin1UnlockNotification;
+            case 2: return skin2UnlockNotification;
+            case 3: return skin3UnlockNotification;
+            case 4: return skin4UnlockNotification;
+            case 5: return skin5UnlockNotification;
+            default: return null;
         }
     }
     #endregion
@@ -340,7 +432,7 @@ public class MainGameUIScript : MonoBehaviour
             bool tutorialNotSpawned = !shownTutorial[currentPhaseIndex];
 
             // Spawn tutorial sequence if conditions met
-            if (tutorialNotSpawned) 
+            if (tutorialNotSpawned)
             {
                 // Tutorial is being shown: do not repeat this if for the phase
                 shownTutorial[currentPhaseIndex] = true;
@@ -364,7 +456,8 @@ public class MainGameUIScript : MonoBehaviour
         foreach (Phase phase in LevelGeneratorScript.instance.phases)
         {
             if (phase.tutorial != null) phase.tutorial.SetActive(false);
-        };
+        }
+        ;
 
         // Save in persistent storage that the tutorial was shown
         PlayerPrefs.SetInt("Phase" + currentPhaseIndex + "TutorialShown", 1);
@@ -410,6 +503,7 @@ public class MainGameUIScript : MonoBehaviour
     private IEnumerator SpawnFailedBoostTip()
     {
         failedBoostTipOn = true;
+        failedBoostsForTip *= 2;              // Next tip requires double the fails
         failedBoostTip.SetActive(true);
 
         yield return WaitForSecondsUnpaused(timeTipText);
@@ -434,6 +528,7 @@ public class MainGameUIScript : MonoBehaviour
     private IEnumerator SpawnFailedPickUpTip()
     {
         failedPickUpTipOn = true;
+        failedPickUpForTip *= 2;            // Next tip requires double the fails
         failedPickUpTip.SetActive(true);
 
         yield return WaitForSecondsUnpaused(timeTipText);

@@ -1,0 +1,925 @@
+fileFormatVersion: 2
+guid: aa3be7f0fbacd1a4e929ec25db1f9110
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7624185392625594120
+    second: SkinsButtons_0
+  - first:
+      213: -7568521301154278507
+    second: SkinsButtons_1
+  - first:
+      213: 7885383426584203387
+    second: SkinsButtons_2
+  - first:
+      213: 4535199854195079287
+    second: SkinsButtons_3
+  - first:
+      213: -8185935352490028166
+    second: SkinsButtons_4
+  - first:
+      213: 4123573857738018953
+    second: SkinsButtons_5
+  - first:
+      213: -6439542512465139040
+    second: SkinsButtons_6
+  - first:
+      213: 3976664944019794335
+    second: SkinsButtons_7
+  - first:
+      213: 7726704699403822269
+    second: SkinsButtons_8
+  - first:
+      213: -5901447974123033454
+    second: SkinsButtons_9
+  - first:
+      213: 2084980991827715384
+    second: SkinsButtons_10
+  - first:
+      213: -4029885193271405018
+    second: SkinsButtons_11
+  - first:
+      213: 4516047867946118820
+    second: SkinsButtons_12
+  - first:
+      213: 4088957077501018885
+    second: SkinsButtons_13
+  - first:
+      213: -290917552195841690
+    second: SkinsButtons_14
+  - first:
+      213: 6632034413048994907
+    second: SkinsButtons_15
+  - first:
+      213: 8309690823231688986
+    second: SkinsButtons_16
+  - first:
+      213: 7897661837840305720
+    second: SkinsButtons_17
+  - first:
+      213: -1211408926473961920
+    second: SkinsButtons_18
+  - first:
+      213: -6436739181988460615
+    second: SkinsButtons_19
+  - first:
+      213: -1971620566838690375
+    second: SkinsButtons_20
+  - first:
+      213: -8711816165639417810
+    second: SkinsButtons_21
+  - first:
+      213: 558983875710253646
+    second: SkinsButtons_22
+  - first:
+      213: -4252330077480546995
+    second: SkinsButtons_23
+  - first:
+      213: 7897304040153124580
+    second: SkinsButtons_24
+  - first:
+      213: 2850899820418006089
+    second: SkinsButtons_25
+  - first:
+      213: -2691777476176432902
+    second: SkinsButtons_26
+  - first:
+      213: 2450009662544822837
+    second: SkinsButtons_27
+  - first:
+      213: -2275318537014854499
+    second: SkinsButtons_28
+  - first:
+      213: -3626324084377990275
+    second: SkinsButtons_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SkinsButtons_0
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 611
+        width: 94
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f054d2b7c3713690800000000000000
+      internalID: -7624185392625594120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkinsButtons_1
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 611
+        width: 94
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 593d8b1f9f537f690800000000000000
+      internalID: -7568521301154278507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkinsButtons_2
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 611
+        width: 94
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b70dd4ba2728e6d60800000000000000
+      internalID: 7885383426584203387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkinsButtons_3
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 610
+        width: 94
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77873b62d3440fe30800000000000000
+      internalID: 4535199854195079287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkinsButtons_4
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 611
+        width: 94
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a731588fa27b56e80800000000000000
+      internalID: -8185935352490028166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkinsButtons_5
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 492
+        width: 94
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 980df837390e93930800000000000000
+      internalID: 4123573857738018953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkinsButtons_6
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 492
+        width: 94
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aa2d7cf33622a6a0800000000000000
+      internalID: -6439542512465139040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkinsButtons_7
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 492
+        width: 94
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f996c0382b3ff2730800000000000000
+      internalID: 3976664944019794335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkinsButtons_8
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 491
+        width: 94
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db46e4c7cf4ca3b60800000000000000
+      internalID: 7726704699403822269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkinsButtons_9
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 492
+        width: 94
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29ca2f1b558d91ea0800000000000000
+      internalID: -5901447974123033454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkinsButtons_10
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 368
+        width: 94
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83525555a275fec10800000000000000
+      internalID: 2084980991827715384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkinsButtons_11
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 368
+        width: 94
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 626937994c8f218c0800000000000000
+      internalID: -4029885193271405018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkinsButtons_12
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 368
+        width: 94
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4aea69ddb993cae30800000000000000
+      internalID: 4516047867946118820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkinsButtons_13
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 367
+        width: 94
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 503844a3cc4eeb830800000000000000
+      internalID: 4088957077501018885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkinsButtons_14
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 368
+        width: 94
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 661d072170476fbf0800000000000000
+      internalID: -290917552195841690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkinsButtons_15
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 242
+        width: 94
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5c93ff1928b90c50800000000000000
+      internalID: 6632034413048994907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkinsButtons_16
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 242
+        width: 94
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a115c00f6c3f15370800000000000000
+      internalID: 8309690823231688986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkinsButtons_17
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 242
+        width: 94
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83e41a019912a9d60800000000000000
+      internalID: 7897661837840305720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkinsButtons_18
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 241
+        width: 94
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04e38cbeff5303fe0800000000000000
+      internalID: -1211408926473961920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkinsButtons_19
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 242
+        width: 94
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b74db931db1ca6a0800000000000000
+      internalID: -6436739181988460615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkinsButtons_20
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 128
+        width: 94
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bdb9b16a8563a4e0800000000000000
+      internalID: -1971620566838690375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkinsButtons_21
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 128
+        width: 94
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e209e82ca59691780800000000000000
+      internalID: -8711816165639417810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkinsButtons_22
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 128
+        width: 94
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4a71e29fd8e1c700800000000000000
+      internalID: 558983875710253646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkinsButtons_23
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 127
+        width: 94
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4d00180350bcf4c0800000000000000
+      internalID: -4252330077480546995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkinsButtons_24
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 128
+        width: 94
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ee859cce2cd89d60800000000000000
+      internalID: 7897304040153124580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkinsButtons_25
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 10
+        width: 94
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94c7d3e284e609720800000000000000
+      internalID: 2850899820418006089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkinsButtons_26
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 10
+        width: 94
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af03b16a5a2e4aad0800000000000000
+      internalID: -2691777476176432902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkinsButtons_27
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 10
+        width: 94
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5324240bece200220800000000000000
+      internalID: 2450009662544822837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkinsButtons_28
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 9
+        width: 94
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9c3e5288d17c60e0800000000000000
+      internalID: -2275318537014854499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkinsButtons_29
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 10
+        width: 94
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7bc4365575bcadc0800000000000000
+      internalID: -3626324084377990275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 59843b29242b7e64e97a09c19434d20e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      SkinsButtons_0: -7624185392625594120
+      SkinsButtons_1: -7568521301154278507
+      SkinsButtons_10: 2084980991827715384
+      SkinsButtons_11: -4029885193271405018
+      SkinsButtons_12: 4516047867946118820
+      SkinsButtons_13: 4088957077501018885
+      SkinsButtons_14: -290917552195841690
+      SkinsButtons_15: 6632034413048994907
+      SkinsButtons_16: 8309690823231688986
+      SkinsButtons_17: 7897661837840305720
+      SkinsButtons_18: -1211408926473961920
+      SkinsButtons_19: -6436739181988460615
+      SkinsButtons_2: 7885383426584203387
+      SkinsButtons_20: -1971620566838690375
+      SkinsButtons_21: -8711816165639417810
+      SkinsButtons_22: 558983875710253646
+      SkinsButtons_23: -4252330077480546995
+      SkinsButtons_24: 7897304040153124580
+      SkinsButtons_25: 2850899820418006089
+      SkinsButtons_26: -2691777476176432902
+      SkinsButtons_27: 2450009662544822837
+      SkinsButtons_28: -2275318537014854499
+      SkinsButtons_29: -3626324084377990275
+      SkinsButtons_3: 4535199854195079287
+      SkinsButtons_4: -8185935352490028166
+      SkinsButtons_5: 4123573857738018953
+      SkinsButtons_6: -6439542512465139040
+      SkinsButtons_7: 3976664944019794335
+      SkinsButtons_8: 7726704699403822269
+      SkinsButtons_9: -5901447974123033454
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

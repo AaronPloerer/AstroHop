@@ -34,23 +34,51 @@ public class ManagerScript : MonoBehaviour
 
     void InitializeLanguage()
     {
-        // Load saved language preference or default to first option
-        int localeID = PlayerPrefs.GetInt("Language", 0);
+        int localeID;
+
+        if (PlayerPrefs.HasKey("Language"))
+        {
+            // User has already picked (or had auto-detected) a language before
+            localeID = PlayerPrefs.GetInt("Language", 0);
+        }
+        else
+        {
+            // First ever launch: try to match system language, otherwise default to English
+            localeID = GetLocaleIDFromSystemLanguage();
+            PlayerPrefs.SetInt("Language", localeID);
+            PlayerPrefs.Save();
+        }
+
         StartCoroutine(SetLocale(localeID));
+    }
+
+    private int GetLocaleIDFromSystemLanguage()
+    {
+        switch (Application.systemLanguage)
+        {
+            case SystemLanguage.German:
+                return 1;
+            case SystemLanguage.Italian:
+                return 2;
+            case SystemLanguage.French:
+                return 3;
+            default:
+                return 0; // English fallback for everything else
+        }
     }
 
     public void LanguageDropdown()
     {
+        // Load language from UI language dropdown
+        int selectedLocale = MenuUIScript.instance.languageDropdown.value;
+
+        if (localizationActive == true)  return;     // Prevent multiple simultaneous locale changes
+
         // Add click sound when selecting language
         if (MenuUIScript.instance.optionsPanel.activeSelf)
         {
             AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
         }
-
-        // Load language from UI language dropdown
-        int selectedLocale = MenuUIScript.instance.languageDropdown.value;
-
-        if (localizationActive == true)  return;     // Prevent multiple simultaneous locale changes
 
         StartCoroutine(SetLocale(selectedLocale));
     }
@@ -65,15 +93,28 @@ public class ManagerScript : MonoBehaviour
     }
     #endregion
 
+    #region Revive Settings
+    [Header("Revive Settings")]
+    [SerializeField] private GameObject playerPrefab;          // Drag your new Player Prefab here
+    [SerializeField] private float respawnBelowCameraOffset;   // How far below the camera's current Y to respawn (positive number)
+    [SerializeField] private float reviveBoostDuration;        // How long the revive boost lasts, in seconds
+    private bool reviveUsedThisSession = false;
+    #endregion
+
     #region Cursor Management
     [Header("Cursor Configuration")]
     [SerializeField] private float cursorScale;      // Multiplier for cursor texture scaling
     public Sprite basicCursor;                       // Default cursor appearence
     public Sprite laserCursor;                       // Cursor appearence when playing of game view area
     public Sprite laserCursorActive;                 // Game cursor when laser indicator is on (clicked to shoot)
+    private Sprite currentCursorSprite;
     public void SetPixelCursor(Sprite cursorSprite, float hotspotRight, float hotspotDown)
     {
         if (cursorSprite == null) return;
+
+        if (cursorSprite == currentCursorSprite) return; // nothing changed, skip
+
+        currentCursorSprite = cursorSprite;
 
         // Get original sprite dimensions
         int originalWidth = (int)cursorSprite.textureRect.width;
@@ -212,6 +253,12 @@ public class ManagerScript : MonoBehaviour
         StartCoroutine(LoadSceneAfterSound("GameScene"));
     }
 
+    public void LoadMenuScene()
+    {
+        // Directly load game scene
+        SceneManager.LoadScene("MenuScene");
+    }
+
     public void LoadMenuSceneOnClick()
     {        
         // Start coroutine to handle sound and scene change
@@ -249,15 +296,20 @@ public class ManagerScript : MonoBehaviour
     #endregion
 
     #region Button Management
+    [Header("Help/Exit Button Cooldowns")]
+    [SerializeField] private float helpButtonCooldown;
+    [SerializeField] private float exitWarningButtonCooldown;
+    private float lastHelpButtonClickTime = -999f;
+    private float lastExitWarningButtonClickTime = -999f;
+
     public void OpenOptionsPanel()
     {
-        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
         MenuUIScript.instance.optionsPanel.SetActive(true);
         MenuUIScript.instance.startGameButton.interactable = false;
         MenuUIScript.instance.openOptionsButton.interactable = false;
         MenuUIScript.instance.openSkinsButton.interactable = false;
-        MenuUIScript.instance.openHelpButton.interactable = false;
-        MenuUIScript.instance.exitWindowWarningButton.interactable = false;
+
+        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
     }
 
     public void CloseOptionsPanel()
@@ -268,13 +320,12 @@ public class ManagerScript : MonoBehaviour
 
         MenuUIScript.instance.deletedProgressText.SetActive(false);
 
-        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.closeClick, AudioManagerScript.instance.closeClickVolume);
         MenuUIScript.instance.optionsPanel.SetActive(false);
         MenuUIScript.instance.startGameButton.interactable = true;
         MenuUIScript.instance.openOptionsButton.interactable = true;
         MenuUIScript.instance.openSkinsButton.interactable = true;
-        MenuUIScript.instance.openHelpButton.interactable = true;
-        MenuUIScript.instance.exitWindowWarningButton.interactable = true;
+
+        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.closeClick, AudioManagerScript.instance.closeClickVolume);
     }
 
     public void OpenSkinsPanel()
@@ -282,63 +333,77 @@ public class ManagerScript : MonoBehaviour
         // Update UI in Help panel
         MenuUIScript.instance.UpdateInputTutorialText();
 
-        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
         MenuUIScript.instance.skinsPanel.SetActive(true);
         MenuUIScript.instance.startGameButton.interactable = false;
         MenuUIScript.instance.openOptionsButton.interactable = false;
         MenuUIScript.instance.openSkinsButton.interactable = false;
-        MenuUIScript.instance.openHelpButton.interactable = false;
-        MenuUIScript.instance.exitWindowWarningButton.interactable = false;
+
+        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
     }
 
     public void CloseSkinsPanel()
     {
-        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.closeClick, AudioManagerScript.instance.closeClickVolume);
         MenuUIScript.instance.skinsPanel.SetActive(false);
         MenuUIScript.instance.startGameButton.interactable = true;
         MenuUIScript.instance.openOptionsButton.interactable = true;
         MenuUIScript.instance.openSkinsButton.interactable = true;
-        MenuUIScript.instance.openHelpButton.interactable = true;
-        MenuUIScript.instance.exitWindowWarningButton.interactable = true;
+
+        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.closeClick, AudioManagerScript.instance.closeClickVolume);
     }
 
     public void OpenHelpPanel() 
-    { 
+    {
+        // Cooldown to prevent double-click spam
+        if (Time.unscaledTime - lastHelpButtonClickTime < helpButtonCooldown) return;
+        lastHelpButtonClickTime = Time.unscaledTime;
+
+        // Toggle: if it's already open, close it instead of reopening
+        if (MenuUIScript.instance.helpPanel.activeSelf)
+        {
+            CloseHelpPanel();
+            return;
+        }
+
         // Update UI in Help panel
         MenuUIScript.instance.UpdateInputTutorialText();
 
-        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
         MenuUIScript.instance.helpPanel.SetActive(true);
+        MenuUIScript.instance.exitWindowWarningPanel.SetActive(false);
+        MenuUIScript.instance.skinsPanel.SetActive(false);
+        MenuUIScript.instance.optionsPanel.SetActive(false);
+        MenuUIScript.instance.deleteProgressPanel.SetActive(false);
+        MenuUIScript.instance.deleteProgressConfirmPanel.SetActive(false);
         MenuUIScript.instance.startGameButton.interactable = false;
         MenuUIScript.instance.openOptionsButton.interactable = false;
         MenuUIScript.instance.openSkinsButton.interactable = false;
-        MenuUIScript.instance.openHelpButton.interactable = false;
-        MenuUIScript.instance.exitWindowWarningButton.interactable = false;
+
+        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
     }
 
     public void CloseHelpPanel()
     {
-        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.closeClick, AudioManagerScript.instance.closeClickVolume);
         MenuUIScript.instance.helpPanel.SetActive(false);
         MenuUIScript.instance.startGameButton.interactable = true;
         MenuUIScript.instance.openOptionsButton.interactable = true;
         MenuUIScript.instance.openSkinsButton.interactable = true;
-        MenuUIScript.instance.openHelpButton.interactable = true;
-        MenuUIScript.instance.exitWindowWarningButton.interactable = true;
+
+        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.closeClick, AudioManagerScript.instance.closeClickVolume);
     }
 
     public void OpenWarningToMenu()
     {
-        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
         MainGameUIScript.instance.warningMainMenuPanel.SetActive(true);
         MainGameUIScript.instance.pausePanel.SetActive(false);
+
+        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
     }
 
     public void OpenWarningRetry()
     {
-        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
         MainGameUIScript.instance.warningRetryPanel.SetActive(true);
         MainGameUIScript.instance.pausePanel.SetActive(false);
+
+        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
     }
 
     public void GameOverScreen()
@@ -361,6 +426,9 @@ public class ManagerScript : MonoBehaviour
         int finalScore = int.Parse(MainGameUIScript.instance.scoreText.text);
         PlayerPrefs.SetInt("Score", finalScore);
         MainGameUIScript.instance.finalScore.text = finalScore.ToString();
+
+        // Check skin unlocks
+        MainGameUIScript.instance.CheckSkinUnlocks(finalScore);
 
         // Update highscore if needed
         int storedHighScore = PlayerPrefs.GetInt("HighScore", 0);
@@ -391,6 +459,13 @@ public class ManagerScript : MonoBehaviour
         MainGameUIScript.instance.tutorials.SetActive(false);
         MainGameUIScript.instance.gameOverPanel.SetActive(true);
 
+        // Only show the revive button if a rewarded ad is actually ready AND the player hasn't already revived this session
+        bool adReady = !reviveUsedThisSession
+            && AdManagerScript.instance != null
+            && AdManagerScript.instance.IsAdActuallyReady();
+
+        MainGameUIScript.instance.reviveButton.gameObject.SetActive(adReady);
+
         // Display appropriate failure message
         if (PlayerControllerScript.instance.falling)
         {
@@ -409,26 +484,80 @@ public class ManagerScript : MonoBehaviour
         }
     }
 
-    public void OpenExitWinodwWarning()
+    public void WatchAdToRevive()
     {
         AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
+
+        AdManagerScript.instance.ShowRewardedAd(() =>
+        {
+            reviveUsedThisSession = true;             // Lock out further revives this session
+            StartCoroutine(RevivePlayerRoutine());
+        });
+    }
+
+    private IEnumerator RevivePlayerRoutine()
+    {
+        yield return new WaitForSecondsRealtime(0.3f);
+
+        // Restore UI/controls to their pre-game-over state
+        MainGameUIScript.instance.gameOverPanel.SetActive(false);
+        MainGameUIScript.instance.tutorials.SetActive(true);
+        MainGameUIScript.instance.pauseButton.interactable = true;
+
+        var joystick = MainGameUIScript.instance.aimConroller.GetComponent<AimJoystick>();
+        joystick.enabled = true;
+
+        ManagerScript.instance.SetPixelCursor(ManagerScript.instance.laserCursor, 0.5f, 0.5f);
+
+        // Respawn position: centered horizontally, a fixed distance below the camera's current position
+        Vector3 respawnPosition = new Vector3(
+            0f,
+            CameraScript.instance.transform.position.y - respawnBelowCameraOffset,
+            0f
+        );
+
+        GameObject newPlayer = Instantiate(playerPrefab, respawnPosition, Quaternion.identity);
+
+        yield return null;
+
+        CameraScript.instance.SetTarget(newPlayer.transform);
+        PlayerControllerScript.instance.ActivateReviveBoost(reviveBoostDuration);
+    }
+
+    public void OpenExitWinodwWarning()
+    {
+        // Cooldown to prevent double-click spam
+        if (Time.unscaledTime - lastExitWarningButtonClickTime < exitWarningButtonCooldown) return;
+        lastExitWarningButtonClickTime = Time.unscaledTime;
+
+        // Toggle: if it's already open, close it instead of reopening
+        if (MenuUIScript.instance.exitWindowWarningPanel.activeSelf)
+        {
+            CloseExitWindowWarning();
+            return;
+        }
+
         MenuUIScript.instance.exitWindowWarningPanel.SetActive(true);
+        MenuUIScript.instance.helpPanel.SetActive(false);
+        MenuUIScript.instance.skinsPanel.SetActive(false);
+        MenuUIScript.instance.optionsPanel.SetActive(false);
+        MenuUIScript.instance.deleteProgressPanel.SetActive(false);
+        MenuUIScript.instance.deleteProgressConfirmPanel.SetActive(false);
         MenuUIScript.instance.startGameButton.interactable = false;
         MenuUIScript.instance.openOptionsButton.interactable = false;
         MenuUIScript.instance.openSkinsButton.interactable = false;
-        MenuUIScript.instance.openHelpButton.interactable = false;
-        MenuUIScript.instance.exitWindowWarningButton.interactable = false;
+
+        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
     }
 
     public void CloseExitWindowWarning()
     {
-        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.closeClick, AudioManagerScript.instance.closeClickVolume);
         MenuUIScript.instance.exitWindowWarningPanel.SetActive(false);
         MenuUIScript.instance.startGameButton.interactable = true;
         MenuUIScript.instance.openOptionsButton.interactable = true;
         MenuUIScript.instance.openSkinsButton.interactable = true;
-        MenuUIScript.instance.openHelpButton.interactable = true;
-        MenuUIScript.instance.exitWindowWarningButton.interactable = true;
+
+        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.closeClick, AudioManagerScript.instance.closeClickVolume);
     }
 
     public void ExitProgram()
@@ -444,47 +573,44 @@ public class ManagerScript : MonoBehaviour
 
     public void OpenDeleteProgressPanel()
     {
-        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
         MenuUIScript.instance.deleteProgressPanel.SetActive(true);
         MenuUIScript.instance.startGameButton.interactable = false;
         MenuUIScript.instance.openOptionsButton.interactable = false;
         MenuUIScript.instance.openSkinsButton.interactable = false;
-        MenuUIScript.instance.openHelpButton.interactable = false;
-        MenuUIScript.instance.exitWindowWarningButton.interactable = false;
+
+        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
     }
 
     public void CloseDeleteProgressPanel()
     {
-        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.closeClick, AudioManagerScript.instance.closeClickVolume);
         MenuUIScript.instance.deleteProgressPanel.SetActive(false);
         MenuUIScript.instance.startGameButton.interactable = true;
         MenuUIScript.instance.openOptionsButton.interactable = true;
         MenuUIScript.instance.openSkinsButton.interactable = true;
-        MenuUIScript.instance.openHelpButton.interactable = true;
-        MenuUIScript.instance.exitWindowWarningButton.interactable = true;
+
+        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.closeClick, AudioManagerScript.instance.closeClickVolume);
     }
 
     public void OpenDeleteProgressConfirmPanel()
     {
-        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
         MenuUIScript.instance.deleteProgressConfirmPanel.SetActive(true);
         MenuUIScript.instance.deleteProgressPanel.SetActive(false);
+
+        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
     }
 
     public void CloseDeleteProgressConfirmPanel()
     {
-        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.closeClickVolume);
         MenuUIScript.instance.deleteProgressConfirmPanel.SetActive(false);
         MenuUIScript.instance.startGameButton.interactable = true;
         MenuUIScript.instance.openOptionsButton.interactable = true;
         MenuUIScript.instance.openSkinsButton.interactable = true;
-        MenuUIScript.instance.openHelpButton.interactable = true;
-        MenuUIScript.instance.exitWindowWarningButton.interactable = true;
+
+        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.closeClickVolume);
     }
 
     public void DeleteProgress()
     {
-        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
         MenuUIScript.instance.deletedProgressText.SetActive(true);
         MenuUIScript.instance.deleteProgressConfirmPanel.SetActive(false);
         MenuUIScript.instance.startGameButton.interactable = true;
@@ -492,6 +618,8 @@ public class ManagerScript : MonoBehaviour
         MenuUIScript.instance.openSkinsButton.interactable = true;
         MenuUIScript.instance.openHelpButton.interactable = true;
         MenuUIScript.instance.exitWindowWarningButton.interactable = true;
+
+        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
 
         // Wipe progression data and reshow tutorials
         PlayerPrefs.DeleteKey("HighScore");
@@ -511,20 +639,93 @@ public class ManagerScript : MonoBehaviour
                 break;
             }
         }
+
+        // Wipe unlocked skins
+        foreach (var skinButton in MenuUIScript.instance.skinButtons)
+        {
+            int skinIndex = skinButton.skinIndex;
+
+            if (PlayerPrefs.GetInt("SkinUnlocked" + skinIndex, 0) == 1)
+            {
+                PlayerPrefs.DeleteKey("SkinUnlocked" + skinIndex);
+            }
+        }
+
+        // Reset selected skin to defaul
+        PlayerPrefs.SetInt("Skin", 0);
+
         PlayerPrefs.Save();
+    }
+
+    public void SetInvertedControlsOn()
+    {
+        if (PlayerPrefs.GetInt("InvertedControls", 0) == 1) return; // already on, no-op
+
+        PlayerPrefs.SetInt("InvertedControls", 1);
+        PlayerPrefs.Save();
+
+        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
+        MenuUIScript.instance.UpdateInvertedControlsButtonsVisual();
+    }
+
+    public void SetInvertedControlsOff()
+    {
+        if (PlayerPrefs.GetInt("InvertedControls", 0) == 0) return; // already off, no-op
+
+        PlayerPrefs.SetInt("InvertedControls", 0);
+        PlayerPrefs.Save();
+
+        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.closeClick, AudioManagerScript.instance.closeClickVolume);
+        MenuUIScript.instance.UpdateInvertedControlsButtonsVisual();
     }
 
     public void SelectSkin(int skinIndex)
     {
+        // Ignore the click if this skin hasn't been unlocked yet
+        if (!IsSkinUnlocked(skinIndex)) return;
+
         PlayerPrefs.SetInt("Skin", skinIndex);
+        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
         PlayerPrefs.Save();
+    }
+
+    private bool IsSkinUnlocked(int skinIndex)
+    {
+        if (skinIndex <= 0) return true;
+
+        return PlayerPrefs.GetInt("SkinUnlocked" + skinIndex, 0) == 1;
     }
     #endregion
 
     #region Pause Management
     public void PauseGame()
     {
+        MainGameUIScript.instance.paused = true;
+        MainGameUIScript.instance.tutorials.SetActive(false);
+        MainGameUIScript.instance.pausePanel.SetActive(true);
+        MainGameUIScript.instance.warningMainMenuPanel.SetActive(false);
+        MainGameUIScript.instance.warningRetryPanel.SetActive(false);
+
+        // Reset and disable joystick
+        var joystick = MainGameUIScript.instance.aimConroller.GetComponent<AimJoystick>();
+        joystick.ForceReset();         // Snap knob to center and hide preview 
+        joystick.enabled = false;      // Then disable
+
+        // Force-release boost
+        MainGameUIScript.instance.boostButton.GetComponent<BoostButton>().ForceRelease();
+
+        // Change to default cursor
+
+        ManagerScript.instance.SetPixelCursor(ManagerScript.instance.basicCursor, 0f, 0f);
+        // Save score
+        int finalScore = int.Parse(MainGameUIScript.instance.scoreText.text);
+        PlayerPrefs.SetInt("Score", finalScore);
+
         AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
+    }
+
+    public void PauseGameOnExit()
+    {
         MainGameUIScript.instance.paused = true;
         MainGameUIScript.instance.tutorials.SetActive(false);
         MainGameUIScript.instance.pausePanel.SetActive(true);
@@ -549,9 +750,10 @@ public class ManagerScript : MonoBehaviour
 
     public void ContinueGame()
     {
-        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.closeClick, AudioManagerScript.instance.closeClickVolume);
         MainGameUIScript.instance.tutorials.SetActive(true);
         MainGameUIScript.instance.pausePanel.SetActive(false);
+        MainGameUIScript.instance.warningMainMenuPanel.SetActive(false);
+        MainGameUIScript.instance.warningRetryPanel.SetActive(false);
         MainGameUIScript.instance.paused = false;
 
         // Enable aim functionality
@@ -559,6 +761,8 @@ public class ManagerScript : MonoBehaviour
 
         // Change to game cursor
         ManagerScript.instance.SetPixelCursor(ManagerScript.instance.laserCursor, 0.5f, 0.5f);
+
+        AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.closeClick, AudioManagerScript.instance.closeClickVolume);
     }
     #endregion
 

@@ -209,6 +209,7 @@ MonoBehaviour:
   rightFuelPoint: {fileID: 2014045906165343439}
   breakingPlatformAnim: {fileID: 2641596883710027528}
   playerJumpForce: 9.2
+  hapticDelayTime: 0.075
   fallDownSpeed: 0.18
   chanceForSuperFuel: 0.1
   forceFuelSpawn: 0

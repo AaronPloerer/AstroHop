@@ -1,6 +1,5 @@
 using System.Collections;
 using UnityEngine;
-using static UnityEngine.InputManagerEntry;
 
 public class PlayerControllerScript : MonoBehaviour
 {
@@ -49,6 +48,7 @@ public class PlayerControllerScript : MonoBehaviour
     [SerializeField] private float startingBoostForce;                  // Upward force applied during special initial score-based boost
     [SerializeField] private float relativeStartingBoostDistance;       // Fraction of previous score to reach with initial boost
     [SerializeField] private float scoreForBoostActivation;             // Minimum score to enable starting boost
+    [SerializeField] private float fallHapticFeedbackDelayTime;         // Delay haptics after game over fall
     #endregion
 
     #region State Flags
@@ -64,14 +64,16 @@ public class PlayerControllerScript : MonoBehaviour
     #endregion
 
     #region Private Variables
-    private float movement;                     // Current horizontal movement value
-    private float currentDirection;             // Horizontal movement direction
-    private bool failedBoostSfxPlayed;          // While pressing boost key and not having enough fuel, the sound effect was played
-    private float lostFuel;                     // Fuel loss during single boost
-    private int previousScore;                  // Score from previous game
-    private bool isPausedPlayer;                // Pause state flag
-    private Vector2 storedVelocity;             // Velocity storage during pause
-    private RigidbodyType2D originalBodyType;   // Original rigidbody type
+    private float movement;                      // Current horizontal movement value
+    private float currentDirection;              // Horizontal movement direction
+    private bool failedBoostSfxPlayed;           // While pressing boost key and not having enough fuel, the sound effect was played
+    private float lostFuel;                      // Fuel loss during single boost
+    private int previousScore;                   // Score from previous game
+    private bool isPausedPlayer;                 // Pause state flag
+    private float reviveBoostTimeRemaining;      // Countdown for the fixed-duration revive boost
+    private Vector2 storedVelocity;              // Velocity storage during pause
+    private RigidbodyType2D originalBodyType;    // Original rigidbody type
+    private bool controlsLockedForStartingBoost; // Track lock state to avoid redundant calls
     #endregion
 
     #region Initialization
@@ -150,7 +152,7 @@ public class PlayerControllerScript : MonoBehaviour
         // Get movement direction from input
         float targetDirection = 0f;
 
-        #if UNITY_EDITOR // Keyboard controls when testing in Unity Editor
+#if UNITY_EDITOR // Keyboard controls when testing in Unity Editor
 
         bool leftPressed = Input.GetKey(KeyCode.A);
         bool rightPressed = Input.GetKey(KeyCode.D);
@@ -225,7 +227,7 @@ public class PlayerControllerScript : MonoBehaviour
             }
         }
     }
-#endregion
+    #endregion
 
     #region Physics & Movement Management
     void FixedUpdate()
@@ -274,6 +276,37 @@ public class PlayerControllerScript : MonoBehaviour
         if (!startingBoost)
         {
             astronautAnim.SetBool("startboost", false);
+            if (controlsLockedForStartingBoost)
+            {
+                UnlockControlsAfterStartingBoost();
+            }
+            return;
+        }
+
+        // Lock joystick/boost button the first frame we detect an active starting boost
+        if (!controlsLockedForStartingBoost)
+        {
+            LockControlsForStartingBoost();
+        }
+
+        // Revive boost
+        if (reviveBoostTimeRemaining > 0f)
+        {
+            velocity.y = startingBoostForce;
+            astronautAnim.SetBool("startboost", true);
+
+            reviveBoostTimeRemaining -= Time.fixedDeltaTime;
+            if (reviveBoostTimeRemaining <= 0f)
+            {
+                astronautAnim.SetBool("startboost", false);
+                startingBoost = false;
+            }
+
+            boostMovement = true;
+            if (rb.linearVelocityY <= 0.5f)
+            {
+                boostMovement = false;
+            }
             return;
         }
 
@@ -281,7 +314,11 @@ public class PlayerControllerScript : MonoBehaviour
         float gravity = Mathf.Abs(rb.gravityScale * Physics2D.gravity.y);
         float physicsDistance = (startingBoostForce * startingBoostForce) / (2 * gravity);
         float physicsScore = physicsDistance * MainGameUIScript.instance.positionToScore;
-        float targetScore = (previousScore * relativeStartingBoostDistance) - physicsScore;
+
+        // account for the extra frame of thrust applied before the check catches up
+        float frameLagScore = startingBoostForce * Time.fixedDeltaTime * MainGameUIScript.instance.positionToScore;
+
+        float targetScore = (previousScore * relativeStartingBoostDistance) - physicsScore - frameLagScore;
 
         // Boost to calculated position
         float currentScore = transform.position.y * MainGameUIScript.instance.positionToScore;
@@ -307,6 +344,30 @@ public class PlayerControllerScript : MonoBehaviour
                 boostMovement = false;
             }
         }
+    }
+    #endregion
+
+    #region Starting Boost UI Lock
+    private void LockControlsForStartingBoost()
+    {
+        var joystick = MainGameUIScript.instance.aimConroller.GetComponent<AimJoystick>();
+        joystick.ForceReset();
+        joystick.enabled = false;
+
+        MainGameUIScript.instance.boostButton.ForceRelease();
+
+        controlsLockedForStartingBoost = true;
+    }
+
+    private void UnlockControlsAfterStartingBoost()
+    {
+        controlsLockedForStartingBoost = false;
+
+        // Don't re-enable if the game is also paused right now
+        if (MainGameUIScript.instance.paused) return;
+
+        var joystick = MainGameUIScript.instance.aimConroller.GetComponent<AimJoystick>();
+        joystick.enabled = true;
     }
     #endregion
 
@@ -379,6 +440,15 @@ public class PlayerControllerScript : MonoBehaviour
             Destroy(gameObject);
             ManagerScript.instance.GameOverScreen();
         }
+    }
+    #endregion
+
+    #region Revive Function
+    // Called by ManagerScript right after a fresh player is instantiated post-revive.
+    public void ActivateReviveBoost(float duration)
+    {
+        startingBoost = true;
+        reviveBoostTimeRemaining = duration;
     }
     #endregion
 }

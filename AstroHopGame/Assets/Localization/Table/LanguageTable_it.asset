@@ -107,7 +107,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 322549373206528
-    m_Localized: Primo contatto fallito. Collisione fatale con un UFO.
+    m_Localized: Primo contatto fallito. Collisione fatale.
     m_Metadata:
       m_Items: []
   - m_Id: 322383782084608
@@ -139,39 +139,25 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 604724567998464
-    m_Localized: 'Non cadere fuori dallo schermo!
-
-      <size=30><alpha=#80>Premi
-      [Alt] per saltare il tutorial.'
+    m_Localized: Inclina lo schermo per muoverti.
     m_Metadata:
       m_Items: []
-  - m_Id: 604769543520256
-    m_Localized: 'Clicca il <color=#ECA800>tasto sinistro <color=#FFFFFF>per sparare
-      verso gli UFO.
-
-      <size=30><alpha=#80>Premi [Alt] per saltare il tutorial.'
+  - m_Id: 180702060588564480
+    m_Localized: Spara, sfonda con il Boost, salta o evita gli UFO.
     m_Metadata:
       m_Items: []
   - m_Id: 604853593178112
-    m_Localized: 'Raccogli carburante per ricaricare il tuo razzo boost.
-
-      <size=30><alpha=#80>Premi
-      [Alt] per saltare il tutorial.'
+    m_Localized: Raccogli carburante per ricaricare il Boost.
     m_Metadata:
       m_Items: []
   - m_Id: 604892465987584
-    m_Localized: 'Le piattaforme <color=#EC1321>rosse <color=#FFFFFF>si rompono dopo
+    m_Localized: Le piattaforme <color=#EC1321>rosse <color=#FFFFFF>si rompono dopo
       un solo uso.
-
-      <size=30><alpha=#80>Premi [Alt] per saltare il tutorial.'
     m_Metadata:
       m_Items: []
   - m_Id: 604938443948032
-    m_Localized: 'Le piattaforme <color=#BE23FE>viola <color=#FFFFFF>si muovono a
+    m_Localized: Le piattaforme <color=#BE23FE>viola <color=#FFFFFF>si muovono a
       sinistra e a destra.
-
-      <size=30><alpha=#80>Premi [Alt] per saltare il
-      tutorial.'
     m_Metadata:
       m_Items: []
   - m_Id: 4223074929999872
@@ -191,7 +177,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6408009740713984
-    m_Localized: "Carburante finito \u2013 raccogli serbatoi per il boost razzo."
+    m_Localized: Non puoi raccogliere altro carburante!
     m_Metadata:
       m_Items: []
   - m_Id: 6417898709975040
@@ -212,9 +198,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418170840612864
-    m_Localized: Usa i tasti di movimento sinistra/destra (Frecce Sinistra/Destra
-      o tasti selezionati in Impostazioni) per posizionarti sulle piattaforme su
-      cui vuoi atterrare.
+    m_Localized: Inclina il telefono a sinistra e a destra per posizionarti sulle
+      piattaforme su cui vuoi atterrare.
     m_Metadata:
       m_Items: []
   - m_Id: 6418195234684928
@@ -223,13 +208,13 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 6419343605760000
     m_Localized: "Hai un razzo per boost verticali. Se il razzo contiene carburante,
-      tieni premuto il tasto Boost (Freccia Su o tasto selezionato in Impostazioni)
-      per volare verso l\u2019alto. Per fare rifornimento, tocca i serbatoi di carburante
-      che compaiono su alcune piattaforme.\r\nDurante il boost, il carburante si
-      consuma a un ritmo costante, ma ogni volta che fai un boost, viene consumato
-      almeno il 10% del serbatoio totale. Se inizi il boost con meno del 10% di carburante
-      rimanente, verr\xE0 consumato tutto.\r\nUtilizza boost per correggere atterraggi
-      mancati o raggiungere piattaforme pi\xF9 alte.\r"
+      premi il pulsante Boost per volare verso l'alto. Per fare rifornimento, tocca
+      i serbatoi di carburante che compaiono su alcune piattaforme. I serbatoi rossi
+      ripristinano il 20% di carburante, mentre quelli blu riempiono il serbatoio
+      al massimo.\nDurante il boost, il carburante si consuma a un ritmo costante,
+      ma ogni boost consuma almeno il 20% del serbatoio totale. Se inizi il boost
+      con meno del 20% di carburante rimanente, verr\xE0 consumato tutto.\nUtilizza
+      boost per correggere atterraggi mancati o raggiungere piattaforme pi\xF9 alte."
     m_Metadata:
       m_Items: []
   - m_Id: 6418291280052224
@@ -237,9 +222,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418301782589440
-    m_Localized: "Le piattaforme hanno tre varianti:\r\n- Verdi: Statiche e permanenti.\r\n-
-      Rosse: Si rompono dopo un atterraggio, utilizzabili una sola volta.\r\n- Viola:
-      Si muovono a sinistra e destra a velocit\xE0 costante.\r"
+    m_Localized: "Le piattaforme hanno tre varianti:\n- Verdi: Statiche e permanenti.\n-
+      Viola: Si muovono a sinistra e destra a velocit\xE0 costante.\n- Rosse: Si
+      rompono dopo un atterraggio, utilizzabili una sola volta."
     m_Metadata:
       m_Items: []
   - m_Id: 6418419743195136
@@ -252,12 +237,11 @@ MonoBehaviour:
     m_Localized: "Gli UFO scendono lentamente seguendo la tua posizione orizzontale.
       Prima che un UFO appaia sullo schermo, una freccia in alto avvisa da quale
       direzione sta arrivando. Scontrarsi con uno dal basso o dal lato termina la
-      partita.\r\nPuoi eliminarli in tre modi:\r\n- Colpo Laser: Clicca con il tasto
-      sinistro del mouse verso il bersaglio. Un raggio laser parte dalla tua posizione
-      dirigendosi verso il cursore e distrugge un UFO se viene colpito.\r\n- Attacco
-      con Salto: Atterra sopra un UFO per distruggerlo. Rimbalzerai come su una piattaforma.\r\n-
-      Propulsione del Razzo: Usa un boost per distruggere qualsiasi UFO che colpisci
-      mentre sali.\r"
+      partita.\r\nPuoi eliminarli in tre modi:\r\n- Colpo Laser: Mira e rilascia
+      il joystick nella direzione del tuo bersaglio. Un raggio laser parte dalla
+      tua posizione e distrugge un UFO se lo colpisce.\r\n- Attacco con Salto: Atterra
+      sopra un UFO per distruggerlo. Rimbalzerai come su una piattaforma.\r\n- Propulsione
+      del Razzo: Usa un boost per distruggere qualsiasi UFO che colpisci mentre sali.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6418570339680256
@@ -265,7 +249,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6418695137001472
-    m_Localized: Dopo aver raggiunto un punteggio di 400 o superiore, sblocchi un
+    m_Localized: Dopo aver raggiunto un punteggio di 500 o superiore, sblocchi un
       boost di partenza automatico per la prossima partita, che ti lancia fino al
       50% del punteggio precedente. Puoi attivare/disattivare questa funzione nelle
       Impostazioni.
@@ -277,7 +261,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 6418756222844928
     m_Localized: "Metti in pausa il gioco in qualsiasi momento cliccando l\u2019icona
-      di pausa in alto a sinistra o premendo il tasto Pausa (predefinito: Barra Spaziatrice)."
+      di pausa in alto a sinistra."
     m_Metadata:
       m_Items: []
   - m_Id: 6418783104139264
@@ -296,10 +280,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 6418934363324416
     m_Localized: "Apri il menu impostazioni dal menu principale per:\r\n- Scegliere
-      la lingua dei testi sullo schermo\r\n- Regolare separatamente il volume della
-      musica e degli effetti sonori\r\n- Personalizzare l\u2019assegnazione dei tasti
-      per movimento, boost, sparo e pausa\r\n- Attivare o disattivare il boost di
-      partenza automatico e i suggerimenti in gioco\r"
+      la lingua dei testi sullo schermo\r\n- Regolare il volume della musica e degli
+      effetti sonori\r\n- Scambiare la posizione del Joystick di Sparo e del Pulsante
+      Boost\r\n- Attivare o disattivare il boost di partenza automatico e i suggerimenti
+      in gioco\r"
     m_Metadata:
       m_Items: []
   - m_Id: 6751468896911360
@@ -349,12 +333,37 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 8607735869341696
-    m_Localized: "Serbatoio razzo pieno \u2013 non puoi raccogliere altro carburante
-      per il boost."
+    m_Localized: Raccogli carburante per il boost!
     m_Metadata:
       m_Items: []
   - m_Id: 178533994857496576
     m_Localized: Skin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 180976597200797696
+    m_Localized: 'Guarda un video
+
+      per rivivere'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 181097022450827264
+    m_Localized: Sblocca a 1000 punti
+    m_Metadata:
+      m_Items: []
+  - m_Id: 181097114461274112
+    m_Localized: Sblocca a 2500 punti
+    m_Metadata:
+      m_Items: []
+  - m_Id: 181097117191766016
+    m_Localized: Sblocca a 4500 punti
+    m_Metadata:
+      m_Items: []
+  - m_Id: 181097119892897792
+    m_Localized: Sblocca a 6500 punti
+    m_Metadata:
+      m_Items: []
+  - m_Id: 181097121469956096
+    m_Localized: Sblocca a 9000 punti
     m_Metadata:
       m_Items: []
   references:
