@@ -7,15 +7,7 @@ public class AndroidHaptics : MonoBehaviour
 
     private void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        instance = this;
     }
 
     public static void TriggerHapticFeedback(float delay = 0f)

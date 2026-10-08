@@ -23,7 +23,7 @@ public class AdManagerScript : MonoBehaviour
     #region Ad Unit IDs
     // TEST ID - Google's official test rewarded ad unit for Android.
     // Always test with this before switching to your real Ad Unit ID.
-    private const string reviveAdUnitId = "ca-app-pub-3940256099942544/5224354917";
+    private const string reviveAdUnitId = "ca-app-pub-2118603046749632/1243821480";
     #endregion
 
     #region State
