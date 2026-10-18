@@ -102,6 +102,7 @@ public class MainGameUIScript : MonoBehaviour
     [Header("Score Settings")]
     public float positionToScore;
     public int highScoreNumber;
+    public int previousRunScore;
     private float highestPos;
     #endregion
 
@@ -129,6 +130,10 @@ public class MainGameUIScript : MonoBehaviour
 
     private void InitializeGameState()
     {
+        // Review prompt: count this run and remember the previous run's score
+        ReviewPromptStats.CountRun();
+        previousRunScore = ReviewPromptStats.GetLastRunScore();
+
         // Set initial laser cursor 
         ManagerScript.instance.SetPixelCursor(ManagerScript.instance.laserCursor, 0.5f, 0.5f);
 

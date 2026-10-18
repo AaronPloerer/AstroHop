@@ -4,6 +4,11 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Localization.Settings;
 using UnityEngine.SceneManagement;
+
+#if UNITY_ANDROID
+using Google.Play.Review;
+#endif
+
 public class ManagerScript : MonoBehaviour
 {
     #region Singleton
@@ -25,6 +30,7 @@ public class ManagerScript : MonoBehaviour
     #region Initialization
     private void Start()
     {
+        ReviewPromptStats.CountSessionOnce();
         InitializeLanguage();
     }
     #endregion
@@ -441,6 +447,18 @@ public class ManagerScript : MonoBehaviour
         MainGameUIScript.instance.highScore.text = storedHighScore.ToString();
 
 
+        // Review prompt: check the rule first, then remember this run's score for next time
+        bool askForReview = ReviewPromptStats.ShouldPrompt(finalScore, MainGameUIScript.instance.previousRunScore);
+        ReviewPromptStats.SaveRunScore(finalScore);
+
+        // Lock the game over buttons while the review is pending (also resets the lock after a revive)
+        SetGameOverPanelInteractable(!askForReview);
+
+        if (askForReview)
+        {
+            StartCoroutine(RequestReviewRoutine());
+        }
+
         StartCoroutine(SpawnGameOverScreen());
     }
 
@@ -776,6 +794,67 @@ public class ManagerScript : MonoBehaviour
     public void CloseClickSound()
     {
         AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.closeClick, AudioManagerScript.instance.closeClickVolume);
+    }
+    #endregion
+
+    #region Review Prompt
+    [Header("Review Prompt")]
+    [SerializeField] private float reviewDelay = 2f;        // seconds after the death before the dialog appears
+    [SerializeField] private float requestTimeout = 4f;     // give up waiting for Google after this many seconds
+
+    // Blocks or unblocks all buttons on the game over panel (revive, retry, menu)
+    private void SetGameOverPanelInteractable(bool value)
+    {
+        GameObject panel = MainGameUIScript.instance.gameOverPanel;
+        CanvasGroup group = panel.GetComponent<CanvasGroup>();
+        if (group == null) group = panel.AddComponent<CanvasGroup>();
+        group.interactable = value;
+    }
+
+    private IEnumerator RequestReviewRoutine()
+    {
+    #if UNITY_EDITOR
+            // The Play Store doesn't exist in the editor: just simulate the wait
+            yield return new WaitForSecondsRealtime(reviewDelay);
+            Debug.Log("Review popup would be shown now");
+            ReviewPromptStats.MarkPrompted();
+            SetGameOverPanelInteractable(true);
+    #elif UNITY_ANDROID
+        float startTime = Time.unscaledTime;
+
+        ReviewManager reviewManager = new ReviewManager();
+
+        // Pre-load the review info while the game over screen is appearing
+        var requestFlow = reviewManager.RequestReviewFlow();
+        float waited = 0f;
+        while (!requestFlow.IsDone && waited < requestTimeout)
+        {
+            waited += Time.unscaledDeltaTime;
+            yield return null;
+        }
+
+        if (!requestFlow.IsDone || requestFlow.Error != ReviewErrorCode.NoError)
+        {
+            Debug.LogWarning("Review request failed or timed out");
+            SetGameOverPanelInteractable(true);   // unlock; nothing used up, can try again on a later run
+            yield break;
+        }
+
+        PlayReviewInfo reviewInfo = requestFlow.GetResult();
+
+        // Let the score land first
+        float remaining = reviewDelay - (Time.unscaledTime - startTime);
+        if (remaining > 0f) yield return new WaitForSecondsRealtime(remaining);
+
+        ReviewPromptStats.MarkPrompted();   // one time only
+        var launchFlow = reviewManager.LaunchReviewFlow(reviewInfo);
+        yield return launchFlow;            // continues once the dialog is closed
+
+        SetGameOverPanelInteractable(true);
+    #else
+        SetGameOverPanelInteractable(true);
+        yield break;
+    #endif
     }
     #endregion
 }
