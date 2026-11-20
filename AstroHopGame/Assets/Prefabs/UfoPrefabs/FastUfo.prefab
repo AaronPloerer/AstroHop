@@ -82,7 +82,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1665908449
-  m_SortingLayer: 1
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 5326888594864507837, guid: a6e53143ee2f28b4fa973e8f3528d37e, type: 3}
@@ -152,12 +152,14 @@ PolygonCollider2D:
       - {x: 0.6095772, y: -0.09503937}
       - {x: 0.60949945, y: 0.00005340576}
       - {x: 0.546988, y: 0.0626955}
+      - {x: 0.42048597, y: 0.12547636}
       - {x: 0.35954523, y: 0.12519264}
       - {x: 0.29676533, y: 0.25017095}
       - {x: 0.14057064, y: 0.37544322}
       - {x: -0.1403861, y: 0.37604332}
       - {x: -0.29665422, y: 0.25013447}
       - {x: -0.36042595, y: 0.12597966}
+      - {x: -0.42123938, y: 0.12615705}
       - {x: -0.5471158, y: 0.062437296}
   m_UseDelaunayMesh: 1
 --- !u!50 &-6536061304401074750

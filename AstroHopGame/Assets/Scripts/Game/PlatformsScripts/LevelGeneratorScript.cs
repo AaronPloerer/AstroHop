@@ -21,10 +21,17 @@ public class LevelGeneratorScript : MonoBehaviour
 
     #region Platform Prefabs and Settings
     [Header("Platform Prefabs")]
-    // Standard, Broken and Moving Platform Templates
-    [SerializeField] private GameObject platformPrefab;        
+    // Standard, Broken, Moving and Wide Platform Templates
+    [SerializeField] private GameObject platformPrefab;
     [SerializeField] private GameObject brokenPlatformPrefab;
     [SerializeField] private GameObject movingPlatformPrefab;
+    [SerializeField] private GameObject widePlatformPrefab;
+
+    [Header("Wide Platform")]
+    [SerializeField] private float widePlatformExclusion;        // No platforms this far below the startingboost platform
+    [SerializeField] private float widePlatformYOffset;          // Fine-tuning of the wide startingboost platform height (+ up / - down)
+    [SerializeField] private float minXDistanceFromCenter;       // Min x distance from x = 0 for the first platforms (start and after the wide platform)
+    [SerializeField] private float centerClearHeight;            // Height range above the first platform / startingboost platform where this applies
 
     [Header("Level Dimensions")]
     [SerializeField] private float levelWidth;         // Horizontal play area boundary
@@ -35,7 +42,7 @@ public class LevelGeneratorScript : MonoBehaviour
     #region Phase Configuration
     [System.Serializable]
     public class Phase
-    { 
+    {
         public float height;                 // Score threshold to reach next phase
 
         // Platform position
@@ -71,6 +78,10 @@ public class LevelGeneratorScript : MonoBehaviour
     private Vector3 spawnPosition;        // Selected coordinates for spawn
     private List<GameObject> spawnedPlatforms = new List<GameObject>();  // List of all active platforms for despawn check
 
+    private bool startingBoostChecked;                                  // The start-of-run boost is checked once on the first Update
+    private float widePlatformY = float.PositiveInfinity;               // Infinity = no wide platform waiting for the cursor (exclusion inactive)
+    private float lastWidePlatformY = float.NegativeInfinity;           // Height of the last wide platform (stays set after widePlatformY is reset)
+
     // Phase management
     public int currentPhaseIndex;         // Index of current phase
     private Phase currentPhase;           // Reference to current phase data
@@ -86,6 +97,7 @@ public class LevelGeneratorScript : MonoBehaviour
 
     void Update()
     {
+        CheckStartingBoostWidePlatform();
         HandlePhaseProgression();
         HandlePlatformSpawning();
     }
@@ -106,8 +118,8 @@ public class LevelGeneratorScript : MonoBehaviour
 
     private void CreateInitialPlatform()
     {
-        // Create safe starting platform at origin and add to tracking list
-        GameObject newPlatform = Instantiate(platformPrefab, transform.position, Quaternion.identity);
+        // Create safe wide starting platform at origin and add to tracking list
+        GameObject newPlatform = Instantiate(widePlatformPrefab, transform.position, Quaternion.identity);
         spawnedPlatforms.Add(newPlatform);
     }
     #endregion
@@ -134,7 +146,7 @@ public class LevelGeneratorScript : MonoBehaviour
         {
             CreatePlatform();
         }
-        CheckDespawnPlatforms(); 
+        CheckDespawnPlatforms();
     }
 
     private void CheckDespawnPlatforms()
@@ -164,6 +176,17 @@ public class LevelGeneratorScript : MonoBehaviour
     {
         UpdateCurrentPhase();
         CalculateNewPosition();
+
+        // Cursor reached the exclusion zone below the wide platform:
+        // skip this platform and continue from the wide platform's position
+        if (spawnPosition.y >= widePlatformY - widePlatformExclusion)
+        {
+            spawnPosition = new Vector3(0f, widePlatformY, spawnPosition.z);
+            highestSpawnY = widePlatformY;
+            widePlatformY = float.PositiveInfinity;   // Done, exclusion is inactive again
+            return;
+        }
+
         HandlePositionConstraints();
         DeterminePlatformType();
         InstantiatePlatform();
@@ -210,17 +233,28 @@ public class LevelGeneratorScript : MonoBehaviour
             spawnPosition.x -= (difference * 2.0f);
         }
 
-        // Ensure initial platforms aren't too close to center to prevent player movement before first input
-        if (spawnPosition.y < 3.0f)
+        // Platforms right above the first platform or above the starting boost wide platform (both at x = 0)
+        // must not be too close to the center, so the player doesn't move before the first input
+        bool nearStartPlatform = spawnPosition.y < centerClearHeight;
+        bool nearWidePlatform = spawnPosition.y >= lastWidePlatformY &&
+                                spawnPosition.y <= lastWidePlatformY + centerClearHeight;
+
+        if (nearStartPlatform || nearWidePlatform)
         {
-            if (spawnPosition.x >= 0.0f && spawnPosition.x < 1.2f)
-            {
-                spawnPosition.x = 1.2f;
-            }
-            else if (spawnPosition.x > -1.2f && spawnPosition.x < 0.0f)
-            {
-                spawnPosition.x = -1.2f;
-            }
+            KeepAwayFromCenter();
+        }
+    }
+
+    private void KeepAwayFromCenter()
+    {
+        // Push the platform out to at least minXDistanceFromCenter from x = 0
+        if (spawnPosition.x >= 0.0f && spawnPosition.x < minXDistanceFromCenter)
+        {
+            spawnPosition.x = minXDistanceFromCenter;
+        }
+        else if (spawnPosition.x > -minXDistanceFromCenter && spawnPosition.x < 0.0f)
+        {
+            spawnPosition.x = -minXDistanceFromCenter;
         }
     }
 
@@ -272,7 +306,7 @@ public class LevelGeneratorScript : MonoBehaviour
         // Set forceFuelSpawn based on foce-fuel-spawn flag on whichever component exists
         if (standardPlatform != null) standardPlatform.forceFuelSpawn = mustSpawnFuel;
         if (movingPlatform != null) movingPlatform.forceFuelSpawn = mustSpawnFuel;
-        if (brokenPlatform != null) brokenPlatform.forceFuelSpawn = mustSpawnFuel; 
+        if (brokenPlatform != null) brokenPlatform.forceFuelSpawn = mustSpawnFuel;
     }
     #endregion
 
@@ -293,6 +327,54 @@ public class LevelGeneratorScript : MonoBehaviour
         else
         {
             chosenPlatform = platformPrefab;
+        }
+    }
+    #endregion
+
+    #region Wide Platform After Starting Boost
+    private void CheckStartingBoostWidePlatform()
+    {
+        // Runs once on the first frame, when all Start() methods are done and the player knows if the run begins with a starting boost
+        if (startingBoostChecked) return;
+        startingBoostChecked = true;
+
+        if (PlayerControllerScript.instance != null &&
+            PlayerControllerScript.instance.TryGetStartingBoostApexY(out float apexY))
+        {
+            RequestWidePlatform(apexY);
+        }
+    }
+
+    // Called with the height where a boost ends up. The wide platform is spawned one jump below that height.
+    public void RequestWidePlatform(float boostApexY)
+    {
+        PlatformScript widePlatformScript = widePlatformPrefab.GetComponent<PlatformScript>();
+        if (widePlatformScript == null)
+        {
+            Debug.LogWarning("widePlatformPrefab has no PlatformScript: jump height cannot be calculated");
+            return;
+        }
+
+        // Height reached by one bounce from the wide platform
+        float gravity = Mathf.Abs(PlayerControllerScript.instance.rb.gravityScale * Physics2D.gravity.y);
+        float jumpForce = widePlatformScript.playerJumpForce;
+        float jumpHeight = (jumpForce * jumpForce) / (2f * gravity);
+
+        // After landing and jumping, the player reaches the same height as the boost did
+        float targetY = boostApexY - jumpHeight + widePlatformYOffset;
+
+        // Safety: never inside the exclusion zone of platforms that were already spawned
+        widePlatformY = Mathf.Max(targetY, highestSpawnY + widePlatformExclusion);
+        lastWidePlatformY = widePlatformY;
+
+        // Spawn it right away, centered in x. The cursor is not touched.
+        GameObject widePlatform = Instantiate(widePlatformPrefab, new Vector3(0f, widePlatformY, transform.position.z), Quaternion.identity);
+        spawnedPlatforms.Add(widePlatform);
+
+        // UFOs wait until the player has landed and jumped higher after the boost
+        if (UfoSpawnerScript.instance != null)
+        {
+            UfoSpawnerScript.instance.StartAfterStartingBoostDelay(boostApexY);
         }
     }
     #endregion

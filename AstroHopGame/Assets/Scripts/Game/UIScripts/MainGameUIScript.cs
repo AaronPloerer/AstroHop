@@ -113,10 +113,17 @@ public class MainGameUIScript : MonoBehaviour
 
     #region Tutorial System
     [Header("Tutorial System")]
-    [SerializeField] private float timeTutorialText, timeTutorialPause;
+    [SerializeField] private float timeTutorialText;
+    [SerializeField] private float distanceForTutorialDespawn;
     private bool[] shownTutorial;
     private Coroutine activeTutorialCoroutine;   // Track the active tutorial coroutine for force stop
     private int activeTutorialPhaseIndex = -1;   // Track the phase index of the active tutorial for force stop
+
+    [Header("Player Still Settings")]
+    [SerializeField] private float timeUntilPlayerStill;         // Seconds without score increase until the player counts as still
+    public bool playerStill;                                     // True when the score has not increased for timeUntilPlayerStill
+    private float stillTimer;
+    private int lastProgressScore;
     #endregion
 
     #region Initialization
@@ -152,6 +159,11 @@ public class MainGameUIScript : MonoBehaviour
         // Reset flags and timer
         laserIndicatorActive = false;
         paused = false;
+
+        // Rest Player Still Settings
+        stillTimer = 0f;
+        lastProgressScore = 0;
+        playerStill = false;
     }
 
     private void InitializeFuelSystem()
@@ -279,6 +291,28 @@ public class MainGameUIScript : MonoBehaviour
 
             // Update new camera height record
             highestPos = (CameraScript.instance.transform.position.y);
+
+            // The score shown in the UI increased -> player is progressing
+            if (score > lastProgressScore)
+            {
+                lastProgressScore = score;
+                stillTimer = 0f;
+                playerStill = false;
+            }
+        }
+
+        UpdatePlayerStill(); 
+    }
+
+    private void UpdatePlayerStill()
+    {
+        // Time only counts while the game is running
+        if (paused || !PlayerControllerScript.instance.isAlive) return;
+
+        stillTimer += Time.deltaTime;
+        if (stillTimer >= timeUntilPlayerStill)
+        {
+            playerStill = true;
         }
     }
     #endregion
@@ -474,11 +508,23 @@ public class MainGameUIScript : MonoBehaviour
 
     private IEnumerator SpawnSequence(GameObject firsttext, int phaseIndex)
     {
-        // Tutorial element sequence
         if (firsttext != null)
         {
+            // Score that led to this tutorial spawning = start height of its phase (0 for the first phase)
+            float spawnScore = phaseIndex == 0 ? 0f : LevelGeneratorScript.instance.phases[phaseIndex - 1].height;
+            float despawnScore = spawnScore + distanceForTutorialDespawn;
+
             firsttext.SetActive(true);
+
+            // Condition 1: time has to pass
             yield return WaitForSecondsUnpaused(timeTutorialText);
+
+            // Condition 2: score has to reach the despawn distance (a new tutorial spawning still interrupts via SkipCurrentTutorial)
+            while (GetCurrentScore() < despawnScore)
+            {
+                yield return null;
+            }
+
             firsttext.SetActive(false);
         }
 
@@ -486,8 +532,13 @@ public class MainGameUIScript : MonoBehaviour
         PlayerPrefs.SetInt("Phase" + phaseIndex + "TutorialShown", 1);
         PlayerPrefs.Save();
 
-        activeTutorialCoroutine = null;            // Reset active coroutine reference
-        activeTutorialPhaseIndex = -1;             // Reset phase index
+        activeTutorialCoroutine = null;
+        activeTutorialPhaseIndex = -1;
+    }
+
+    private int GetCurrentScore()
+    {
+        return Mathf.FloorToInt(CameraScript.instance.transform.position.y * positionToScore);
     }
     #endregion
 

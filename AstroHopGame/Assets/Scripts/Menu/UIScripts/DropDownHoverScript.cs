@@ -9,7 +9,6 @@ public class SpriteSwitcher : MonoBehaviour
 
     [Header("Sprites for each state")]
     [SerializeField] private Sprite normalSprite;
-    [SerializeField] private Sprite hoverSprite;
     [SerializeField] private Sprite clickedSprite;
 
     private BoxCollider2D col;
@@ -18,59 +17,50 @@ public class SpriteSwitcher : MonoBehaviour
     #region Initialization
     void Start()
     {
-        // Configure required components
         targetImage = GetComponent<Image>();
         col = GetComponent<BoxCollider2D>();
 
-        // Srt with normal Image
-        if (normalSprite != null)
-            targetImage.sprite = normalSprite;
+        SetNormal();
+    }
+
+    void OnDisable()
+    {
+        // Never stay stuck in the pressed look if the object gets hidden while pressed
+        if (targetImage != null) SetNormal();
     }
     #endregion
 
-    #region Mouse Interaction Handlers
-    void OnMouseEnter()
-    {
-        // When mouse enters the collider area
-        if (hoverSprite != null)
-            targetImage.sprite = hoverSprite;
-    }
-
-    void OnMouseExit()
-    {
-        // When mouse exits the collider area
-        if (normalSprite != null)
-            targetImage.sprite = normalSprite;
-    }
-
+    #region Mouse / Touch Handlers
     void OnMouseDown()
     {
-        // When mouse button is pressed down
+        // Finger/mouse goes down: pressed look
         if (clickedSprite != null)
             targetImage.sprite = clickedSprite;
     }
 
+    void OnMouseExit()
+    {
+        // Finger/mouse dragged off the button while held: back to normal
+        SetNormal();
+    }
+
     void OnMouseUp()
     {
-        // Convert mouse position to world point
-        Vector2 worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        // Always return to normal on release
+        SetNormal();
 
-        // Check if that point overlaps our collider
+        // Click sound only if released while still over the button
+        Vector2 worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         if (col.OverlapPoint(worldPoint))
         {
-            // Still over the image: go back to hover
-            if (hoverSprite != null)
-            {
-                AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
-                targetImage.sprite = hoverSprite;
-            }
+            AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
         }
-        else
-        {
-            // Mouse up outside: revert to normal
-            if (normalSprite != null)
-                targetImage.sprite = normalSprite;
-        }
+    }
+
+    private void SetNormal()
+    {
+        if (normalSprite != null)
+            targetImage.sprite = normalSprite;
     }
     #endregion
 }

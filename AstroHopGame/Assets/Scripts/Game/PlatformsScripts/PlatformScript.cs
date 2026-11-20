@@ -10,7 +10,7 @@ public class PlatformScript : MonoBehaviour
     [SerializeField] private Transform rightFuelPoint;        // Right fuel spawn boundary
 
     [Header("Settings")]
-    [SerializeField] private float playerJumpForce;                 // Force applied to player bounce
+    public float playerJumpForce;                 // Force applied to player bounce
     [SerializeField] private float chanceForSuperFuel;              // Probability of spawning super fuel
     #endregion
 

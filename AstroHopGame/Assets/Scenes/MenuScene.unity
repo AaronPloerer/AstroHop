@@ -7094,7 +7094,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.78039217, g: 0.78039217, b: 0.78039217, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: -5, y: -5, z: -5, w: -5}
+  m_RaycastPadding: {x: -7, y: -7, z: -7, w: -7}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -7668,7 +7668,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.78039217, g: 0.78039217, b: 0.78039217, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: -5, y: -5, z: -5, w: -5}
+  m_RaycastPadding: {x: -7, y: -7, z: -7, w: -7}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -10056,6 +10056,8 @@ MonoBehaviour:
   pauseToggleCooldown: 0.2
   helpButtonCooldown: 0.2
   exitWarningButtonCooldown: 0.2
+  reviewDelay: 2
+  requestTimeout: 4
 --- !u!1 &819881247
 GameObject:
   m_ObjectHideFlags: 0
@@ -15121,7 +15123,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: -5, y: -5, z: -5, w: -5}
+  m_RaycastPadding: {x: -15, y: -15, z: -15, w: -15}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -20042,7 +20044,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   normalSprite: {fileID: 6687851822966965590, guid: 75051eb108651fe44b9dda214a83318a, type: 3}
-  hoverSprite: {fileID: -6408775633568255793, guid: 713df1de8d8b9bd4796d60958325b1a8, type: 3}
   clickedSprite: {fileID: -354252705906616202, guid: 713df1de8d8b9bd4796d60958325b1a8, type: 3}
 --- !u!114 &1644956884
 MonoBehaviour:

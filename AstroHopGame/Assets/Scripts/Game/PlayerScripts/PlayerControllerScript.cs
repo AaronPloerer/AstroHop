@@ -347,7 +347,7 @@ public class PlayerControllerScript : MonoBehaviour
     }
     #endregion
 
-    #region Starting Boost UI Lock
+    #region Starting Boost
     private void LockControlsForStartingBoost()
     {
         var joystick = MainGameUIScript.instance.aimConroller.GetComponent<AimJoystick>();
@@ -368,6 +368,16 @@ public class PlayerControllerScript : MonoBehaviour
 
         var joystick = MainGameUIScript.instance.aimConroller.GetComponent<AimJoystick>();
         joystick.enabled = true;
+    }
+
+    // Height where the score-based starting boost at the beginning of a run ends up.
+    public bool TryGetStartingBoostApexY(out float apexY)
+    {
+        apexY = 0f;
+        if (!startingBoost) return false;
+
+        apexY = previousScore * relativeStartingBoostDistance / MainGameUIScript.instance.positionToScore;
+        return true;
     }
     #endregion
 
@@ -449,6 +459,13 @@ public class PlayerControllerScript : MonoBehaviour
     {
         startingBoost = true;
         reviveBoostTimeRemaining = duration;
+
+        // Predict where the revive boost ends up (boost distance + coasting distance)
+        float gravity = Mathf.Abs(rb.gravityScale * Physics2D.gravity.y);
+        float boostDistance = startingBoostForce * duration;
+        float coastDistance = (startingBoostForce * startingBoostForce) / (2f * gravity);
+
+        LevelGeneratorScript.instance.RequestWidePlatform(transform.position.y + boostDistance + coastDistance);
     }
     #endregion
 }
