@@ -6683,8 +6683,9 @@ MonoBehaviour:
   widePlatformPrefab: {fileID: 6147987595589634864, guid: c1b18b09ac97908458454ebc2b8518a3, type: 3}
   widePlatformExclusion: 0.8
   widePlatformYOffset: -0.1
-  minXDistanceFromCenter: 2
-  centerClearHeight: 4
+  minXDistanceShort: 1.5
+  minXDistanceLong: 2
+  centerClearHeight: 3.5
   levelWidth: 5.4
   spawnBuffer: 8
   despawnBuffer: 5
@@ -7632,11 +7633,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6217713605522287744, guid: ce21995272441454ea7c9f0449e8f57a, type: 3}
       propertyPath: deadZone
-      value: 0.025
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 6217713605522287744, guid: ce21995272441454ea7c9f0449e8f57a, type: 3}
       propertyPath: tiltStrength
-      value: 2.8
+      value: 2.6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

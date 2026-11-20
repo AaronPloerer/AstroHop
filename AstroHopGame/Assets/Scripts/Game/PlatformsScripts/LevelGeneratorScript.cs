@@ -30,7 +30,8 @@ public class LevelGeneratorScript : MonoBehaviour
     [Header("Wide Platform")]
     [SerializeField] private float widePlatformExclusion;        // No platforms this far below the startingboost platform
     [SerializeField] private float widePlatformYOffset;          // Fine-tuning of the wide startingboost platform height (+ up / - down)
-    [SerializeField] private float minXDistanceFromCenter;       // Min x distance from x = 0 for the first platforms (start and after the wide platform)
+    [SerializeField] private float minXDistanceShort;            // Lower bound for the random min x distance from x = 0 for the first platforms (start and after the wide platform)
+    [SerializeField] private float minXDistanceLong;             // Upper bound for the random min x distance from x = 0 for the first platforms (start and after the wide platform)
     [SerializeField] private float centerClearHeight;            // Height range above the first platform / startingboost platform where this applies
 
     [Header("Level Dimensions")]
@@ -187,8 +188,8 @@ public class LevelGeneratorScript : MonoBehaviour
             return;
         }
 
-        HandlePositionConstraints();
         DeterminePlatformType();
+        HandlePositionConstraints();
         InstantiatePlatform();
     }
 
@@ -241,20 +242,37 @@ public class LevelGeneratorScript : MonoBehaviour
 
         if (nearStartPlatform || nearWidePlatform)
         {
-            KeepAwayFromCenter();
+            KeepAwayFromCenter(GetCenterClearance());
         }
     }
 
-    private void KeepAwayFromCenter()
+    private float GetCenterClearance()
     {
-        // Push the platform out to at least minXDistanceFromCenter from x = 0
-        if (spawnPosition.x >= 0.0f && spawnPosition.x < minXDistanceFromCenter)
+        // Random min distance for this platform, between the two bounds
+        float baseDistance = Random.Range(minXDistanceShort, minXDistanceLong);
+
+        // Moving platforms swing 'difference' to each side, so shift their center outwards by that amount
+        float extra = 0f;
+        if (chosenPlatform != null)
         {
-            spawnPosition.x = minXDistanceFromCenter;
+            MovingPlatformScript moving = chosenPlatform.GetComponent<MovingPlatformScript>();
+            if (moving != null) extra = moving.Difference;
         }
-        else if (spawnPosition.x > -minXDistanceFromCenter && spawnPosition.x < 0.0f)
+
+        // Can't go beyond the level boundary
+        return Mathf.Min(baseDistance + extra, levelWidth);
+    }
+
+    private void KeepAwayFromCenter(float minDistance)
+    {
+        // Push the platform out to at least minDistance from x = 0
+        if (spawnPosition.x >= 0.0f && spawnPosition.x < minDistance)
         {
-            spawnPosition.x = -minXDistanceFromCenter;
+            spawnPosition.x = minDistance;
+        }
+        else if (spawnPosition.x > -minDistance && spawnPosition.x < 0.0f)
+        {
+            spawnPosition.x = -minDistance;
         }
     }
 

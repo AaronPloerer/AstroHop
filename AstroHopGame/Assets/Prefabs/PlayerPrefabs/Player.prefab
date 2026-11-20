@@ -235,8 +235,8 @@ MonoBehaviour:
   astronautSkin5Anim: {fileID: 4134110231288806821}
   movementSpeed: 12
   movementSmoothing: 11
-  tiltStrength: 2.5
-  deadZone: 0.03
+  tiltStrength: 2.6
+  deadZone: 0.02
   fuelLossRate: 5400
   minFuelLoss: 2000
   boostForce: 8

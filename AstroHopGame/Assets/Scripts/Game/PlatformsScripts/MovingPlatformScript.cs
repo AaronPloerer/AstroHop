@@ -12,6 +12,7 @@ public class MovingPlatformScript : MonoBehaviour
     [Header("Settings")]
     [SerializeField] private float playerJumpForce;                 // Force applied to player bounce
     [SerializeField] private float difference;                      // Horizontal movement range from start position
+    public float Difference => difference;
     [SerializeField] private float levelWidth;                      // Level boundary constraints
     [SerializeField] private float speed;                           // Platform movement speed
     [SerializeField] private float chanceForSuperFuel;              // Probability of spawning super fuel

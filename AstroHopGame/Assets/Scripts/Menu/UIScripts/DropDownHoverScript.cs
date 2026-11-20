@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,6 +13,8 @@ public class SpriteSwitcher : MonoBehaviour
     [SerializeField] private Sprite clickedSprite;
 
     private BoxCollider2D col;
+    private TMP_Dropdown dropdown;
+    private bool dropdownWasOpenOnPress;
     #endregion
 
     #region Initialization
@@ -20,12 +23,16 @@ public class SpriteSwitcher : MonoBehaviour
         targetImage = GetComponent<Image>();
         col = GetComponent<BoxCollider2D>();
 
+        // Dropdown must be searched in the parents, not on this object.
+        dropdown = GetComponentInParent<TMP_Dropdown>();
+
         SetNormal();
     }
 
     void OnDisable()
     {
         // Never stay stuck in the pressed look if the object gets hidden while pressed
+        dropdownWasOpenOnPress = false;
         if (targetImage != null) SetNormal();
     }
     #endregion
@@ -33,6 +40,9 @@ public class SpriteSwitcher : MonoBehaviour
     #region Mouse / Touch Handlers
     void OnMouseDown()
     {
+        // Remember if the dropdown was already open when the press started
+        dropdownWasOpenOnPress = dropdown != null && dropdown.IsExpanded;
+
         // Finger/mouse goes down: pressed look
         if (clickedSprite != null)
             targetImage.sprite = clickedSprite;
@@ -49,17 +59,26 @@ public class SpriteSwitcher : MonoBehaviour
         // Always return to normal on release
         SetNormal();
 
+        // This press closed an open dropdown: no sound
+        if (dropdownWasOpenOnPress)
+        {
+            dropdownWasOpenOnPress = false;
+            return;
+        }
+
         // Click sound only if released while still over the button
         Vector2 worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         if (col.OverlapPoint(worldPoint))
         {
-            AudioManagerScript.instance.PlaySFX(AudioManagerScript.instance.click, AudioManagerScript.instance.clickVolume);
+            AudioManagerScript.instance.PlaySFX(
+                AudioManagerScript.instance.click,
+                AudioManagerScript.instance.clickVolume);
         }
     }
 
     private void SetNormal()
     {
-        if (normalSprite != null)
+        if (targetImage != null && normalSprite != null)
             targetImage.sprite = normalSprite;
     }
     #endregion

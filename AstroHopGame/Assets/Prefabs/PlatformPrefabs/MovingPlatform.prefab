@@ -197,7 +197,7 @@ EdgeCollider2D:
   m_Points:
   - {x: -0.6093584, y: 0.00003361702}
   - {x: 0, y: 0.00003361702}
-  - {x: 0.6093584, y: 0.00003361702}
+  - {x: 0.6406168, y: 0.00003361702}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
